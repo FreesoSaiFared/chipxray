@@ -1,0 +1,6487 @@
+{
+ "source": "blobs\\espressif\\esp32_librftest.a",
+ "sha256": "17cdfede65d13d9061605eb4efafb93a4932fcd4f35b2fbefc6302b3cc00f4d7",
+ "objects": [
+  {
+   "name": "simple_wdt.o",
+   "machine": 94,
+   "functions": [
+    {
+     "name": "rtc_get_reset_reason",
+     "size": 40,
+     "section": ".text.rtc_get_reset_reason",
+     "exported": true,
+     "mmio": [
+      "0x3ff48018",
+      "0x3ff48034"
+     ]
+    },
+    {
+     "name": "wdt_nrst_inc",
+     "size": 74,
+     "section": ".text.wdt_nrst_inc",
+     "exported": true,
+     "mmio": [
+      "0x3ff48018",
+      "0x3ff48034",
+      "0x3ff4804c"
+     ]
+    },
+    {
+     "name": "wdt_nrst",
+     "size": 16,
+     "section": ".text.wdt_nrst",
+     "exported": true,
+     "mmio": [
+      "0x3ff4804c"
+     ]
+    },
+    {
+     "name": "wdt_init",
+     "size": 197,
+     "section": ".text.wdt_init",
+     "exported": true,
+     "mmio": [
+      "0x3ff5f048",
+      "0x3ff5f050",
+      "0x3ff5f054",
+      "0x3ff5f058",
+      "0x3ff5f05c"
+     ]
+    },
+    {
+     "name": "wdt_feed",
+     "size": 15,
+     "section": ".text.wdt_feed",
+     "exported": true,
+     "mmio": [
+      "0x3ff5f060"
+     ]
+    },
+    {
+     "name": "t0_start_toggle",
+     "size": 166,
+     "section": ".text.t0_start_toggle",
+     "exported": true,
+     "mmio": [
+      "0x3ff5f000",
+      "0x3ff5f010",
+      "0x3ff5f014",
+      "0x3ff5f018",
+      "0x3ff5f01c",
+      "0x3ff5f020",
+      "0x3ff5f098",
+      "0x60000c00"
+     ]
+    },
+    {
+     "name": "t0_toggle_service",
+     "size": 58,
+     "section": ".text.t0_toggle_service",
+     "exported": true,
+     "mmio": [
+      "0x3ff5f000",
+      "0x3ff5f0a4"
+     ]
+    },
+    {
+     "name": "t1_start_toggle",
+     "size": 166,
+     "section": ".text.t1_start_toggle",
+     "exported": true,
+     "mmio": [
+      "0x3ff5f024",
+      "0x3ff5f034",
+      "0x3ff5f038",
+      "0x3ff5f03c",
+      "0x3ff5f040",
+      "0x3ff5f044",
+      "0x3ff5f098",
+      "0x60000c00"
+     ]
+    },
+    {
+     "name": "t1_toggle_service",
+     "size": 58,
+     "section": ".text.t1_toggle_service",
+     "exported": true,
+     "mmio": [
+      "0x3ff5f024",
+      "0x3ff5f0a4"
+     ]
+    }
+   ],
+   "calls": [
+    [
+     "rtc_get_reset_reason",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "t0_start_toggle",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "t0_toggle_service",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "t0_toggle_service",
+     "phy_printf"
+    ],
+    [
+     "t1_start_toggle",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "t1_toggle_service",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "t1_toggle_service",
+     "phy_printf"
+    ],
+    [
+     "wdt_init",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "wdt_nrst",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "wdt_nrst_inc",
+     "esp_dport_access_reg_read"
+    ]
+   ]
+  },
+  {
+   "name": "esp_phy_api.o",
+   "machine": 94,
+   "functions": [
+    {
+     "name": "esp_phy_rftest_config",
+     "size": 14,
+     "section": ".text.esp_phy_rftest_config",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_phy_rftest_init",
+     "size": 11,
+     "section": ".text.esp_phy_rftest_init",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_phy_tx_contin_en",
+     "size": 14,
+     "section": ".text.esp_phy_tx_contin_en",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_phy_cbw40m_en",
+     "size": 14,
+     "section": ".text.esp_phy_cbw40m_en",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_phy_wifi_tx",
+     "size": 30,
+     "section": ".text.esp_phy_wifi_tx",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_phy_wifi_rx",
+     "size": 15,
+     "section": ".text.esp_phy_wifi_rx",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_phy_get_rx_result",
+     "size": 36,
+     "section": ".text.esp_phy_get_rx_result",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_phy_wifi_tx_tone",
+     "size": 18,
+     "section": ".text.esp_phy_wifi_tx_tone",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_phy_short_gi_en",
+     "size": 24,
+     "section": ".text.esp_phy_short_gi_en",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_phy_ble_tx",
+     "size": 27,
+     "section": ".text.esp_phy_ble_tx",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_phy_ble_rx",
+     "size": 18,
+     "section": ".text.esp_phy_ble_rx",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_phy_bt_tx_tone",
+     "size": 18,
+     "section": ".text.esp_phy_bt_tx_tone",
+     "exported": true,
+     "mmio": []
+    }
+   ],
+   "calls": [
+    [
+     "esp_phy_ble_rx",
+     "esp_ble_rx_func"
+    ],
+    [
+     "esp_phy_ble_tx",
+     "esp_ble_tx_func"
+    ],
+    [
+     "esp_phy_bt_tx_tone",
+     "bt_tx_tone"
+    ],
+    [
+     "esp_phy_cbw40m_en",
+     "cbw40m_en"
+    ],
+    [
+     "esp_phy_rftest_config",
+     "idf_enable"
+    ],
+    [
+     "esp_phy_rftest_init",
+     "rftest_init"
+    ],
+    [
+     "esp_phy_short_gi_en",
+     "phy_printf"
+    ],
+    [
+     "esp_phy_tx_contin_en",
+     "tx_contin_en"
+    ],
+    [
+     "esp_phy_wifi_rx",
+     "esp_rx_func"
+    ],
+    [
+     "esp_phy_wifi_tx",
+     "esp_tx_func"
+    ],
+    [
+     "esp_phy_wifi_tx_tone",
+     "wifiscwout"
+    ]
+   ]
+  },
+  {
+   "name": "mod_subtest.o",
+   "machine": 94,
+   "functions": [
+    {
+     "name": "test_digital_pads_slpsel",
+     "size": 98,
+     "section": ".text.test_digital_pads_slpsel",
+     "exported": true,
+     "mmio": [
+      "0x3ff49004",
+      "0x3ff49084",
+      "0x3ff49090"
+     ]
+    },
+    {
+     "name": "test_digital_pads_slppu",
+     "size": 98,
+     "section": ".text.test_digital_pads_slppu",
+     "exported": true,
+     "mmio": [
+      "0x3ff49004",
+      "0x3ff49084",
+      "0x3ff49090"
+     ]
+    },
+    {
+     "name": "test_digital_pads_pd",
+     "size": 102,
+     "section": ".text.test_digital_pads_pd",
+     "exported": true,
+     "mmio": [
+      "0x3ff49004",
+      "0x3ff49084",
+      "0x3ff49090"
+     ]
+    },
+    {
+     "name": "test_digital_pads_drv",
+     "size": 100,
+     "section": ".text.test_digital_pads_drv",
+     "exported": true,
+     "mmio": [
+      "0x3ff49004",
+      "0x3ff49084",
+      "0x3ff49090"
+     ]
+    },
+    {
+     "name": "test_digital_pads_pu",
+     "size": 102,
+     "section": ".text.test_digital_pads_pu",
+     "exported": true,
+     "mmio": [
+      "0x3ff49004",
+      "0x3ff49084",
+      "0x3ff49090"
+     ]
+    },
+    {
+     "name": "test_digital_pads_slppd",
+     "size": 98,
+     "section": ".text.test_digital_pads_slppd",
+     "exported": true,
+     "mmio": [
+      "0x3ff49004",
+      "0x3ff49084",
+      "0x3ff49090"
+     ]
+    },
+    {
+     "name": "test_digital_pads_slpoe",
+     "size": 106,
+     "section": ".text.test_digital_pads_slpoe",
+     "exported": true,
+     "mmio": [
+      "0x3ff49004",
+      "0x3ff49084",
+      "0x3ff49090"
+     ]
+    },
+    {
+     "name": "test_digital_pads_GPIO",
+     "size": 99,
+     "section": ".text.test_digital_pads_GPIO",
+     "exported": true,
+     "mmio": [
+      "0x3ff49004",
+      "0x3ff49084",
+      "0x3ff49090"
+     ]
+    },
+    {
+     "name": "test_digital_pads_ie",
+     "size": 102,
+     "section": ".text.test_digital_pads_ie",
+     "exported": true,
+     "mmio": [
+      "0x3ff49004",
+      "0x3ff49084",
+      "0x3ff49090"
+     ]
+    },
+    {
+     "name": "test_rtc_pads_muxsel",
+     "size": 780,
+     "section": ".text.test_rtc_pads_muxsel",
+     "exported": true,
+     "mmio": [
+      "0x3ff4847c",
+      "0x3ff48480",
+      "0x3ff48484",
+      "0x3ff48488",
+      "0x3ff4848c",
+      "0x3ff48494",
+      "0x3ff48498",
+      "0x3ff4849c",
+      "0x3ff484a0",
+      "0x3ff484a4",
+      "0x3ff484a8",
+      "0x3ff484ac",
+      "0x3ff484b0"
+     ]
+    },
+    {
+     "name": "test_slp_pad_ctrl",
+     "size": 284,
+     "section": ".text.test_slp_pad_ctrl",
+     "exported": true,
+     "mmio": [
+      "0x3ff44004",
+      "0x3ff44010",
+      "0x3ff44020",
+      "0x3ff4402c",
+      "0x3ff4840c"
+     ]
+    },
+    {
+     "name": "test_pad_mode_sel",
+     "size": 284,
+     "section": ".text.test_pad_mode_sel",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "ESP_TEST_GPIO",
+     "size": 534,
+     "section": ".text.ESP_TEST_GPIO",
+     "exported": true,
+     "mmio": [
+      "0x3ff49004"
+     ]
+    },
+    {
+     "name": "ESP_TEST_GPIO_DRV",
+     "size": 546,
+     "section": ".text.ESP_TEST_GPIO_DRV",
+     "exported": true,
+     "mmio": [
+      "0x3ff49004"
+     ]
+    },
+    {
+     "name": "CMDSTOP_GPIO",
+     "size": 47,
+     "section": ".text.CMDSTOP_GPIO",
+     "exported": true,
+     "mmio": [
+      "0x3ff49004"
+     ]
+    },
+    {
+     "name": "pvt",
+     "size": 232,
+     "section": ".text.pvt",
+     "exported": true,
+     "mmio": [
+      "0x3ff48030",
+      "0x3ff4807c",
+      "0x3ff4e0f8"
+     ]
+    },
+    {
+     "name": "pvt_test",
+     "size": 241,
+     "section": ".text.pvt_test",
+     "exported": true,
+     "mmio": [
+      "0x3ff4807c",
+      "0x3ff4e0f8"
+     ]
+    },
+    {
+     "name": "pvt_pwr_ctrl",
+     "size": 79,
+     "section": ".text.pvt_pwr_ctrl",
+     "exported": true,
+     "mmio": [
+      "0x3ff48030",
+      "0x3ff4807c"
+     ]
+    },
+    {
+     "name": "clk8M",
+     "size": 75,
+     "section": ".text.clk8M",
+     "exported": true,
+     "mmio": [
+      "0x3ff48070"
+     ]
+    },
+    {
+     "name": "GPIO_cali",
+     "size": 132,
+     "section": ".text.GPIO_cali",
+     "exported": true,
+     "mmio": [
+      "0x3ff44128",
+      "0x3ff4412c"
+     ]
+    },
+    {
+     "name": "slow_clk_write_efuse",
+     "size": 126,
+     "section": ".text.slow_clk_write_efuse",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "slow_clk_read_temp",
+     "size": 122,
+     "section": ".text.slow_clk_read_temp",
+     "exported": true,
+     "mmio": [
+      "0x3ff5a014"
+     ]
+    },
+    {
+     "name": "esp_crc8",
+     "size": 54,
+     "section": ".text.esp_crc8",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "check_usermac_from_efuse",
+     "size": 352,
+     "section": ".text.check_usermac_from_efuse",
+     "exported": true,
+     "mmio": [
+      "0x3ff5a078",
+      "0x3ff5a079",
+      "0x3ff5a07a",
+      "0x3ff5a07b",
+      "0x3ff5a07c",
+      "0x3ff5a07d",
+      "0x3ff5a07e",
+      "0x3ff5a08f"
+     ]
+    },
+    {
+     "name": "wr_adc_blk0",
+     "size": 62,
+     "section": ".text.wr_adc_blk0",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "wr_adc_blk0_data3_14b",
+     "size": 46,
+     "section": ".text.wr_adc_blk0_data3_14b",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "write_coding_to_efuse",
+     "size": 48,
+     "section": ".text.write_coding_to_efuse",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "count_ones",
+     "size": 30,
+     "section": ".text.count_ones",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "make_efuse",
+     "size": 531,
+     "section": ".text.make_efuse",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "write_usermac_to_efuse",
+     "size": 347,
+     "section": ".text.write_usermac_to_efuse",
+     "exported": true,
+     "mmio": [
+      "0x3ff5a018"
+     ]
+    },
+    {
+     "name": "Vsar2_pwc_mea_ate",
+     "size": 241,
+     "section": ".text.Vsar2_pwc_mea_ate",
+     "exported": true,
+     "mmio": [
+      "0x3ff48078",
+      "0x3ff4807c",
+      "0x3ff480a8",
+      "0x3ff4880c",
+      "0x3ff4882c",
+      "0x3ff48894"
+     ]
+    },
+    {
+     "name": "DIG_pwc_mea_ate",
+     "size": 238,
+     "section": ".text.DIG_pwc_mea_ate",
+     "exported": true,
+     "mmio": [
+      "0x3ff48078",
+      "0x3ff4807c",
+      "0x3ff480a8",
+      "0x3ff4880c",
+      "0x3ff4882c",
+      "0x3ff48894"
+     ]
+    },
+    {
+     "name": "RTC_pwc_mea_ate",
+     "size": 233,
+     "section": ".text.RTC_pwc_mea_ate",
+     "exported": true,
+     "mmio": [
+      "0x3ff48078",
+      "0x3ff4807c",
+      "0x3ff480a8",
+      "0x3ff4880c",
+      "0x3ff4882c",
+      "0x3ff48894"
+     ]
+    },
+    {
+     "name": "clr_pwc_mea",
+     "size": 113,
+     "section": ".text.clr_pwc_mea",
+     "exported": true,
+     "mmio": [
+      "0x3ff48078",
+      "0x3ff480a8",
+      "0x3ff4880c",
+      "0x3ff4882c"
+     ]
+    }
+   ],
+   "calls": [
+    [
+     "CMDSTOP_GPIO",
+     "phy_printf"
+    ],
+    [
+     "DIG_pwc_mea_ate",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "ESP_TEST_GPIO",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "ESP_TEST_GPIO",
+     "ets_delay_us"
+    ],
+    [
+     "ESP_TEST_GPIO",
+     "gpio_input_get"
+    ],
+    [
+     "ESP_TEST_GPIO",
+     "gpio_input_get_high"
+    ],
+    [
+     "ESP_TEST_GPIO",
+     "gpio_output_set"
+    ],
+    [
+     "ESP_TEST_GPIO",
+     "gpio_output_set_high"
+    ],
+    [
+     "ESP_TEST_GPIO",
+     "phy_printf"
+    ],
+    [
+     "ESP_TEST_GPIO",
+     "test_pad_mode_sel"
+    ],
+    [
+     "ESP_TEST_GPIO",
+     "uart_wait_idle"
+    ],
+    [
+     "ESP_TEST_GPIO_DRV",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "ESP_TEST_GPIO_DRV",
+     "ets_delay_us"
+    ],
+    [
+     "ESP_TEST_GPIO_DRV",
+     "gpio_input_get"
+    ],
+    [
+     "ESP_TEST_GPIO_DRV",
+     "gpio_input_get_high"
+    ],
+    [
+     "ESP_TEST_GPIO_DRV",
+     "gpio_output_set"
+    ],
+    [
+     "ESP_TEST_GPIO_DRV",
+     "gpio_output_set_high"
+    ],
+    [
+     "ESP_TEST_GPIO_DRV",
+     "phy_printf"
+    ],
+    [
+     "ESP_TEST_GPIO_DRV",
+     "test_digital_pads_drv"
+    ],
+    [
+     "ESP_TEST_GPIO_DRV",
+     "test_pad_mode_sel"
+    ],
+    [
+     "ESP_TEST_GPIO_DRV",
+     "uart_wait_idle"
+    ],
+    [
+     "GPIO_cali",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "GPIO_cali",
+     "ets_delay_us"
+    ],
+    [
+     "RTC_pwc_mea_ate",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "Vsar2_pwc_mea_ate",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "check_usermac_from_efuse",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "clk8M",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "clk8M",
+     "ets_delay_us"
+    ],
+    [
+     "clk8M",
+     "rtc_8m_ena"
+    ],
+    [
+     "clk8M",
+     "rtc_slowck_cali"
+    ],
+    [
+     "clr_pwc_mea",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "pvt",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "pvt",
+     "ets_delay_us"
+    ],
+    [
+     "pvt_pwr_ctrl",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "pvt_test",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "pvt_test",
+     "ets_delay_us"
+    ],
+    [
+     "slow_clk_read_temp",
+     "GPIO_cali"
+    ],
+    [
+     "slow_clk_read_temp",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "slow_clk_read_temp",
+     "phy_printf"
+    ],
+    [
+     "slow_clk_write_efuse",
+     "GPIO_cali"
+    ],
+    [
+     "slow_clk_write_efuse",
+     "burn_efuse"
+    ],
+    [
+     "slow_clk_write_efuse",
+     "phy_printf"
+    ],
+    [
+     "test_digital_pads_GPIO",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "test_digital_pads_drv",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "test_digital_pads_ie",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "test_digital_pads_pd",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "test_digital_pads_pu",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "test_digital_pads_slpoe",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "test_digital_pads_slppd",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "test_digital_pads_slppu",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "test_digital_pads_slpsel",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "test_pad_mode_sel",
+     "ets_delay_us"
+    ],
+    [
+     "test_pad_mode_sel",
+     "phy_printf"
+    ],
+    [
+     "test_pad_mode_sel",
+     "test_digital_pads_GPIO"
+    ],
+    [
+     "test_pad_mode_sel",
+     "test_digital_pads_ie"
+    ],
+    [
+     "test_pad_mode_sel",
+     "test_digital_pads_pd"
+    ],
+    [
+     "test_pad_mode_sel",
+     "test_digital_pads_pu"
+    ],
+    [
+     "test_pad_mode_sel",
+     "test_digital_pads_slpoe"
+    ],
+    [
+     "test_pad_mode_sel",
+     "test_digital_pads_slppd"
+    ],
+    [
+     "test_pad_mode_sel",
+     "test_digital_pads_slppu"
+    ],
+    [
+     "test_pad_mode_sel",
+     "test_digital_pads_slpsel"
+    ],
+    [
+     "test_pad_mode_sel",
+     "test_rtc_pads_muxsel"
+    ],
+    [
+     "test_pad_mode_sel",
+     "test_slp_pad_ctrl"
+    ],
+    [
+     "test_rtc_pads_muxsel",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "test_slp_pad_ctrl",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "test_slp_pad_ctrl",
+     "rtc_pads_funsel"
+    ],
+    [
+     "test_slp_pad_ctrl",
+     "rtc_pads_muxsel"
+    ],
+    [
+     "test_slp_pad_ctrl",
+     "rtc_pads_pd"
+    ],
+    [
+     "test_slp_pad_ctrl",
+     "rtc_pads_pu"
+    ],
+    [
+     "test_slp_pad_ctrl",
+     "rtc_pads_slpie"
+    ],
+    [
+     "test_slp_pad_ctrl",
+     "rtc_pads_slpoe"
+    ],
+    [
+     "test_slp_pad_ctrl",
+     "rtc_pads_slpsel"
+    ],
+    [
+     "test_slp_pad_ctrl",
+     "test_digital_pads_GPIO"
+    ],
+    [
+     "test_slp_pad_ctrl",
+     "test_digital_pads_ie"
+    ],
+    [
+     "test_slp_pad_ctrl",
+     "test_digital_pads_pd"
+    ],
+    [
+     "test_slp_pad_ctrl",
+     "test_digital_pads_pu"
+    ],
+    [
+     "test_slp_pad_ctrl",
+     "test_digital_pads_slpoe"
+    ],
+    [
+     "test_slp_pad_ctrl",
+     "test_digital_pads_slppd"
+    ],
+    [
+     "test_slp_pad_ctrl",
+     "test_digital_pads_slppu"
+    ],
+    [
+     "test_slp_pad_ctrl",
+     "test_digital_pads_slpsel"
+    ],
+    [
+     "wr_adc_blk0",
+     "burn_efuse"
+    ],
+    [
+     "wr_adc_blk0_data3_14b",
+     "burn_efuse"
+    ],
+    [
+     "write_coding_to_efuse",
+     "burn_efuse"
+    ],
+    [
+     "write_usermac_to_efuse",
+     "burn_efuse"
+    ],
+    [
+     "write_usermac_to_efuse",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "write_usermac_to_efuse",
+     "make_efuse"
+    ]
+   ]
+  },
+  {
+   "name": "bb_common.o",
+   "machine": 94,
+   "functions": [
+    {
+     "name": "delay_ns",
+     "size": 5,
+     "section": ".text.delay_ns",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "tx_add_pocketnum",
+     "size": 110,
+     "section": ".text.tx_add_pocketnum",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "get_temp_cal_wifi",
+     "size": 120,
+     "section": ".text.get_temp_cal_wifi",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "tx_a_frame",
+     "size": 377,
+     "section": ".text.tx_a_frame",
+     "exported": true,
+     "mmio": [
+      "0x3ff5c400",
+      "0x3ff5c458",
+      "0x60033c00",
+      "0x60033c10",
+      "0x60033c40",
+      "0x60033c48",
+      "0x60033c4c",
+      "0x60033cb8",
+      "0x60033cc0"
+     ]
+    },
+    {
+     "name": "test_tx_frame",
+     "size": 370,
+     "section": ".text.test_tx_frame",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "set_mac_filter",
+     "size": 114,
+     "section": ".text.set_mac_filter",
+     "exported": true,
+     "mmio": [
+      "0x60033040",
+      "0x60033044",
+      "0x60033060",
+      "0x60033064",
+      "0x600330dc",
+      "0x600330e0",
+      "0x600330e4"
+     ]
+    },
+    {
+     "name": "get_rx_freq_local",
+     "size": 109,
+     "section": ".text.get_rx_freq_local",
+     "exported": true,
+     "mmio": [
+      "0x60033080",
+      "0x60033098"
+     ]
+    },
+    {
+     "name": "esp_get_rx_result",
+     "size": 50,
+     "section": ".text.esp_get_rx_result",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "do_rx_poll",
+     "size": 2221,
+     "section": ".text.do_rx_poll",
+     "exported": true,
+     "mmio": [
+      "0x3ff5c018",
+      "0x3ff5c06c",
+      "0x3ff5c104",
+      "0x3ff5cc5c",
+      "0x60033080",
+      "0x600330a4",
+      "0x600330a8",
+      "0x600330ac",
+      "0x600330f8",
+      "0x60033800",
+      "0x60033c00",
+      "0x60033c08",
+      "0x60033c0c",
+      "0x60033c48",
+      "0x60033c4c"
+     ]
+    },
+    {
+     "name": "rx_data_check",
+     "size": 167,
+     "section": ".text.rx_data_check",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "read_macaddr_from_otp",
+     "size": 59,
+     "section": ".text.read_macaddr_from_otp",
+     "exported": true,
+     "mmio": [
+      "0x3ff5a004",
+      "0x3ff5a008"
+     ]
+    },
+    {
+     "name": "fill_txaddr",
+     "size": 43,
+     "section": ".text.fill_txaddr",
+     "exported": true,
+     "mmio": [
+      "0x60033040",
+      "0x60033044"
+     ]
+    },
+    {
+     "name": "fill_txdataframe",
+     "size": 737,
+     "section": ".text.fill_txdataframe",
+     "exported": true,
+     "mmio": [
+      "0x60033040",
+      "0x60033044",
+      "0x60035144"
+     ]
+    },
+    {
+     "name": "fill_txbeacon",
+     "size": 431,
+     "section": ".text.fill_txbeacon",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "setmacaddr",
+     "size": 29,
+     "section": ".text.setmacaddr",
+     "exported": true,
+     "mmio": [
+      "0x60033040",
+      "0x60033044"
+     ]
+    },
+    {
+     "name": "settxframe_chipid",
+     "size": 43,
+     "section": ".text.settxframe_chipid",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "settxframe_rate",
+     "size": 66,
+     "section": ".text.settxframe_rate",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "get_macaddr",
+     "size": 23,
+     "section": ".text.get_macaddr",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "set_macrxfilter",
+     "size": 242,
+     "section": ".text.set_macrxfilter",
+     "exported": true,
+     "mmio": [
+      "0x600330d8",
+      "0x600330dc",
+      "0x600330e0",
+      "0x600330e4"
+     ]
+    },
+    {
+     "name": "ate_rxframe_fb",
+     "size": 1027,
+     "section": ".text.ate_rxframe_fb",
+     "exported": true,
+     "mmio": [
+      "0x60033040",
+      "0x60033044",
+      "0x60033080",
+      "0x60033084",
+      "0x60033098",
+      "0x60033c00",
+      "0x60033c40",
+      "0x60033c48",
+      "0x60033c4c",
+      "0x60033c78",
+      "0x60033c8c",
+      "0x60033cac"
+     ]
+    },
+    {
+     "name": "ap_ack_test",
+     "size": 840,
+     "section": ".text.ap_ack_test",
+     "exported": true,
+     "mmio": [
+      "0x60033040",
+      "0x60033044",
+      "0x60033080",
+      "0x60033084",
+      "0x60033098",
+      "0x60033c00",
+      "0x60033c40",
+      "0x60033c48",
+      "0x60033c4c",
+      "0x60033c78",
+      "0x60033c8c",
+      "0x60033cac"
+     ]
+    },
+    {
+     "name": "tx_data_frame",
+     "size": 176,
+     "section": ".text.tx_data_frame",
+     "exported": true,
+     "mmio": [
+      "0x60033c00",
+      "0x60033c10",
+      "0x60033c40",
+      "0x60033c48",
+      "0x60033c4c",
+      "0x60033c68"
+     ]
+    },
+    {
+     "name": "tx_ack_start",
+     "size": 495,
+     "section": ".text.tx_ack_start",
+     "exported": true,
+     "mmio": [
+      "0x3ff5c018",
+      "0x600330a8",
+      "0x60035144"
+     ]
+    },
+    {
+     "name": "tx_ack_init",
+     "size": 283,
+     "section": ".text.tx_ack_init",
+     "exported": true,
+     "mmio": [
+      "0x60033040",
+      "0x60033044",
+      "0x60033080",
+      "0x60033084",
+      "0x60033c50",
+      "0x60033c78"
+     ]
+    },
+    {
+     "name": "tx_ack_test",
+     "size": 102,
+     "section": ".text.tx_ack_test",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "pm_set_sleep_mode_local",
+     "size": 102,
+     "section": ".text.pm_set_sleep_mode_local",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "light_sleep",
+     "size": 191,
+     "section": ".text.light_sleep",
+     "exported": true,
+     "mmio": [
+      "0x3ff000cc",
+      "0x3ff48084",
+      "0x3ff48088"
+     ]
+    },
+    {
+     "name": "sleep_proc_test",
+     "size": 164,
+     "section": ".text.sleep_proc_test",
+     "exported": true,
+     "mmio": [
+      "0x60033c00"
+     ]
+    },
+    {
+     "name": "wifi_ack_test",
+     "size": 536,
+     "section": ".text.wifi_ack_test",
+     "exported": true,
+     "mmio": [
+      "0x60033c00"
+     ]
+    },
+    {
+     "name": "ram_get_power_db",
+     "size": 109,
+     "section": ".text.ram_get_power_db",
+     "exported": true,
+     "mmio": [
+      "0x3ff460b8"
+     ]
+    },
+    {
+     "name": "test_txtone_pwr",
+     "size": 178,
+     "section": ".text.test_txtone_pwr",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "get_rx_buffer",
+     "size": 403,
+     "section": ".text.get_rx_buffer",
+     "exported": true,
+     "mmio": [
+      "0x60033080",
+      "0x60033084",
+      "0x60033098"
+     ]
+    },
+    {
+     "name": "test_noise_floor",
+     "size": 78,
+     "section": ".text.test_noise_floor",
+     "exported": true,
+     "mmio": []
+    }
+   ],
+   "calls": [
+    [
+     "ap_ack_test",
+     "ConfAddrGet"
+    ],
+    [
+     "ap_ack_test",
+     "GetStopCmd"
+    ],
+    [
+     "ap_ack_test",
+     "HTsigAddrGet"
+    ],
+    [
+     "ap_ack_test",
+     "Plcp0AddrGet"
+    ],
+    [
+     "ap_ack_test",
+     "Plcp1AddrGet"
+    ],
+    [
+     "ap_ack_test",
+     "chip_v7_set_chan"
+    ],
+    [
+     "ap_ack_test",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "ap_ack_test",
+     "fill_txdataframe"
+    ],
+    [
+     "ap_ack_test",
+     "phy_printf"
+    ],
+    [
+     "ap_ack_test",
+     "set_macrxfilter"
+    ],
+    [
+     "ap_ack_test",
+     "tx_add_pocketnum"
+    ],
+    [
+     "ate_rxframe_fb",
+     "ConfAddrGet"
+    ],
+    [
+     "ate_rxframe_fb",
+     "GetStopCmd"
+    ],
+    [
+     "ate_rxframe_fb",
+     "HTsigAddrGet"
+    ],
+    [
+     "ate_rxframe_fb",
+     "Plcp0AddrGet"
+    ],
+    [
+     "ate_rxframe_fb",
+     "Plcp1AddrGet"
+    ],
+    [
+     "ate_rxframe_fb",
+     "chip_v7_set_chan"
+    ],
+    [
+     "ate_rxframe_fb",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "ate_rxframe_fb",
+     "fill_txdataframe"
+    ],
+    [
+     "ate_rxframe_fb",
+     "phy_printf"
+    ],
+    [
+     "ate_rxframe_fb",
+     "set_macrxfilter"
+    ],
+    [
+     "ate_rxframe_fb",
+     "tx_add_pocketnum"
+    ],
+    [
+     "do_rx_poll",
+     "GetStopCmd"
+    ],
+    [
+     "do_rx_poll",
+     "bb_wdt_rst_enable"
+    ],
+    [
+     "do_rx_poll",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "do_rx_poll",
+     "ets_delay_us"
+    ],
+    [
+     "do_rx_poll",
+     "flash_test_run"
+    ],
+    [
+     "do_rx_poll",
+     "get_rx_freq_local"
+    ],
+    [
+     "do_rx_poll",
+     "phy_printf"
+    ],
+    [
+     "fill_txaddr",
+     "read_macaddr_from_otp"
+    ],
+    [
+     "fill_txbeacon",
+     "fill_txaddr"
+    ],
+    [
+     "fill_txbeacon",
+     "fill_txdataframe"
+    ],
+    [
+     "fill_txdataframe",
+     "ConfAddrGet"
+    ],
+    [
+     "fill_txdataframe",
+     "Plcp0AddrGet"
+    ],
+    [
+     "fill_txdataframe",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "fill_txdataframe",
+     "fill_tx_frame"
+    ],
+    [
+     "get_macaddr",
+     "read_macaddr_from_otp"
+    ],
+    [
+     "get_rx_buffer",
+     "GetStopCmd"
+    ],
+    [
+     "get_rx_buffer",
+     "chip_v7_set_chan"
+    ],
+    [
+     "get_rx_buffer",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "get_rx_buffer",
+     "phy_get_rx_freq"
+    ],
+    [
+     "get_rx_buffer",
+     "phy_printf"
+    ],
+    [
+     "get_rx_freq_local",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "get_rx_freq_local",
+     "phy_get_rx_freq"
+    ],
+    [
+     "get_rx_freq_local",
+     "phy_printf"
+    ],
+    [
+     "get_temp_cal_wifi",
+     "phy_printf"
+    ],
+    [
+     "get_temp_cal_wifi",
+     "tsens_code_read"
+    ],
+    [
+     "get_temp_cal_wifi",
+     "tx_gain_table_set"
+    ],
+    [
+     "light_sleep",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "light_sleep",
+     "ets_delay_us"
+    ],
+    [
+     "light_sleep",
+     "phy_close_rf"
+    ],
+    [
+     "light_sleep",
+     "pm_goto_sleep"
+    ],
+    [
+     "light_sleep",
+     "pm_open_rf"
+    ],
+    [
+     "light_sleep",
+     "pm_set_sleep_cycles"
+    ],
+    [
+     "light_sleep",
+     "pm_set_sleep_mode_local"
+    ],
+    [
+     "light_sleep",
+     "pm_wakeup_opt"
+    ],
+    [
+     "light_sleep",
+     "rtc_set_cpu_freq"
+    ],
+    [
+     "light_sleep",
+     "rtc_slowck_cali"
+    ],
+    [
+     "light_sleep",
+     "rtc_uart_div_modify"
+    ],
+    [
+     "light_sleep",
+     "rtc_usec2rtc"
+    ],
+    [
+     "pm_set_sleep_mode_local",
+     "__assert_func"
+    ],
+    [
+     "pm_set_sleep_mode_local",
+     "pm_check_mac_idle"
+    ],
+    [
+     "pm_set_sleep_mode_local",
+     "pm_mac_deinit"
+    ],
+    [
+     "pm_set_sleep_mode_local",
+     "pm_mac_init"
+    ],
+    [
+     "pm_set_sleep_mode_local",
+     "rtc_sleep_init"
+    ],
+    [
+     "ram_get_power_db",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "read_macaddr_from_otp",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "set_macrxfilter",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "settxframe_chipid",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "settxframe_rate",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "sleep_proc_test",
+     "coex_bt_high_prio"
+    ],
+    [
+     "sleep_proc_test",
+     "light_sleep"
+    ],
+    [
+     "sleep_proc_test",
+     "mac_init"
+    ],
+    [
+     "sleep_proc_test",
+     "phy_close_rf"
+    ],
+    [
+     "sleep_proc_test",
+     "phy_printf"
+    ],
+    [
+     "sleep_proc_test",
+     "pm_wakeup_init"
+    ],
+    [
+     "sleep_proc_test",
+     "rf_rw_init"
+    ],
+    [
+     "sleep_proc_test",
+     "rtc_set_cpu_freq"
+    ],
+    [
+     "sleep_proc_test",
+     "rtc_uart_div_modify"
+    ],
+    [
+     "test_noise_floor",
+     "GetStopCmd"
+    ],
+    [
+     "test_noise_floor",
+     "chip_v7_set_chan"
+    ],
+    [
+     "test_noise_floor",
+     "ets_delay_us"
+    ],
+    [
+     "test_noise_floor",
+     "noise_check_loop"
+    ],
+    [
+     "test_noise_floor",
+     "phy_printf"
+    ],
+    [
+     "test_noise_floor",
+     "read_hw_noisefloor"
+    ],
+    [
+     "test_tx_frame",
+     "HTsigAddrGet"
+    ],
+    [
+     "test_tx_frame",
+     "Plcp1AddrGet"
+    ],
+    [
+     "test_tx_frame",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "test_tx_frame",
+     "ets_delay_us"
+    ],
+    [
+     "test_tx_frame",
+     "phy_ofdm_bandage_opt"
+    ],
+    [
+     "test_tx_frame",
+     "phy_temp_track"
+    ],
+    [
+     "test_tx_frame",
+     "tx_a_frame"
+    ],
+    [
+     "test_tx_frame",
+     "tx_pwctrl_background"
+    ],
+    [
+     "test_tx_frame",
+     "wifi_track_pll_cap"
+    ],
+    [
+     "test_txtone_pwr",
+     "phy_printf"
+    ],
+    [
+     "test_txtone_pwr",
+     "txcal_debuge_mode"
+    ],
+    [
+     "tx_a_frame",
+     "ConfAddrGet"
+    ],
+    [
+     "tx_a_frame",
+     "GetStopCmd"
+    ],
+    [
+     "tx_a_frame",
+     "Plcp0AddrGet"
+    ],
+    [
+     "tx_a_frame",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "tx_a_frame",
+     "ets_delay_us"
+    ],
+    [
+     "tx_a_frame",
+     "flash_test_run"
+    ],
+    [
+     "tx_a_frame",
+     "get_temp_cal_wifi"
+    ],
+    [
+     "tx_a_frame",
+     "phy_ofdm_bandage_opt"
+    ],
+    [
+     "tx_a_frame",
+     "phy_printf"
+    ],
+    [
+     "tx_a_frame",
+     "tx_add_pocketnum"
+    ],
+    [
+     "tx_ack_init",
+     "HTsigAddrGet"
+    ],
+    [
+     "tx_ack_init",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "tx_ack_init",
+     "fill_txdataframe"
+    ],
+    [
+     "tx_ack_init",
+     "get_macaddr"
+    ],
+    [
+     "tx_ack_init",
+     "set_macrxfilter"
+    ],
+    [
+     "tx_ack_start",
+     "ConfAddrGet"
+    ],
+    [
+     "tx_ack_start",
+     "Plcp0AddrGet"
+    ],
+    [
+     "tx_ack_start",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "tx_ack_start",
+     "ets_delay_us"
+    ],
+    [
+     "tx_ack_start",
+     "tx_data_frame"
+    ],
+    [
+     "tx_ack_test",
+     "phy_printf"
+    ],
+    [
+     "tx_ack_test",
+     "tx_ack_init"
+    ],
+    [
+     "tx_ack_test",
+     "tx_ack_start"
+    ],
+    [
+     "tx_data_frame",
+     "Plcp0AddrGet"
+    ],
+    [
+     "tx_data_frame",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "tx_data_frame",
+     "tx_add_pocketnum"
+    ],
+    [
+     "wifi_ack_test",
+     "chip_v7_set_chan_nomac"
+    ],
+    [
+     "wifi_ack_test",
+     "ets_delay_us"
+    ],
+    [
+     "wifi_ack_test",
+     "phy_printf"
+    ],
+    [
+     "wifi_ack_test",
+     "sleep_proc_test"
+    ],
+    [
+     "wifi_ack_test",
+     "tx_ack_init"
+    ],
+    [
+     "wifi_ack_test",
+     "tx_ack_start"
+    ]
+   ]
+  },
+  {
+   "name": "crypto_common.o",
+   "machine": 94,
+   "functions": [
+    {
+     "name": "oneblock_buf_init",
+     "size": 73,
+     "section": ".text.oneblock_buf_init",
+     "exported": true,
+     "mmio": [
+      "0x60033088"
+     ]
+    },
+    {
+     "name": "clear_mem",
+     "size": 22,
+     "section": ".text.clear_mem",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "clear_txdumpmem",
+     "size": 26,
+     "section": ".text.clear_txdumpmem",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "link_dscr_check",
+     "size": 104,
+     "section": ".text.link_dscr_check",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rxlink_count",
+     "size": 5,
+     "section": ".text.rxlink_count",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "get_encapaddr",
+     "size": 5,
+     "section": ".text.get_encapaddr",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "get_txdumpaddr",
+     "size": 14,
+     "section": ".text.get_txdumpaddr",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "crypto_disable",
+     "size": 31,
+     "section": ".text.crypto_disable",
+     "exported": true,
+     "mmio": [
+      "0x60033800",
+      "0x60033814"
+     ]
+    },
+    {
+     "name": "crypto_encap",
+     "size": 386,
+     "section": ".text.crypto_encap",
+     "exported": true,
+     "mmio": [
+      "0x3ff00024",
+      "0x60033000",
+      "0x60033004",
+      "0x60033008",
+      "0x6003300c",
+      "0x60033040",
+      "0x60033044",
+      "0x60033048",
+      "0x6003304c",
+      "0x60033800",
+      "0x60033804",
+      "0x60033814",
+      "0x60033dc0"
+     ]
+    },
+    {
+     "name": "do_decryto_poll",
+     "size": 600,
+     "section": ".text.do_decryto_poll",
+     "exported": true,
+     "mmio": [
+      "0x3ff5c04c",
+      "0x3ff5c050",
+      "0x60009c44",
+      "0x60033080",
+      "0x60033098",
+      "0x600330a4",
+      "0x600330d8",
+      "0x600330dc",
+      "0x600330e0",
+      "0x600330e4",
+      "0x60033830",
+      "0x60033c0c",
+      "0x60033c40",
+      "0x60033c48",
+      "0x60033c4c",
+      "0x60033c78"
+     ]
+    },
+    {
+     "name": "do_ampdu_rx_poll",
+     "size": 5,
+     "section": ".text.do_ampdu_rx_poll",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "crypto_decap",
+     "size": 848,
+     "section": ".text.crypto_decap",
+     "exported": true,
+     "mmio": [
+      "0x60033000",
+      "0x60033004",
+      "0x60033008",
+      "0x6003300c",
+      "0x60033020",
+      "0x60033024",
+      "0x60033028",
+      "0x6003302c",
+      "0x60033040",
+      "0x60033044",
+      "0x60033048",
+      "0x6003304c",
+      "0x60033060",
+      "0x60033064",
+      "0x60033068",
+      "0x6003306c",
+      "0x60033800",
+      "0x60033804",
+      "0x60033814"
+     ]
+    },
+    {
+     "name": "get_micaddr",
+     "size": 22,
+     "section": ".text.get_micaddr",
+     "exported": true,
+     "mmio": [
+      "0x60034800"
+     ]
+    },
+    {
+     "name": "crypto_enmic",
+     "size": 298,
+     "section": ".text.crypto_enmic",
+     "exported": true,
+     "mmio": [
+      "0x60034808",
+      "0x6003480c",
+      "0x60034810",
+      "0x60034814"
+     ]
+    }
+   ],
+   "calls": [
+    [
+     "crypto_decap",
+     "do_decryto_poll"
+    ],
+    [
+     "crypto_decap",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "crypto_decap",
+     "mac_write"
+    ],
+    [
+     "crypto_encap",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "crypto_encap",
+     "tx_a_frame"
+    ],
+    [
+     "crypto_enmic",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "crypto_enmic",
+     "mac_read"
+    ],
+    [
+     "crypto_enmic",
+     "mac_write"
+    ],
+    [
+     "crypto_enmic",
+     "phy_printf"
+    ],
+    [
+     "do_decryto_poll",
+     "GetStopCmd"
+    ],
+    [
+     "do_decryto_poll",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "do_decryto_poll",
+     "phy_printf"
+    ],
+    [
+     "do_decryto_poll",
+     "rx_buffer_ena"
+    ],
+    [
+     "do_decryto_poll",
+     "rx_link_des"
+    ],
+    [
+     "get_micaddr",
+     "phy_printf"
+    ],
+    [
+     "link_dscr_check",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "oneblock_buf_init",
+     "mac_write"
+    ],
+    [
+     "oneblock_buf_init",
+     "phy_printf"
+    ]
+   ]
+  },
+  {
+   "name": "i2s_test.o",
+   "machine": 94,
+   "functions": [],
+   "calls": []
+  },
+  {
+   "name": "io_config.o",
+   "machine": 94,
+   "functions": [],
+   "calls": []
+  },
+  {
+   "name": "rtc_command.o",
+   "machine": 94,
+   "functions": [
+    {
+     "name": "rtc_cmd_wr_reg",
+     "size": 29,
+     "section": ".text.rtc_cmd_wr_reg",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rtc_cmd_rd_reg",
+     "size": 23,
+     "section": ".text.rtc_cmd_rd_reg",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rtc_cmd_wr_i2c",
+     "size": 41,
+     "section": ".text.rtc_cmd_wr_i2c",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rtc_cmd_wait_delay",
+     "size": 11,
+     "section": ".text.rtc_cmd_wait_delay",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rtc_cmd_meas_tsens",
+     "size": 17,
+     "section": ".text.rtc_cmd_meas_tsens",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rtc_cmd_meas_saradc",
+     "size": 29,
+     "section": ".text.rtc_cmd_meas_saradc",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rtc_cmd_write_mem",
+     "size": 23,
+     "section": ".text.rtc_cmd_write_mem",
+     "exported": true,
+     "mmio": [
+      "0x60000000"
+     ]
+    },
+    {
+     "name": "rtc_cmd_reg0_alu",
+     "size": 23,
+     "section": ".text.rtc_cmd_reg0_alu",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rtc_cmd_stage_alu",
+     "size": 20,
+     "section": ".text.rtc_cmd_stage_alu",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rtc_cmd_force_branch",
+     "size": 14,
+     "section": ".text.rtc_cmd_force_branch",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rtc_cmd_reg0_branch",
+     "size": 23,
+     "section": ".text.rtc_cmd_reg0_branch",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rtc_cmd_stage_branch",
+     "size": 23,
+     "section": ".text.rtc_cmd_stage_branch",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rtc_cmd_cpu_wakeup",
+     "size": 11,
+     "section": ".text.rtc_cmd_cpu_wakeup",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rtc_cmd_sleep_cyc_sel",
+     "size": 11,
+     "section": ".text.rtc_cmd_sleep_cyc_sel",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rtc_cmd_meas_end",
+     "size": 8,
+     "section": ".text.rtc_cmd_meas_end",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "read_rtc_mem",
+     "size": 55,
+     "section": ".text.read_rtc_mem",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "test_rtc_cmd",
+     "size": 280,
+     "section": ".text.test_rtc_cmd",
+     "exported": true,
+     "mmio": [
+      "0x3ff48018",
+      "0x3ff48890",
+      "0x60000000",
+      "0x60000004",
+      "0x60000008",
+      "0x6000000c",
+      "0x60000010",
+      "0x60000014",
+      "0x60000018",
+      "0x60021000"
+     ]
+    }
+   ],
+   "calls": [
+    [
+     "read_rtc_mem",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "read_rtc_mem",
+     "phy_printf"
+    ],
+    [
+     "test_rtc_cmd",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "test_rtc_cmd",
+     "ets_delay_us"
+    ],
+    [
+     "test_rtc_cmd",
+     "read_rtc_mem"
+    ]
+   ]
+  },
+  {
+   "name": "mac_common.o",
+   "machine": 94,
+   "functions": [
+    {
+     "name": "mac_write",
+     "size": 10,
+     "section": ".text.mac_write",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "mac_read",
+     "size": 10,
+     "section": ".text.mac_read",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "mac_buffer_get",
+     "size": 173,
+     "section": ".text.mac_buffer_get",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "DurAddrGet",
+     "size": 22,
+     "section": ".text.DurAddrGet",
+     "exported": true,
+     "mmio": [
+      "0x60034268"
+     ]
+    },
+    {
+     "name": "RealQGet",
+     "size": 22,
+     "section": ".text.RealQGet",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "Plcp0AddrGet",
+     "size": 23,
+     "section": ".text.Plcp0AddrGet",
+     "exported": true,
+     "mmio": [
+      "0x60033d20"
+     ]
+    },
+    {
+     "name": "Plcp1AddrGet",
+     "size": 23,
+     "section": ".text.Plcp1AddrGet",
+     "exported": true,
+     "mmio": [
+      "0x60034258"
+     ]
+    },
+    {
+     "name": "HTsigAddrGet",
+     "size": 23,
+     "section": ".text.HTsigAddrGet",
+     "exported": true,
+     "mmio": [
+      "0x60034260"
+     ]
+    },
+    {
+     "name": "ConfAddrGet",
+     "size": 22,
+     "section": ".text.ConfAddrGet",
+     "exported": true,
+     "mmio": [
+      "0x60033d1c"
+     ]
+    },
+    {
+     "name": "BackOffCountGet",
+     "size": 143,
+     "section": ".text.BackOffCountGet",
+     "exported": true,
+     "mmio": [
+      "0x60033ce4",
+      "0x60033cec",
+      "0x60033cf4",
+      "0x60033cfc",
+      "0x60033d04",
+      "0x60033d0c",
+      "0x60033d14",
+      "0x60033d1c"
+     ]
+    },
+    {
+     "name": "fill_tx_frame",
+     "size": 1138,
+     "section": ".text.fill_tx_frame",
+     "exported": true,
+     "mmio": [
+      "0x60033c6c",
+      "0x60033d1c",
+      "0x60033d20",
+      "0x60034258",
+      "0x60034260"
+     ]
+    },
+    {
+     "name": "rx_buffer_init",
+     "size": 150,
+     "section": ".text.rx_buffer_init",
+     "exported": true,
+     "mmio": [
+      "0x60033084",
+      "0x60033088"
+     ]
+    },
+    {
+     "name": "rx_link_des",
+     "size": 34,
+     "section": ".text.rx_link_des",
+     "exported": true,
+     "mmio": [
+      "0x60033084"
+     ]
+    },
+    {
+     "name": "rx_buffer_ena",
+     "size": 27,
+     "section": ".text.rx_buffer_ena",
+     "exported": true,
+     "mmio": [
+      "0x60033084"
+     ]
+    },
+    {
+     "name": "rx_ampdu_buffer_fresh",
+     "size": 113,
+     "section": ".text.rx_ampdu_buffer_fresh",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rx_ampdu_buffer_init",
+     "size": 28,
+     "section": ".text.rx_ampdu_buffer_init",
+     "exported": true,
+     "mmio": [
+      "0x60033088"
+     ]
+    },
+    {
+     "name": "rx_ampdu_entry_fresh",
+     "size": 112,
+     "section": ".text.rx_ampdu_entry_fresh",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rx_ampdu_entry_init",
+     "size": 15,
+     "section": ".text.rx_ampdu_entry_init",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rx_ampdu_entrysd_fresh",
+     "size": 112,
+     "section": ".text.rx_ampdu_entrysd_fresh",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rx_ampdu_entrysd_init",
+     "size": 15,
+     "section": ".text.rx_ampdu_entrysd_init",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "mac_init",
+     "size": 701,
+     "section": ".text.mac_init",
+     "exported": true,
+     "mmio": [
+      "0x3ff000a8",
+      "0x60033040",
+      "0x60033044",
+      "0x60033080",
+      "0x60033084",
+      "0x60033088",
+      "0x600330d8",
+      "0x600330dc",
+      "0x600330e0",
+      "0x600330e4",
+      "0x60033c24",
+      "0x60033c40",
+      "0x60033c6c",
+      "0x60033d1c",
+      "0x60033d24",
+      "0x60033dc4"
+     ]
+    },
+    {
+     "name": "adctrig",
+     "size": 506,
+     "section": ".text.adctrig",
+     "exported": true,
+     "mmio": [
+      "0x3ff5c02c",
+      "0x60033d90",
+      "0x60033d94"
+     ]
+    }
+   ],
+   "calls": [
+    [
+     "BackOffCountGet",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "adctrig",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "adctrig",
+     "ets_delay_us"
+    ],
+    [
+     "adctrig",
+     "phy_printf"
+    ],
+    [
+     "fill_tx_frame",
+     "crypto_disable"
+    ],
+    [
+     "fill_tx_frame",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "mac_init",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "mac_init",
+     "rx_ampdu_buffer_fresh"
+    ],
+    [
+     "mac_init",
+     "rx_ampdu_entry_fresh"
+    ],
+    [
+     "mac_init",
+     "rx_ampdu_entrysd_fresh"
+    ],
+    [
+     "rx_ampdu_buffer_init",
+     "rx_ampdu_buffer_fresh"
+    ],
+    [
+     "rx_ampdu_entry_init",
+     "rx_ampdu_entry_fresh"
+    ],
+    [
+     "rx_ampdu_entrysd_init",
+     "rx_ampdu_entrysd_fresh"
+    ],
+    [
+     "rx_buffer_ena",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "rx_link_des",
+     "esp_dport_access_reg_read"
+    ]
+   ]
+  },
+  {
+   "name": "ate_test.o",
+   "machine": 94,
+   "functions": [
+    {
+     "name": "module_test_cal_print",
+     "size": 1126,
+     "section": ".text.module_test_cal_print",
+     "exported": true,
+     "mmio": [
+      "0x3ff5a004",
+      "0x3ff5a008"
+     ]
+    },
+    {
+     "name": "linear_to_db_64bits",
+     "size": 287,
+     "section": ".text.linear_to_db_64bits",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "get_iq_est_snr",
+     "size": 1324,
+     "section": ".text.get_iq_est_snr",
+     "exported": true,
+     "mmio": [
+      "0x3ff46080",
+      "0x3ff46084",
+      "0x3ff46088",
+      "0x3ff4608c",
+      "0x3ff460cc",
+      "0x3ff460d0",
+      "0x3ff460d4",
+      "0x3ff460d8",
+      "0x3ff460dc",
+      "0x3ff460e0",
+      "0x3ff460e4"
+     ]
+    },
+    {
+     "name": "freq_offset_get_pwr",
+     "size": 1374,
+     "section": ".text.freq_offset_get_pwr",
+     "exported": true,
+     "mmio": [
+      "0x3ff450a8",
+      "0x3ff460b8"
+     ]
+    },
+    {
+     "name": "get_corr_power",
+     "size": 228,
+     "section": ".text.get_corr_power",
+     "exported": true,
+     "mmio": [
+      "0x3ff46080",
+      "0x3ff46084",
+      "0x3ff46088",
+      "0x3ff4608c",
+      "0x3ff460dc",
+      "0x3ff460e0",
+      "0x3ff460e4"
+     ]
+    },
+    {
+     "name": "test_set_rf_freq_offset",
+     "size": 82,
+     "section": ".text.test_set_rf_freq_offset",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "ate_rxdc_remain_check",
+     "size": 246,
+     "section": ".text.ate_rxdc_remain_check",
+     "exported": true,
+     "mmio": [
+      "0x3ff5c02c"
+     ]
+    },
+    {
+     "name": "txdc_delta_max",
+     "size": 123,
+     "section": ".text.txdc_delta_max",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "txdc_stable_sub",
+     "size": 197,
+     "section": ".text.txdc_stable_sub",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "txdc_stable_test",
+     "size": 71,
+     "section": ".text.txdc_stable_test",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rxspur_test",
+     "size": 234,
+     "section": ".text.rxspur_test",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "ate_rfpll_cap_sign",
+     "size": 324,
+     "section": ".text.ate_rfpll_cap_sign",
+     "exported": true,
+     "mmio": []
+    }
+   ],
+   "calls": [
+    [
+     "ate_rfpll_cap_sign",
+     "chip_v7_set_chan"
+    ],
+    [
+     "ate_rfpll_cap_sign",
+     "ets_delay_us"
+    ],
+    [
+     "ate_rfpll_cap_sign",
+     "phy_printf"
+    ],
+    [
+     "ate_rxdc_remain_check",
+     "chip_v7_set_chan"
+    ],
+    [
+     "ate_rxdc_remain_check",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "freq_offset_get_pwr",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "freq_offset_get_pwr",
+     "get_iq_est_snr"
+    ],
+    [
+     "freq_offset_get_pwr",
+     "linear_to_db_64bits"
+    ],
+    [
+     "freq_offset_get_pwr",
+     "phy_printf"
+    ],
+    [
+     "get_corr_power",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "get_corr_power",
+     "phy_printf"
+    ],
+    [
+     "get_iq_est_snr",
+     "__divdi3"
+    ],
+    [
+     "get_iq_est_snr",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "get_iq_est_snr",
+     "linear_to_db_64bits"
+    ],
+    [
+     "get_iq_est_snr",
+     "phy_printf"
+    ],
+    [
+     "linear_to_db_64bits",
+     "memcpy"
+    ],
+    [
+     "module_test_cal_print",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "module_test_cal_print",
+     "phy_get_rf_cal_version"
+    ],
+    [
+     "module_test_cal_print",
+     "phy_printf"
+    ],
+    [
+     "rxspur_test",
+     "get_spur4m_pwr"
+    ],
+    [
+     "rxspur_test",
+     "phy_printf"
+    ],
+    [
+     "rxspur_test",
+     "rx_spur_cal"
+    ],
+    [
+     "rxspur_test",
+     "set_chan_freq_sw_start"
+    ],
+    [
+     "test_set_rf_freq_offset",
+     "chip_v7_rxmax_ext_ana"
+    ],
+    [
+     "txdc_stable_sub",
+     "ets_delay_us"
+    ],
+    [
+     "txdc_stable_sub",
+     "txdc_delta_max"
+    ],
+    [
+     "txdc_stable_test",
+     "ets_delay_us"
+    ],
+    [
+     "txdc_stable_test",
+     "phy_printf"
+    ],
+    [
+     "txdc_stable_test",
+     "txdc_delta_max"
+    ],
+    [
+     "txdc_stable_test",
+     "txdc_stable_sub"
+    ]
+   ]
+  },
+  {
+   "name": "rf_test.o",
+   "machine": 94,
+   "functions": [
+    {
+     "name": "rftest_init",
+     "size": 137,
+     "section": ".text.rftest_init",
+     "exported": true,
+     "mmio": [
+      "0x3ff000c0",
+      "0x3ff000cc",
+      "0x3ff4808c",
+      "0x3ff5f048"
+     ]
+    },
+    {
+     "name": "esp_en_reboot",
+     "size": 118,
+     "section": ".text.esp_en_reboot",
+     "exported": true,
+     "mmio": [
+      "0x3ff4808c",
+      "0x3ff48090",
+      "0x3ff48094",
+      "0x3ff48098",
+      "0x3ff4809c"
+     ]
+    },
+    {
+     "name": "cbw40m_en",
+     "size": 28,
+     "section": ".text.cbw40m_en",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "wifitxout_func",
+     "size": 422,
+     "section": ".text.wifitxout_func",
+     "exported": true,
+     "mmio": [
+      "0x3ff5c400",
+      "0x60033c68"
+     ]
+    },
+    {
+     "name": "esp_tx_func_org",
+     "size": 304,
+     "section": ".text.esp_tx_func_org",
+     "exported": true,
+     "mmio": [
+      "0x60033c68"
+     ]
+    },
+    {
+     "name": "esp_tx_func_notxon",
+     "size": 171,
+     "section": ".text.esp_tx_func_notxon",
+     "exported": true,
+     "mmio": [
+      "0x60033c68"
+     ]
+    },
+    {
+     "name": "esp_tx_func_duty",
+     "size": 263,
+     "section": ".text.esp_tx_func_duty",
+     "exported": true,
+     "mmio": [
+      "0x60033c68"
+     ]
+    },
+    {
+     "name": "tx_contin_en",
+     "size": 126,
+     "section": ".text.tx_contin_en",
+     "exported": true,
+     "mmio": [
+      "0x600312e0"
+     ]
+    },
+    {
+     "name": "wifitxout",
+     "size": 32,
+     "section": ".text.wifitxout",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_tx_func",
+     "size": 32,
+     "section": ".text.esp_tx_func",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_tx_func_5p",
+     "size": 42,
+     "section": ".text.esp_tx_func_5p",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "wifiscwout",
+     "size": 190,
+     "section": ".text.wifiscwout",
+     "exported": true,
+     "mmio": [
+      "0x3ff46004"
+     ]
+    },
+    {
+     "name": "esp_rx_func",
+     "size": 154,
+     "section": ".text.esp_rx_func",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fcc_bt_tx_func",
+     "size": 198,
+     "section": ".text.fcc_bt_tx_func",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fcc_le_tx_func",
+     "size": 127,
+     "section": ".text.fcc_le_tx_func",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fcc_le_tx_syncw_func",
+     "size": 136,
+     "section": ".text.fcc_le_tx_syncw_func",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rw_rx_per_func",
+     "size": 183,
+     "section": ".text.rw_rx_per_func",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rw_le_rx_per_func",
+     "size": 179,
+     "section": ".text.rw_le_rx_per_func",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "bt_tx_tone",
+     "size": 18,
+     "section": ".text.bt_tx_tone",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_ble_tx_func",
+     "size": 23,
+     "section": ".text.esp_ble_tx_func",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_ble_rx_func",
+     "size": 15,
+     "section": ".text.esp_ble_rx_func",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "RF_init_sel",
+     "size": 724,
+     "section": ".text.RF_init_sel",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_chg_freqoff",
+     "size": 311,
+     "section": ".text.esp_chg_freqoff",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_set_target_txp",
+     "size": 855,
+     "section": ".text.esp_set_target_txp",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_get_target_txp",
+     "size": 139,
+     "section": ".text.esp_get_target_txp",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rfpll_1p2_test",
+     "size": 222,
+     "section": ".text.rfpll_1p2_test",
+     "exported": true,
+     "mmio": [
+      "0x3ff48030"
+     ]
+    },
+    {
+     "name": "esp_origin_mac",
+     "size": 62,
+     "section": ".text.esp_origin_mac",
+     "exported": true,
+     "mmio": [
+      "0x3ff5a004",
+      "0x3ff5a008"
+     ]
+    },
+    {
+     "name": "esp_chk_mac",
+     "size": 103,
+     "section": ".text.esp_chk_mac",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_set_mac",
+     "size": 79,
+     "section": ".text.esp_set_mac",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "ESP_TEST_GPIO_func",
+     "size": 30,
+     "section": ".text.ESP_TEST_GPIO_func",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "pvt_test_func",
+     "size": 64,
+     "section": ".text.pvt_test_func",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "remove_head_newline",
+     "size": 23,
+     "section": ".text.remove_head_newline",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_phy_getstopcmd",
+     "size": 38,
+     "section": ".text.esp_phy_getstopcmd",
+     "exported": false,
+     "mmio": []
+    },
+    {
+     "name": "GetStopCmd",
+     "size": 13,
+     "section": ".text.GetStopCmd",
+     "exported": false,
+     "mmio": []
+    },
+    {
+     "name": "spi_qe0",
+     "size": 70,
+     "section": ".text.spi_qe0",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "spi_qe1",
+     "size": 106,
+     "section": ".text.spi_qe1",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "spi_qe2",
+     "size": 72,
+     "section": ".text.spi_qe2",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "SPI_get_id",
+     "size": 60,
+     "section": ".text.SPI_get_id",
+     "exported": true,
+     "mmio": [
+      "0x3ff42000",
+      "0x3ff42080"
+     ]
+    },
+    {
+     "name": "SPI_SET_QE",
+     "size": 11,
+     "section": ".text.SPI_SET_QE",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "gpio_set_flash_drv",
+     "size": 596,
+     "section": ".text.gpio_set_flash_drv",
+     "exported": true,
+     "mmio": [
+      "0x3ff42000",
+      "0x3ff42004",
+      "0x3ff42080",
+      "0x3ff49030",
+      "0x3ff49034",
+      "0x3ff49038",
+      "0x3ff4903c",
+      "0x3ff49040",
+      "0x3ff49048",
+      "0x3ff49054",
+      "0x3ff49058",
+      "0x3ff4905c",
+      "0x3ff49060",
+      "0x3ff49064",
+      "0x3ff49068"
+     ]
+    },
+    {
+     "name": "spi_clk_local",
+     "size": 51,
+     "section": ".text.spi_clk_local",
+     "exported": true,
+     "mmio": [
+      "0x3ff42018"
+     ]
+    },
+    {
+     "name": "spi_test_init",
+     "size": 84,
+     "section": ".text.spi_test_init",
+     "exported": true,
+     "mmio": [
+      "0x3ff42018"
+     ]
+    },
+    {
+     "name": "SPI_read_local",
+     "size": 126,
+     "section": ".text.SPI_read_local",
+     "exported": true,
+     "mmio": [
+      "0x3ff42000",
+      "0x3ff42004",
+      "0x3ff42080"
+     ]
+    },
+    {
+     "name": "SPI_page_program_local",
+     "size": 227,
+     "section": ".text.SPI_page_program_local",
+     "exported": true,
+     "mmio": [
+      "0x3ff42000",
+      "0x3ff42004",
+      "0x3ff4201c",
+      "0x3ff42028",
+      "0x3ff42080",
+      "0x3ff42084",
+      "0x3ff42088",
+      "0x3ff4208c",
+      "0x3ff42090",
+      "0x3ff42094",
+      "0x3ff42098",
+      "0x3ff4209c"
+     ]
+    },
+    {
+     "name": "flash_test_init",
+     "size": 96,
+     "section": ".text.flash_test_init",
+     "exported": true,
+     "mmio": [
+      "0x3ff42018"
+     ]
+    },
+    {
+     "name": "gpio_test_init",
+     "size": 43,
+     "section": ".text.gpio_test_init",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "gpio_set_psram_drv",
+     "size": 79,
+     "section": ".text.gpio_set_psram_drv",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "SPIPsramExitQIO",
+     "size": 206,
+     "section": ".text.SPIPsramExitQIO",
+     "exported": true,
+     "mmio": [
+      "0x3ff42000",
+      "0x3ff4201c",
+      "0x3ff42020",
+      "0x3ff42028",
+      "0x3ff42034",
+      "0x3ff42080"
+     ]
+    },
+    {
+     "name": "SPIPsramReadID",
+     "size": 366,
+     "section": ".text.SPIPsramReadID",
+     "exported": true,
+     "mmio": [
+      "0x3ff42000",
+      "0x3ff42004",
+      "0x3ff4201c",
+      "0x3ff42020",
+      "0x3ff42024",
+      "0x3ff4202c",
+      "0x3ff42034",
+      "0x3ff42080"
+     ]
+    },
+    {
+     "name": "SPIPsramEnterQIO",
+     "size": 274,
+     "section": ".text.SPIPsramEnterQIO",
+     "exported": true,
+     "mmio": [
+      "0x3ff42000",
+      "0x3ff42004",
+      "0x3ff4201c",
+      "0x3ff42020",
+      "0x3ff42024",
+      "0x3ff42034"
+     ]
+    },
+    {
+     "name": "SPIPsramCLK",
+     "size": 50,
+     "section": ".text.SPIPsramCLK",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "SPIPsramEnable",
+     "size": 364,
+     "section": ".text.SPIPsramEnable",
+     "exported": true,
+     "mmio": [
+      "0x3ff4201c"
+     ]
+    },
+    {
+     "name": "SPIPsramInitCheck",
+     "size": 54,
+     "section": ".text.SPIPsramInitCheck",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "PsramQIORead",
+     "size": 132,
+     "section": ".text.PsramQIORead",
+     "exported": true,
+     "mmio": [
+      "0x3ff42000",
+      "0x3ff42004",
+      "0x3ff42034"
+     ]
+    },
+    {
+     "name": "rfpll_cal_time",
+     "size": 510,
+     "section": ".text.rfpll_cal_time",
+     "exported": true,
+     "mmio": [
+      "0x3ff4e0c4",
+      "0x60033c00"
+     ]
+    },
+    {
+     "name": "gpio_output_set",
+     "size": 61,
+     "section": ".text.gpio_output_set",
+     "exported": false,
+     "mmio": [
+      "0x3ff44008",
+      "0x3ff4400c",
+      "0x3ff44024",
+      "0x3ff44028"
+     ]
+    },
+    {
+     "name": "gpio_test_run",
+     "size": 70,
+     "section": ".text.gpio_test_run",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "flash_test_run",
+     "size": 91,
+     "section": ".text.flash_test_run",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "PsramQIOConf",
+     "size": 288,
+     "section": ".text.PsramQIOConf",
+     "exported": true,
+     "mmio": [
+      "0x3ff42008",
+      "0x3ff4201c",
+      "0x3ff42020",
+      "0x3ff42024",
+      "0x3ff4202c",
+      "0x3ff42034"
+     ]
+    },
+    {
+     "name": "gpio_output_set_high",
+     "size": 61,
+     "section": ".text.gpio_output_set_high",
+     "exported": false,
+     "mmio": [
+      "0x3ff44014",
+      "0x3ff44018",
+      "0x3ff44030",
+      "0x3ff44034"
+     ]
+    },
+    {
+     "name": "gpio_input_get",
+     "size": 16,
+     "section": ".text.gpio_input_get",
+     "exported": false,
+     "mmio": [
+      "0x3ff4403c"
+     ]
+    },
+    {
+     "name": "gpio_input_get_high",
+     "size": 16,
+     "section": ".text.gpio_input_get_high",
+     "exported": false,
+     "mmio": [
+      "0x3ff44040"
+     ]
+    }
+   ],
+   "calls": [
+    [
+     "ESP_TEST_GPIO_func",
+     "ESP_TEST_GPIO"
+    ],
+    [
+     "ESP_TEST_GPIO_func",
+     "phy_printf"
+    ],
+    [
+     "GetStopCmd",
+     "esp_phy_getstopcmd"
+    ],
+    [
+     "PsramQIOConf",
+     "SPIPsramEnable"
+    ],
+    [
+     "PsramQIOConf",
+     "SPIPsramEnterQIO"
+    ],
+    [
+     "PsramQIOConf",
+     "SPIPsramInitCheck"
+    ],
+    [
+     "PsramQIOConf",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "PsramQIOConf",
+     "gpio_output_set"
+    ],
+    [
+     "PsramQIORead",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "RF_init_sel",
+     "bb_init"
+    ],
+    [
+     "RF_init_sel",
+     "chip_v7_set_chan_offset"
+    ],
+    [
+     "RF_init_sel",
+     "esp_crc8"
+    ],
+    [
+     "RF_init_sel",
+     "memset"
+    ],
+    [
+     "RF_init_sel",
+     "phy_printf"
+    ],
+    [
+     "RF_init_sel",
+     "read_flash_init_para"
+    ],
+    [
+     "RF_init_sel",
+     "register_chipv7_phy_init_param"
+    ],
+    [
+     "RF_init_sel",
+     "rf_init"
+    ],
+    [
+     "SPIPsramCLK",
+     "PsramDisableVspiClk"
+    ],
+    [
+     "SPIPsramCLK",
+     "PsramEnableVspiClk"
+    ],
+    [
+     "SPIPsramCLK",
+     "spi_clk_config"
+    ],
+    [
+     "SPIPsramEnable",
+     "SPIPsramCLK"
+    ],
+    [
+     "SPIPsramEnable",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "SPIPsramEnable",
+     "gpio_matrix_in"
+    ],
+    [
+     "SPIPsramEnable",
+     "gpio_matrix_out"
+    ],
+    [
+     "SPIPsramEnable",
+     "gpio_pad_select_gpio"
+    ],
+    [
+     "SPIPsramEnterQIO",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "SPIPsramExitQIO",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "SPIPsramInitCheck",
+     "SPIPsramEnable"
+    ],
+    [
+     "SPIPsramInitCheck",
+     "SPIPsramReadID"
+    ],
+    [
+     "SPIPsramReadID",
+     "SPIPsramExitQIO"
+    ],
+    [
+     "SPIPsramReadID",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "SPI_SET_QE",
+     "SPI_get_id"
+    ],
+    [
+     "SPI_get_id",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "SPI_page_program_local",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "SPI_read_local",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "SPI_read_local",
+     "phy_printf"
+    ],
+    [
+     "bt_tx_tone",
+     "fcc_bt_force_tx_tone"
+    ],
+    [
+     "cbw40m_en",
+     "phy_printf"
+    ],
+    [
+     "esp_ble_rx_func",
+     "rw_le_rx_per_func"
+    ],
+    [
+     "esp_ble_tx_func",
+     "fcc_le_tx_syncw_func"
+    ],
+    [
+     "esp_chg_freqoff",
+     "chip_v7_set_chan_offset"
+    ],
+    [
+     "esp_chg_freqoff",
+     "esp_crc8"
+    ],
+    [
+     "esp_chg_freqoff",
+     "phy_printf"
+    ],
+    [
+     "esp_chg_freqoff",
+     "read_flash_init_para"
+    ],
+    [
+     "esp_chg_freqoff",
+     "register_chipv7_phy_init_param"
+    ],
+    [
+     "esp_chg_freqoff",
+     "write_flash_init_para"
+    ],
+    [
+     "esp_chk_mac",
+     "check_usermac_from_efuse"
+    ],
+    [
+     "esp_chk_mac",
+     "phy_printf"
+    ],
+    [
+     "esp_en_reboot",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "esp_get_target_txp",
+     "esp_crc8"
+    ],
+    [
+     "esp_get_target_txp",
+     "ets_efuse_get_spiconfig"
+    ],
+    [
+     "esp_get_target_txp",
+     "phy_printf"
+    ],
+    [
+     "esp_get_target_txp",
+     "read_flash_init_para"
+    ],
+    [
+     "esp_get_target_txp",
+     "spi_flash_attach"
+    ],
+    [
+     "esp_origin_mac",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "esp_origin_mac",
+     "phy_printf"
+    ],
+    [
+     "esp_phy_getstopcmd",
+     "cmdstop_callback"
+    ],
+    [
+     "esp_phy_getstopcmd",
+     "phy_printf"
+    ],
+    [
+     "esp_rx_func",
+     "RFChannelSel"
+    ],
+    [
+     "esp_rx_func",
+     "WifiRxStart"
+    ],
+    [
+     "esp_rx_func",
+     "phy_printf"
+    ],
+    [
+     "esp_rx_func",
+     "rx_gain_level"
+    ],
+    [
+     "esp_rx_func",
+     "set_macrxfilter"
+    ],
+    [
+     "esp_rx_func",
+     "setmacaddr"
+    ],
+    [
+     "esp_set_mac",
+     "phy_printf"
+    ],
+    [
+     "esp_set_mac",
+     "write_usermac_to_efuse"
+    ],
+    [
+     "esp_set_target_txp",
+     "bb_init"
+    ],
+    [
+     "esp_set_target_txp",
+     "chip_v7_set_chan_offset"
+    ],
+    [
+     "esp_set_target_txp",
+     "esp_crc8"
+    ],
+    [
+     "esp_set_target_txp",
+     "ets_efuse_get_spiconfig"
+    ],
+    [
+     "esp_set_target_txp",
+     "memset"
+    ],
+    [
+     "esp_set_target_txp",
+     "phy_printf"
+    ],
+    [
+     "esp_set_target_txp",
+     "read_flash_init_para"
+    ],
+    [
+     "esp_set_target_txp",
+     "register_chipv7_phy_init_param"
+    ],
+    [
+     "esp_set_target_txp",
+     "rf_init"
+    ],
+    [
+     "esp_set_target_txp",
+     "spi_flash_attach"
+    ],
+    [
+     "esp_set_target_txp",
+     "write_flash_init_para"
+    ],
+    [
+     "esp_tx_func",
+     "esp_tx_func_org"
+    ],
+    [
+     "esp_tx_func",
+     "wifitxout_func"
+    ],
+    [
+     "esp_tx_func_5p",
+     "esp_tx_func_org"
+    ],
+    [
+     "esp_tx_func_5p",
+     "wifitxout_func"
+    ],
+    [
+     "esp_tx_func_duty",
+     "FillTxPacket"
+    ],
+    [
+     "esp_tx_func_duty",
+     "RFChannelSel"
+    ],
+    [
+     "esp_tx_func_duty",
+     "WifiTxStart"
+    ],
+    [
+     "esp_tx_func_duty",
+     "change_data_rate"
+    ],
+    [
+     "esp_tx_func_duty",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "esp_tx_func_duty",
+     "phy_printf"
+    ],
+    [
+     "esp_tx_func_duty",
+     "target_power_backoff"
+    ],
+    [
+     "esp_tx_func_notxon",
+     "FillTxPacket"
+    ],
+    [
+     "esp_tx_func_notxon",
+     "RFChannelSel"
+    ],
+    [
+     "esp_tx_func_notxon",
+     "WifiTxStart"
+    ],
+    [
+     "esp_tx_func_notxon",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "esp_tx_func_notxon",
+     "phy_printf"
+    ],
+    [
+     "esp_tx_func_notxon",
+     "target_power_backoff"
+    ],
+    [
+     "esp_tx_func_org",
+     "FillTxPacket"
+    ],
+    [
+     "esp_tx_func_org",
+     "RFChannelSel"
+    ],
+    [
+     "esp_tx_func_org",
+     "WifiTxStart"
+    ],
+    [
+     "esp_tx_func_org",
+     "change_data_rate"
+    ],
+    [
+     "esp_tx_func_org",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "esp_tx_func_org",
+     "phy_printf"
+    ],
+    [
+     "esp_tx_func_org",
+     "target_power_backoff"
+    ],
+    [
+     "fcc_bt_tx_func",
+     "bt_3200_opt"
+    ],
+    [
+     "fcc_bt_tx_func",
+     "fcc_tx"
+    ],
+    [
+     "fcc_bt_tx_func",
+     "phy_dis_hw_set_freq"
+    ],
+    [
+     "fcc_bt_tx_func",
+     "phy_en_hw_set_freq"
+    ],
+    [
+     "fcc_bt_tx_func",
+     "phy_printf"
+    ],
+    [
+     "fcc_bt_tx_func",
+     "set_chan_freq_sw_start"
+    ],
+    [
+     "fcc_le_tx_func",
+     "bt_3200_opt"
+    ],
+    [
+     "fcc_le_tx_func",
+     "fcc_le_tx"
+    ],
+    [
+     "fcc_le_tx_func",
+     "phy_dis_hw_set_freq"
+    ],
+    [
+     "fcc_le_tx_func",
+     "phy_en_hw_set_freq"
+    ],
+    [
+     "fcc_le_tx_func",
+     "phy_printf"
+    ],
+    [
+     "fcc_le_tx_func",
+     "set_chan_freq_sw_start"
+    ],
+    [
+     "fcc_le_tx_syncw_func",
+     "bt_3200_opt"
+    ],
+    [
+     "fcc_le_tx_syncw_func",
+     "fcc_le_tx_syncw"
+    ],
+    [
+     "fcc_le_tx_syncw_func",
+     "phy_dis_hw_set_freq"
+    ],
+    [
+     "fcc_le_tx_syncw_func",
+     "phy_en_hw_set_freq"
+    ],
+    [
+     "fcc_le_tx_syncw_func",
+     "phy_printf"
+    ],
+    [
+     "fcc_le_tx_syncw_func",
+     "set_chan_freq_sw_start"
+    ],
+    [
+     "flash_test_init",
+     "SPI_get_id"
+    ],
+    [
+     "flash_test_init",
+     "phy_printf"
+    ],
+    [
+     "flash_test_init",
+     "spi_test_init"
+    ],
+    [
+     "flash_test_run",
+     "PsramQIORead"
+    ],
+    [
+     "flash_test_run",
+     "SPI_page_program_local"
+    ],
+    [
+     "flash_test_run",
+     "SPI_read_local"
+    ],
+    [
+     "flash_test_run",
+     "gpio_test_run"
+    ],
+    [
+     "flash_test_run",
+     "phy_printf"
+    ],
+    [
+     "gpio_input_get",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "gpio_input_get_high",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "gpio_set_flash_drv",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "gpio_set_flash_drv",
+     "ets_efuse_get_spiconfig"
+    ],
+    [
+     "gpio_set_flash_drv",
+     "gpio_pad_set_drv"
+    ],
+    [
+     "gpio_set_flash_drv",
+     "phy_printf"
+    ],
+    [
+     "gpio_set_flash_drv",
+     "spi_flash_attach"
+    ],
+    [
+     "gpio_set_psram_drv",
+     "gpio_pad_set_drv"
+    ],
+    [
+     "gpio_test_init",
+     "test_pad_mode_sel"
+    ],
+    [
+     "gpio_test_run",
+     "ets_delay_us"
+    ],
+    [
+     "gpio_test_run",
+     "gpio_output_set"
+    ],
+    [
+     "pvt_test_func",
+     "ets_delay_us"
+    ],
+    [
+     "pvt_test_func",
+     "phy_printf"
+    ],
+    [
+     "pvt_test_func",
+     "pvt_pwr_ctrl"
+    ],
+    [
+     "pvt_test_func",
+     "pvt_test"
+    ],
+    [
+     "rfpll_1p2_test",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "rfpll_1p2_test",
+     "phy_printf"
+    ],
+    [
+     "rfpll_cal_time",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "rfpll_cal_time",
+     "ets_delay_us"
+    ],
+    [
+     "rfpll_cal_time",
+     "phy_printf"
+    ],
+    [
+     "rfpll_cal_time",
+     "write_wifi_chan_data"
+    ],
+    [
+     "rftest_init",
+     "coex_bt_high_prio"
+    ],
+    [
+     "rftest_init",
+     "mac_init"
+    ],
+    [
+     "rftest_init",
+     "register_chipv7_phy"
+    ],
+    [
+     "rftest_init",
+     "rf_rw_init"
+    ],
+    [
+     "rw_le_rx_per_func",
+     "bt_2480_opt_enter"
+    ],
+    [
+     "rw_le_rx_per_func",
+     "bt_2480_opt_exit"
+    ],
+    [
+     "rw_le_rx_per_func",
+     "bt_3200_opt"
+    ],
+    [
+     "rw_le_rx_per_func",
+     "bt_set_freq_cal"
+    ],
+    [
+     "rw_le_rx_per_func",
+     "get_rfrx_dcap_bt"
+    ],
+    [
+     "rw_le_rx_per_func",
+     "phy_dis_hw_set_freq"
+    ],
+    [
+     "rw_le_rx_per_func",
+     "phy_en_hw_set_freq"
+    ],
+    [
+     "rw_le_rx_per_func",
+     "phy_printf"
+    ],
+    [
+     "rw_le_rx_per_func",
+     "rw_le_rx_per_syncw"
+    ],
+    [
+     "rw_rx_per_func",
+     "bt_2480_opt_enter"
+    ],
+    [
+     "rw_rx_per_func",
+     "bt_2480_opt_exit"
+    ],
+    [
+     "rw_rx_per_func",
+     "bt_3200_opt"
+    ],
+    [
+     "rw_rx_per_func",
+     "bt_set_freq_cal"
+    ],
+    [
+     "rw_rx_per_func",
+     "get_rfrx_dcap_bt"
+    ],
+    [
+     "rw_rx_per_func",
+     "phy_dis_hw_set_freq"
+    ],
+    [
+     "rw_rx_per_func",
+     "phy_en_hw_set_freq"
+    ],
+    [
+     "rw_rx_per_func",
+     "phy_printf"
+    ],
+    [
+     "rw_rx_per_func",
+     "rw_rx_per_ulap"
+    ],
+    [
+     "spi_qe0",
+     "WaitFlashIdle"
+    ],
+    [
+     "spi_qe0",
+     "spi_flash_wren"
+    ],
+    [
+     "spi_qe0",
+     "spi_usr_cmd"
+    ],
+    [
+     "spi_qe1",
+     "WaitFlashIdle"
+    ],
+    [
+     "spi_qe1",
+     "spi_flash_wren"
+    ],
+    [
+     "spi_qe1",
+     "spi_usr_cmd"
+    ],
+    [
+     "spi_qe2",
+     "WaitFlashIdle"
+    ],
+    [
+     "spi_qe2",
+     "spi_flash_wren"
+    ],
+    [
+     "spi_qe2",
+     "spi_usr_cmd"
+    ],
+    [
+     "spi_test_init",
+     "SPIReadModeCnfig"
+    ],
+    [
+     "spi_test_init",
+     "gpio_set_flash_drv"
+    ],
+    [
+     "tx_contin_en",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "tx_contin_en",
+     "phy_printf"
+    ],
+    [
+     "wifiscwout",
+     "RFChannelSel"
+    ],
+    [
+     "wifiscwout",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "wifiscwout",
+     "phy_printf"
+    ],
+    [
+     "wifiscwout",
+     "txcal_debuge_mode"
+    ],
+    [
+     "wifitxout",
+     "esp_tx_func_org"
+    ],
+    [
+     "wifitxout",
+     "wifitxout_func"
+    ],
+    [
+     "wifitxout_func",
+     "FillTxPacket"
+    ],
+    [
+     "wifitxout_func",
+     "RFChannelSel"
+    ],
+    [
+     "wifitxout_func",
+     "WifiTxStart"
+    ],
+    [
+     "wifitxout_func",
+     "change_data_rate"
+    ],
+    [
+     "wifitxout_func",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "wifitxout_func",
+     "phy_printf"
+    ],
+    [
+     "wifitxout_func",
+     "remove_11b_4p8G_spur"
+    ],
+    [
+     "wifitxout_func",
+     "target_power_backoff"
+    ],
+    [
+     "wifitxout_func",
+     "tx_cont_cfg"
+    ]
+   ]
+  },
+  {
+   "name": "wifi.o",
+   "machine": 94,
+   "functions": [
+    {
+     "name": "flash_init_param_print$part$1",
+     "size": 334,
+     "section": ".text.flash_init_param_print$part$1",
+     "exported": false,
+     "mmio": []
+    },
+    {
+     "name": "FillTxPacket",
+     "size": 124,
+     "section": ".text.FillTxPacket",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "dig_gain_rse",
+     "size": 189,
+     "section": ".text.dig_gain_rse",
+     "exported": true,
+     "mmio": [
+      "0x3ff450e8",
+      "0x3ff46000",
+      "0x3ff46004",
+      "0x3ff46008"
+     ]
+    },
+    {
+     "name": "dig_gain_rse_stop",
+     "size": 49,
+     "section": ".text.dig_gain_rse_stop",
+     "exported": true,
+     "mmio": [
+      "0x3ff450e8",
+      "0x3ff46000"
+     ]
+    },
+    {
+     "name": "txpwr_track_disable",
+     "size": 66,
+     "section": ".text.txpwr_track_disable",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "WifiTxStart",
+     "size": 382,
+     "section": ".text.WifiTxStart",
+     "exported": true,
+     "mmio": [
+      "0x3ff5c400",
+      "0x3ff5c458",
+      "0x60033cc0"
+     ]
+    },
+    {
+     "name": "WifiRxStart",
+     "size": 22,
+     "section": ".text.WifiRxStart",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "my_temprature_sens_read",
+     "size": 254,
+     "section": ".text.my_temprature_sens_read",
+     "exported": true,
+     "mmio": [
+      "0x3ff4880c",
+      "0x3ff48844",
+      "0x3ff4884c"
+     ]
+    },
+    {
+     "name": "write_efuse_dig_reserve",
+     "size": 55,
+     "section": ".text.write_efuse_dig_reserve",
+     "exported": true,
+     "mmio": [
+      "0x3ff5a018"
+     ]
+    },
+    {
+     "name": "read_efuse_dig_reserve",
+     "size": 26,
+     "section": ".text.read_efuse_dig_reserve",
+     "exported": true,
+     "mmio": [
+      "0x3ff5a018"
+     ]
+    },
+    {
+     "name": "sampledeal",
+     "size": 17,
+     "section": ".text.sampledeal",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "accumiq",
+     "size": 94,
+     "section": ".text.accumiq",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "dc_iq_est_test",
+     "size": 194,
+     "section": ".text.dc_iq_est_test",
+     "exported": true,
+     "mmio": [
+      "0x3ff460dc",
+      "0x3ff460e0",
+      "0x3ff460e4",
+      "0x3ff460ec",
+      "0x3ff460f0"
+     ]
+    },
+    {
+     "name": "ram_get_corr_power",
+     "size": 241,
+     "section": ".text.ram_get_corr_power",
+     "exported": true,
+     "mmio": [
+      "0x3ff46080",
+      "0x3ff46084",
+      "0x3ff46088",
+      "0x3ff4608c",
+      "0x3ff460dc",
+      "0x3ff460e0",
+      "0x3ff460e4"
+     ]
+    },
+    {
+     "name": "get_rx_tone_pwr",
+     "size": 123,
+     "section": ".text.get_rx_tone_pwr",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "noise_init_check",
+     "size": 135,
+     "section": ".text.noise_init_check",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "test_rf_cal_level",
+     "size": 130,
+     "section": ".text.test_rf_cal_level",
+     "exported": true,
+     "mmio": [
+      "0x60033c00"
+     ]
+    },
+    {
+     "name": "improve_dig_rtc_vol",
+     "size": 26,
+     "section": ".text.improve_dig_rtc_vol",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "burn_in_test",
+     "size": 1017,
+     "section": ".text.burn_in_test",
+     "exported": true,
+     "mmio": [
+      "0x60033c00",
+      "0x60033c10",
+      "0x60033c40",
+      "0x60033c48",
+      "0x60033c4c",
+      "0x60033c68",
+      "0x60033cc0",
+      "0x60033d1c"
+     ]
+    },
+    {
+     "name": "rx_per_init",
+     "size": 117,
+     "section": ".text.rx_per_init",
+     "exported": true,
+     "mmio": [
+      "0x600330d8",
+      "0x600330dc",
+      "0x600330e0",
+      "0x600330e4"
+     ]
+    },
+    {
+     "name": "clk_pull_out",
+     "size": 114,
+     "section": ".text.clk_pull_out",
+     "exported": true,
+     "mmio": [
+      "0x3ff49000",
+      "0x3ff49044"
+     ]
+    },
+    {
+     "name": "clk50m_pull_out",
+     "size": 271,
+     "section": ".text.clk50m_pull_out",
+     "exported": true,
+     "mmio": [
+      "0x3ff49000",
+      "0x3ff49044",
+      "0x3ff4904c",
+      "0x3ff49050",
+      "0x3ff69800"
+     ]
+    },
+    {
+     "name": "print_efuse_mac",
+     "size": 39,
+     "section": ".text.print_efuse_mac",
+     "exported": true,
+     "mmio": [
+      "0x3ff5a004",
+      "0x3ff5a008"
+     ]
+    },
+    {
+     "name": "rtc_brown_out_set",
+     "size": 91,
+     "section": ".text.rtc_brown_out_set",
+     "exported": true,
+     "mmio": [
+      "0x3ff480d4"
+     ]
+    },
+    {
+     "name": "pad_gpio_set",
+     "size": 129,
+     "section": ".text.pad_gpio_set",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rtc_brown_out_test",
+     "size": 134,
+     "section": ".text.rtc_brown_out_test",
+     "exported": true,
+     "mmio": [
+      "0x3ff480d4"
+     ]
+    },
+    {
+     "name": "test_tx_vdd33",
+     "size": 352,
+     "section": ".text.test_tx_vdd33",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "coex_bt_wifi_test",
+     "size": 128,
+     "section": ".text.coex_bt_wifi_test",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rftest_optimize",
+     "size": 32,
+     "section": ".text.rftest_optimize",
+     "exported": true,
+     "mmio": [
+      "0x3ff5cd04",
+      "0x3ff5cd08"
+     ]
+    },
+    {
+     "name": "init_param_read",
+     "size": 246,
+     "section": ".text.init_param_read",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "flash_init_param_print",
+     "size": 16,
+     "section": ".text.flash_init_param_print",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "tx_lo_for_5g",
+     "size": 110,
+     "section": ".text.tx_lo_for_5g",
+     "exported": true,
+     "mmio": [
+      "0x3ff460a0"
+     ]
+    },
+    {
+     "name": "wifi_init",
+     "size": 545,
+     "section": ".text.wifi_init",
+     "exported": true,
+     "mmio": [
+      "0x3ff000c0",
+      "0x3ff000cc",
+      "0x3ff44038",
+      "0x3ff4808c",
+      "0x3ff5cd04",
+      "0x3ff5cd08",
+      "0x3ff5f048"
+     ]
+    },
+    {
+     "name": "phy_temp_track",
+     "size": 316,
+     "section": ".text.phy_temp_track",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "phy_ofdm_bandage_opt",
+     "size": 91,
+     "section": ".text.phy_ofdm_bandage_opt",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "write_rtc_mem_test",
+     "size": 47,
+     "section": ".text.write_rtc_mem_test",
+     "exported": true,
+     "mmio": [
+      "0x3ff61000"
+     ]
+    },
+    {
+     "name": "change_data_rate",
+     "size": 206,
+     "section": ".text.change_data_rate",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "get_length_delay",
+     "size": 139,
+     "section": ".text.get_length_delay",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "remove_11b_4p8G_spur",
+     "size": 188,
+     "section": ".text.remove_11b_4p8G_spur",
+     "exported": true,
+     "mmio": [
+      "0x3ff5c454",
+      "0x3ff5c458"
+     ]
+    },
+    {
+     "name": "txpwr_track_correct",
+     "size": 5,
+     "section": ".text.txpwr_track_correct",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rx_pbus_set",
+     "size": 515,
+     "section": ".text.rx_pbus_set",
+     "exported": true,
+     "mmio": [
+      "0x3ff45034",
+      "0x3ff45038",
+      "0x3ff46030"
+     ]
+    },
+    {
+     "name": "tx_pbus_set",
+     "size": 535,
+     "section": ".text.tx_pbus_set",
+     "exported": true,
+     "mmio": [
+      "0x3ff45034",
+      "0x3ff45038",
+      "0x3ff46034"
+     ]
+    },
+    {
+     "name": "pa_pbus_set",
+     "size": 427,
+     "section": ".text.pa_pbus_set",
+     "exported": true,
+     "mmio": [
+      "0x3ff45034",
+      "0x3ff45038",
+      "0x3ff46038"
+     ]
+    },
+    {
+     "name": "force_txon_en",
+     "size": 190,
+     "section": ".text.force_txon_en",
+     "exported": true,
+     "mmio": [
+      "0x3ff460a0"
+     ]
+    },
+    {
+     "name": "gpio_conf_for_certific",
+     "size": 73,
+     "section": ".text.gpio_conf_for_certific",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "read_flash_init_para",
+     "size": 32,
+     "section": ".text.read_flash_init_para",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "write_flash_init_para",
+     "size": 27,
+     "section": ".text.write_flash_init_para",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fcc_bt_force_tx_tone",
+     "size": 199,
+     "section": ".text.fcc_bt_force_tx_tone",
+     "exported": true,
+     "mmio": [
+      "0x3ff460a0"
+     ]
+    },
+    {
+     "name": "get_sar2_vol",
+     "size": 326,
+     "section": ".text.get_sar2_vol",
+     "exported": true,
+     "mmio": [
+      "0x3ff460c0",
+      "0x3ff4882c",
+      "0x3ff48838",
+      "0x3ff48890",
+      "0x3ff4e050",
+      "0x3ff4e05c"
+     ]
+    },
+    {
+     "name": "coex_test",
+     "size": 397,
+     "section": ".text.coex_test",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "set_rtc_dig_dbias",
+     "size": 64,
+     "section": ".text.set_rtc_dig_dbias",
+     "exported": true,
+     "mmio": [
+      "0x3ff4807c"
+     ]
+    },
+    {
+     "name": "rtc_clk_bbpll_set_new",
+     "size": 131,
+     "section": ".text.rtc_clk_bbpll_set_new",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rtc_clk_cpu_freq_set_new",
+     "size": 152,
+     "section": ".text.rtc_clk_cpu_freq_set_new",
+     "exported": true,
+     "mmio": [
+      "0x3ff48000",
+      "0x3ff48070"
+     ]
+    },
+    {
+     "name": "bbpll_80m_cal",
+     "size": 22,
+     "section": ".text.bbpll_80m_cal",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "bt_rx_spur_cal",
+     "size": 166,
+     "section": ".text.bt_rx_spur_cal",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "bt_2480_opt_enter",
+     "size": 208,
+     "section": ".text.bt_2480_opt_enter",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "bt_2480_opt_exit",
+     "size": 80,
+     "section": ".text.bt_2480_opt_exit",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "bt_3200_opt",
+     "size": 132,
+     "section": ".text.bt_3200_opt",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "test_2480_power",
+     "size": 133,
+     "section": ".text.test_2480_power",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "ble_chan_trans",
+     "size": 50,
+     "section": ".text.ble_chan_trans",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "bt_chan_change",
+     "size": 114,
+     "section": ".text.bt_chan_change",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "bt_set_freq_cal",
+     "size": 40,
+     "section": ".text.bt_set_freq_cal",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "set_freq_test",
+     "size": 242,
+     "section": ".text.set_freq_test",
+     "exported": true,
+     "mmio": [
+      "0x3ff460a0"
+     ]
+    },
+    {
+     "name": "pbus_test_init",
+     "size": 194,
+     "section": ".text.pbus_test_init",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "pbus_wr_que",
+     "size": 218,
+     "section": ".text.pbus_wr_que",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "pbus_debug_test",
+     "size": 417,
+     "section": ".text.pbus_debug_test",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "force_power_level",
+     "size": 185,
+     "section": ".text.force_power_level",
+     "exported": true,
+     "mmio": [
+      "0x3ff46000"
+     ]
+    },
+    {
+     "name": "pvt_ate",
+     "size": 144,
+     "section": ".text.pvt_ate",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "get_path_loss_offset",
+     "size": 198,
+     "section": ".text.get_path_loss_offset",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "mac_filter_enable",
+     "size": 14,
+     "section": ".text.mac_filter_enable",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "force_rx_gain",
+     "size": 131,
+     "section": ".text.force_rx_gain",
+     "exported": true,
+     "mmio": [
+      "0x3ff5c02c"
+     ]
+    },
+    {
+     "name": "rx_gain_comp_cal",
+     "size": 478,
+     "section": ".text.rx_gain_comp_cal",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "idf_enable",
+     "size": 14,
+     "section": ".text.idf_enable",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "run_rftest_case",
+     "size": 13960,
+     "section": ".text.run_rftest_case",
+     "exported": true,
+     "mmio": [
+      "0x3ff000bc",
+      "0x3ff000cc",
+      "0x3ff0018c",
+      "0x3ff450cc",
+      "0x3ff48030",
+      "0x3ff48070",
+      "0x3ff480b8",
+      "0x3ff49054",
+      "0x3ff49058",
+      "0x3ff5a000",
+      "0x3ff5a004",
+      "0x3ff5a008",
+      "0x3ff5a018",
+      "0x3ff5a01c",
+      "0x3ff5a038",
+      "0x3ff5a058",
+      "0x3ff5a078",
+      "0x3ff5a098",
+      "0x3ff5c01c",
+      "0x3ff5c050",
+      "0x3ff5c400",
+      "0x3ff5d050",
+      "0x60033c00",
+      "0x60033c68"
+     ]
+    }
+   ],
+   "calls": [
+    [
+     "FillTxPacket",
+     "fill_tx_frame"
+    ],
+    [
+     "WifiRxStart",
+     "bb_wdt_rst_enable"
+    ],
+    [
+     "WifiRxStart",
+     "do_rx_poll"
+    ],
+    [
+     "WifiTxStart",
+     "GetStopCmd"
+    ],
+    [
+     "WifiTxStart",
+     "dig_gain_rse_stop"
+    ],
+    [
+     "WifiTxStart",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "WifiTxStart",
+     "test_tx_frame"
+    ],
+    [
+     "WifiTxStart",
+     "tx_cont_cfg"
+    ],
+    [
+     "accumiq",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "accumiq",
+     "phy_printf"
+    ],
+    [
+     "bbpll_80m_cal",
+     "rtc_clk_cpu_freq_set_new"
+    ],
+    [
+     "bbpll_80m_cal",
+     "rtc_uart_div_modify"
+    ],
+    [
+     "bt_2480_opt_enter",
+     "bt_rx_spur_cal"
+    ],
+    [
+     "bt_rx_spur_cal",
+     "rx_spur_cal"
+    ],
+    [
+     "bt_rx_spur_cal",
+     "set_chan_freq_sw_start"
+    ],
+    [
+     "bt_set_freq_cal",
+     "bt_chan_change"
+    ],
+    [
+     "bt_set_freq_cal",
+     "set_chan_freq_sw_start"
+    ],
+    [
+     "burn_in_test",
+     "GetStopCmd"
+    ],
+    [
+     "burn_in_test",
+     "HTsigAddrGet"
+    ],
+    [
+     "burn_in_test",
+     "Plcp0AddrGet"
+    ],
+    [
+     "burn_in_test",
+     "Plcp1AddrGet"
+    ],
+    [
+     "burn_in_test",
+     "WifiTxStart"
+    ],
+    [
+     "burn_in_test",
+     "chip_v7_set_chan"
+    ],
+    [
+     "burn_in_test",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "burn_in_test",
+     "ets_delay_us"
+    ],
+    [
+     "burn_in_test",
+     "fill_tx_frame"
+    ],
+    [
+     "burn_in_test",
+     "fill_txbeacon"
+    ],
+    [
+     "burn_in_test",
+     "improve_dig_rtc_vol"
+    ],
+    [
+     "burn_in_test",
+     "phy_printf"
+    ],
+    [
+     "burn_in_test",
+     "register_chipv7_phy"
+    ],
+    [
+     "burn_in_test",
+     "uart_wait_idle"
+    ],
+    [
+     "burn_in_test",
+     "wdt_feed"
+    ],
+    [
+     "burn_in_test",
+     "wdt_init"
+    ],
+    [
+     "burn_in_test",
+     "wdt_nrst"
+    ],
+    [
+     "burn_in_test",
+     "wdt_nrst_inc"
+    ],
+    [
+     "change_data_rate",
+     "phy_printf"
+    ],
+    [
+     "clk50m_pull_out",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "clk50m_pull_out",
+     "phy_printf"
+    ],
+    [
+     "clk50m_pull_out",
+     "rtc_clk_apll_enable"
+    ],
+    [
+     "clk_pull_out",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "clk_pull_out",
+     "ets_delay_us"
+    ],
+    [
+     "clk_pull_out",
+     "phy_printf"
+    ],
+    [
+     "coex_bt_wifi_test",
+     "_xtos_ints_on"
+    ],
+    [
+     "coex_bt_wifi_test",
+     "_xtos_set_interrupt_handler_arg"
+    ],
+    [
+     "coex_bt_wifi_test",
+     "intr_matrix_set"
+    ],
+    [
+     "coex_bt_wifi_test",
+     "rw_tx_test_init"
+    ],
+    [
+     "coex_bt_wifi_test",
+     "t0_start_toggle"
+    ],
+    [
+     "coex_bt_wifi_test",
+     "t1_start_toggle"
+    ],
+    [
+     "coex_test",
+     "_xtos_ints_on"
+    ],
+    [
+     "coex_test",
+     "_xtos_set_interrupt_handler_arg"
+    ],
+    [
+     "coex_test",
+     "intr_matrix_set"
+    ],
+    [
+     "coex_test",
+     "phy_printf"
+    ],
+    [
+     "coex_test",
+     "rw_inq_test_init"
+    ],
+    [
+     "coex_test",
+     "rw_le_adv_test_init"
+    ],
+    [
+     "coex_test",
+     "rw_le_advscan_test_init"
+    ],
+    [
+     "coex_test",
+     "rw_le_rx_per_init"
+    ],
+    [
+     "coex_test",
+     "rw_le_tx_nohoppe_init"
+    ],
+    [
+     "coex_test",
+     "rw_rx_per_init"
+    ],
+    [
+     "coex_test",
+     "rw_tx_test_init"
+    ],
+    [
+     "coex_test",
+     "t0_start_toggle"
+    ],
+    [
+     "coex_test",
+     "t1_start_toggle"
+    ],
+    [
+     "dc_iq_est_test",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "dig_gain_rse",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "dig_gain_rse",
+     "get_target_power_offset"
+    ],
+    [
+     "dig_gain_rse_stop",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "fcc_bt_force_tx_tone",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "fcc_bt_force_tx_tone",
+     "phy_printf"
+    ],
+    [
+     "fcc_bt_force_tx_tone",
+     "set_chan_freq_sw_start"
+    ],
+    [
+     "flash_init_param_print$part$1",
+     "chip_v7_set_chan_offset"
+    ],
+    [
+     "flash_init_param_print$part$1",
+     "phy_printf"
+    ],
+    [
+     "flash_init_param_print$part$1",
+     "tx_contin_en"
+    ],
+    [
+     "flash_init_param_print$part$1",
+     "wifitxout"
+    ],
+    [
+     "force_power_level",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "force_rx_gain",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "force_txon_en",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "force_txon_en",
+     "ets_delay_us"
+    ],
+    [
+     "force_txon_en",
+     "pa_pbus_set"
+    ],
+    [
+     "force_txon_en",
+     "ram_set_pbus_mem"
+    ],
+    [
+     "force_txon_en",
+     "rx_pbus_set"
+    ],
+    [
+     "force_txon_en",
+     "tx_pbus_set"
+    ],
+    [
+     "get_length_delay",
+     "change_data_rate"
+    ],
+    [
+     "get_length_delay",
+     "get_target_power_offset"
+    ],
+    [
+     "get_length_delay",
+     "memcpy"
+    ],
+    [
+     "get_path_loss_offset",
+     "dc_iq_est_test"
+    ],
+    [
+     "get_rx_tone_pwr",
+     "ets_delay_us"
+    ],
+    [
+     "get_rx_tone_pwr",
+     "phy_printf"
+    ],
+    [
+     "get_rx_tone_pwr",
+     "ram_get_corr_power"
+    ],
+    [
+     "get_sar2_vol",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "get_sar2_vol",
+     "ets_delay_us"
+    ],
+    [
+     "get_sar2_vol",
+     "set_xpd_sar"
+    ],
+    [
+     "gpio_conf_for_certific",
+     "rtc_set_dig_gpio_out"
+    ],
+    [
+     "gpio_conf_for_certific",
+     "uart_wait_idle"
+    ],
+    [
+     "improve_dig_rtc_vol",
+     "DIG_pwc_mea_ate"
+    ],
+    [
+     "improve_dig_rtc_vol",
+     "RTC_pwc_mea_ate"
+    ],
+    [
+     "init_param_read",
+     "SPIRead"
+    ],
+    [
+     "init_param_read",
+     "ets_efuse_get_spiconfig"
+    ],
+    [
+     "init_param_read",
+     "phy_printf"
+    ],
+    [
+     "init_param_read",
+     "spi_flash_attach"
+    ],
+    [
+     "my_temprature_sens_read",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "my_temprature_sens_read",
+     "ets_delay_us"
+    ],
+    [
+     "noise_init_check",
+     "chip_v7_set_chan"
+    ],
+    [
+     "noise_init_check",
+     "phy_printf"
+    ],
+    [
+     "pa_pbus_set",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "pad_gpio_set",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "pbus_debug_test",
+     "GetStopCmd"
+    ],
+    [
+     "pbus_debug_test",
+     "ets_delay_us"
+    ],
+    [
+     "pbus_debug_test",
+     "pbus_wr_que"
+    ],
+    [
+     "pbus_debug_test",
+     "phy_printf"
+    ],
+    [
+     "pbus_test_init",
+     "ets_delay_us"
+    ],
+    [
+     "pbus_wr_que",
+     "ets_delay_us"
+    ],
+    [
+     "phy_ofdm_bandage_opt",
+     "dig_gain_rse"
+    ],
+    [
+     "phy_temp_track",
+     "get_rate_target_power"
+    ],
+    [
+     "phy_temp_track",
+     "phy_printf"
+    ],
+    [
+     "phy_temp_track",
+     "tsens_code_read"
+    ],
+    [
+     "print_efuse_mac",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "print_efuse_mac",
+     "phy_printf"
+    ],
+    [
+     "pvt_ate",
+     "ets_delay_us"
+    ],
+    [
+     "pvt_ate",
+     "phy_printf"
+    ],
+    [
+     "pvt_ate",
+     "pvt_pwr_ctrl"
+    ],
+    [
+     "pvt_ate",
+     "pvt_test"
+    ],
+    [
+     "ram_get_corr_power",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "read_efuse_dig_reserve",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "read_efuse_dig_reserve",
+     "phy_printf"
+    ],
+    [
+     "read_flash_init_para",
+     "SPIRead"
+    ],
+    [
+     "read_flash_init_para",
+     "ets_efuse_get_spiconfig"
+    ],
+    [
+     "read_flash_init_para",
+     "spi_flash_attach"
+    ],
+    [
+     "remove_11b_4p8G_spur",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "rtc_brown_out_set",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "rtc_brown_out_test",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "rtc_brown_out_test",
+     "ets_delay_us"
+    ],
+    [
+     "rtc_brown_out_test",
+     "phy_printf"
+    ],
+    [
+     "rtc_clk_bbpll_set_new",
+     "ets_delay_us"
+    ],
+    [
+     "rtc_clk_cpu_freq_set_new",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "rtc_clk_cpu_freq_set_new",
+     "ets_update_cpu_frequency"
+    ],
+    [
+     "rtc_clk_cpu_freq_set_new",
+     "rtc_clk_apb_freq_update"
+    ],
+    [
+     "rtc_clk_cpu_freq_set_new",
+     "rtc_clk_bbpll_set_new"
+    ],
+    [
+     "rtc_clk_cpu_freq_set_new",
+     "rtc_clk_wait_for_slow_cycle"
+    ],
+    [
+     "rtc_clk_cpu_freq_set_new",
+     "rtc_clk_xtal_freq_get"
+    ],
+    [
+     "run_rftest_case",
+     "CMDSTOP_GPIO"
+    ],
+    [
+     "run_rftest_case",
+     "DIG_pwc_mea_ate"
+    ],
+    [
+     "run_rftest_case",
+     "ESP_TEST_GPIO_DRV"
+    ],
+    [
+     "run_rftest_case",
+     "ESP_TEST_GPIO_func"
+    ],
+    [
+     "run_rftest_case",
+     "FillTxPacket"
+    ],
+    [
+     "run_rftest_case",
+     "FlashBoardTest"
+    ],
+    [
+     "run_rftest_case",
+     "GetStopCmd"
+    ],
+    [
+     "run_rftest_case",
+     "PsramBoardTest"
+    ],
+    [
+     "run_rftest_case",
+     "RFChannelSel"
+    ],
+    [
+     "run_rftest_case",
+     "RF_init_sel"
+    ],
+    [
+     "run_rftest_case",
+     "RTC_pwc_mea_ate"
+    ],
+    [
+     "run_rftest_case",
+     "SPIEraseSector"
+    ],
+    [
+     "run_rftest_case",
+     "SPIRead"
+    ],
+    [
+     "run_rftest_case",
+     "SPIWrite"
+    ],
+    [
+     "run_rftest_case",
+     "SPI_read_local"
+    ],
+    [
+     "run_rftest_case",
+     "Vsar2_pwc_mea_ate"
+    ],
+    [
+     "run_rftest_case",
+     "WifiTxStart"
+    ],
+    [
+     "run_rftest_case",
+     "_xtos_ints_off"
+    ],
+    [
+     "run_rftest_case",
+     "_xtos_ints_on"
+    ],
+    [
+     "run_rftest_case",
+     "accumiq"
+    ],
+    [
+     "run_rftest_case",
+     "adc1_read"
+    ],
+    [
+     "run_rftest_case",
+     "adc2_read"
+    ],
+    [
+     "run_rftest_case",
+     "adc_test1"
+    ],
+    [
+     "run_rftest_case",
+     "adctrig"
+    ],
+    [
+     "run_rftest_case",
+     "ant_btrx_cfg"
+    ],
+    [
+     "run_rftest_case",
+     "ant_bttx_cfg"
+    ],
+    [
+     "run_rftest_case",
+     "ant_dft_cfg"
+    ],
+    [
+     "run_rftest_case",
+     "ant_wifirx_cfg"
+    ],
+    [
+     "run_rftest_case",
+     "ant_wifitx_cfg"
+    ],
+    [
+     "run_rftest_case",
+     "ap_ack_test"
+    ],
+    [
+     "run_rftest_case",
+     "ate_rfpll_cap_sign"
+    ],
+    [
+     "run_rftest_case",
+     "bb_init"
+    ],
+    [
+     "run_rftest_case",
+     "bb_wdt_rst_enable"
+    ],
+    [
+     "run_rftest_case",
+     "bt_bb_init_cmplx_reg"
+    ],
+    [
+     "run_rftest_case",
+     "bt_rx_spur_cal"
+    ],
+    [
+     "run_rftest_case",
+     "bt_rx_spur_opt"
+    ],
+    [
+     "run_rftest_case",
+     "bt_tx_tone"
+    ],
+    [
+     "run_rftest_case",
+     "btpwr_backoff"
+    ],
+    [
+     "run_rftest_case",
+     "burn_efuse"
+    ],
+    [
+     "run_rftest_case",
+     "burn_in_test"
+    ],
+    [
+     "run_rftest_case",
+     "cbw40m_en"
+    ],
+    [
+     "run_rftest_case",
+     "chan14_mic_enable"
+    ],
+    [
+     "run_rftest_case",
+     "chip_v7_set_chan"
+    ],
+    [
+     "run_rftest_case",
+     "chip_v7_set_chan_offset"
+    ],
+    [
+     "run_rftest_case",
+     "clk50m_pull_out"
+    ],
+    [
+     "run_rftest_case",
+     "clk_pull_out"
+    ],
+    [
+     "run_rftest_case",
+     "clr_pwc_mea"
+    ],
+    [
+     "run_rftest_case",
+     "cmd_polling_start"
+    ],
+    [
+     "run_rftest_case",
+     "coex_bt_high_prio"
+    ],
+    [
+     "run_rftest_case",
+     "coex_test"
+    ],
+    [
+     "run_rftest_case",
+     "dac_out"
+    ],
+    [
+     "run_rftest_case",
+     "dc_iq_est_test"
+    ],
+    [
+     "run_rftest_case",
+     "dig_gain_rse"
+    ],
+    [
+     "run_rftest_case",
+     "do_rx_poll"
+    ],
+    [
+     "run_rftest_case",
+     "esp_chg_freqoff"
+    ],
+    [
+     "run_rftest_case",
+     "esp_chk_mac"
+    ],
+    [
+     "run_rftest_case",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "run_rftest_case",
+     "esp_en_reboot"
+    ],
+    [
+     "run_rftest_case",
+     "esp_get_rx_result"
+    ],
+    [
+     "run_rftest_case",
+     "esp_get_target_txp"
+    ],
+    [
+     "run_rftest_case",
+     "esp_origin_mac"
+    ],
+    [
+     "run_rftest_case",
+     "esp_rx_func"
+    ],
+    [
+     "run_rftest_case",
+     "esp_set_mac"
+    ],
+    [
+     "run_rftest_case",
+     "esp_set_target_txp"
+    ],
+    [
+     "run_rftest_case",
+     "esp_tx_func"
+    ],
+    [
+     "run_rftest_case",
+     "esp_tx_func_duty"
+    ],
+    [
+     "run_rftest_case",
+     "esp_tx_func_notxon"
+    ],
+    [
+     "run_rftest_case",
+     "esp_tx_state_out"
+    ],
+    [
+     "run_rftest_case",
+     "ets_delay_us"
+    ],
+    [
+     "run_rftest_case",
+     "ets_efuse_get_spiconfig"
+    ],
+    [
+     "run_rftest_case",
+     "ets_unpack_flash_code"
+    ],
+    [
+     "run_rftest_case",
+     "fcc_bt_tx_func"
+    ],
+    [
+     "run_rftest_case",
+     "fcc_le_tx"
+    ],
+    [
+     "run_rftest_case",
+     "fcc_le_tx_func"
+    ],
+    [
+     "run_rftest_case",
+     "fcc_le_tx_syncw"
+    ],
+    [
+     "run_rftest_case",
+     "fcc_le_tx_syncw_func"
+    ],
+    [
+     "run_rftest_case",
+     "fcc_tx"
+    ],
+    [
+     "run_rftest_case",
+     "fcc_tx_len"
+    ],
+    [
+     "run_rftest_case",
+     "flash_test_init"
+    ],
+    [
+     "run_rftest_case",
+     "force_bt_mode"
+    ],
+    [
+     "run_rftest_case",
+     "force_bttx_gain"
+    ],
+    [
+     "run_rftest_case",
+     "force_rx_gain"
+    ],
+    [
+     "run_rftest_case",
+     "force_txon_en"
+    ],
+    [
+     "run_rftest_case",
+     "force_wifi_mode"
+    ],
+    [
+     "run_rftest_case",
+     "get_path_loss_offset"
+    ],
+    [
+     "run_rftest_case",
+     "get_rx_buffer"
+    ],
+    [
+     "run_rftest_case",
+     "get_rx_tone_pwr"
+    ],
+    [
+     "run_rftest_case",
+     "get_sar2_vol"
+    ],
+    [
+     "run_rftest_case",
+     "get_spur4m_pwr"
+    ],
+    [
+     "run_rftest_case",
+     "gpio_input_get"
+    ],
+    [
+     "run_rftest_case",
+     "gpio_input_get_high"
+    ],
+    [
+     "run_rftest_case",
+     "gpio_output_set"
+    ],
+    [
+     "run_rftest_case",
+     "gpio_output_set_high"
+    ],
+    [
+     "run_rftest_case",
+     "gpio_set_flash_drv"
+    ],
+    [
+     "run_rftest_case",
+     "gpio_test_init"
+    ],
+    [
+     "run_rftest_case",
+     "improve_dig_rtc_vol"
+    ],
+    [
+     "run_rftest_case",
+     "mac_init"
+    ],
+    [
+     "run_rftest_case",
+     "memset"
+    ],
+    [
+     "run_rftest_case",
+     "module_test_cal_print"
+    ],
+    [
+     "run_rftest_case",
+     "my_temprature_sens_read"
+    ],
+    [
+     "run_rftest_case",
+     "noise_check_loop"
+    ],
+    [
+     "run_rftest_case",
+     "noise_init"
+    ],
+    [
+     "run_rftest_case",
+     "noise_init_check"
+    ],
+    [
+     "run_rftest_case",
+     "pa_pbus_set"
+    ],
+    [
+     "run_rftest_case",
+     "pbus_debug_test"
+    ],
+    [
+     "run_rftest_case",
+     "phy_bt_power_track"
+    ],
+    [
+     "run_rftest_case",
+     "phy_bttx_low_power"
+    ],
+    [
+     "run_rftest_case",
+     "phy_close_pa"
+    ],
+    [
+     "run_rftest_case",
+     "phy_close_rf"
+    ],
+    [
+     "run_rftest_case",
+     "phy_disable_low_rate"
+    ],
+    [
+     "run_rftest_case",
+     "phy_enable_low_rate"
+    ],
+    [
+     "run_rftest_case",
+     "phy_force_wifi_chan"
+    ],
+    [
+     "run_rftest_case",
+     "phy_get_adc_rand"
+    ],
+    [
+     "run_rftest_case",
+     "phy_get_most_tpw"
+    ],
+    [
+     "run_rftest_case",
+     "phy_get_tx_pwr"
+    ],
+    [
+     "run_rftest_case",
+     "phy_get_tx_rate"
+    ],
+    [
+     "run_rftest_case",
+     "phy_get_txpwr_param"
+    ],
+    [
+     "run_rftest_case",
+     "phy_i2c_init"
+    ],
+    [
+     "run_rftest_case",
+     "phy_printf"
+    ],
+    [
+     "run_rftest_case",
+     "phy_pwdet_always_en"
+    ],
+    [
+     "run_rftest_case",
+     "phy_pwdet_onetime_en"
+    ],
+    [
+     "run_rftest_case",
+     "phy_reg_check"
+    ],
+    [
+     "run_rftest_case",
+     "phy_rfcal_data_check"
+    ],
+    [
+     "run_rftest_case",
+     "phy_rx_sense_set"
+    ],
+    [
+     "run_rftest_case",
+     "phy_set_bbfreq_init"
+    ],
+    [
+     "run_rftest_case",
+     "phy_set_bt_dig_gain"
+    ],
+    [
+     "run_rftest_case",
+     "phy_set_most_tpw"
+    ],
+    [
+     "run_rftest_case",
+     "phy_unforce_wifi_chan"
+    ],
+    [
+     "run_rftest_case",
+     "phy_version_print"
+    ],
+    [
+     "run_rftest_case",
+     "phy_wakeup_init"
+    ],
+    [
+     "run_rftest_case",
+     "phy_wifitx_low_power"
+    ],
+    [
+     "run_rftest_case",
+     "pvt_ate"
+    ],
+    [
+     "run_rftest_case",
+     "pvt_test_func"
+    ],
+    [
+     "run_rftest_case",
+     "ram_chip_i2c_readReg"
+    ],
+    [
+     "run_rftest_case",
+     "ram_get_power_db"
+    ],
+    [
+     "run_rftest_case",
+     "read_hw_noisefloor"
+    ],
+    [
+     "run_rftest_case",
+     "read_macaddr_from_otp"
+    ],
+    [
+     "run_rftest_case",
+     "register_chipv7_phy"
+    ],
+    [
+     "run_rftest_case",
+     "register_chipv7_phy_init_param"
+    ],
+    [
+     "run_rftest_case",
+     "remove_11b_4p8G_spur"
+    ],
+    [
+     "run_rftest_case",
+     "rf_cal_data_backup"
+    ],
+    [
+     "run_rftest_case",
+     "rf_init"
+    ],
+    [
+     "run_rftest_case",
+     "rf_rw_init"
+    ],
+    [
+     "run_rftest_case",
+     "rfpll_1p2_test"
+    ],
+    [
+     "run_rftest_case",
+     "rfpll_cal_time"
+    ],
+    [
+     "run_rftest_case",
+     "rtc_brown_out_test"
+    ],
+    [
+     "run_rftest_case",
+     "rtc_clk_cpu_freq_set_new"
+    ],
+    [
+     "run_rftest_case",
+     "rtc_get_cpu_clk_grade"
+    ],
+    [
+     "run_rftest_case",
+     "rtc_get_gpio_dig_conf"
+    ],
+    [
+     "run_rftest_case",
+     "rtc_restore_dig_gpio"
+    ],
+    [
+     "run_rftest_case",
+     "rtc_set_cpu_freq"
+    ],
+    [
+     "run_rftest_case",
+     "rtc_set_dig_gpio_out"
+    ],
+    [
+     "run_rftest_case",
+     "rtc_sleep"
+    ],
+    [
+     "run_rftest_case",
+     "rtc_slowck_cali"
+    ],
+    [
+     "run_rftest_case",
+     "rtc_slp_prep_lite"
+    ],
+    [
+     "run_rftest_case",
+     "rtc_uart_div_modify"
+    ],
+    [
+     "run_rftest_case",
+     "rtc_xtal_32k_test"
+    ],
+    [
+     "run_rftest_case",
+     "rw_bt_func_test_dut"
+    ],
+    [
+     "run_rftest_case",
+     "rw_bt_func_test_init"
+    ],
+    [
+     "run_rftest_case",
+     "rw_bt_func_test_tester"
+    ],
+    [
+     "run_rftest_case",
+     "rw_le_rx_per_func"
+    ],
+    [
+     "run_rftest_case",
+     "rw_le_rx_per_syncw_polling"
+    ],
+    [
+     "run_rftest_case",
+     "rw_le_rx_per_syncw_polling_stop"
+    ],
+    [
+     "run_rftest_case",
+     "rw_le_rx_per_syncw_rssi"
+    ],
+    [
+     "run_rftest_case",
+     "rw_rx_per_func"
+    ],
+    [
+     "run_rftest_case",
+     "rw_rx_per_ulap_rssi"
+    ],
+    [
+     "run_rftest_case",
+     "rx_11b_opt"
+    ],
+    [
+     "run_rftest_case",
+     "rx_gain_comp_cal"
+    ],
+    [
+     "run_rftest_case",
+     "rx_gain_level"
+    ],
+    [
+     "run_rftest_case",
+     "rx_pbus_set"
+    ],
+    [
+     "run_rftest_case",
+     "rx_per_init"
+    ],
+    [
+     "run_rftest_case",
+     "rxspur_test"
+    ],
+    [
+     "run_rftest_case",
+     "set_bt_chan_cal_interp"
+    ],
+    [
+     "run_rftest_case",
+     "set_cca"
+    ],
+    [
+     "run_rftest_case",
+     "set_freq_test"
+    ],
+    [
+     "run_rftest_case",
+     "set_rtc_memory_crc"
+    ],
+    [
+     "run_rftest_case",
+     "set_rx_sense"
+    ],
+    [
+     "run_rftest_case",
+     "set_tx_dig_gain"
+    ],
+    [
+     "run_rftest_case",
+     "set_tx_gain_table"
+    ],
+    [
+     "run_rftest_case",
+     "set_tx_gain_table_bt"
+    ],
+    [
+     "run_rftest_case",
+     "sleep_proc_test"
+    ],
+    [
+     "run_rftest_case",
+     "slow_clk_read_temp"
+    ],
+    [
+     "run_rftest_case",
+     "slow_clk_write_efuse"
+    ],
+    [
+     "run_rftest_case",
+     "spi_flash_attach"
+    ],
+    [
+     "run_rftest_case",
+     "strcmp"
+    ],
+    [
+     "run_rftest_case",
+     "target_power_backoff"
+    ],
+    [
+     "run_rftest_case",
+     "temprature_sens_read"
+    ],
+    [
+     "run_rftest_case",
+     "test_2480_power"
+    ],
+    [
+     "run_rftest_case",
+     "test_noise_floor"
+    ],
+    [
+     "run_rftest_case",
+     "test_rf_cal_level"
+    ],
+    [
+     "run_rftest_case",
+     "test_set_rf_freq_offset"
+    ],
+    [
+     "run_rftest_case",
+     "test_tx_vdd33"
+    ],
+    [
+     "run_rftest_case",
+     "test_txtone_pwr"
+    ],
+    [
+     "run_rftest_case",
+     "tsens_code_read"
+    ],
+    [
+     "run_rftest_case",
+     "tx_ack_init"
+    ],
+    [
+     "run_rftest_case",
+     "tx_ack_start"
+    ],
+    [
+     "run_rftest_case",
+     "tx_ack_test"
+    ],
+    [
+     "run_rftest_case",
+     "tx_contin_en"
+    ],
+    [
+     "run_rftest_case",
+     "tx_pbus_set"
+    ],
+    [
+     "run_rftest_case",
+     "txdc_stable_test"
+    ],
+    [
+     "run_rftest_case",
+     "uart_wait_idle"
+    ],
+    [
+     "run_rftest_case",
+     "wifi_ack_test"
+    ],
+    [
+     "run_rftest_case",
+     "wifi_rifs_mode_en"
+    ],
+    [
+     "run_rftest_case",
+     "wifi_track_pll_cap"
+    ],
+    [
+     "run_rftest_case",
+     "wifiscwout"
+    ],
+    [
+     "run_rftest_case",
+     "wifitxout"
+    ],
+    [
+     "run_rftest_case",
+     "wr_bt_tx_atten"
+    ],
+    [
+     "run_rftest_case",
+     "wr_bt_tx_gain_mem"
+    ],
+    [
+     "rx_gain_comp_cal",
+     "ets_delay_us"
+    ],
+    [
+     "rx_gain_comp_cal",
+     "force_rx_gain"
+    ],
+    [
+     "rx_gain_comp_cal",
+     "get_rfrx_dcap_bt"
+    ],
+    [
+     "rx_gain_comp_cal",
+     "phy_printf"
+    ],
+    [
+     "rx_gain_comp_cal",
+     "ram_dc_iq_est"
+    ],
+    [
+     "rx_gain_comp_cal",
+     "set_chan_rxcomp"
+    ],
+    [
+     "rx_pbus_set",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "rx_per_init",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "rx_per_init",
+     "set_mac_filter"
+    ],
+    [
+     "set_freq_test",
+     "GetStopCmd"
+    ],
+    [
+     "set_freq_test",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "set_freq_test",
+     "ets_delay_us"
+    ],
+    [
+     "set_freq_test",
+     "phy_printf"
+    ],
+    [
+     "set_freq_test",
+     "set_chan_freq_sw_start"
+    ],
+    [
+     "set_rtc_dig_dbias",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "test_2480_power",
+     "freq_offset_get_pwr"
+    ],
+    [
+     "test_2480_power",
+     "phy_printf"
+    ],
+    [
+     "test_rf_cal_level",
+     "SPIEraseSector"
+    ],
+    [
+     "test_rf_cal_level",
+     "SPIRead"
+    ],
+    [
+     "test_rf_cal_level",
+     "SPIWrite"
+    ],
+    [
+     "test_rf_cal_level",
+     "ets_efuse_get_spiconfig"
+    ],
+    [
+     "test_rf_cal_level",
+     "phy_printf"
+    ],
+    [
+     "test_rf_cal_level",
+     "phy_set_wifi_mode_only"
+    ],
+    [
+     "test_rf_cal_level",
+     "register_chipv7_phy"
+    ],
+    [
+     "test_rf_cal_level",
+     "spi_flash_attach"
+    ],
+    [
+     "test_tx_vdd33",
+     "ets_delay_us"
+    ],
+    [
+     "test_tx_vdd33",
+     "phy_printf"
+    ],
+    [
+     "test_tx_vdd33",
+     "ram_rfcal_pwrctrl"
+    ],
+    [
+     "test_tx_vdd33",
+     "set_channel_rfpll_freq"
+    ],
+    [
+     "test_tx_vdd33",
+     "txcal_debuge_mode"
+    ],
+    [
+     "test_tx_vdd33",
+     "uart_wait_idle"
+    ],
+    [
+     "tx_lo_for_5g",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "tx_lo_for_5g",
+     "set_tx_gain_table"
+    ],
+    [
+     "tx_lo_for_5g",
+     "test_set_rf_freq_offset"
+    ],
+    [
+     "tx_pbus_set",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "txpwr_track_disable",
+     "tx_gain_table_set"
+    ],
+    [
+     "wifi_init",
+     "GetUartDevice"
+    ],
+    [
+     "wifi_init",
+     "coex_bt_high_prio"
+    ],
+    [
+     "wifi_init",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "wifi_init",
+     "ets_delay_us"
+    ],
+    [
+     "wifi_init",
+     "ets_update_cpu_frequency"
+    ],
+    [
+     "wifi_init",
+     "i2c_xtal_init"
+    ],
+    [
+     "wifi_init",
+     "init_param_read"
+    ],
+    [
+     "wifi_init",
+     "mac_init"
+    ],
+    [
+     "wifi_init",
+     "noise_init"
+    ],
+    [
+     "wifi_init",
+     "phy_bt_power_track"
+    ],
+    [
+     "wifi_init",
+     "phy_get_romfunc_addr"
+    ],
+    [
+     "wifi_init",
+     "phy_printf"
+    ],
+    [
+     "wifi_init",
+     "phy_pwdet_always_en"
+    ],
+    [
+     "wifi_init",
+     "phy_set_wifi_mode_only"
+    ],
+    [
+     "wifi_init",
+     "phy_version_print"
+    ],
+    [
+     "wifi_init",
+     "print_efuse_mac"
+    ],
+    [
+     "wifi_init",
+     "read_macaddr_from_otp"
+    ],
+    [
+     "wifi_init",
+     "register_chipv7_phy"
+    ],
+    [
+     "wifi_init",
+     "rf_rw_init"
+    ],
+    [
+     "wifi_init",
+     "rtc_init_lite"
+    ],
+    [
+     "wifi_init",
+     "rtc_set_cpu_freq"
+    ],
+    [
+     "wifi_init",
+     "rx_gain_level"
+    ],
+    [
+     "wifi_init",
+     "tsens_code_read"
+    ],
+    [
+     "wifi_init",
+     "uart_div_modify"
+    ],
+    [
+     "wifi_init",
+     "uart_tx_switch"
+    ],
+    [
+     "wifi_init",
+     "uart_wait_idle"
+    ],
+    [
+     "wifi_init",
+     "write_efuse_dig_reserve"
+    ],
+    [
+     "write_efuse_dig_reserve",
+     "burn_efuse"
+    ],
+    [
+     "write_efuse_dig_reserve",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "write_flash_init_para",
+     "SPIEraseSector"
+    ],
+    [
+     "write_flash_init_para",
+     "SPIWrite"
+    ],
+    [
+     "write_rtc_mem_test",
+     "esp_dport_access_reg_read"
+    ],
+    [
+     "write_rtc_mem_test",
+     "phy_printf"
+    ]
+   ]
+  },
+  {
+   "name": "esp32_se.o",
+   "machine": 94,
+   "functions": [],
+   "calls": []
+  }
+ ]
+}

@@ -1,0 +1,6315 @@
+{
+ "source": "blobs\\espressif\\esp32c5_librftest.a",
+ "sha256": "0f9680b41612762d854accf2334412e3e01b206a3ec290bbbb232842fdaec7ba",
+ "objects": [
+  {
+   "name": "phy_test.o",
+   "machine": 243,
+   "functions": [
+    {
+     "name": "get_bbgain_db",
+     "size": 44,
+     "section": ".text.get_bbgain_db",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "set_tx_dig_gain",
+     "size": 2,
+     "section": ".text.set_tx_dig_gain",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "phy_get_tx_rate",
+     "size": 16,
+     "section": ".text.phy_get_tx_rate",
+     "exported": true,
+     "mmio": [
+      "0x600a080c",
+      "0x600a1000"
+     ]
+    },
+    {
+     "name": "start_tx_tone",
+     "size": 98,
+     "section": ".text.start_tx_tone",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a041c"
+     ]
+    },
+    {
+     "name": "tx_pwr_backoff",
+     "size": 446,
+     "section": ".text.tx_pwr_backoff",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "get_rfrx_sat",
+     "size": 44,
+     "section": ".text.get_rfrx_sat",
+     "exported": true,
+     "mmio": [
+      "0x600a7000",
+      "0x600a708c"
+     ]
+    },
+    {
+     "name": "rfrx_sat_rst",
+     "size": 36,
+     "section": ".text.rfrx_sat_rst",
+     "exported": true,
+     "mmio": [
+      "0x600a7000",
+      "0x600a705c"
+     ]
+    },
+    {
+     "name": "rfrx_sat_check",
+     "size": 2,
+     "section": ".text.rfrx_sat_check",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "phy_dig_ldo_cal",
+     "size": 238,
+     "section": ".text.phy_dig_ldo_cal",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "phy_corr_get_pwr",
+     "size": 110,
+     "section": ".text.phy_corr_get_pwr",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a0454",
+      "0x600a0458",
+      "0x600a045c",
+      "0x600a0460"
+     ]
+    },
+    {
+     "name": "phy_corr_pwr_sum",
+     "size": 130,
+     "section": ".text.phy_corr_pwr_sum",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "phy_2480m_opt",
+     "size": 2,
+     "section": ".text.phy_2480m_opt",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "check_noise_floor",
+     "size": 162,
+     "section": ".text.check_noise_floor",
+     "exported": true,
+     "mmio": [
+      "0x600a7000",
+      "0x600a7018",
+      "0x600a7050",
+      "0x600ad800",
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "force_iq_set",
+     "size": 244,
+     "section": ".text.force_iq_set",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a0438",
+      "0x600a0c0c",
+      "0x600a1000"
+     ]
+    },
+    {
+     "name": "set_noise_floor",
+     "size": 74,
+     "section": ".text.set_noise_floor",
+     "exported": true,
+     "mmio": [
+      "0x600a7000",
+      "0x600a7018"
+     ]
+    },
+    {
+     "name": "phy_11p_set_1",
+     "size": 82,
+     "section": ".text.phy_11p_set_1",
+     "exported": true,
+     "mmio": [
+      "0x600a7000",
+      "0x600a7030",
+      "0x600a9c18",
+      "0x600aa000"
+     ]
+    },
+    {
+     "name": "rxiq_get_pwr",
+     "size": 296,
+     "section": ".text.rxiq_get_pwr",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a0454",
+      "0x600a0458",
+      "0x600a045c",
+      "0x600a0460"
+     ]
+    },
+    {
+     "name": "txdc_delta_max",
+     "size": 122,
+     "section": ".text.txdc_delta_max",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "txdc_stable_sub",
+     "size": 246,
+     "section": ".text.txdc_stable_sub",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "txdc_stable_test",
+     "size": 92,
+     "section": ".text.txdc_stable_test",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "bt_rx_force",
+     "size": 214,
+     "section": ".text.bt_rx_force",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a0008",
+      "0x600a0890",
+      "0x600a1000"
+     ]
+    },
+    {
+     "name": "force_rx_gain",
+     "size": 222,
+     "section": ".text.force_rx_gain",
+     "exported": true,
+     "mmio": [
+      "0x600a2000",
+      "0x600a2184",
+      "0x600a2840",
+      "0x600a3000",
+      "0x600a7000",
+      "0x600a702c",
+      "0x600af000",
+      "0x600af4b4"
+     ]
+    },
+    {
+     "name": "force_dig_gain",
+     "size": 66,
+     "section": ".text.force_dig_gain",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a0408"
+     ]
+    },
+    {
+     "name": "rx_spur_remove",
+     "size": 112,
+     "section": ".text.rx_spur_remove",
+     "exported": true,
+     "mmio": [
+      "0x600a7000",
+      "0x600a71d4",
+      "0x600a7c14",
+      "0x600a7c2c",
+      "0x600a8000"
+     ]
+    },
+    {
+     "name": "fedump_wr_txmem",
+     "size": 2,
+     "section": ".text.fedump_wr_txmem",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fedump_rd_txmem",
+     "size": 2,
+     "section": ".text.fedump_rd_txmem",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fedump_rd_rxmem",
+     "size": 2,
+     "section": ".text.fedump_rd_rxmem",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "tx_nominal_pe_set",
+     "size": 150,
+     "section": ".text.tx_nominal_pe_set",
+     "exported": true,
+     "mmio": [
+      "0x600a4c90",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "phy_11ax_tx_set",
+     "size": 58,
+     "section": ".text.phy_11ax_tx_set",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "get_hetb_reg",
+     "size": 210,
+     "section": ".text.get_hetb_reg",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "phy_11ax_tx_mode",
+     "size": 796,
+     "section": ".text.phy_11ax_tx_mode",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a4494",
+      "0x600a44c4",
+      "0x600a44c8",
+      "0x600a44cc",
+      "0x600a44d0",
+      "0x600a44d4"
+     ]
+    },
+    {
+     "name": "phy_11ax_rx_set",
+     "size": 56,
+     "section": ".text.phy_11ax_rx_set",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a4038"
+     ]
+    },
+    {
+     "name": "loop_mode_set",
+     "size": 202,
+     "section": ".text.loop_mode_set",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rxiq_cal_test",
+     "size": 28,
+     "section": ".text.rxiq_cal_test",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "get_cal_iq",
+     "size": 168,
+     "section": ".text.get_cal_iq",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "cpu_reset",
+     "size": 2,
+     "section": ".text.cpu_reset",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "force_rfrx_param",
+     "size": 18,
+     "section": ".text.force_rfrx_param",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rx_max_gain",
+     "size": 28,
+     "section": ".text.rx_max_gain",
+     "exported": true,
+     "mmio": [
+      "0x600a2850",
+      "0x600a3000",
+      "0x600a7000",
+      "0x600a702c"
+     ]
+    },
+    {
+     "name": "force_tx_seed",
+     "size": 44,
+     "section": ".text.force_tx_seed",
+     "exported": true,
+     "mmio": [
+      "0x600a7000",
+      "0x600a7400"
+     ]
+    },
+    {
+     "name": "freq_stable_test",
+     "size": 268,
+     "section": ".text.freq_stable_test",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rx_spur_cal",
+     "size": 400,
+     "section": ".text.rx_spur_cal",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "xtal_spur_cal",
+     "size": 140,
+     "section": ".text.xtal_spur_cal",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "read_pkdet_original",
+     "size": 124,
+     "section": ".text.read_pkdet_original",
+     "exported": true,
+     "mmio": [
+      "0x600a0c50",
+      "0x600a1000"
+     ]
+    },
+    {
+     "name": "pwdet_debug_test",
+     "size": 282,
+     "section": ".text.pwdet_debug_test",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a041c",
+      "0x600a0428"
+     ]
+    },
+    {
+     "name": "mem_read_test",
+     "size": 38,
+     "section": ".text.mem_read_test",
+     "exported": true,
+     "mmio": [
+      "0x600ae000",
+      "0x600af000",
+      "0x600af038"
+     ]
+    },
+    {
+     "name": "pbus_xpd_txon_test",
+     "size": 146,
+     "section": ".text.pbus_xpd_txon_test",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "phy_sdm_cal_check",
+     "size": 320,
+     "section": ".text.phy_sdm_cal_check",
+     "exported": true,
+     "mmio": [
+      "0x600ad800",
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "phy_sdm_start_cal_1p1",
+     "size": 78,
+     "section": ".text.phy_sdm_start_cal_1p1",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "phy_sdm_read_code",
+     "size": 182,
+     "section": ".text.phy_sdm_read_code",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "phy_sar_vol_1p1",
+     "size": 104,
+     "section": ".text.phy_sar_vol_1p1",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "phy_force_txon_test",
+     "size": 162,
+     "section": ".text.phy_force_txon_test",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "set_dump_mode",
+     "size": 42,
+     "section": ".text.set_dump_mode",
+     "exported": true,
+     "mmio": [
+      "0x600a08cc",
+      "0x600a1000",
+      "0x600a7000",
+      "0x600a70b8"
+     ]
+    },
+    {
+     "name": "print_dump_data",
+     "size": 238,
+     "section": ".text.print_dump_data",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "loop_dump_test",
+     "size": 272,
+     "section": ".text.loop_dump_test",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "phy_dumptone_test",
+     "size": 224,
+     "section": ".text.phy_dumptone_test",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "phy_sigrssi_rx_frame",
+     "size": 118,
+     "section": ".text.phy_sigrssi_rx_frame",
+     "exported": true,
+     "mmio": [
+      "0x600a4c48",
+      "0x600a4c4c",
+      "0x600a5000",
+      "0x600ad800",
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "phy_check_rssi_20m",
+     "size": 94,
+     "section": ".text.phy_check_rssi_20m",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "phy_check_rssi_1m",
+     "size": 426,
+     "section": ".text.phy_check_rssi_1m",
+     "exported": true,
+     "mmio": [
+      "0x600a1000",
+      "0x600a1010",
+      "0x600a1100",
+      "0x600a110c",
+      "0x600a1110",
+      "0x600a1508",
+      "0x600a1650",
+      "0x600a2000",
+      "0x600a2010",
+      "0x600a2088",
+      "0x600a2090",
+      "0x600a20b8",
+      "0x600a20d4",
+      "0x600a20d8"
+     ]
+    },
+    {
+     "name": "phy_check_rssi_freq_set",
+     "size": 2,
+     "section": ".text.phy_check_rssi_freq_set",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "phy_check_rssi",
+     "size": 54,
+     "section": ".text.phy_check_rssi",
+     "exported": true,
+     "mmio": [
+      "0x600a4ca8",
+      "0x600a4dd8",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "fft_dump_init",
+     "size": 558,
+     "section": ".text.fft_dump_init",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a4098",
+      "0x600a4c48",
+      "0x600a4c4c",
+      "0x600a5000",
+      "0x600a5c00",
+      "0x600a5c04",
+      "0x600a5d00",
+      "0x600a6000",
+      "0x600a7000",
+      "0x600a7008",
+      "0x600a700c",
+      "0x600a7010",
+      "0x600a7030",
+      "0x600a7094",
+      "0x600a70c4",
+      "0x600a70ec",
+      "0x600a7150",
+      "0x600a7880",
+      "0x600a7884",
+      "0x600a790c",
+      "0x600a7ca8",
+      "0x600a8000",
+      "0x600ad800",
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "ble_freq_offset_test",
+     "size": 184,
+     "section": ".text.ble_freq_offset_test",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a001c",
+      "0x600a0030",
+      "0x600a0044",
+      "0x600a2000",
+      "0x600a2170"
+     ]
+    }
+   ],
+   "calls": [
+    [
+     "bt_rx_force",
+     "ets_delay_us"
+    ],
+    [
+     "fft_dump_init",
+     "phy_linear_to_db"
+    ],
+    [
+     "fft_dump_init",
+     "phy_printf"
+    ],
+    [
+     "force_iq_set",
+     "phy_printf"
+    ],
+    [
+     "force_rfrx_param",
+     "phy_param"
+    ],
+    [
+     "force_rx_gain",
+     "bt_rx_force"
+    ],
+    [
+     "force_rx_gain",
+     "ets_delay_us"
+    ],
+    [
+     "force_rx_gain",
+     "phy_dis_hw_set_freq_new"
+    ],
+    [
+     "force_rx_gain",
+     "phy_en_hw_set_freq"
+    ],
+    [
+     "freq_stable_test",
+     "GetStopCmd"
+    ],
+    [
+     "freq_stable_test",
+     "ets_delay_us"
+    ],
+    [
+     "freq_stable_test",
+     "force_txon_mode"
+    ],
+    [
+     "freq_stable_test",
+     "phy_band_change"
+    ],
+    [
+     "freq_stable_test",
+     "phy_param"
+    ],
+    [
+     "freq_stable_test",
+     "phy_set_freq_sw_start"
+    ],
+    [
+     "freq_stable_test",
+     "phy_set_rf_freq_offset"
+    ],
+    [
+     "freq_stable_test",
+     "phy_start_tx_tone_step"
+    ],
+    [
+     "get_cal_iq",
+     "phy_freq_to_index"
+    ],
+    [
+     "get_cal_iq",
+     "phy_param"
+    ],
+    [
+     "get_cal_iq",
+     "phy_printf"
+    ],
+    [
+     "get_hetb_reg",
+     "memcpy"
+    ],
+    [
+     "loop_dump_test",
+     "WifiTxStart_org"
+    ],
+    [
+     "loop_dump_test",
+     "adctrig"
+    ],
+    [
+     "loop_dump_test",
+     "ets_delay_us"
+    ],
+    [
+     "loop_dump_test",
+     "phy_chip_set_chan"
+    ],
+    [
+     "loop_dump_test",
+     "phy_pbus_print"
+    ],
+    [
+     "loop_dump_test",
+     "phy_pbus_workmode"
+    ],
+    [
+     "loop_dump_test",
+     "phy_pbus_xpd_dpd_path"
+    ],
+    [
+     "loop_dump_test",
+     "phy_printf"
+    ],
+    [
+     "loop_dump_test",
+     "phy_set_rxclk_en"
+    ],
+    [
+     "loop_dump_test",
+     "phy_set_txclk_en"
+    ],
+    [
+     "loop_dump_test",
+     "print_dump_data"
+    ],
+    [
+     "loop_dump_test",
+     "set_dump_mode"
+    ],
+    [
+     "loop_mode_set",
+     "ets_delay_us"
+    ],
+    [
+     "loop_mode_set",
+     "force_iq_set"
+    ],
+    [
+     "loop_mode_set",
+     "phy_freq_to_index"
+    ],
+    [
+     "loop_mode_set",
+     "phy_loop_clk_en"
+    ],
+    [
+     "loop_mode_set",
+     "phy_param"
+    ],
+    [
+     "loop_mode_set",
+     "phy_pbus_debugmode"
+    ],
+    [
+     "loop_mode_set",
+     "phy_pbus_rx_dco_cal"
+    ],
+    [
+     "loop_mode_set",
+     "phy_set_lb_txiq"
+    ],
+    [
+     "loop_mode_set",
+     "phy_set_loopback_gain"
+    ],
+    [
+     "loop_mode_set",
+     "phy_set_rx_pbus_freq"
+    ],
+    [
+     "mem_read_test",
+     "phy_printf"
+    ],
+    [
+     "pbus_xpd_txon_test",
+     "phy_chip_set_chan_ana"
+    ],
+    [
+     "pbus_xpd_txon_test",
+     "phy_en_pwdet"
+    ],
+    [
+     "pbus_xpd_txon_test",
+     "phy_index_to_txbbgain"
+    ],
+    [
+     "pbus_xpd_txon_test",
+     "phy_param"
+    ],
+    [
+     "pbus_xpd_txon_test",
+     "phy_pbus_debugmode"
+    ],
+    [
+     "pbus_xpd_txon_test",
+     "phy_pbus_force_test"
+    ],
+    [
+     "pbus_xpd_txon_test",
+     "phy_pbus_xpd_tx_on"
+    ],
+    [
+     "pbus_xpd_txon_test",
+     "phy_set_txclk_en"
+    ],
+    [
+     "phy_11ax_tx_mode",
+     "HTsigAddrGet"
+    ],
+    [
+     "phy_11ax_tx_mode",
+     "Hesig1AddrGet"
+    ],
+    [
+     "phy_11ax_tx_mode",
+     "Hesig2AddrGet"
+    ],
+    [
+     "phy_11ax_tx_mode",
+     "Plcp1AddrGet"
+    ],
+    [
+     "phy_11ax_tx_mode",
+     "get_hetb_reg"
+    ],
+    [
+     "phy_11ax_tx_mode",
+     "tx_nominal_pe_set"
+    ],
+    [
+     "phy_11p_set_1",
+     "phy_param"
+    ],
+    [
+     "phy_check_rssi",
+     "phy_check_rssi_1m"
+    ],
+    [
+     "phy_check_rssi",
+     "phy_check_rssi_20m"
+    ],
+    [
+     "phy_check_rssi_1m",
+     "phy_dis_hw_set_freq_new"
+    ],
+    [
+     "phy_check_rssi_1m",
+     "phy_en_hw_set_freq"
+    ],
+    [
+     "phy_check_rssi_1m",
+     "phy_force_pwr_index"
+    ],
+    [
+     "phy_check_rssi_1m",
+     "phy_set_freq_sw_start"
+    ],
+    [
+     "phy_check_rssi_20m",
+     "phy_check_sigrssi_en"
+    ],
+    [
+     "phy_check_rssi_20m",
+     "phy_chip_set_chan"
+    ],
+    [
+     "phy_check_rssi_20m",
+     "phy_param"
+    ],
+    [
+     "phy_check_rssi_20m",
+     "phy_set_freq_sw_start"
+    ],
+    [
+     "phy_check_rssi_20m",
+     "phy_sigrssi_rx_frame"
+    ],
+    [
+     "phy_corr_pwr_sum",
+     "phy_corr_get_pwr"
+    ],
+    [
+     "phy_corr_pwr_sum",
+     "phy_iq_est_disable"
+    ],
+    [
+     "phy_corr_pwr_sum",
+     "phy_iq_est_enable_new"
+    ],
+    [
+     "phy_corr_pwr_sum",
+     "phy_start_tx_tone_step"
+    ],
+    [
+     "phy_dig_ldo_cal",
+     "ets_delay_us"
+    ],
+    [
+     "phy_dig_ldo_cal",
+     "phy_get_sar2_vol"
+    ],
+    [
+     "phy_dig_ldo_cal",
+     "phy_i2c_writeReg_Mask"
+    ],
+    [
+     "phy_dig_ldo_cal",
+     "phy_param"
+    ],
+    [
+     "phy_dig_ldo_cal",
+     "phy_printf"
+    ],
+    [
+     "phy_dumptone_test",
+     "ets_delay_us"
+    ],
+    [
+     "phy_dumptone_test",
+     "phy_param"
+    ],
+    [
+     "phy_dumptone_test",
+     "phy_pbus_clear_reg"
+    ],
+    [
+     "phy_dumptone_test",
+     "phy_pbus_force_test"
+    ],
+    [
+     "phy_dumptone_test",
+     "phy_pbus_xpd_dpd_path"
+    ],
+    [
+     "phy_dumptone_test",
+     "phy_start_tx_tone_step"
+    ],
+    [
+     "phy_dumptone_test",
+     "phy_txbbgain_to_index"
+    ],
+    [
+     "phy_force_txon_test",
+     "GetStopCmd"
+    ],
+    [
+     "phy_force_txon_test",
+     "ets_delay_us"
+    ],
+    [
+     "phy_force_txon_test",
+     "force_txon_mode"
+    ],
+    [
+     "phy_force_txon_test",
+     "phy_restart_cal"
+    ],
+    [
+     "phy_force_txon_test",
+     "phy_start_tx_tone_step"
+    ],
+    [
+     "phy_sar_vol_1p1",
+     "ets_delay_us"
+    ],
+    [
+     "phy_sar_vol_1p1",
+     "phy_get_sar2_vol"
+    ],
+    [
+     "phy_sar_vol_1p1",
+     "phy_i2c_writeReg_Mask"
+    ],
+    [
+     "phy_sar_vol_1p1",
+     "phy_printf"
+    ],
+    [
+     "phy_sdm_cal_check",
+     "phy_i2c_readReg_Mask"
+    ],
+    [
+     "phy_sdm_cal_check",
+     "phy_printf"
+    ],
+    [
+     "phy_sdm_cal_check",
+     "phy_restart_cal"
+    ],
+    [
+     "phy_sdm_read_code",
+     "phy_i2c_readReg_Mask"
+    ],
+    [
+     "phy_sdm_read_code",
+     "phy_printf"
+    ],
+    [
+     "phy_sdm_start_cal_1p1",
+     "ets_delay_us"
+    ],
+    [
+     "phy_sdm_start_cal_1p1",
+     "phy_i2c_writeReg_Mask"
+    ],
+    [
+     "phy_sdm_start_cal_1p1",
+     "phy_restart_cal"
+    ],
+    [
+     "phy_sigrssi_rx_frame",
+     "ets_delay_us"
+    ],
+    [
+     "phy_sigrssi_rx_frame",
+     "phy_get_sigrssi"
+    ],
+    [
+     "print_dump_data",
+     "phy_printf"
+    ],
+    [
+     "pwdet_debug_test",
+     "ets_delay_us"
+    ],
+    [
+     "pwdet_debug_test",
+     "phy_printf"
+    ],
+    [
+     "pwdet_debug_test",
+     "phy_pwdet_tone_start"
+    ],
+    [
+     "pwdet_debug_test",
+     "phy_read_sar_dout"
+    ],
+    [
+     "pwdet_debug_test",
+     "phy_txcal_debuge_mode_new"
+    ],
+    [
+     "pwdet_debug_test",
+     "phy_txcal_work_mode"
+    ],
+    [
+     "read_pkdet_original",
+     "phy_printf"
+    ],
+    [
+     "rx_spur_cal",
+     "ets_delay_us"
+    ],
+    [
+     "rx_spur_cal",
+     "force_rx_gain"
+    ],
+    [
+     "rx_spur_cal",
+     "phy_adc_rate_set"
+    ],
+    [
+     "rx_spur_cal",
+     "phy_chip_set_chan"
+    ],
+    [
+     "rx_spur_cal",
+     "phy_i2c_readReg_Mask"
+    ],
+    [
+     "rx_spur_cal",
+     "phy_i2c_writeReg_Mask"
+    ],
+    [
+     "rx_spur_cal",
+     "phy_printf"
+    ],
+    [
+     "rx_spur_cal",
+     "phy_start_tx_tone_step"
+    ],
+    [
+     "rx_spur_cal",
+     "rxiq_get_pwr"
+    ],
+    [
+     "rxiq_cal_test",
+     "phy_rxiq_cover_mg_mp"
+    ],
+    [
+     "rxiq_get_pwr",
+     "phy_iq_est_disable"
+    ],
+    [
+     "rxiq_get_pwr",
+     "phy_iq_est_enable_new"
+    ],
+    [
+     "rxiq_get_pwr",
+     "phy_set_rxclk_en"
+    ],
+    [
+     "rxiq_get_pwr",
+     "phy_set_txclk_en"
+    ],
+    [
+     "start_tx_tone",
+     "phy_start_tx_tone_step"
+    ],
+    [
+     "tx_pwr_backoff",
+     "phy_meas_tone_pwr_db"
+    ],
+    [
+     "tx_pwr_backoff",
+     "phy_param"
+    ],
+    [
+     "tx_pwr_backoff",
+     "phy_rfcal_pwrctrl"
+    ],
+    [
+     "txdc_delta_max",
+     "phy_abs_temp"
+    ],
+    [
+     "txdc_stable_sub",
+     "ets_delay_us"
+    ],
+    [
+     "txdc_stable_sub",
+     "phy_pbus_debugmode"
+    ],
+    [
+     "txdc_stable_sub",
+     "phy_pbus_force_test"
+    ],
+    [
+     "txdc_stable_sub",
+     "phy_pbus_rd"
+    ],
+    [
+     "txdc_stable_sub",
+     "phy_pbus_workmode"
+    ],
+    [
+     "txdc_stable_sub",
+     "phy_pbus_xpd_rx_on"
+    ],
+    [
+     "txdc_stable_sub",
+     "phy_pbus_xpd_tx_on"
+    ],
+    [
+     "txdc_stable_sub",
+     "phy_printf"
+    ],
+    [
+     "txdc_stable_sub",
+     "phy_txdc_cal"
+    ],
+    [
+     "txdc_stable_sub",
+     "txdc_delta_max"
+    ],
+    [
+     "txdc_stable_test",
+     "phy_printf"
+    ],
+    [
+     "txdc_stable_test",
+     "txdc_delta_max"
+    ],
+    [
+     "txdc_stable_test",
+     "txdc_stable_sub"
+    ],
+    [
+     "xtal_spur_cal",
+     "phy_printf"
+    ],
+    [
+     "xtal_spur_cal",
+     "rx_spur_cal"
+    ]
+   ]
+  },
+  {
+   "name": "esp_phy_api.o",
+   "machine": 243,
+   "functions": [
+    {
+     "name": "esp_phy_rftest_config",
+     "size": 8,
+     "section": ".text.esp_phy_rftest_config",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_phy_rftest_init",
+     "size": 8,
+     "section": ".text.esp_phy_rftest_init",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_phy_tx_contin_en",
+     "size": 8,
+     "section": ".text.esp_phy_tx_contin_en",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_phy_cbw40m_en",
+     "size": 8,
+     "section": ".text.esp_phy_cbw40m_en",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_phy_wifi_tx",
+     "size": 34,
+     "section": ".text.esp_phy_wifi_tx",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_phy_wifi_rx",
+     "size": 24,
+     "section": ".text.esp_phy_wifi_rx",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_phy_get_rx_result",
+     "size": 34,
+     "section": ".text.esp_phy_get_rx_result",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_phy_wifi_tx_tone",
+     "size": 26,
+     "section": ".text.esp_phy_wifi_tx_tone",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_phy_short_gi_en",
+     "size": 26,
+     "section": ".text.esp_phy_short_gi_en",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_phy_11ax_tx_set",
+     "size": 34,
+     "section": ".text.esp_phy_11ax_tx_set",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_phy_ble_tx",
+     "size": 8,
+     "section": ".text.esp_phy_ble_tx",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_phy_ble_rx",
+     "size": 8,
+     "section": ".text.esp_phy_ble_rx",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_phy_bt_tx_tone",
+     "size": 10,
+     "section": ".text.esp_phy_bt_tx_tone",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_phy_zb_tx",
+     "size": 10,
+     "section": ".text.esp_phy_zb_tx",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_phy_zb_rx",
+     "size": 8,
+     "section": ".text.esp_phy_zb_rx",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_phy_zb_tx_tone",
+     "size": 10,
+     "section": ".text.esp_phy_zb_tx_tone",
+     "exported": true,
+     "mmio": []
+    }
+   ],
+   "calls": [
+    [
+     "esp_phy_11ax_tx_set",
+     "phy_11ax_tx_set"
+    ],
+    [
+     "esp_phy_ble_rx",
+     "esp_ble_rx_func"
+    ],
+    [
+     "esp_phy_ble_tx",
+     "esp_ble_tx_func"
+    ],
+    [
+     "esp_phy_bt_tx_tone",
+     "bt_zb_tx_tone"
+    ],
+    [
+     "esp_phy_cbw40m_en",
+     "cbw40m_en"
+    ],
+    [
+     "esp_phy_get_rx_result",
+     "esp_rx_result"
+    ],
+    [
+     "esp_phy_get_rx_result",
+     "esp_rx_valid"
+    ],
+    [
+     "esp_phy_rftest_config",
+     "idf_enable"
+    ],
+    [
+     "esp_phy_rftest_init",
+     "rftest_init"
+    ],
+    [
+     "esp_phy_short_gi_en",
+     "phy_printf"
+    ],
+    [
+     "esp_phy_short_gi_en",
+     "short_gi_enable"
+    ],
+    [
+     "esp_phy_tx_contin_en",
+     "tx_contin_en"
+    ],
+    [
+     "esp_phy_wifi_rx",
+     "esp_rx_func"
+    ],
+    [
+     "esp_phy_wifi_tx",
+     "esp_tx_func"
+    ],
+    [
+     "esp_phy_wifi_tx_tone",
+     "wifiscwout"
+    ],
+    [
+     "esp_phy_zb_rx",
+     "zb_rx"
+    ],
+    [
+     "esp_phy_zb_tx",
+     "zb_tx"
+    ],
+    [
+     "esp_phy_zb_tx_tone",
+     "bt_zb_tx_tone"
+    ]
+   ]
+  },
+  {
+   "name": "bb_common.o",
+   "machine": 243,
+   "functions": [
+    {
+     "name": "delay_ns",
+     "size": 2,
+     "section": ".text.delay_ns",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "tx_add_pocketnum",
+     "size": 20,
+     "section": ".text.tx_add_pocketnum",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "trig_tx_frame",
+     "size": 148,
+     "section": ".text.trig_tx_frame",
+     "exported": true,
+     "mmio": [
+      "0x600a4c40",
+      "0x600a4c48",
+      "0x600a4c4c",
+      "0x600a5000",
+      "0x600ad800",
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "tx_a_frame",
+     "size": 288,
+     "section": ".text.tx_a_frame",
+     "exported": true,
+     "mmio": [
+      "0x600a4c40",
+      "0x600a4c48",
+      "0x600a4c4c",
+      "0x600a5000",
+      "0x600a7c08",
+      "0x600a8000",
+      "0x600ad800",
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "set_tx_rate",
+     "size": 318,
+     "section": ".text.set_tx_rate",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "phy_txiq_track",
+     "size": 174,
+     "section": ".text.phy_txiq_track",
+     "exported": true,
+     "mmio": [
+      "0x600ad800",
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "test_tx_frame",
+     "size": 160,
+     "section": ".text.test_tx_frame",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "set_mac_filter",
+     "size": 76,
+     "section": ".text.set_mac_filter",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a4004",
+      "0x600a405c",
+      "0x600a4060",
+      "0x600a40dc",
+      "0x600a40e0",
+      "0x600a40e4"
+     ]
+    },
+    {
+     "name": "get_rxctrl_addr",
+     "size": 38,
+     "section": ".text.get_rxctrl_addr",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a407c",
+      "0x600a4090",
+      "0x600a4c70",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "phy_get_rx_freq_phi",
+     "size": 46,
+     "section": ".text.phy_get_rx_freq_phi",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "get_rx_freq_local",
+     "size": 56,
+     "section": ".text.get_rx_freq_local",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "get_rx_data_addr",
+     "size": 8,
+     "section": ".text.get_rx_data_addr",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_get_rx_result",
+     "size": 30,
+     "section": ".text.esp_get_rx_result",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "do_rx_poll",
+     "size": 1840,
+     "section": ".text.do_rx_poll",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a407c",
+      "0x600a4090",
+      "0x600a40a8",
+      "0x600a40ac",
+      "0x600a40b0",
+      "0x600a4800",
+      "0x600a4c48",
+      "0x600a4c4c",
+      "0x600a4c70",
+      "0x600a5000",
+      "0x600a7000",
+      "0x600a706c",
+      "0x600ad800",
+      "0x600ad804",
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "beacon_print",
+     "size": 382,
+     "section": ".text.beacon_print",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a40a8",
+      "0x600a40ac",
+      "0x600a40b0",
+      "0x600a4800",
+      "0x600a4c48",
+      "0x600a4c4c",
+      "0x600a5000",
+      "0x600a7000",
+      "0x600a7018",
+      "0x600ad800",
+      "0x600ad804",
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "rx_data_check",
+     "size": 190,
+     "section": ".text.rx_data_check",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fill_txaddr",
+     "size": 42,
+     "section": ".text.fill_txaddr",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a405c",
+      "0x600a4060"
+     ]
+    },
+    {
+     "name": "read_macaddr_from_otp",
+     "size": 8,
+     "section": ".text.read_macaddr_from_otp",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fill_txdataframe",
+     "size": 626,
+     "section": ".text.fill_txdataframe",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a405c",
+      "0x600a4060"
+     ]
+    },
+    {
+     "name": "fill_txbeacon",
+     "size": 360,
+     "section": ".text.fill_txbeacon",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "setmacaddr",
+     "size": 18,
+     "section": ".text.setmacaddr",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a405c",
+      "0x600a4060"
+     ]
+    },
+    {
+     "name": "settxframe_chipid",
+     "size": 24,
+     "section": ".text.settxframe_chipid",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "settxframe_rate",
+     "size": 46,
+     "section": ".text.settxframe_rate",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "tx_cuntom_type_set",
+     "size": 76,
+     "section": ".text.tx_cuntom_type_set",
+     "exported": true,
+     "mmio": [
+      "0x600a4ca0",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "set_tx_11bg_length",
+     "size": 40,
+     "section": ".text.set_tx_11bg_length",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "get_macaddr",
+     "size": 36,
+     "section": ".text.get_macaddr",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "set_macrxfilter",
+     "size": 96,
+     "section": ".text.set_macrxfilter",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a40d8",
+      "0x600a40dc",
+      "0x600a40e0",
+      "0x600a40e4"
+     ]
+    },
+    {
+     "name": "tx_data_frame",
+     "size": 120,
+     "section": ".text.tx_data_frame",
+     "exported": true,
+     "mmio": [
+      "0x600a4c40",
+      "0x600a4c48",
+      "0x600a4c4c",
+      "0x600a5000",
+      "0x600a5514",
+      "0x600ad800",
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "test_delay_us",
+     "size": 66,
+     "section": ".text.test_delay_us",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "ate_fill_frame",
+     "size": 122,
+     "section": ".text.ate_fill_frame",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a405c",
+      "0x600a4060"
+     ]
+    },
+    {
+     "name": "clear_macrxfilter",
+     "size": 54,
+     "section": ".text.clear_macrxfilter",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a4080",
+      "0x600a40d8",
+      "0x600a40dc",
+      "0x600a40e0",
+      "0x600a40e4"
+     ]
+    },
+    {
+     "name": "ate_print_data_m",
+     "size": 102,
+     "section": ".text.ate_print_data_m",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "tx_ack_start",
+     "size": 498,
+     "section": ".text.tx_ack_start",
+     "exported": true,
+     "mmio": [
+      "0x600a4000"
+     ]
+    },
+    {
+     "name": "get_split_mac_addr",
+     "size": 38,
+     "section": ".text.get_split_mac_addr",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "tx_ack_init",
+     "size": 300,
+     "section": ".text.tx_ack_init",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a407c",
+      "0x600a4080",
+      "0x600a4c50",
+      "0x600a4c9c",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "ate_txframe_dut",
+     "size": 1720,
+     "section": ".text.ate_txframe_dut",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "set_tx_pwr_index",
+     "size": 78,
+     "section": ".text.set_tx_pwr_index",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a0408"
+     ]
+    },
+    {
+     "name": "tx_ack_test",
+     "size": 112,
+     "section": ".text.tx_ack_test",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "test_txtone_pwr",
+     "size": 222,
+     "section": ".text.test_txtone_pwr",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "get_rx_buffer",
+     "size": 732,
+     "section": ".text.get_rx_buffer",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a4060",
+      "0x600a407c",
+      "0x600a4080",
+      "0x600a40d8",
+      "0x600a40dc",
+      "0x600a40e0",
+      "0x600a40e4",
+      "0x600ad800",
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "test_noise_floor",
+     "size": 92,
+     "section": ".text.test_noise_floor",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "ack_rate_tab",
+     "size": 46,
+     "section": ".text.ack_rate_tab",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a444c",
+      "0x600a4450",
+      "0x600a4454"
+     ]
+    },
+    {
+     "name": "ate_rxframe_fb",
+     "size": 708,
+     "section": ".text.ate_rxframe_fb",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a4080",
+      "0x600a40a4",
+      "0x600a4c9c",
+      "0x600a4ca4",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "auto_ack_test",
+     "size": 564,
+     "section": ".text.auto_ack_test",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a407c",
+      "0x600a4080",
+      "0x600a4c9c",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "esp_txrx_test",
+     "size": 158,
+     "section": ".text.esp_txrx_test",
+     "exported": true,
+     "mmio": []
+    }
+   ],
+   "calls": [
+    [
+     "ate_fill_frame",
+     "PSDU0_OFFSET"
+    ],
+    [
+     "ate_fill_frame",
+     "memset"
+    ],
+    [
+     "ate_print_data_m",
+     "phy_printf"
+    ],
+    [
+     "ate_rxframe_fb",
+     "ConfAddrGet"
+    ],
+    [
+     "ate_rxframe_fb",
+     "GetStopCmd"
+    ],
+    [
+     "ate_rxframe_fb",
+     "PSDU0_OFFSET"
+    ],
+    [
+     "ate_rxframe_fb",
+     "Plcp0AddrGet"
+    ],
+    [
+     "ate_rxframe_fb",
+     "ack_rate_tab"
+    ],
+    [
+     "ate_rxframe_fb",
+     "esp_rom_spiflash_read"
+    ],
+    [
+     "ate_rxframe_fb",
+     "get_rxctrl_addr"
+    ],
+    [
+     "ate_rxframe_fb",
+     "phy_chip_set_chan"
+    ],
+    [
+     "ate_rxframe_fb",
+     "phy_force_pwr_index"
+    ],
+    [
+     "ate_rxframe_fb",
+     "phy_get_pwr_index"
+    ],
+    [
+     "ate_rxframe_fb",
+     "phy_param"
+    ],
+    [
+     "ate_rxframe_fb",
+     "phy_printf"
+    ],
+    [
+     "ate_rxframe_fb",
+     "set_macrxfilter"
+    ],
+    [
+     "ate_rxframe_fb",
+     "set_tx_11bg_length"
+    ],
+    [
+     "ate_rxframe_fb",
+     "set_tx_rate"
+    ],
+    [
+     "ate_rxframe_fb",
+     "setmacaddr"
+    ],
+    [
+     "ate_rxframe_fb",
+     "settxframe_chipid"
+    ],
+    [
+     "ate_rxframe_fb",
+     "tx_ack_init"
+    ],
+    [
+     "ate_rxframe_fb",
+     "tx_cuntom_type_set"
+    ],
+    [
+     "ate_txframe_dut",
+     "ConfAddrGet"
+    ],
+    [
+     "ate_txframe_dut",
+     "PSDU0_OFFSET"
+    ],
+    [
+     "ate_txframe_dut",
+     "Plcp0AddrGet"
+    ],
+    [
+     "ate_txframe_dut",
+     "ate_print_data_m"
+    ],
+    [
+     "ate_txframe_dut",
+     "clear_macrxfilter"
+    ],
+    [
+     "ate_txframe_dut",
+     "get_rx_freq_local"
+    ],
+    [
+     "ate_txframe_dut",
+     "get_rxctrl_addr"
+    ],
+    [
+     "ate_txframe_dut",
+     "phy_11ax_array"
+    ],
+    [
+     "ate_txframe_dut",
+     "phy_11ax_tx_mode"
+    ],
+    [
+     "ate_txframe_dut",
+     "phy_11ax_tx_set"
+    ],
+    [
+     "ate_txframe_dut",
+     "phy_chip_set_chan"
+    ],
+    [
+     "ate_txframe_dut",
+     "phy_force_pwr_index"
+    ],
+    [
+     "ate_txframe_dut",
+     "phy_get_pwr_index"
+    ],
+    [
+     "ate_txframe_dut",
+     "phy_param"
+    ],
+    [
+     "ate_txframe_dut",
+     "phy_printf"
+    ],
+    [
+     "ate_txframe_dut",
+     "set_tx_11bg_length"
+    ],
+    [
+     "ate_txframe_dut",
+     "set_tx_rate"
+    ],
+    [
+     "ate_txframe_dut",
+     "test_pocket_type"
+    ],
+    [
+     "ate_txframe_dut",
+     "tx_ack_init"
+    ],
+    [
+     "ate_txframe_dut",
+     "tx_data_frame"
+    ],
+    [
+     "ate_txframe_dut",
+     "uart_tx_wait_idle"
+    ],
+    [
+     "auto_ack_test",
+     "GetStopCmd"
+    ],
+    [
+     "auto_ack_test",
+     "ack_rate_tab"
+    ],
+    [
+     "auto_ack_test",
+     "get_rxctrl_addr"
+    ],
+    [
+     "auto_ack_test",
+     "phy_force_pwr_index"
+    ],
+    [
+     "auto_ack_test",
+     "phy_get_pwr_index"
+    ],
+    [
+     "auto_ack_test",
+     "phy_printf"
+    ],
+    [
+     "auto_ack_test",
+     "set_macrxfilter"
+    ],
+    [
+     "auto_ack_test",
+     "setmacaddr"
+    ],
+    [
+     "beacon_print",
+     "get_rxctrl_addr"
+    ],
+    [
+     "beacon_print",
+     "phy_printf"
+    ],
+    [
+     "beacon_print",
+     "set_mac_filter"
+    ],
+    [
+     "do_rx_poll",
+     "GetStopCmd"
+    ],
+    [
+     "do_rx_poll",
+     "ets_delay_us"
+    ],
+    [
+     "do_rx_poll",
+     "flash_test_run"
+    ],
+    [
+     "do_rx_poll",
+     "get_rx_freq_local"
+    ],
+    [
+     "do_rx_poll",
+     "phy_printf"
+    ],
+    [
+     "do_rx_poll",
+     "phy_read_hw_noisefloor"
+    ],
+    [
+     "do_rx_poll",
+     "phy_rxevm_calcu"
+    ],
+    [
+     "do_rx_poll",
+     "phy_vht_support"
+    ],
+    [
+     "esp_txrx_test",
+     "auto_ack_test"
+    ],
+    [
+     "esp_txrx_test",
+     "phy_11ac_enable"
+    ],
+    [
+     "esp_txrx_test",
+     "target_power_backoff"
+    ],
+    [
+     "esp_txrx_test",
+     "tx_ack_test"
+    ],
+    [
+     "fill_txaddr",
+     "phy_get_mac_addr"
+    ],
+    [
+     "fill_txbeacon",
+     "fill_txaddr"
+    ],
+    [
+     "fill_txbeacon",
+     "fill_txdataframe"
+    ],
+    [
+     "fill_txdataframe",
+     "ConfAddrGet"
+    ],
+    [
+     "fill_txdataframe",
+     "PSDU0_OFFSET"
+    ],
+    [
+     "fill_txdataframe",
+     "Plcp0AddrGet"
+    ],
+    [
+     "fill_txdataframe",
+     "TXBUF_START"
+    ],
+    [
+     "fill_txdataframe",
+     "fill_tx_frame"
+    ],
+    [
+     "get_macaddr",
+     "phy_get_mac_addr"
+    ],
+    [
+     "get_rx_buffer",
+     "GetStopCmd"
+    ],
+    [
+     "get_rx_buffer",
+     "get_rxctrl_addr"
+    ],
+    [
+     "get_rx_buffer",
+     "phy_get_rx_freq"
+    ],
+    [
+     "get_rx_buffer",
+     "phy_printf"
+    ],
+    [
+     "get_rx_data_addr",
+     "get_rxctrl_addr"
+    ],
+    [
+     "get_rx_freq_local",
+     "get_rxctrl_addr"
+    ],
+    [
+     "get_rx_freq_local",
+     "phy_get_rx_freq"
+    ],
+    [
+     "phy_txiq_track",
+     "fcc_mode_sel"
+    ],
+    [
+     "phy_txiq_track",
+     "phy_param"
+    ],
+    [
+     "phy_txiq_track",
+     "phy_printf"
+    ],
+    [
+     "phy_txiq_track",
+     "phy_txiq_cal_init"
+    ],
+    [
+     "read_macaddr_from_otp",
+     "phy_get_mac_addr"
+    ],
+    [
+     "set_tx_11bg_length",
+     "Plcp1AddrGet"
+    ],
+    [
+     "set_tx_pwr_index",
+     "phy_get_target_pwr"
+    ],
+    [
+     "set_tx_rate",
+     "HT40LenAddrGet"
+    ],
+    [
+     "set_tx_rate",
+     "HTsigAddrGet"
+    ],
+    [
+     "set_tx_rate",
+     "Plcp1AddrGet"
+    ],
+    [
+     "set_tx_rate",
+     "Vhtsig1AddrGet"
+    ],
+    [
+     "set_tx_rate",
+     "phy_11ac_enable"
+    ],
+    [
+     "test_delay_us",
+     "ets_delay_us"
+    ],
+    [
+     "test_noise_floor",
+     "GetStopCmd"
+    ],
+    [
+     "test_noise_floor",
+     "ets_delay_us"
+    ],
+    [
+     "test_noise_floor",
+     "phy_chip_set_chan"
+    ],
+    [
+     "test_noise_floor",
+     "phy_printf"
+    ],
+    [
+     "test_noise_floor",
+     "phy_read_hw_noisefloor"
+    ],
+    [
+     "test_tx_frame",
+     "ets_delay_us"
+    ],
+    [
+     "test_tx_frame",
+     "phy_i2c_correct"
+    ],
+    [
+     "test_tx_frame",
+     "phy_param"
+    ],
+    [
+     "test_tx_frame",
+     "phy_tx_pwctrl_background"
+    ],
+    [
+     "test_tx_frame",
+     "set_tx_rate"
+    ],
+    [
+     "test_tx_frame",
+     "tx_a_frame"
+    ],
+    [
+     "test_txtone_pwr",
+     "ets_delay_us"
+    ],
+    [
+     "test_txtone_pwr",
+     "phy_get_power_db"
+    ],
+    [
+     "test_txtone_pwr",
+     "phy_param"
+    ],
+    [
+     "test_txtone_pwr",
+     "phy_printf"
+    ],
+    [
+     "test_txtone_pwr",
+     "phy_start_tx_tone_step"
+    ],
+    [
+     "test_txtone_pwr",
+     "phy_stop_tx_tone"
+    ],
+    [
+     "test_txtone_pwr",
+     "phy_txcal_debuge_mode_new"
+    ],
+    [
+     "test_txtone_pwr",
+     "phy_txcal_work_mode"
+    ],
+    [
+     "trig_tx_frame",
+     "ConfAddrGet"
+    ],
+    [
+     "trig_tx_frame",
+     "Plcp0AddrGet"
+    ],
+    [
+     "tx_a_frame",
+     "ConfAddrGet"
+    ],
+    [
+     "tx_a_frame",
+     "Plcp0AddrGet"
+    ],
+    [
+     "tx_a_frame",
+     "flash_test_run"
+    ],
+    [
+     "tx_a_frame",
+     "phy_printf"
+    ],
+    [
+     "tx_a_frame",
+     "tx_contin_fcc_en"
+    ],
+    [
+     "tx_ack_init",
+     "FillTxPacket"
+    ],
+    [
+     "tx_ack_init",
+     "HTsigAddrGet"
+    ],
+    [
+     "tx_ack_init",
+     "get_split_mac_addr"
+    ],
+    [
+     "tx_ack_init",
+     "set_macrxfilter"
+    ],
+    [
+     "tx_ack_init",
+     "setmacaddr"
+    ],
+    [
+     "tx_ack_init",
+     "test_sta_mac"
+    ],
+    [
+     "tx_ack_start",
+     "ConfAddrGet"
+    ],
+    [
+     "tx_ack_start",
+     "Plcp0AddrGet"
+    ],
+    [
+     "tx_ack_start",
+     "ets_delay_us"
+    ],
+    [
+     "tx_ack_start",
+     "phy_11ax_array"
+    ],
+    [
+     "tx_ack_start",
+     "phy_11ax_tx_mode"
+    ],
+    [
+     "tx_ack_start",
+     "set_rate_power"
+    ],
+    [
+     "tx_ack_start",
+     "set_tx_rate"
+    ],
+    [
+     "tx_ack_start",
+     "target_power_backoff"
+    ],
+    [
+     "tx_ack_start",
+     "tx_add_pocketnum"
+    ],
+    [
+     "tx_ack_start",
+     "tx_data_frame"
+    ],
+    [
+     "tx_ack_test",
+     "phy_printf"
+    ],
+    [
+     "tx_ack_test",
+     "tx_ack_init"
+    ],
+    [
+     "tx_ack_test",
+     "tx_ack_start"
+    ],
+    [
+     "tx_add_pocketnum",
+     "PSDU0_OFFSET"
+    ],
+    [
+     "tx_cuntom_type_set",
+     "test_pocket_type"
+    ],
+    [
+     "tx_data_frame",
+     "Plcp0AddrGet"
+    ]
+   ]
+  },
+  {
+   "name": "crypto_common.o",
+   "machine": 243,
+   "functions": [
+    {
+     "name": "crypto_disable",
+     "size": 14,
+     "section": ".text.crypto_disable",
+     "exported": true,
+     "mmio": [
+      "0x600a4800",
+      "0x600a4814",
+      "0x600a5000"
+     ]
+    }
+   ],
+   "calls": []
+  },
+  {
+   "name": "mac_common.o",
+   "machine": 243,
+   "functions": [
+    {
+     "name": "mac_write",
+     "size": 4,
+     "section": ".text.mac_write",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "mac_read",
+     "size": 4,
+     "section": ".text.mac_read",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "mac_buffer_get",
+     "size": 170,
+     "section": ".text.mac_buffer_get",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "DurAddrGet",
+     "size": 36,
+     "section": ".text.DurAddrGet",
+     "exported": true,
+     "mmio": [
+      "0x600a5000",
+      "0x600a54ec"
+     ]
+    },
+    {
+     "name": "RealQGet",
+     "size": 28,
+     "section": ".text.RealQGet",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "Conf1AddrGet",
+     "size": 36,
+     "section": ".text.Conf1AddrGet",
+     "exported": true,
+     "mmio": [
+      "0x600a4d64",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "Conf2AddrGet",
+     "size": 36,
+     "section": ".text.Conf2AddrGet",
+     "exported": true,
+     "mmio": [
+      "0x600a4d60",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "Vhtsig1AddrGet",
+     "size": 36,
+     "section": ".text.Vhtsig1AddrGet",
+     "exported": true,
+     "mmio": [
+      "0x600a5000",
+      "0x600a54c4"
+     ]
+    },
+    {
+     "name": "Vhtsig2AddrGet",
+     "size": 36,
+     "section": ".text.Vhtsig2AddrGet",
+     "exported": true,
+     "mmio": [
+      "0x600a5000",
+      "0x600a54c8"
+     ]
+    },
+    {
+     "name": "Hesig1AddrGet",
+     "size": 36,
+     "section": ".text.Hesig1AddrGet",
+     "exported": true,
+     "mmio": [
+      "0x600a5000",
+      "0x600a54cc"
+     ]
+    },
+    {
+     "name": "Hesig2AddrGet",
+     "size": 36,
+     "section": ".text.Hesig2AddrGet",
+     "exported": true,
+     "mmio": [
+      "0x600a5000",
+      "0x600a54d0"
+     ]
+    },
+    {
+     "name": "PakagenumAddrGet",
+     "size": 36,
+     "section": ".text.PakagenumAddrGet",
+     "exported": true,
+     "mmio": [
+      "0x600a5000",
+      "0x600a54dc"
+     ]
+    },
+    {
+     "name": "ThresholdAddrGet",
+     "size": 36,
+     "section": ".text.ThresholdAddrGet",
+     "exported": true,
+     "mmio": [
+      "0x600a5000",
+      "0x600a54b4"
+     ]
+    },
+    {
+     "name": "Plcp0AddrGet",
+     "size": 36,
+     "section": ".text.Plcp0AddrGet",
+     "exported": true,
+     "mmio": [
+      "0x600a4d6c",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "Plcp1AddrGet",
+     "size": 36,
+     "section": ".text.Plcp1AddrGet",
+     "exported": true,
+     "mmio": [
+      "0x600a5000",
+      "0x600a54b0"
+     ]
+    },
+    {
+     "name": "HT40LenAddrGet",
+     "size": 36,
+     "section": ".text.HT40LenAddrGet",
+     "exported": true,
+     "mmio": [
+      "0x600a5000",
+      "0x600a54e4"
+     ]
+    },
+    {
+     "name": "HTsigAddrGet",
+     "size": 36,
+     "section": ".text.HTsigAddrGet",
+     "exported": true,
+     "mmio": [
+      "0x600a5000",
+      "0x600a54c0"
+     ]
+    },
+    {
+     "name": "HT40LENAddrGet",
+     "size": 36,
+     "section": ".text.HT40LENAddrGet",
+     "exported": true,
+     "mmio": [
+      "0x600a5000",
+      "0x600a54e4"
+     ]
+    },
+    {
+     "name": "ConfAddrGet",
+     "size": 36,
+     "section": ".text.ConfAddrGet",
+     "exported": true,
+     "mmio": [
+      "0x600a4d68",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "BackOffCountGet",
+     "size": 124,
+     "section": ".text.BackOffCountGet",
+     "exported": true,
+     "mmio": [
+      "0x600a4cf8",
+      "0x600a4d08",
+      "0x600a4d18",
+      "0x600a4d28",
+      "0x600a4d38",
+      "0x600a4d48",
+      "0x600a4d58",
+      "0x600a4d68",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "fill_tx_frame",
+     "size": 920,
+     "section": ".text.fill_tx_frame",
+     "exported": true,
+     "mmio": [
+      "0x600a4c8c",
+      "0x600a4d68",
+      "0x600a4d6c",
+      "0x600a5000",
+      "0x600a54b0",
+      "0x600a54c0",
+      "0x600a54c8",
+      "0x600a54d0",
+      "0x600a54e4"
+     ]
+    },
+    {
+     "name": "rx_buffer_init",
+     "size": 112,
+     "section": ".text.rx_buffer_init",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a4080",
+      "0x600a4084"
+     ]
+    },
+    {
+     "name": "rx_link_des",
+     "size": 28,
+     "section": ".text.rx_link_des",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a4080"
+     ]
+    },
+    {
+     "name": "rx_buffer_ena",
+     "size": 20,
+     "section": ".text.rx_buffer_ena",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a4080"
+     ]
+    },
+    {
+     "name": "rx_ampdu_buffer_fresh",
+     "size": 94,
+     "section": ".text.rx_ampdu_buffer_fresh",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rx_ampdu_buffer_init",
+     "size": 34,
+     "section": ".text.rx_ampdu_buffer_init",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a4084"
+     ]
+    },
+    {
+     "name": "rx_ampdu_entry_fresh",
+     "size": 90,
+     "section": ".text.rx_ampdu_entry_fresh",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rx_ampdu_entry_init",
+     "size": 8,
+     "section": ".text.rx_ampdu_entry_init",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rx_ampdu_entrysd_fresh",
+     "size": 90,
+     "section": ".text.rx_ampdu_entrysd_fresh",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rx_ampdu_entrysd_init",
+     "size": 8,
+     "section": ".text.rx_ampdu_entrysd_init",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "mac_init",
+     "size": 356,
+     "section": ".text.mac_init",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a405c",
+      "0x600a4060",
+      "0x600a407c",
+      "0x600a40d8",
+      "0x600a40dc",
+      "0x600a40e0",
+      "0x600a40e4",
+      "0x600a4c24",
+      "0x600a4c40",
+      "0x600a4c5c",
+      "0x600a4c8c",
+      "0x600a4d68",
+      "0x600a4dd8",
+      "0x600a4ddc",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "adctrig",
+     "size": 1406,
+     "section": ".text.adctrig",
+     "exported": true,
+     "mmio": [
+      "0x60095000",
+      "0x60095004",
+      "0x600a0800",
+      "0x600a1000",
+      "0x600a2000",
+      "0x600a20ac",
+      "0x600a20b4",
+      "0x600a4e38",
+      "0x600a5000",
+      "0x600a7000",
+      "0x600a702c",
+      "0x600a9000",
+      "0x600a9004",
+      "0x600a9008",
+      "0x600a9018",
+      "0x600a9c04",
+      "0x600aa000",
+      "0x600ad800",
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "dactrig",
+     "size": 94,
+     "section": ".text.dactrig",
+     "exported": true,
+     "mmio": []
+    }
+   ],
+   "calls": [
+    [
+     "adctrig",
+     "ble_rx_start"
+    ],
+    [
+     "adctrig",
+     "ets_delay_us"
+    ],
+    [
+     "adctrig",
+     "phy_disable_cca"
+    ],
+    [
+     "adctrig",
+     "phy_enable_cca"
+    ],
+    [
+     "adctrig",
+     "phy_param"
+    ],
+    [
+     "adctrig",
+     "phy_pbus_clear_reg"
+    ],
+    [
+     "adctrig",
+     "phy_pbus_force_test"
+    ],
+    [
+     "adctrig",
+     "phy_pbus_xpd_dpd_path"
+    ],
+    [
+     "adctrig",
+     "phy_pbus_xpd_rx_off"
+    ],
+    [
+     "adctrig",
+     "phy_printf"
+    ],
+    [
+     "adctrig",
+     "phy_start_tx_tone_step"
+    ],
+    [
+     "adctrig",
+     "phy_stop_tx_tone"
+    ],
+    [
+     "adctrig",
+     "trig_tx_frame"
+    ],
+    [
+     "dactrig",
+     "ets_delay_us"
+    ],
+    [
+     "dactrig",
+     "phy_printf"
+    ],
+    [
+     "mac_buffer_get",
+     "RX_ampdu_buff0_buf"
+    ],
+    [
+     "mac_buffer_get",
+     "txbuffer"
+    ],
+    [
+     "mac_init",
+     "mac_buffer_get"
+    ],
+    [
+     "mac_init",
+     "rx_ampdu_buffer_init"
+    ],
+    [
+     "mac_init",
+     "rx_ampdu_entry_fresh"
+    ],
+    [
+     "mac_init",
+     "rx_ampdu_entrysd_fresh"
+    ],
+    [
+     "mac_init",
+     "rx_buffer_ena"
+    ],
+    [
+     "rx_ampdu_buffer_init",
+     "rx_ampdu_buffer_fresh"
+    ],
+    [
+     "rx_ampdu_entry_init",
+     "rx_ampdu_entry_fresh"
+    ],
+    [
+     "rx_ampdu_entrysd_init",
+     "rx_ampdu_entrysd_fresh"
+    ]
+   ]
+  },
+  {
+   "name": "rf_test.o",
+   "machine": 243,
+   "functions": [
+    {
+     "name": "tx_cont_cfg.part.0",
+     "size": 286,
+     "section": ".text.tx_cont_cfg.part.0",
+     "exported": false,
+     "mmio": []
+    },
+    {
+     "name": "esp_en_reboot",
+     "size": 2,
+     "section": ".text.esp_en_reboot",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "cbw40m_en",
+     "size": 26,
+     "section": ".text.cbw40m_en",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "filter_dcap_tia_wf",
+     "size": 44,
+     "section": ".text.filter_dcap_tia_wf",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "tx_cont_cfg",
+     "size": 152,
+     "section": ".text.tx_cont_cfg",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "wifitxout_func",
+     "size": 400,
+     "section": ".text.wifitxout_func",
+     "exported": true,
+     "mmio": [
+      "0x600a4c74",
+      "0x600a5000",
+      "0x600a7000",
+      "0x600a7400"
+     ]
+    },
+    {
+     "name": "pa_setting_by_chan",
+     "size": 2,
+     "section": ".text.pa_setting_by_chan",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_tx_func_org",
+     "size": 608,
+     "section": ".text.esp_tx_func_org",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a0408",
+      "0x600a4c74",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "tx_contin_en",
+     "size": 40,
+     "section": ".text.tx_contin_en",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "wifitxout",
+     "size": 30,
+     "section": ".text.wifitxout",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_tx_func",
+     "size": 60,
+     "section": ".text.esp_tx_func",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "wifiscwout",
+     "size": 206,
+     "section": ".text.wifiscwout",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_rx_func",
+     "size": 104,
+     "section": ".text.esp_rx_func",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "tx_signal_test",
+     "size": 388,
+     "section": ".text.tx_signal_test",
+     "exported": true,
+     "mmio": [
+      "0x60096000",
+      "0x60096018"
+     ]
+    },
+    {
+     "name": "esp_crc8",
+     "size": 48,
+     "section": ".text.esp_crc8",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "RF_init_sel",
+     "size": 1336,
+     "section": ".text.RF_init_sel",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "module_test_sel",
+     "size": 190,
+     "section": ".text.module_test_sel",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_en_retest",
+     "size": 24,
+     "section": ".text.esp_en_retest",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_origin_mac",
+     "size": 60,
+     "section": ".text.esp_origin_mac",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "remove_head_newline",
+     "size": 20,
+     "section": ".text.remove_head_newline",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "gen_ate_data",
+     "size": 2,
+     "section": ".text.gen_ate_data",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "module_test_cal_print",
+     "size": 24,
+     "section": ".text.module_test_cal_print",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "flash_test_init",
+     "size": 108,
+     "section": ".text.flash_test_init",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "psram_test_init",
+     "size": 108,
+     "section": ".text.psram_test_init",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rf_spi_flash_test",
+     "size": 2,
+     "section": ".text.rf_spi_flash_test",
+     "exported": false,
+     "mmio": []
+    },
+    {
+     "name": "rf_spi_psram_test",
+     "size": 2,
+     "section": ".text.rf_spi_psram_test",
+     "exported": false,
+     "mmio": []
+    },
+    {
+     "name": "flash_test_run",
+     "size": 60,
+     "section": ".text.flash_test_run",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "pa_dc_test",
+     "size": 120,
+     "section": ".text.pa_dc_test",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rfpll_cal_time",
+     "size": 2,
+     "section": ".text.rfpll_cal_time",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "ESP_TEST_GPIO",
+     "size": 376,
+     "section": ".text.ESP_TEST_GPIO",
+     "exported": true,
+     "mmio": [
+      "0x6000f000",
+      "0x6000f018",
+      "0x60090000",
+      "0x60090004",
+      "0x60090008",
+      "0x60090078"
+     ]
+    },
+    {
+     "name": "CMDSTOP_GPIO",
+     "size": 36,
+     "section": ".text.CMDSTOP_GPIO",
+     "exported": true,
+     "mmio": [
+      "0x60090000",
+      "0x60090004",
+      "0x60090008",
+      "0x60090078"
+     ]
+    },
+    {
+     "name": "init_param_chg",
+     "size": 2,
+     "section": ".text.init_param_chg",
+     "exported": true,
+     "mmio": []
+    }
+   ],
+   "calls": [
+    [
+     "ESP_TEST_GPIO",
+     "dig_gpio_in"
+    ],
+    [
+     "ESP_TEST_GPIO",
+     "dig_gpio_out"
+    ],
+    [
+     "ESP_TEST_GPIO",
+     "ets_delay_us"
+    ],
+    [
+     "ESP_TEST_GPIO",
+     "phy_printf"
+    ],
+    [
+     "RF_init_sel",
+     "esp_crc8"
+    ],
+    [
+     "RF_init_sel",
+     "init_param_default"
+    ],
+    [
+     "RF_init_sel",
+     "memcpy"
+    ],
+    [
+     "RF_init_sel",
+     "memset"
+    ],
+    [
+     "RF_init_sel",
+     "phy_param"
+    ],
+    [
+     "RF_init_sel",
+     "phy_printf"
+    ],
+    [
+     "RF_init_sel",
+     "read_flash_init_para"
+    ],
+    [
+     "RF_init_sel",
+     "register_chipv7_phy"
+    ],
+    [
+     "cbw40m_en",
+     "phy_printf"
+    ],
+    [
+     "cbw40m_en",
+     "tx_cbw40m_en"
+    ],
+    [
+     "esp_en_retest",
+     "module_test_func_local"
+    ],
+    [
+     "esp_en_retest",
+     "phy_init"
+    ],
+    [
+     "esp_origin_mac",
+     "phy_printf"
+    ],
+    [
+     "esp_origin_mac",
+     "read_macaddr_from_otp"
+    ],
+    [
+     "esp_rx_func",
+     "WifiRxStart"
+    ],
+    [
+     "esp_rx_func",
+     "phy_chan_to_freq"
+    ],
+    [
+     "esp_rx_func",
+     "phy_printf"
+    ],
+    [
+     "esp_rx_func",
+     "rftest_set_chan"
+    ],
+    [
+     "esp_rx_func",
+     "tx_cbw40m_en"
+    ],
+    [
+     "esp_tx_func",
+     "esp_tx_func_org"
+    ],
+    [
+     "esp_tx_func",
+     "fcc_mode_sel"
+    ],
+    [
+     "esp_tx_func",
+     "wifitxout_func"
+    ],
+    [
+     "esp_tx_func_org",
+     "FillTxPacket"
+    ],
+    [
+     "esp_tx_func_org",
+     "WifiTxStart_org"
+    ],
+    [
+     "esp_tx_func_org",
+     "change_data_rate"
+    ],
+    [
+     "esp_tx_func_org",
+     "fcc_mode_flag"
+    ],
+    [
+     "esp_tx_func_org",
+     "phy_11ax_array"
+    ],
+    [
+     "esp_tx_func_org",
+     "phy_get_rom_ver"
+    ],
+    [
+     "esp_tx_func_org",
+     "phy_i2c_writeReg_Mask"
+    ],
+    [
+     "esp_tx_func_org",
+     "phy_printf"
+    ],
+    [
+     "esp_tx_func_org",
+     "phy_txgain_comp_pacfg_new"
+    ],
+    [
+     "esp_tx_func_org",
+     "rftest_set_chan"
+    ],
+    [
+     "esp_tx_func_org",
+     "short_gi_enable"
+    ],
+    [
+     "esp_tx_func_org",
+     "target_power_backoff"
+    ],
+    [
+     "esp_tx_func_org",
+     "tx_cbw40m_en"
+    ],
+    [
+     "esp_tx_func_org",
+     "tx_cont_cfg.part.0"
+    ],
+    [
+     "filter_dcap_tia_wf",
+     "phy_get_data_sat"
+    ],
+    [
+     "flash_test_init",
+     "phy_printf"
+    ],
+    [
+     "flash_test_init",
+     "rf_spi_flash_test_init"
+    ],
+    [
+     "flash_test_run",
+     "rf_spi_flash_test"
+    ],
+    [
+     "flash_test_run",
+     "rf_spi_psram_test"
+    ],
+    [
+     "module_test_cal_print",
+     "esp_origin_mac"
+    ],
+    [
+     "module_test_cal_print",
+     "phy_cal_print"
+    ],
+    [
+     "module_test_sel",
+     "ate_bt_dut_func"
+    ],
+    [
+     "module_test_sel",
+     "ate_rxframe_fb"
+    ],
+    [
+     "module_test_sel",
+     "ate_txframe_dut"
+    ],
+    [
+     "module_test_sel",
+     "ate_zb_dut_func"
+    ],
+    [
+     "module_test_sel",
+     "le_slave_test"
+    ],
+    [
+     "module_test_sel",
+     "zb_slave_test"
+    ],
+    [
+     "pa_dc_test",
+     "phy_chip_set_chan"
+    ],
+    [
+     "pa_dc_test",
+     "phy_pbus_debugmode"
+    ],
+    [
+     "pa_dc_test",
+     "phy_pbus_force_test"
+    ],
+    [
+     "pa_dc_test",
+     "phy_pbus_workmode"
+    ],
+    [
+     "pa_dc_test",
+     "phy_pbus_xpd_rx_off"
+    ],
+    [
+     "psram_test_init",
+     "phy_printf"
+    ],
+    [
+     "psram_test_init",
+     "rf_spi_psram_test_init"
+    ],
+    [
+     "tx_cont_cfg",
+     "filter_dcap_tia_wf"
+    ],
+    [
+     "tx_cont_cfg",
+     "phy_bbtx_outfilter"
+    ],
+    [
+     "tx_cont_cfg",
+     "phy_i2c_writeReg"
+    ],
+    [
+     "tx_cont_cfg",
+     "phy_param"
+    ],
+    [
+     "tx_cont_cfg",
+     "tx_cont_cfg.part.0"
+    ],
+    [
+     "tx_cont_cfg.part.0",
+     "fcc_mode_flag"
+    ],
+    [
+     "tx_cont_cfg.part.0",
+     "filter_dcap_tia_wf"
+    ],
+    [
+     "tx_cont_cfg.part.0",
+     "phy_bbtx_outfilter"
+    ],
+    [
+     "tx_cont_cfg.part.0",
+     "phy_get_data_sat"
+    ],
+    [
+     "tx_cont_cfg.part.0",
+     "phy_i2c_writeReg"
+    ],
+    [
+     "tx_cont_cfg.part.0",
+     "phy_param"
+    ],
+    [
+     "tx_contin_en",
+     "fcc_mode_sel"
+    ],
+    [
+     "tx_contin_en",
+     "phy_printf"
+    ],
+    [
+     "tx_signal_test",
+     "GetStopCmd"
+    ],
+    [
+     "tx_signal_test",
+     "esp_rom_spiflash_erase_sector"
+    ],
+    [
+     "tx_signal_test",
+     "esp_rom_spiflash_read"
+    ],
+    [
+     "tx_signal_test",
+     "esp_rom_spiflash_write"
+    ],
+    [
+     "tx_signal_test",
+     "force_txon_mode"
+    ],
+    [
+     "tx_signal_test",
+     "phy_param"
+    ],
+    [
+     "tx_signal_test",
+     "phy_printf"
+    ],
+    [
+     "tx_signal_test",
+     "phy_set_chan_interp"
+    ],
+    [
+     "tx_signal_test",
+     "phy_set_freq"
+    ],
+    [
+     "tx_signal_test",
+     "phy_start_tx_tone_step"
+    ],
+    [
+     "tx_signal_test",
+     "spi_flash_attach"
+    ],
+    [
+     "wifiscwout",
+     "phy_param"
+    ],
+    [
+     "wifiscwout",
+     "phy_printf"
+    ],
+    [
+     "wifiscwout",
+     "phy_set_chan_interp"
+    ],
+    [
+     "wifiscwout",
+     "phy_start_tx_tone_step"
+    ],
+    [
+     "wifiscwout",
+     "phy_txcal_debuge_mode_new"
+    ],
+    [
+     "wifiscwout",
+     "phy_txcal_work_mode"
+    ],
+    [
+     "wifiscwout",
+     "rftest_set_chan"
+    ],
+    [
+     "wifitxout",
+     "esp_tx_func_org"
+    ],
+    [
+     "wifitxout",
+     "fcc_mode_sel"
+    ],
+    [
+     "wifitxout",
+     "wifitxout_func"
+    ],
+    [
+     "wifitxout_func",
+     "FillTxPacket"
+    ],
+    [
+     "wifitxout_func",
+     "WifiTxStart_org"
+    ],
+    [
+     "wifitxout_func",
+     "fcc_mode_flag"
+    ],
+    [
+     "wifitxout_func",
+     "phy_param"
+    ],
+    [
+     "wifitxout_func",
+     "phy_printf"
+    ],
+    [
+     "wifitxout_func",
+     "phy_tx_pwr_correct_en"
+    ],
+    [
+     "wifitxout_func",
+     "phy_tx_pwr_track_en"
+    ],
+    [
+     "wifitxout_func",
+     "remove_11b_4p8G_spur"
+    ],
+    [
+     "wifitxout_func",
+     "rftest_set_chan"
+    ],
+    [
+     "wifitxout_func",
+     "short_gi_enable"
+    ],
+    [
+     "wifitxout_func",
+     "target_power_backoff"
+    ],
+    [
+     "wifitxout_func",
+     "tx_cbw40m_en"
+    ],
+    [
+     "wifitxout_func",
+     "tx_cont_cfg"
+    ],
+    [
+     "wifitxout_func",
+     "tx_cont_cfg.part.0"
+    ]
+   ]
+  },
+  {
+   "name": "wifi.o",
+   "machine": 243,
+   "functions": [
+    {
+     "name": "txon_set.part.2",
+     "size": 50,
+     "section": ".text.txon_set.part.2",
+     "exported": false,
+     "mmio": [
+      "0x600a0890",
+      "0x600a1000"
+     ]
+    },
+    {
+     "name": "set_spur_reg",
+     "size": 102,
+     "section": ".text.set_spur_reg",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "Mem_WrByteEn_Test",
+     "size": 148,
+     "section": ".text.Mem_WrByteEn_Test",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "FillTxPacket",
+     "size": 80,
+     "section": ".text.FillTxPacket",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "set_mactx_pwrdb",
+     "size": 84,
+     "section": ".text.set_mactx_pwrdb",
+     "exported": true,
+     "mmio": [
+      "0x600a5000",
+      "0x600a54d8",
+      "0x600a7000",
+      "0x600a7428"
+     ]
+    },
+    {
+     "name": "set_rate_power",
+     "size": 84,
+     "section": ".text.set_rate_power",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "set_rate_power_index",
+     "size": 60,
+     "section": ".text.set_rate_power_index",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "tx_force_pwr",
+     "size": 24,
+     "section": ".text.tx_force_pwr",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "max_power_api_test",
+     "size": 82,
+     "section": ".text.max_power_api_test",
+     "exported": true,
+     "mmio": [
+      "0x600a5000",
+      "0x600a54d8"
+     ]
+    },
+    {
+     "name": "pa_reg_opt",
+     "size": 8,
+     "section": ".text.pa_reg_opt",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "seed_vs_rate",
+     "size": 34,
+     "section": ".text.seed_vs_rate",
+     "exported": true,
+     "mmio": [
+      "0x600a7000",
+      "0x600a7400"
+     ]
+    },
+    {
+     "name": "WifiRxStart",
+     "size": 8,
+     "section": ".text.WifiRxStart",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rftest_pll_track",
+     "size": 2,
+     "section": ".text.rftest_pll_track",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "esp_phy_getstopcmd",
+     "size": 168,
+     "section": ".text.esp_phy_getstopcmd",
+     "exported": false,
+     "mmio": []
+    },
+    {
+     "name": "GetStopCmd",
+     "size": 8,
+     "section": ".text.GetStopCmd",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "WifiTxStart",
+     "size": 340,
+     "section": ".text.WifiTxStart",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a0408",
+      "0x600a4cb0",
+      "0x600a5000",
+      "0x600a7000",
+      "0x600a7400",
+      "0x600a7418"
+     ]
+    },
+    {
+     "name": "WifiTxStart_org",
+     "size": 30,
+     "section": ".text.WifiTxStart_org",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "sampledeal",
+     "size": 18,
+     "section": ".text.sampledeal",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "accumiq",
+     "size": 136,
+     "section": ".text.accumiq",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "ram_get_corr_power",
+     "size": 172,
+     "section": ".text.ram_get_corr_power",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a0454",
+      "0x600a0458",
+      "0x600a045c",
+      "0x600a0460",
+      "0x600a0464",
+      "0x600a0468",
+      "0x600a046c"
+     ]
+    },
+    {
+     "name": "get_rx_tone_pwr",
+     "size": 144,
+     "section": ".text.get_rx_tone_pwr",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "phy_enter_critical",
+     "size": 4,
+     "section": ".text.phy_enter_critical",
+     "exported": false,
+     "mmio": []
+    },
+    {
+     "name": "phy_exit_critical",
+     "size": 2,
+     "section": ".text.phy_exit_critical",
+     "exported": false,
+     "mmio": []
+    },
+    {
+     "name": "noise_init_check",
+     "size": 122,
+     "section": ".text.noise_init_check",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "test_rf_cal_level",
+     "size": 196,
+     "section": ".text.test_rf_cal_level",
+     "exported": true,
+     "mmio": [
+      "0x60096000",
+      "0x60096018",
+      "0x600ad800",
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "timers_wdt_init",
+     "size": 2,
+     "section": ".text.timers_wdt_init",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "phy_init",
+     "size": 54,
+     "section": ".text.phy_init",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "burnin_fill_beacon",
+     "size": 510,
+     "section": ".text.burnin_fill_beacon",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a405c",
+      "0x600a4060"
+     ]
+    },
+    {
+     "name": "wdg_rst_init",
+     "size": 48,
+     "section": ".text.wdg_rst_init",
+     "exported": true,
+     "mmio": [
+      "0x600b1000"
+     ]
+    },
+    {
+     "name": "burnin_rtc_init",
+     "size": 16,
+     "section": ".text.burnin_rtc_init",
+     "exported": true,
+     "mmio": [
+      "0x600a4d68",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "burnin_test_func",
+     "size": 734,
+     "section": ".text.burnin_test_func",
+     "exported": true,
+     "mmio": [
+      "0x600a4c40",
+      "0x600a4c48",
+      "0x600a4c4c",
+      "0x600a4c74",
+      "0x600a4cb0",
+      "0x600a5000",
+      "0x600ad800",
+      "0x600ae000",
+      "0x600b1000"
+     ]
+    },
+    {
+     "name": "burnin_test_func_5g",
+     "size": 278,
+     "section": ".text.burnin_test_func_5g",
+     "exported": true,
+     "mmio": [
+      "0x600ad800",
+      "0x600ae000",
+      "0x600b1000"
+     ]
+    },
+    {
+     "name": "burn_in_test",
+     "size": 114,
+     "section": ".text.burn_in_test",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rx_per_init",
+     "size": 102,
+     "section": ".text.rx_per_init",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a40d8",
+      "0x600a40dc",
+      "0x600a40e0",
+      "0x600a40e4"
+     ]
+    },
+    {
+     "name": "clk_pull_out",
+     "size": 2,
+     "section": ".text.clk_pull_out",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "pad_gpio_set",
+     "size": 2,
+     "section": ".text.pad_gpio_set",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "wifi_init",
+     "size": 48,
+     "section": ".text.wifi_init",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "change_data_rate",
+     "size": 290,
+     "section": ".text.change_data_rate",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "remove_11b_4p8G_spur",
+     "size": 142,
+     "section": ".text.remove_11b_4p8G_spur",
+     "exported": true,
+     "mmio": [
+      "0x600a7000",
+      "0x600a7414",
+      "0x600a7418"
+     ]
+    },
+    {
+     "name": "read_flash_init_para",
+     "size": 56,
+     "section": ".text.read_flash_init_para",
+     "exported": true,
+     "mmio": [
+      "0x60096000",
+      "0x60096018"
+     ]
+    },
+    {
+     "name": "write_flash_init_para",
+     "size": 42,
+     "section": ".text.write_flash_init_para",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "bt_zb_tx_tone",
+     "size": 172,
+     "section": ".text.bt_zb_tx_tone",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "force_txtone",
+     "size": 90,
+     "section": ".text.force_txtone",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "mem_read_func",
+     "size": 10,
+     "section": ".text.mem_read_func",
+     "exported": true,
+     "mmio": [
+      "0x600a08dc",
+      "0x600a1000"
+     ]
+    },
+    {
+     "name": "mem_write_func",
+     "size": 10,
+     "section": ".text.mem_write_func",
+     "exported": true,
+     "mmio": [
+      "0x600a08dc",
+      "0x600a1000"
+     ]
+    },
+    {
+     "name": "test_mem_time",
+     "size": 102,
+     "section": ".text.test_mem_time",
+     "exported": true,
+     "mmio": [
+      "0x600a08dc",
+      "0x600a1000",
+      "0x600ad800",
+      "0x600adfff",
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "get_tx_rate",
+     "size": 16,
+     "section": ".text.get_tx_rate",
+     "exported": true,
+     "mmio": [
+      "0x600a080c",
+      "0x600a1000"
+     ]
+    },
+    {
+     "name": "phy_test_init",
+     "size": 82,
+     "section": ".text.phy_test_init",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "close_peri",
+     "size": 2,
+     "section": ".text.close_peri",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rtc_sar_read",
+     "size": 4,
+     "section": ".text.rtc_sar_read",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "clk10m_enable",
+     "size": 2,
+     "section": ".text.clk10m_enable",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "uart1_sel",
+     "size": 2,
+     "section": ".text.uart1_sel",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "get_iq_est_pwr",
+     "size": 42,
+     "section": ".text.get_iq_est_pwr",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a046c"
+     ]
+    },
+    {
+     "name": "tx_chan_atten",
+     "size": 180,
+     "section": ".text.tx_chan_atten",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rx_gain_comp",
+     "size": 2,
+     "section": ".text.rx_gain_comp",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rx_chan_noise_all",
+     "size": 202,
+     "section": ".text.rx_chan_noise_all",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rx_chan_noise",
+     "size": 104,
+     "section": ".text.rx_chan_noise",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "bt_pbus_rx_dco_cal",
+     "size": 744,
+     "section": ".text.bt_pbus_rx_dco_cal",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "dc_iq_est_test",
+     "size": 212,
+     "section": ".text.dc_iq_est_test",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a0464",
+      "0x600a0468",
+      "0x600a046c",
+      "0x600a0470",
+      "0x600a0474"
+     ]
+    },
+    {
+     "name": "txpwr_backoff_test",
+     "size": 246,
+     "section": ".text.txpwr_backoff_test",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rx_init_gain",
+     "size": 54,
+     "section": ".text.rx_init_gain",
+     "exported": true,
+     "mmio": [
+      "0x600a7000",
+      "0x600a7094",
+      "0x600a713c"
+     ]
+    },
+    {
+     "name": "force_ble_tx_gain",
+     "size": 92,
+     "section": ".text.force_ble_tx_gain",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "force_tx_gain",
+     "size": 154,
+     "section": ".text.force_tx_gain",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "set_tx_power",
+     "size": 124,
+     "section": ".text.set_tx_power",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rftest_set_chan",
+     "size": 66,
+     "section": ".text.rftest_set_chan",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "sw_chan_test",
+     "size": 138,
+     "section": ".text.sw_chan_test",
+     "exported": true,
+     "mmio": [
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "get_dump_pbus",
+     "size": 58,
+     "section": ".text.get_dump_pbus",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "set_dump_pbus",
+     "size": 186,
+     "section": ".text.set_dump_pbus",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rftest_optimize",
+     "size": 92,
+     "section": ".text.rftest_optimize",
+     "exported": true,
+     "mmio": [
+      "0x600a7000",
+      "0x600a7400",
+      "0x600a7904",
+      "0x600a8000"
+     ]
+    },
+    {
+     "name": "brown_out_rst_dis",
+     "size": 34,
+     "section": ".text.brown_out_rst_dis",
+     "exported": true,
+     "mmio": [
+      "0x600b2c04",
+      "0x600b2c0c",
+      "0x600b3000"
+     ]
+    },
+    {
+     "name": "open_pwr_domain",
+     "size": 2,
+     "section": ".text.open_pwr_domain",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "phy_set_clk_conf",
+     "size": 2,
+     "section": ".text.phy_set_clk_conf",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "rftest_open_clk",
+     "size": 38,
+     "section": ".text.rftest_open_clk",
+     "exported": true,
+     "mmio": [
+      "0x600a9c04",
+      "0x600a9c0c",
+      "0x600a9c14",
+      "0x600aa000",
+      "0x600af000",
+      "0x600af018",
+      "0x600af01c",
+      "0x600af020"
+     ]
+    },
+    {
+     "name": "tx_cal_default_value",
+     "size": 128,
+     "section": ".text.tx_cal_default_value",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "set_chan_freq_sub",
+     "size": 16,
+     "section": ".text.set_chan_freq_sub",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "txon_set",
+     "size": 58,
+     "section": ".text.txon_set",
+     "exported": true,
+     "mmio": [
+      "0x600a0890",
+      "0x600a1000"
+     ]
+    },
+    {
+     "name": "rf_freq_debug",
+     "size": 346,
+     "section": ".text.rf_freq_debug",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a0408"
+     ]
+    },
+    {
+     "name": "test_5g",
+     "size": 8,
+     "section": ".text.test_5g",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "run_para_array_clear",
+     "size": 34,
+     "section": ".text.run_para_array_clear",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "write_flash",
+     "size": 202,
+     "section": ".text.write_flash",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "read_flash",
+     "size": 208,
+     "section": ".text.read_flash",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "pa_dc_code_set_flash",
+     "size": 198,
+     "section": ".text.pa_dc_code_set_flash",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "ate_pa_curr_cal_init",
+     "size": 122,
+     "section": ".text.ate_pa_curr_cal_init",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "ate_pa_trim_code_read",
+     "size": 74,
+     "section": ".text.ate_pa_trim_code_read",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "ate_pa_trim_code_write",
+     "size": 52,
+     "section": ".text.ate_pa_trim_code_write",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "ate_curr_cal_wait_trig_gpio",
+     "size": 118,
+     "section": ".text.ate_curr_cal_wait_trig_gpio",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "ate_chip_ref_curr_cal",
+     "size": 476,
+     "section": ".text.ate_chip_ref_curr_cal",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "ate_chip_pa_curr_cal",
+     "size": 1440,
+     "section": ".text.ate_chip_pa_curr_cal",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "phy_rf_param_flash_burn",
+     "size": 46,
+     "section": ".text.phy_rf_param_flash_burn",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "phy_rf_param_flash_get",
+     "size": 42,
+     "section": ".text.phy_rf_param_flash_get",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "curr_cal_param_set_from_flash",
+     "size": 224,
+     "section": ".text.curr_cal_param_set_from_flash",
+     "exported": true,
+     "mmio": [
+      "0x600b484c",
+      "0x600b5000"
+     ]
+    },
+    {
+     "name": "rftest_init",
+     "size": 328,
+     "section": ".text.rftest_init",
+     "exported": true,
+     "mmio": [
+      "0x60099000",
+      "0x600990c4",
+      "0x600b0000",
+      "0x600b0028"
+     ]
+    },
+    {
+     "name": "apb_get_mem",
+     "size": 152,
+     "section": ".text.apb_get_mem",
+     "exported": true,
+     "mmio": [
+      "0x600a9c00",
+      "0x600a9c14",
+      "0x600aa000",
+      "0x600ae000",
+      "0x600af000",
+      "0x600af02c",
+      "0x600af038"
+     ]
+    },
+    {
+     "name": "idf_enable",
+     "size": 10,
+     "section": ".text.idf_enable",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "get_5g_en",
+     "size": 10,
+     "section": ".text.get_5g_en",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "run_rftest_case",
+     "size": 16354,
+     "section": ".text.run_rftest_case",
+     "exported": true,
+     "mmio": [
+      "0x60096000",
+      "0x60096094",
+      "0x600a086c",
+      "0x600a1000",
+      "0x600a2000",
+      "0x600a2170",
+      "0x600a4c74",
+      "0x600a5000",
+      "0x600a7000",
+      "0x600a7050",
+      "0x600a7400",
+      "0x600a7c00",
+      "0x600a7c30",
+      "0x600a7c6c",
+      "0x600a8000",
+      "0x600ad800",
+      "0x600ae000",
+      "0x600ae004"
+     ]
+    },
+    {
+     "name": "run_rftest_case2",
+     "size": 4,
+     "section": ".text.run_rftest_case2",
+     "exported": true,
+     "mmio": []
+    }
+   ],
+   "calls": [
+    [
+     "FillTxPacket",
+     "fill_tx_frame"
+    ],
+    [
+     "GetStopCmd",
+     "esp_phy_getstopcmd"
+    ],
+    [
+     "Mem_WrByteEn_Test",
+     "phy_printf"
+    ],
+    [
+     "WifiRxStart",
+     "do_rx_poll"
+    ],
+    [
+     "WifiTxStart",
+     "esp_phy_getstopcmd"
+    ],
+    [
+     "WifiTxStart",
+     "phy_11ax_array"
+    ],
+    [
+     "WifiTxStart",
+     "phy_11ax_tx_mode"
+    ],
+    [
+     "WifiTxStart",
+     "phy_disable_cca"
+    ],
+    [
+     "WifiTxStart",
+     "phy_enable_cca"
+    ],
+    [
+     "WifiTxStart",
+     "phy_param"
+    ],
+    [
+     "WifiTxStart",
+     "phy_set_rate"
+    ],
+    [
+     "WifiTxStart",
+     "set_rate_power"
+    ],
+    [
+     "WifiTxStart",
+     "test_tx_frame"
+    ],
+    [
+     "WifiTxStart_org",
+     "WifiTxStart"
+    ],
+    [
+     "WifiTxStart_org",
+     "phy_11ax_array"
+    ],
+    [
+     "accumiq",
+     "phy_printf"
+    ],
+    [
+     "accumiq",
+     "sampledeal"
+    ],
+    [
+     "apb_get_mem",
+     "phy_printf"
+    ],
+    [
+     "ate_chip_pa_curr_cal",
+     "ate_curr_cal_wait_trig_gpio"
+    ],
+    [
+     "ate_chip_pa_curr_cal",
+     "ate_pa_curr_cal_init"
+    ],
+    [
+     "ate_chip_pa_curr_cal",
+     "ate_pa_trim_code_write"
+    ],
+    [
+     "ate_chip_pa_curr_cal",
+     "dig_gpio_in"
+    ],
+    [
+     "ate_chip_pa_curr_cal",
+     "phy_i2c_readReg_Mask"
+    ],
+    [
+     "ate_chip_pa_curr_cal",
+     "phy_i2c_writeReg_Mask"
+    ],
+    [
+     "ate_chip_pa_curr_cal",
+     "phy_printf"
+    ],
+    [
+     "ate_chip_ref_curr_cal",
+     "ate_curr_cal_wait_trig_gpio"
+    ],
+    [
+     "ate_chip_ref_curr_cal",
+     "dig_gpio_in"
+    ],
+    [
+     "ate_chip_ref_curr_cal",
+     "phy_i2c_readReg_Mask"
+    ],
+    [
+     "ate_chip_ref_curr_cal",
+     "phy_i2c_writeReg_Mask"
+    ],
+    [
+     "ate_chip_ref_curr_cal",
+     "phy_printf"
+    ],
+    [
+     "ate_chip_ref_curr_cal",
+     "pull_internal_voltage"
+    ],
+    [
+     "ate_curr_cal_wait_trig_gpio",
+     "dig_gpio_in"
+    ],
+    [
+     "ate_curr_cal_wait_trig_gpio",
+     "ets_delay_us"
+    ],
+    [
+     "ate_pa_curr_cal_init",
+     "force_tx_gain"
+    ],
+    [
+     "ate_pa_curr_cal_init",
+     "force_txon_mode"
+    ],
+    [
+     "ate_pa_curr_cal_init",
+     "phy_param"
+    ],
+    [
+     "ate_pa_curr_cal_init",
+     "phy_set_channel_rfpll_freq_new"
+    ],
+    [
+     "ate_pa_curr_cal_init",
+     "phy_set_pbus_mem_5g"
+    ],
+    [
+     "ate_pa_trim_code_read",
+     "phy_i2c_readReg_Mask"
+    ],
+    [
+     "ate_pa_trim_code_read",
+     "phy_printf"
+    ],
+    [
+     "ate_pa_trim_code_write",
+     "ate_pa_trim_code_read"
+    ],
+    [
+     "ate_pa_trim_code_write",
+     "phy_i2c_writeReg_Mask"
+    ],
+    [
+     "bt_pbus_rx_dco_cal",
+     "ets_delay_us"
+    ],
+    [
+     "bt_pbus_rx_dco_cal",
+     "phy_abs_temp"
+    ],
+    [
+     "bt_pbus_rx_dco_cal",
+     "phy_dc_iq_est_new"
+    ],
+    [
+     "bt_pbus_rx_dco_cal",
+     "phy_pbus_force_test"
+    ],
+    [
+     "bt_pbus_rx_dco_cal",
+     "phy_pbus_rd"
+    ],
+    [
+     "bt_pbus_rx_dco_cal",
+     "phy_printf"
+    ],
+    [
+     "bt_zb_tx_tone",
+     "force_txon_mode"
+    ],
+    [
+     "bt_zb_tx_tone",
+     "phy_printf"
+    ],
+    [
+     "bt_zb_tx_tone",
+     "phy_set_freq"
+    ],
+    [
+     "bt_zb_tx_tone",
+     "phy_start_tx_tone_step"
+    ],
+    [
+     "burn_in_test",
+     "burnin_rtc_init"
+    ],
+    [
+     "burn_in_test",
+     "burnin_test_func"
+    ],
+    [
+     "burn_in_test",
+     "dig_gpio_out"
+    ],
+    [
+     "burn_in_test",
+     "esp_phy_getstopcmd"
+    ],
+    [
+     "burn_in_test",
+     "ets_delay_us"
+    ],
+    [
+     "burn_in_test",
+     "phy_printf"
+    ],
+    [
+     "burnin_fill_beacon",
+     "ConfAddrGet"
+    ],
+    [
+     "burnin_fill_beacon",
+     "PSDU0_OFFSET"
+    ],
+    [
+     "burnin_fill_beacon",
+     "Plcp0AddrGet"
+    ],
+    [
+     "burnin_fill_beacon",
+     "memset"
+    ],
+    [
+     "burnin_rtc_init",
+     "wdg_rst_init"
+    ],
+    [
+     "burnin_test_func",
+     "ConfAddrGet"
+    ],
+    [
+     "burnin_test_func",
+     "FillTxPacket"
+    ],
+    [
+     "burnin_test_func",
+     "Plcp0AddrGet"
+    ],
+    [
+     "burnin_test_func",
+     "WifiTxStart_org"
+    ],
+    [
+     "burnin_test_func",
+     "burnin_fill_beacon"
+    ],
+    [
+     "burnin_test_func",
+     "ets_delay_us"
+    ],
+    [
+     "burnin_test_func",
+     "lp_wdt_feed"
+    ],
+    [
+     "burnin_test_func",
+     "phy_chip_set_chan"
+    ],
+    [
+     "burnin_test_func",
+     "phy_init"
+    ],
+    [
+     "burnin_test_func",
+     "phy_param"
+    ],
+    [
+     "burnin_test_func",
+     "phy_printf"
+    ],
+    [
+     "burnin_test_func",
+     "set_tx_rate"
+    ],
+    [
+     "burnin_test_func",
+     "target_power_backoff"
+    ],
+    [
+     "burnin_test_func",
+     "tx_ack_init"
+    ],
+    [
+     "burnin_test_func_5g",
+     "FillTxPacket"
+    ],
+    [
+     "burnin_test_func_5g",
+     "WifiTxStart_org"
+    ],
+    [
+     "burnin_test_func_5g",
+     "lp_wdt_feed"
+    ],
+    [
+     "burnin_test_func_5g",
+     "phy_chip_set_chan"
+    ],
+    [
+     "burnin_test_func_5g",
+     "phy_i2c_readReg_Mask"
+    ],
+    [
+     "burnin_test_func_5g",
+     "phy_printf"
+    ],
+    [
+     "burnin_test_func_5g",
+     "target_power_backoff"
+    ],
+    [
+     "change_data_rate",
+     "phy_printf"
+    ],
+    [
+     "curr_cal_param_set_from_flash",
+     "phy_i2c_writeReg"
+    ],
+    [
+     "curr_cal_param_set_from_flash",
+     "phy_i2c_writeReg_Mask"
+    ],
+    [
+     "curr_cal_param_set_from_flash",
+     "phy_param"
+    ],
+    [
+     "curr_cal_param_set_from_flash",
+     "phy_rf_param_flash_get"
+    ],
+    [
+     "dc_iq_est_test",
+     "phy_iq_est_disable"
+    ],
+    [
+     "dc_iq_est_test",
+     "phy_iq_est_enable_new"
+    ],
+    [
+     "dc_iq_est_test",
+     "phy_linear_to_db"
+    ],
+    [
+     "esp_phy_getstopcmd",
+     "UartGetCmdLn"
+    ],
+    [
+     "esp_phy_getstopcmd",
+     "cmd_parse"
+    ],
+    [
+     "esp_phy_getstopcmd",
+     "phy_printf"
+    ],
+    [
+     "esp_phy_getstopcmd",
+     "remove_head_newline"
+    ],
+    [
+     "esp_phy_getstopcmd",
+     "strcmp"
+    ],
+    [
+     "force_ble_tx_gain",
+     "phy_param"
+    ],
+    [
+     "force_ble_tx_gain",
+     "phy_set_tx_gain_mem"
+    ],
+    [
+     "force_tx_gain",
+     "force_ble_tx_gain"
+    ],
+    [
+     "force_tx_gain",
+     "phy_param"
+    ],
+    [
+     "force_tx_gain",
+     "phy_set_tx_gain_mem"
+    ],
+    [
+     "force_txtone",
+     "ets_delay_us"
+    ],
+    [
+     "force_txtone",
+     "force_txon"
+    ],
+    [
+     "force_txtone",
+     "phy_stop_tx_tone"
+    ],
+    [
+     "force_txtone",
+     "start_tx_tone"
+    ],
+    [
+     "get_5g_en",
+     "phy_param"
+    ],
+    [
+     "get_dump_pbus",
+     "phy_printf"
+    ],
+    [
+     "get_iq_est_pwr",
+     "phy_iq_est_disable"
+    ],
+    [
+     "get_iq_est_pwr",
+     "phy_iq_est_enable_new"
+    ],
+    [
+     "get_rx_tone_pwr",
+     "__fixsfsi"
+    ],
+    [
+     "get_rx_tone_pwr",
+     "ets_delay_us"
+    ],
+    [
+     "get_rx_tone_pwr",
+     "phy_iq_est_disable"
+    ],
+    [
+     "get_rx_tone_pwr",
+     "phy_iq_est_enable_new"
+    ],
+    [
+     "get_rx_tone_pwr",
+     "phy_linear_to_db"
+    ],
+    [
+     "get_rx_tone_pwr",
+     "phy_printf"
+    ],
+    [
+     "get_rx_tone_pwr",
+     "phy_stop_tx_tone"
+    ],
+    [
+     "get_rx_tone_pwr",
+     "ram_get_corr_power"
+    ],
+    [
+     "get_rx_tone_pwr",
+     "start_tx_tone"
+    ],
+    [
+     "max_power_api_test",
+     "phy_get_target_pwr"
+    ],
+    [
+     "noise_init_check",
+     "check_noise_floor"
+    ],
+    [
+     "noise_init_check",
+     "phy_chip_set_chan"
+    ],
+    [
+     "noise_init_check",
+     "phy_printf"
+    ],
+    [
+     "pa_dc_code_set_flash",
+     "esp_rom_spiflash_read"
+    ],
+    [
+     "pa_dc_code_set_flash",
+     "phy_i2c_readReg_Mask"
+    ],
+    [
+     "pa_dc_code_set_flash",
+     "phy_i2c_writeReg_Mask"
+    ],
+    [
+     "pa_dc_code_set_flash",
+     "phy_open_i2c_xpd"
+    ],
+    [
+     "pa_dc_code_set_flash",
+     "phy_printf"
+    ],
+    [
+     "pa_dc_code_set_flash",
+     "spi_flash_attach"
+    ],
+    [
+     "pa_reg_opt",
+     "phy_set_rate"
+    ],
+    [
+     "phy_init",
+     "phy_param"
+    ],
+    [
+     "phy_init",
+     "register_chipv7_phy"
+    ],
+    [
+     "phy_rf_param_flash_burn",
+     "write_flash"
+    ],
+    [
+     "phy_rf_param_flash_get",
+     "esp_rom_spiflash_read"
+    ],
+    [
+     "phy_rf_param_flash_get",
+     "spi_flash_attach"
+    ],
+    [
+     "phy_test_init",
+     "phy_get_romfunc_addr"
+    ],
+    [
+     "phy_test_init",
+     "phy_init"
+    ],
+    [
+     "phy_test_init",
+     "phy_printf"
+    ],
+    [
+     "ram_get_corr_power",
+     "__ashrdi3"
+    ],
+    [
+     "read_flash",
+     "esp_rom_spiflash_read"
+    ],
+    [
+     "read_flash",
+     "memset"
+    ],
+    [
+     "read_flash",
+     "phy_printf"
+    ],
+    [
+     "read_flash",
+     "spi_flash_attach"
+    ],
+    [
+     "read_flash_init_para",
+     "esp_rom_spiflash_read"
+    ],
+    [
+     "read_flash_init_para",
+     "spi_flash_attach"
+    ],
+    [
+     "rf_freq_debug",
+     "ets_delay_us"
+    ],
+    [
+     "rf_freq_debug",
+     "phy_printf"
+    ],
+    [
+     "rf_freq_debug",
+     "phy_start_tx_tone_step"
+    ],
+    [
+     "rf_freq_debug",
+     "set_chan_freq_sub"
+    ],
+    [
+     "rf_freq_debug",
+     "txon_set"
+    ],
+    [
+     "rf_freq_debug",
+     "txon_set.part.2"
+    ],
+    [
+     "rftest_init",
+     "FillTxPacket"
+    ],
+    [
+     "rftest_init",
+     "bt_testmode_init"
+    ],
+    [
+     "rftest_init",
+     "crypto_disable"
+    ],
+    [
+     "rftest_init",
+     "curr_cal_param_set_from_flash"
+    ],
+    [
+     "rftest_init",
+     "esp_origin_mac"
+    ],
+    [
+     "rftest_init",
+     "init_param_chg"
+    ],
+    [
+     "rftest_init",
+     "mac_init"
+    ],
+    [
+     "rftest_init",
+     "phy_chip_set_chan"
+    ],
+    [
+     "rftest_init",
+     "phy_get_romfunc_addr"
+    ],
+    [
+     "rftest_init",
+     "phy_i2c_txrate_init_new"
+    ],
+    [
+     "rftest_init",
+     "phy_i2c_writeReg_Mask"
+    ],
+    [
+     "rftest_init",
+     "phy_init"
+    ],
+    [
+     "rftest_init",
+     "phy_param"
+    ],
+    [
+     "rftest_init",
+     "phy_printf"
+    ],
+    [
+     "rftest_init",
+     "phy_rxevm_en"
+    ],
+    [
+     "rftest_init",
+     "phy_version_print"
+    ],
+    [
+     "rftest_init",
+     "rftest_open_clk"
+    ],
+    [
+     "rftest_init",
+     "rftest_optimize"
+    ],
+    [
+     "rftest_optimize",
+     "phy_set_bttx_low_power"
+    ],
+    [
+     "rftest_optimize",
+     "phy_txpwr_track_slow"
+    ],
+    [
+     "rftest_set_chan",
+     "RFChannelSel"
+    ],
+    [
+     "rftest_set_chan",
+     "phy_param_track_tot"
+    ],
+    [
+     "run_rftest_case",
+     "CMDSTOP_GPIO"
+    ],
+    [
+     "run_rftest_case",
+     "ESP_TEST_GPIO"
+    ],
+    [
+     "run_rftest_case",
+     "FillTxPacket"
+    ],
+    [
+     "run_rftest_case",
+     "RF_init_sel"
+    ],
+    [
+     "run_rftest_case",
+     "WifiTxStart"
+    ],
+    [
+     "run_rftest_case",
+     "accumiq"
+    ],
+    [
+     "run_rftest_case",
+     "adctrig"
+    ],
+    [
+     "run_rftest_case",
+     "apb_get_mem"
+    ],
+    [
+     "run_rftest_case",
+     "ate_rxdc_remain_check"
+    ],
+    [
+     "run_rftest_case",
+     "ate_rxframe_fb"
+    ],
+    [
+     "run_rftest_case",
+     "ate_txframe_dut"
+    ],
+    [
+     "run_rftest_case",
+     "beacon_print"
+    ],
+    [
+     "run_rftest_case",
+     "ble_freq_offset_test"
+    ],
+    [
+     "run_rftest_case",
+     "ble_rx_opt_en"
+    ],
+    [
+     "run_rftest_case",
+     "bt_rx_force"
+    ],
+    [
+     "run_rftest_case",
+     "bt_set_rx_comp"
+    ],
+    [
+     "run_rftest_case",
+     "bt_zb_tx_tone"
+    ],
+    [
+     "run_rftest_case",
+     "burn_in_test"
+    ],
+    [
+     "run_rftest_case",
+     "cbw40m_en"
+    ],
+    [
+     "run_rftest_case",
+     "check_noise_floor"
+    ],
+    [
+     "run_rftest_case",
+     "cpu_reset"
+    ],
+    [
+     "run_rftest_case",
+     "dc_iq_est_test"
+    ],
+    [
+     "run_rftest_case",
+     "do_rx_poll"
+    ],
+    [
+     "run_rftest_case",
+     "esp_origin_mac"
+    ],
+    [
+     "run_rftest_case",
+     "esp_rom_spiflash_erase_sector"
+    ],
+    [
+     "run_rftest_case",
+     "esp_rx_func"
+    ],
+    [
+     "run_rftest_case",
+     "esp_tx_func"
+    ],
+    [
+     "run_rftest_case",
+     "esp_txrx_test"
+    ],
+    [
+     "run_rftest_case",
+     "ets_delay_us"
+    ],
+    [
+     "run_rftest_case",
+     "fedump_rd_rxmem"
+    ],
+    [
+     "run_rftest_case",
+     "fedump_rd_txmem"
+    ],
+    [
+     "run_rftest_case",
+     "fedump_wr_txmem"
+    ],
+    [
+     "run_rftest_case",
+     "fft_dump_init"
+    ],
+    [
+     "run_rftest_case",
+     "flash_test_enable"
+    ],
+    [
+     "run_rftest_case",
+     "flash_test_init"
+    ],
+    [
+     "run_rftest_case",
+     "force_ble_tx_gain"
+    ],
+    [
+     "run_rftest_case",
+     "force_dig_gain"
+    ],
+    [
+     "run_rftest_case",
+     "force_iq_set"
+    ],
+    [
+     "run_rftest_case",
+     "force_rfrx_param"
+    ],
+    [
+     "run_rftest_case",
+     "force_rx_gain"
+    ],
+    [
+     "run_rftest_case",
+     "force_tx_gain"
+    ],
+    [
+     "run_rftest_case",
+     "force_tx_seed"
+    ],
+    [
+     "run_rftest_case",
+     "force_txon_mode"
+    ],
+    [
+     "run_rftest_case",
+     "force_txtone"
+    ],
+    [
+     "run_rftest_case",
+     "freq_stable_test"
+    ],
+    [
+     "run_rftest_case",
+     "get_cal_iq"
+    ],
+    [
+     "run_rftest_case",
+     "get_dump_pbus"
+    ],
+    [
+     "run_rftest_case",
+     "get_iq_est_pwr"
+    ],
+    [
+     "run_rftest_case",
+     "get_rx_buffer"
+    ],
+    [
+     "run_rftest_case",
+     "get_tx_rate"
+    ],
+    [
+     "run_rftest_case",
+     "le_master_test"
+    ],
+    [
+     "run_rftest_case",
+     "le_slave_test"
+    ],
+    [
+     "run_rftest_case",
+     "loop_dump_test"
+    ],
+    [
+     "run_rftest_case",
+     "loop_mode_set"
+    ],
+    [
+     "run_rftest_case",
+     "mac_init"
+    ],
+    [
+     "run_rftest_case",
+     "mem_read_test"
+    ],
+    [
+     "run_rftest_case",
+     "module_test_cal_print"
+    ],
+    [
+     "run_rftest_case",
+     "module_test_sel"
+    ],
+    [
+     "run_rftest_case",
+     "pa_dc_test"
+    ],
+    [
+     "run_rftest_case",
+     "pbus_xpd_txon_test"
+    ],
+    [
+     "run_rftest_case",
+     "phy_11ax_rx_set"
+    ],
+    [
+     "run_rftest_case",
+     "phy_11ax_tx_set"
+    ],
+    [
+     "run_rftest_case",
+     "phy_11p_set"
+    ],
+    [
+     "run_rftest_case",
+     "phy_adc_rate_set"
+    ],
+    [
+     "run_rftest_case",
+     "phy_band_sel"
+    ],
+    [
+     "run_rftest_case",
+     "phy_bb_init"
+    ],
+    [
+     "run_rftest_case",
+     "phy_bbtx_outfilter"
+    ],
+    [
+     "run_rftest_case",
+     "phy_bt_power_track"
+    ],
+    [
+     "run_rftest_case",
+     "phy_bt_set_tx_gain_new"
+    ],
+    [
+     "run_rftest_case",
+     "phy_bt_txdc_cal"
+    ],
+    [
+     "run_rftest_case",
+     "phy_bt_txiq_cal"
+    ],
+    [
+     "run_rftest_case",
+     "phy_cfg_tx_magtrk"
+    ],
+    [
+     "run_rftest_case",
+     "phy_chan_freq_hw_init"
+    ],
+    [
+     "run_rftest_case",
+     "phy_check_freq_mem"
+    ],
+    [
+     "run_rftest_case",
+     "phy_check_rssi"
+    ],
+    [
+     "run_rftest_case",
+     "phy_check_rssi_1m"
+    ],
+    [
+     "run_rftest_case",
+     "phy_check_rssi_band_set"
+    ],
+    [
+     "run_rftest_case",
+     "phy_chip_set_chan"
+    ],
+    [
+     "run_rftest_case",
+     "phy_chip_set_chan_offset"
+    ],
+    [
+     "run_rftest_case",
+     "phy_close_rf"
+    ],
+    [
+     "run_rftest_case",
+     "phy_corr_pwr_sum"
+    ],
+    [
+     "run_rftest_case",
+     "phy_dis_hw_set_freq_new"
+    ],
+    [
+     "run_rftest_case",
+     "phy_disable_cca"
+    ],
+    [
+     "run_rftest_case",
+     "phy_dpd_rxdc_cal"
+    ],
+    [
+     "run_rftest_case",
+     "phy_dumptone_test"
+    ],
+    [
+     "run_rftest_case",
+     "phy_enable_cca"
+    ],
+    [
+     "run_rftest_case",
+     "phy_force_txon_test"
+    ],
+    [
+     "run_rftest_case",
+     "phy_freq_cal_test"
+    ],
+    [
+     "run_rftest_case",
+     "phy_freq_i2c_data_write"
+    ],
+    [
+     "run_rftest_case",
+     "phy_freq_mem_backup"
+    ],
+    [
+     "run_rftest_case",
+     "phy_freq_to_index"
+    ],
+    [
+     "run_rftest_case",
+     "phy_ftm_comp"
+    ],
+    [
+     "run_rftest_case",
+     "phy_get_adc_rand"
+    ],
+    [
+     "run_rftest_case",
+     "phy_get_chan_cap"
+    ],
+    [
+     "run_rftest_case",
+     "phy_get_freq_init"
+    ],
+    [
+     "run_rftest_case",
+     "phy_get_loop_snr"
+    ],
+    [
+     "run_rftest_case",
+     "phy_get_most_tpw"
+    ],
+    [
+     "run_rftest_case",
+     "phy_get_pkdet_data"
+    ],
+    [
+     "run_rftest_case",
+     "phy_get_power_db"
+    ],
+    [
+     "run_rftest_case",
+     "phy_get_pwdet_offset_new"
+    ],
+    [
+     "run_rftest_case",
+     "phy_get_rfcal_rxiq_data"
+    ],
+    [
+     "run_rftest_case",
+     "phy_get_romfunc_addr"
+    ],
+    [
+     "run_rftest_case",
+     "phy_get_rx_sig_pwr"
+    ],
+    [
+     "run_rftest_case",
+     "phy_get_sar2_vol"
+    ],
+    [
+     "run_rftest_case",
+     "phy_get_target_pwr"
+    ],
+    [
+     "run_rftest_case",
+     "phy_get_tone_sar_dout"
+    ],
+    [
+     "run_rftest_case",
+     "phy_get_vdd33"
+    ],
+    [
+     "run_rftest_case",
+     "phy_i2c_check"
+    ],
+    [
+     "run_rftest_case",
+     "phy_i2c_clk_sel"
+    ],
+    [
+     "run_rftest_case",
+     "phy_i2c_readReg"
+    ],
+    [
+     "run_rftest_case",
+     "phy_i2c_readReg_Mask"
+    ],
+    [
+     "run_rftest_case",
+     "phy_i2c_writeReg"
+    ],
+    [
+     "run_rftest_case",
+     "phy_i2c_writeReg_Mask"
+    ],
+    [
+     "run_rftest_case",
+     "phy_init"
+    ],
+    [
+     "run_rftest_case",
+     "phy_meas_tone_pwr_db"
+    ],
+    [
+     "run_rftest_case",
+     "phy_param"
+    ],
+    [
+     "run_rftest_case",
+     "phy_pbus_debugmode"
+    ],
+    [
+     "run_rftest_case",
+     "phy_pbus_force_test"
+    ],
+    [
+     "run_rftest_case",
+     "phy_pbus_print"
+    ],
+    [
+     "run_rftest_case",
+     "phy_pbus_rd"
+    ],
+    [
+     "run_rftest_case",
+     "phy_pbus_rx_dco_cal"
+    ],
+    [
+     "run_rftest_case",
+     "phy_pbus_set_dco"
+    ],
+    [
+     "run_rftest_case",
+     "phy_pbus_set_rxgain"
+    ],
+    [
+     "run_rftest_case",
+     "phy_pbus_workmode"
+    ],
+    [
+     "run_rftest_case",
+     "phy_pbus_xpd_dpd_path"
+    ],
+    [
+     "run_rftest_case",
+     "phy_pbus_xpd_iq_path"
+    ],
+    [
+     "run_rftest_case",
+     "phy_pbus_xpd_rx_on"
+    ],
+    [
+     "run_rftest_case",
+     "phy_pbus_xpd_tx_on"
+    ],
+    [
+     "run_rftest_case",
+     "phy_pkdadc_set"
+    ],
+    [
+     "run_rftest_case",
+     "phy_printf"
+    ],
+    [
+     "run_rftest_case",
+     "phy_pwdet_always_en"
+    ],
+    [
+     "run_rftest_case",
+     "phy_pwdet_code_cal"
+    ],
+    [
+     "run_rftest_case",
+     "phy_read_hw_noisefloor"
+    ],
+    [
+     "run_rftest_case",
+     "phy_read_sar2_code"
+    ],
+    [
+     "run_rftest_case",
+     "phy_reg_check"
+    ],
+    [
+     "run_rftest_case",
+     "phy_restart_cal"
+    ],
+    [
+     "run_rftest_case",
+     "phy_rf_init"
+    ],
+    [
+     "run_rftest_case",
+     "phy_rf_param_flash_burn"
+    ],
+    [
+     "run_rftest_case",
+     "phy_rf_param_flash_get"
+    ],
+    [
+     "run_rftest_case",
+     "phy_rfagc_disable"
+    ],
+    [
+     "run_rftest_case",
+     "phy_rfpll_dreg_pvt_opt"
+    ],
+    [
+     "run_rftest_case",
+     "phy_rxevm_calcu"
+    ],
+    [
+     "run_rftest_case",
+     "phy_rxevm_init_cfg"
+    ],
+    [
+     "run_rftest_case",
+     "phy_rxiq_cover_mg_mp"
+    ],
+    [
+     "run_rftest_case",
+     "phy_rxiq_get_mis"
+    ],
+    [
+     "run_rftest_case",
+     "phy_sar_vol_1p1"
+    ],
+    [
+     "run_rftest_case",
+     "phy_sdm_cal_check"
+    ],
+    [
+     "run_rftest_case",
+     "phy_sdm_read_code"
+    ],
+    [
+     "run_rftest_case",
+     "phy_sdm_start_cal_1p1"
+    ],
+    [
+     "run_rftest_case",
+     "phy_set_cca"
+    ],
+    [
+     "run_rftest_case",
+     "phy_set_freq"
+    ],
+    [
+     "run_rftest_case",
+     "phy_set_freq_sw_start"
+    ],
+    [
+     "run_rftest_case",
+     "phy_set_loopback_gain"
+    ],
+    [
+     "run_rftest_case",
+     "phy_set_most_tpw"
+    ],
+    [
+     "run_rftest_case",
+     "phy_set_rf_freq_offset"
+    ],
+    [
+     "run_rftest_case",
+     "phy_set_rx_gain_cal_iq"
+    ],
+    [
+     "run_rftest_case",
+     "phy_set_rx_gain_table"
+    ],
+    [
+     "run_rftest_case",
+     "phy_set_rx_pbus_freq"
+    ],
+    [
+     "run_rftest_case",
+     "phy_set_rx_sense"
+    ],
+    [
+     "run_rftest_case",
+     "phy_set_rxclk_en"
+    ],
+    [
+     "run_rftest_case",
+     "phy_set_txcap_reg"
+    ],
+    [
+     "run_rftest_case",
+     "phy_set_txclk_en"
+    ],
+    [
+     "run_rftest_case",
+     "phy_start_tx_tone_step"
+    ],
+    [
+     "run_rftest_case",
+     "phy_stop_tx_tone"
+    ],
+    [
+     "run_rftest_case",
+     "phy_test_init"
+    ],
+    [
+     "run_rftest_case",
+     "phy_track_temp_debug"
+    ],
+    [
+     "run_rftest_case",
+     "phy_tsens_temp_read"
+    ],
+    [
+     "run_rftest_case",
+     "phy_tx_cap_init"
+    ],
+    [
+     "run_rftest_case",
+     "phy_tx_pwctrl_init_new"
+    ],
+    [
+     "run_rftest_case",
+     "phy_tx_pwr_correct_en"
+    ],
+    [
+     "run_rftest_case",
+     "phy_tx_pwr_print_en"
+    ],
+    [
+     "run_rftest_case",
+     "phy_tx_pwr_track_en"
+    ],
+    [
+     "run_rftest_case",
+     "phy_txbbgain_to_index"
+    ],
+    [
+     "run_rftest_case",
+     "phy_txdc_cal_init"
+    ],
+    [
+     "run_rftest_case",
+     "phy_txdc_cal_pwdet_init"
+    ],
+    [
+     "run_rftest_case",
+     "phy_txiq_cal_init"
+    ],
+    [
+     "run_rftest_case",
+     "phy_wakeup_init"
+    ],
+    [
+     "run_rftest_case",
+     "phy_wifi_set_tx_gain_new"
+    ],
+    [
+     "run_rftest_case",
+     "phy_xtal_duty_cal"
+    ],
+    [
+     "run_rftest_case",
+     "print_dump_data"
+    ],
+    [
+     "run_rftest_case",
+     "psram_test_enable"
+    ],
+    [
+     "run_rftest_case",
+     "psram_test_init"
+    ],
+    [
+     "run_rftest_case",
+     "pull_internal_voltage"
+    ],
+    [
+     "run_rftest_case",
+     "pwdet_debug_test"
+    ],
+    [
+     "run_rftest_case",
+     "read_flash"
+    ],
+    [
+     "run_rftest_case",
+     "read_pkdet_original"
+    ],
+    [
+     "run_rftest_case",
+     "reg_opt_on"
+    ],
+    [
+     "run_rftest_case",
+     "register_chipv7_phy_init_param"
+    ],
+    [
+     "run_rftest_case",
+     "remove_11b_4p8G_spur"
+    ],
+    [
+     "run_rftest_case",
+     "rf_freq_debug"
+    ],
+    [
+     "run_rftest_case",
+     "rf_spi_flash_test"
+    ],
+    [
+     "run_rftest_case",
+     "rf_spi_psram_test"
+    ],
+    [
+     "run_rftest_case",
+     "rfpll_cal_time"
+    ],
+    [
+     "run_rftest_case",
+     "rftest_init"
+    ],
+    [
+     "run_rftest_case",
+     "rftest_open_clk"
+    ],
+    [
+     "run_rftest_case",
+     "rftest_set_chan"
+    ],
+    [
+     "run_rftest_case",
+     "rssi_min_max_print"
+    ],
+    [
+     "run_rftest_case",
+     "rtc_set_cpu_freq"
+    ],
+    [
+     "run_rftest_case",
+     "run_para_array_clear"
+    ],
+    [
+     "run_rftest_case",
+     "rx_chan_noise"
+    ],
+    [
+     "run_rftest_case",
+     "rx_chan_noise_all"
+    ],
+    [
+     "run_rftest_case",
+     "rx_init_gain"
+    ],
+    [
+     "run_rftest_case",
+     "rx_max_gain"
+    ],
+    [
+     "run_rftest_case",
+     "rx_spur_remove"
+    ],
+    [
+     "run_rftest_case",
+     "rxiq_cal_test"
+    ],
+    [
+     "run_rftest_case",
+     "rxiq_get_pwr"
+    ],
+    [
+     "run_rftest_case",
+     "scale_20"
+    ],
+    [
+     "run_rftest_case",
+     "scale_40"
+    ],
+    [
+     "run_rftest_case",
+     "set_noise_floor"
+    ],
+    [
+     "run_rftest_case",
+     "set_tx_power"
+    ],
+    [
+     "run_rftest_case",
+     "spur_data_1p1"
+    ],
+    [
+     "run_rftest_case",
+     "start_tx_tone"
+    ],
+    [
+     "run_rftest_case",
+     "strcmp"
+    ],
+    [
+     "run_rftest_case",
+     "sw_chan_test"
+    ],
+    [
+     "run_rftest_case",
+     "target_power_backoff"
+    ],
+    [
+     "run_rftest_case",
+     "test_mem_time"
+    ],
+    [
+     "run_rftest_case",
+     "test_rf_cal_level"
+    ],
+    [
+     "run_rftest_case",
+     "test_txtone_pwr"
+    ],
+    [
+     "run_rftest_case",
+     "trig_tx_frame"
+    ],
+    [
+     "run_rftest_case",
+     "tx_ack_init"
+    ],
+    [
+     "run_rftest_case",
+     "tx_ack_test"
+    ],
+    [
+     "run_rftest_case",
+     "tx_chan_atten"
+    ],
+    [
+     "run_rftest_case",
+     "tx_contin_en"
+    ],
+    [
+     "run_rftest_case",
+     "tx_frame_delay_us"
+    ],
+    [
+     "run_rftest_case",
+     "tx_frame_enable"
+    ],
+    [
+     "run_rftest_case",
+     "tx_signal_test"
+    ],
+    [
+     "run_rftest_case",
+     "wifiscwout"
+    ],
+    [
+     "run_rftest_case",
+     "wifitxout"
+    ],
+    [
+     "run_rftest_case",
+     "write_flash"
+    ],
+    [
+     "run_rftest_case",
+     "x32k_enable"
+    ],
+    [
+     "run_rftest_case",
+     "x32k_set"
+    ],
+    [
+     "run_rftest_case",
+     "xtal_spur_cal"
+    ],
+    [
+     "rx_chan_noise",
+     "check_noise_floor"
+    ],
+    [
+     "rx_chan_noise",
+     "phy_chip_set_chan"
+    ],
+    [
+     "rx_chan_noise",
+     "phy_printf"
+    ],
+    [
+     "rx_chan_noise_all",
+     "check_noise_floor"
+    ],
+    [
+     "rx_chan_noise_all",
+     "phy_chip_set_chan"
+    ],
+    [
+     "rx_chan_noise_all",
+     "phy_printf"
+    ],
+    [
+     "rx_per_init",
+     "set_mac_filter"
+    ],
+    [
+     "set_chan_freq_sub",
+     "phy_set_freq_sw_start"
+    ],
+    [
+     "set_dump_pbus",
+     "phy_pbus_force_test"
+    ],
+    [
+     "set_rate_power",
+     "phy_get_pwr_by_rate"
+    ],
+    [
+     "set_rate_power",
+     "phy_param"
+    ],
+    [
+     "set_rate_power",
+     "phy_wifi_set_tx_gain_new"
+    ],
+    [
+     "set_rate_power",
+     "set_mactx_pwrdb"
+    ],
+    [
+     "set_rate_power_index",
+     "phy_force_pwr_index"
+    ],
+    [
+     "set_rate_power_index",
+     "phy_get_pwr_index"
+    ],
+    [
+     "set_rate_power_index",
+     "phy_param"
+    ],
+    [
+     "set_rate_power_index",
+     "phy_wifi_set_tx_gain_new"
+    ],
+    [
+     "set_spur_reg",
+     "phy_printf"
+    ],
+    [
+     "set_spur_reg",
+     "phy_spur_cal"
+    ],
+    [
+     "set_spur_reg",
+     "phy_spur_reg_write"
+    ],
+    [
+     "set_tx_power",
+     "force_tx_gain"
+    ],
+    [
+     "set_tx_power",
+     "g_phyFuns"
+    ],
+    [
+     "set_tx_power",
+     "phy_param"
+    ],
+    [
+     "set_tx_power",
+     "phy_printf"
+    ],
+    [
+     "sw_chan_test",
+     "beacon_print"
+    ],
+    [
+     "sw_chan_test",
+     "phy_printf"
+    ],
+    [
+     "sw_chan_test",
+     "rftest_set_chan"
+    ],
+    [
+     "test_5g",
+     "phy_band_sel"
+    ],
+    [
+     "test_mem_time",
+     "phy_printf"
+    ],
+    [
+     "test_rf_cal_level",
+     "esp_rom_spiflash_erase_sector"
+    ],
+    [
+     "test_rf_cal_level",
+     "esp_rom_spiflash_read"
+    ],
+    [
+     "test_rf_cal_level",
+     "esp_rom_spiflash_write"
+    ],
+    [
+     "test_rf_cal_level",
+     "phy_param"
+    ],
+    [
+     "test_rf_cal_level",
+     "phy_printf"
+    ],
+    [
+     "test_rf_cal_level",
+     "register_chipv7_phy"
+    ],
+    [
+     "tx_cal_default_value",
+     "phy_param"
+    ],
+    [
+     "tx_chan_atten",
+     "phy_chip_set_chan"
+    ],
+    [
+     "tx_chan_atten",
+     "phy_param"
+    ],
+    [
+     "tx_chan_atten",
+     "phy_printf"
+    ],
+    [
+     "tx_chan_atten",
+     "phy_rfcal_pwrctrl"
+    ],
+    [
+     "tx_chan_atten",
+     "phy_txcal_debuge_mode_new"
+    ],
+    [
+     "tx_chan_atten",
+     "phy_txcal_work_mode"
+    ],
+    [
+     "tx_force_pwr",
+     "phy_force_pwr_index"
+    ],
+    [
+     "txon_set",
+     "txon_set.part.2"
+    ],
+    [
+     "txpwr_backoff_test",
+     "phy_chip_set_chan"
+    ],
+    [
+     "txpwr_backoff_test",
+     "phy_param"
+    ],
+    [
+     "txpwr_backoff_test",
+     "phy_printf"
+    ],
+    [
+     "txpwr_backoff_test",
+     "phy_txcal_debuge_mode_new"
+    ],
+    [
+     "txpwr_backoff_test",
+     "phy_txcal_work_mode"
+    ],
+    [
+     "txpwr_backoff_test",
+     "tx_pwr_backoff"
+    ],
+    [
+     "wdg_rst_init",
+     "lp_wdt_reset_sys"
+    ],
+    [
+     "wdg_rst_init",
+     "rtc_reset_cause"
+    ],
+    [
+     "wifi_init",
+     "mac_init"
+    ],
+    [
+     "wifi_init",
+     "phy_get_romfunc_addr"
+    ],
+    [
+     "wifi_init",
+     "phy_init"
+    ],
+    [
+     "wifi_init",
+     "phy_printf"
+    ],
+    [
+     "write_flash",
+     "esp_rom_spiflash_erase_sector"
+    ],
+    [
+     "write_flash",
+     "esp_rom_spiflash_write"
+    ],
+    [
+     "write_flash",
+     "memset"
+    ],
+    [
+     "write_flash",
+     "phy_printf"
+    ],
+    [
+     "write_flash",
+     "spi_flash_attach"
+    ],
+    [
+     "write_flash_init_para",
+     "esp_rom_spiflash_erase_sector"
+    ],
+    [
+     "write_flash_init_para",
+     "esp_rom_spiflash_write"
+    ]
+   ]
+  }
+ ]
+}
