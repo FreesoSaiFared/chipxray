@@ -1,5 +1,5 @@
 """Read-only fact store for one chip, and the tools the agent may call."""
-import gzip, json, re
+import gzip, json, os, re, sys
 from collections import defaultdict
 from chipxray.baseline import rank
 from chipxray.svd import classify, load_svd
@@ -8,14 +8,15 @@ MAX_C = 4000
 
 
 class Store:
-    def __init__(self, chip, stripped=False):
+    def __init__(self, chip, stripped=False, root=None):
         self.chip, self.stripped = chip, stripped
+        root = root or os.environ.get("CHIPXRAY_ROOT", ".")
         tag = f"{chip}_librftest" + ("_stripped" if stripped else "")
-        with open(f"facts/{tag}.json", encoding="utf-8") as fh:
+        with open(f"{root}/facts/{tag}.json", encoding="utf-8") as fh:
             self.facts = json.load(fh)
-        with gzip.open(f"facts/decomp/{tag}.json.gz", "rt", encoding="utf-8") as fh:
+        with gzip.open(f"{root}/facts/decomp/{tag}.json.gz", "rt", encoding="utf-8") as fh:
             dec = json.load(fh)
-        self.periphs = load_svd(f"blobs/svd/{chip}.svd")
+        self.periphs = load_svd(f"{root}/blobs/svd/{chip}.svd")
         self.rows = {r["name"]: r for r in rank(self.facts, self.periphs)}
         self.fn = {f["name"]: dict(f, object=o["name"]) for o in self.facts["objects"] for f in o["functions"]}
         self.c = {f["name"]: f["c"] for o in dec["objects"] for f in o["functions"]}
@@ -93,3 +94,14 @@ def dispatch(store, name, args):
         return getattr(store, name)(**{k: v for k, v in args.items() if k in props})
     except (TypeError, ValueError) as e:
         return {"error": f"bad arguments for {name}: {e}"}
+
+
+def _value(v):
+    return int(v) if v.lstrip("-").isdigit() else v
+
+
+if __name__ == "__main__":
+    store = Store(os.environ["CHIPXRAY_CHIP"], stripped=os.environ.get("CHIPXRAY_STRIPPED") == "1")
+    tool = sys.argv[1] if len(sys.argv) > 1 else ""
+    args = dict(a.split("=", 1) for a in sys.argv[2:] if "=" in a)
+    print(json.dumps(dispatch(store, tool, {k: _value(v) for k, v in args.items()})))

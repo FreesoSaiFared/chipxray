@@ -24,3 +24,7 @@ jobs:
           python tests/test_decomp.py
           python tests/test_query.py
           python tests/test_llm.py
+          python tests/test_evidence.py
+          python tests/test_agent.py
+          python tests/test_oneshot.py
+          python tests/test_cli_backend.py

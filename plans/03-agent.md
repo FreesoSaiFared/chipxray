@@ -30,7 +30,7 @@ Phase 3 plan: an evidence-driven agent that investigates ranked functions with t
 | `chipxray/oneshot.py` | one-prompt comparison system, CLI |
 | `tests/test_query.py`, `test_llm.py`, `test_evidence.py`, `test_agent.py`, `test_oneshot.py` | checks |
 
-Waves: Tasks 1+2 in parallel → Task 3 → Tasks 4+5 in parallel → Task 6 (real runs; needs an API key).
+Waves: Tasks 1+2 → Tasks 3+7 → Tasks 4+5 → Task 8 → Task 6 (real runs).
 
 ---
 
@@ -707,7 +707,176 @@ if __name__ == "__main__":
 - [ ] **Step 1:** Known-answer test, normal mode: `python -m chipxray.agent esp32s3 --budget 30`. Record `adctrig`'s position in `ranking` and the unsupported-claim rate.
 - [ ] **Step 2:** Same in hard mode: `python -m chipxray.agent esp32s3 --strip --budget 30`. Map the alias back with `alias_map` when scoring.
 - [ ] **Step 3:** Hunt: `python -m chipxray.agent esp32c5 --focus fft_dump_init --budget 40`. Read the transcript. Write `wiki/esp32c5-fft-dump.md` with every fact at its evidence level.
-- [ ] **Step 4:** Add the 5 new test files to `.github/workflows/tests.yml`.
+- [ ] **Step 4:** Add the new test files to `.github/workflows/tests.yml`.
+
+---
+
+### Task 7: Query tools as a command line (for external agent CLIs)
+
+**Files:** Modify `chipxray/query.py`, `tests/test_query.py`
+
+**Interfaces:**
+- Produces: `Store(chip, stripped=False, root=None)`; `root` defaults to env `CHIPXRAY_ROOT` or `"."`, and all three file paths are joined to it. CLI: `python -m chipxray.query <tool> [key=value ...]` prints the tool's JSON result. Chip and mode come ONLY from env `CHIPXRAY_CHIP` and `CHIPXRAY_STRIPPED` (`"1"` = hard mode), so an agent cannot switch to normal mode. Integer-looking values (`top=5`) are passed as int.
+
+- [ ] **Step 1: Failing test** (append to `tests/test_query.py`, call in `__main__`)
+
+```python
+def test_cli_uses_env_for_chip_and_mode():
+    import os, subprocess, sys
+    env = dict(os.environ, PYTHONPATH=".", CHIPXRAY_CHIP="esp32s3", CHIPXRAY_STRIPPED="1")
+    out = subprocess.run([sys.executable, "-m", "chipxray.query", "address", "addr=0x60033d5c"],
+                         capture_output=True, text=True, env=env, check=True).stdout
+    d = json.loads(out)
+    assert d["kind"] == "unmapped" and "adctrig" not in out and d["functions"]
+    bad = subprocess.run([sys.executable, "-m", "chipxray.query", "nope"], capture_output=True, text=True, env=env).stdout
+    assert "error" in json.loads(bad)
+```
+
+- [ ] **Step 2: Run** `PYTHONPATH=. python tests/test_query.py` → fails (the module prints nothing, so `json.loads` raises).
+
+- [ ] **Step 3: Implement.** Add `import os, sys` at the top. In `Store.__init__`, add parameter `root=None`, set `root = root or os.environ.get("CHIPXRAY_ROOT", ".")`, and prefix the three file paths with `f"{root}/"`. Append at the end of the file:
+
+```python
+def _value(v):
+    return int(v) if v.lstrip("-").isdigit() else v
+
+
+if __name__ == "__main__":
+    store = Store(os.environ["CHIPXRAY_CHIP"], stripped=os.environ.get("CHIPXRAY_STRIPPED") == "1")
+    tool = sys.argv[1] if len(sys.argv) > 1 else ""
+    args = dict(a.split("=", 1) for a in sys.argv[2:] if "=" in a)
+    print(json.dumps(dispatch(store, tool, {k: _value(v) for k, v in args.items()})))
+```
+
+- [ ] **Step 4: Run** tests → `ok`.
+
+---
+
+### Task 8: External agent CLI backend
+
+**Files:** Create `chipxray/cli_backend.py`, `tests/fake_agent_cli.py`, `tests/test_cli_backend.py`; modify `.gitignore` (add `*.local.json`).
+
+**Interfaces:**
+- Consumes: `SYSTEM`, `parse_report` (Task 4), `check` (Task 3), `Store` (Tasks 1 and 7).
+- Produces: `run_cli(store, template, budget=30, focus=None) -> (report, raw)`; CLI `python -m chipxray.cli_backend <chip> [--strip] [--focus NAME] [--budget N]` that reads the template from the JSON file named by env `CHIPXRAY_AGENT_CLI` and writes `results/agent/<chip>[_stripped]-<model_label>-<stamp>.json`.
+- Template JSON: `{"argv": [...], "model_label": str, "result_field": "result"}`. Placeholders in `argv`: `{task}`, `{system_file}`, `{budget}`. Real templates are local files and are never committed (`*.local.json` is git-ignored).
+- The CLI runs in a fresh, empty temp directory, so the agent can read nothing but tool output. Env passed: `PYTHONPATH` and `CHIPXRAY_ROOT` = repo root (absolute), `CHIPXRAY_CHIP`, `CHIPXRAY_STRIPPED`.
+- `meta` gains `backend: "cli"`, `model: model_label`, `cli_usage` (the CLI's JSON output without the result field).
+
+- [ ] **Step 1: `tests/fake_agent_cli.py`**, a stand-in agent CLI that reads the system file, runs one tool command and answers:
+
+```python
+"""Stand-in for an agent CLI in tests: runs one query tool, then prints a JSON answer."""
+import json, os, subprocess, sys
+
+system_file, task = sys.argv[1], sys.argv[2]
+assert "hardware reverse engineer" in open(system_file, encoding="utf-8").read()
+assert os.listdir(".") == [os.path.basename(system_file)], "agent must start in an empty directory"
+tool = subprocess.run([sys.executable, "-m", "chipxray.query", "address", "addr=0x60033d5c"],
+                      capture_output=True, text=True, check=True).stdout
+fn = json.loads(tool)["functions"][0]
+answer = {"ranking": [fn], "findings": [{"function": fn, "hypothesis": "capture trigger", "evidence_level": "observed",
+          "evidence": [{"kind": "mmio", "ref": "0x60033d5c", "claim": "touches unmapped register"}],
+          "counter_evidence": "", "alternatives": [], "validation": ""}]}
+print(json.dumps({"result": json.dumps(answer), "num_turns": 2, "usage": {"output_tokens": 10}}))
+```
+
+- [ ] **Step 2: Failing test `tests/test_cli_backend.py`**
+
+```python
+import os, sys
+from chipxray.cli_backend import run_cli
+from chipxray.facts import alias_map
+from chipxray.query import Store
+
+
+def test_cli_backend_runs_agent_in_empty_dir_and_checks_report():
+    template = {"argv": [sys.executable, os.path.abspath("tests/fake_agent_cli.py"), "{system_file}", "{task}"],
+                "model_label": "fake-cli", "result_field": "result"}
+    report, raw = run_cli(Store("esp32s3", stripped=True), template, budget=5)
+    alias = alias_map("blobs/espressif/esp32s3_librftest.a")["adctrig"]
+    assert report["ranking"] == [alias] and report["checked"]["supported"] == 1
+    assert report["meta"]["backend"] == "cli" and report["meta"]["model"] == "fake-cli"
+    assert report["meta"]["cli_usage"]["num_turns"] == 2
+
+
+if __name__ == "__main__":
+    test_cli_backend_runs_agent_in_empty_dir_and_checks_report(); print("ok")
+```
+
+- [ ] **Step 3: Run** `PYTHONPATH=. python tests/test_cli_backend.py` → `ModuleNotFoundError: chipxray.cli_backend`.
+
+- [ ] **Step 4: Implement `chipxray/cli_backend.py`**
+
+```python
+"""Run the investigation through an external agent CLI instead of a chat API.
+
+The CLI gets a system prompt file, the task text, a turn budget, an EMPTY working directory,
+and one tool: the shell command `python -m chipxray.query <tool> key=value ...`.
+Template: JSON file named by env CHIPXRAY_AGENT_CLI (keep it local; *.local.json is git-ignored).
+
+Usage: python -m chipxray.cli_backend esp32c5 [--strip] [--focus NAME] [--budget 30]
+"""
+import json, os, re, subprocess, sys, tempfile, time
+from pathlib import Path
+from chipxray.evidence import check
+from chipxray.query import Store
+
+CLI_TOOLS = """Use the tools by running ONE shell command per call:
+  python -m chipxray.query candidates top=20
+  python -m chipxray.query function name=<function>
+  python -m chipxray.query address addr=0x60033d5c
+  python -m chipxray.query search pattern=<regex>
+  python -m chipxray.query callers_of name=<function>
+Each prints JSON facts from the binary. No other command or file is available.
+"""
+
+
+def run_cli(store, template, budget=30, focus=None):
+    from chipxray.agent import SYSTEM, parse_report
+    system = SYSTEM.replace("Use the tools.", CLI_TOOLS, 1)
+    task = f"Investigate the {store.chip} radio test library. Find undocumented hardware capabilities."
+    if focus:
+        task += f" Start with function {focus}."
+    root = str(Path(".").resolve())
+    env = dict(os.environ, PYTHONPATH=root, CHIPXRAY_ROOT=root, CHIPXRAY_CHIP=store.chip,
+               CHIPXRAY_STRIPPED="1" if store.stripped else "0")
+    field = template.get("result_field", "result")
+    t0 = time.time()
+    with tempfile.TemporaryDirectory(prefix="chipxray_agent_") as work:
+        system_file = os.path.join(work, "system.txt")
+        Path(system_file).write_text(system, encoding="utf-8")
+        argv = [a.format(task=task, system_file=system_file, budget=budget) for a in template["argv"]]
+        proc = subprocess.run(argv, cwd=work, env=env, capture_output=True, text=True, encoding="utf-8")
+    if proc.returncode != 0:
+        raise RuntimeError(f"agent CLI failed ({proc.returncode}): {proc.stderr[-800:]}")
+    raw = json.loads(proc.stdout)
+    report = parse_report(str(raw.get(field, "")))
+    parse_failed = report is None
+    report = report or {"ranking": [], "findings": []}
+    report["checked"] = check(report, store)
+    report["meta"] = {"chip": store.chip, "stripped": store.stripped, "backend": "cli", "model": template["model_label"],
+                      "budget": budget, "focus": focus, "parse_failed": parse_failed,
+                      "seconds": round(time.time() - t0, 1), "cli_usage": {k: v for k, v in raw.items() if k != field}}
+    return report, raw
+
+
+if __name__ == "__main__":
+    args = sys.argv[1:]
+    chip, strip = args[0], "--strip" in args
+    focus = args[args.index("--focus") + 1] if "--focus" in args else None
+    budget = int(args[args.index("--budget") + 1]) if "--budget" in args else 30
+    template = json.loads(Path(os.environ["CHIPXRAY_AGENT_CLI"]).read_text(encoding="utf-8"))
+    report, raw = run_cli(Store(chip, stripped=strip), template, budget=budget, focus=focus)
+    stamp = time.strftime("%Y%m%dT%H%M%SZ", time.gmtime())
+    label = re.sub(r"[^A-Za-z0-9._-]", "_", template["model_label"])
+    out = Path("results/agent") / f"{chip}{'_stripped' if strip else ''}-{label}-{stamp}.json"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(report, indent=1), encoding="utf-8")
+    print(out, "ranking:", report["ranking"][:10], "supported:", report["checked"]["supported"], "/", report["checked"]["claims"])
+```
+
+- [ ] **Step 5: Run** tests → `ok`.
 
 ## Done when
 1. All 9 test files print `ok` locally and in CI (no network, no key).
