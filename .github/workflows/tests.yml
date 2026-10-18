@@ -21,3 +21,6 @@ jobs:
           python tests/test_facts.py
           python tests/test_svd.py
           python tests/test_baseline.py
+          python tests/test_decomp.py
+          python tests/test_query.py
+          python tests/test_llm.py
