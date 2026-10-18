@@ -54,6 +54,7 @@ class Store:
         return {"addr": key, "kind": kind, "detail": detail, "functions": same, "same_page_functions": near}
 
     def search(self, pattern, limit=20):
+        limit = max(1, min(int(limit), 50))
         try:
             rx = re.compile(pattern)
         except re.error as e:
@@ -101,7 +102,15 @@ def _value(v):
 
 
 if __name__ == "__main__":
-    store = Store(os.environ["CHIPXRAY_CHIP"], stripped=os.environ.get("CHIPXRAY_STRIPPED") == "1")
+    root = os.environ.get("CHIPXRAY_ROOT", ".")
+    mode_file = os.path.join(root, "mode.json")
+    if os.path.exists(mode_file):  # sandboxed run: mode is fixed by the runner, env cannot override it
+        with open(mode_file, encoding="utf-8") as fh:
+            mode = json.load(fh)
+        chip, stripped = mode["chip"], mode["stripped"]
+    else:
+        chip, stripped = os.environ["CHIPXRAY_CHIP"], os.environ.get("CHIPXRAY_STRIPPED") == "1"
+    store = Store(chip, stripped=stripped)
     tool = sys.argv[1] if len(sys.argv) > 1 else ""
     args = dict(a.split("=", 1) for a in sys.argv[2:] if "=" in a)
     print(json.dumps(dispatch(store, tool, {k: _value(v) for k, v in args.items()})))

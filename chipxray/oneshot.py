@@ -5,10 +5,12 @@ Usage: python -m chipxray.oneshot esp32c5 [--strip] [--top 15]
 import json, re, sys, time
 from pathlib import Path
 from chipxray.evidence import check
-from chipxray.query import Store
+from chipxray.query import MAX_C, Store
 
 
-def build_prompt(store, top=15, max_c=1500):
+def build_prompt(store, top=15, max_c=None):
+    if max_c is None:
+        max_c = MAX_C
     parts = [f"Library: {store.chip} radio test library. Facts for the top {top} candidate functions follow."]
     for c in store.candidates(top=top)["candidates"]:
         f = store.function(c["name"])
@@ -19,8 +21,8 @@ def build_prompt(store, top=15, max_c=1500):
 
 
 def run(store, llm, top=15):
-    from chipxray.agent import SYSTEM, parse_report
-    system = SYSTEM.split("Use the tools.")[0] + SYSTEM[SYSTEM.index("Rules:"):]
+    from chipxray.agent import FORMAT, HEAD, RULES, parse_report
+    system = HEAD + RULES + FORMAT
     messages = [{"role": "system", "content": system}, {"role": "user", "content": build_prompt(store, top)}]
     t0 = time.time()
     msg = llm.chat(messages)

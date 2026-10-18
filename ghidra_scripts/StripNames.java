@@ -14,6 +14,8 @@ import java.util.Map;
 public class StripNames extends GhidraScript {
     @Override
     protected void run() throws Exception {
+        // DWARF debug info (present in the ESP32 library) would restore every real name after this script.
+        setAnalysisOption(currentProgram, "DWARF", "false");
         Map<String, String> alias = new HashMap<>();
         for (String line : Files.readAllLines(Paths.get(getScriptArgs()[0]))) {
             String[] p = line.split("\t");

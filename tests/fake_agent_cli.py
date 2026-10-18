@@ -1,5 +1,6 @@
 """Stand-in for an agent CLI in tests: runs one query tool, then prints a JSON answer."""
 import json, os, subprocess, sys
+assert "CHIPXRAY_STRIPPED" not in os.environ and "CHIPXRAY_CHIP" not in os.environ
 
 system_file, task = sys.argv[1], sys.argv[2]
 assert "hardware reverse engineer" in open(system_file, encoding="utf-8").read()

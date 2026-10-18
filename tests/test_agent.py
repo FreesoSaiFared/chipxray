@@ -40,6 +40,16 @@ def test_unparseable_final_gives_empty_report():
     assert report["ranking"] == [] and report["meta"]["parse_failed"] is True
 
 
+def test_tool_calls_after_budget_get_error_replies_and_loop_ends():
+    llm = ScriptedLLM([_call(i, "candidates", {"top": 3}) for i in range(12)])
+    report, transcript = run(S, llm, budget=2)
+    assert report["meta"]["tool_calls"] == 2 and report["meta"]["parse_failed"] is True
+    ids = [tc["id"] for m in transcript if m.get("tool_calls") for tc in m["tool_calls"]]
+    answered = [m["tool_call_id"] for m in transcript if m["role"] == "tool"]
+    assert ids == answered and any("budget used up" in m["content"] for m in transcript if m["role"] == "tool")
+
+
 if __name__ == "__main__":
     test_parse_report_accepts_fenced_json(); test_run_executes_tools_then_returns_checked_report()
-    test_budget_exhaustion_forces_final_answer(); test_unparseable_final_gives_empty_report(); print("ok")
+    test_budget_exhaustion_forces_final_answer(); test_unparseable_final_gives_empty_report()
+    test_tool_calls_after_budget_get_error_replies_and_loop_ends(); print("ok")

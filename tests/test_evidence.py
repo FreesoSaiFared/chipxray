@@ -12,8 +12,16 @@ def _report(evidence, level="correlated", fn="adctrig"):
 def test_supported_claims():
     r = check(_report([{"kind": "mmio", "ref": "0x60033d5c", "claim": "x"},
                        {"kind": "call", "ref": "tx_a_frame", "claim": "x"},
-                       {"kind": "code", "ref": "memw()", "claim": "x"}]), S)
+                       {"kind": "code", "ref": "*DAT_00010a9c & 0xfffffff0", "claim": "x"}]), S)
     assert r["claims"] == 3 and r["supported"] == 3 and r["unsupported_rate"] == 0.0
+
+
+def test_short_snippets_and_malformed_items_are_not_supported():
+    rep = _report([{"kind": "code", "ref": "memw()", "claim": "x"}, "just a string"])
+    rep["findings"].append("not a dict")
+    r = check(rep, S)
+    assert r["supported"] == 0 and r["claims"] == 2 and r["malformed"] == 1
+    assert check({"ranking": [], "findings": "oops"}, S)["claims"] == 0
 
 
 def test_unsupported_claims_are_listed():
@@ -38,4 +46,4 @@ def test_mmio_ref_accepts_any_hex_case():
 
 if __name__ == "__main__":
     test_supported_claims(); test_unsupported_claims_are_listed(); test_unknown_function_and_validated_level()
-    test_mmio_ref_accepts_any_hex_case(); print("ok")
+    test_mmio_ref_accepts_any_hex_case(); test_short_snippets_and_malformed_items_are_not_supported(); print("ok")

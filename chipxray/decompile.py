@@ -4,14 +4,24 @@ Usage: python -m chipxray.decompile blobs/espressif/esp32s3_librftest.a [--strip
 Needs env CHIPXRAY_GHIDRA: path to a .ps1 launcher (Windows) or to analyzeHeadless.
 Writes facts/decomp/<stem>[_stripped].json.gz
 """
-import gzip, hashlib, json, os, shutil, subprocess, sys
+import gzip, hashlib, json, os, re, shutil, subprocess, sys
 from pathlib import Path
 from chipxray.facts import alias_map, ar_members
+
+STRING = re.compile(r'"(?:[^"\\]|\\.)*"')
 
 
 def launcher():
     g = os.environ["CHIPXRAY_GHIDRA"]
     return ["powershell", "-ExecutionPolicy", "Bypass", "-File", g] if g.endswith(".ps1") else [g]
+
+
+def redact_strings(c, alias):
+    """Inside C string literals, replace whole-word defined names with their fn_N alias."""
+    if not alias:
+        return c
+    word = re.compile(r"(?<![A-Za-z0-9_])(" + "|".join(map(re.escape, sorted(alias, key=len, reverse=True))) + r")(?![A-Za-z0-9_])")
+    return STRING.sub(lambda m: word.sub(lambda w: alias[w.group(1)], m.group(0)), c)
 
 
 def decompile(src, strip=False):
@@ -41,6 +51,11 @@ def decompile(src, strip=False):
     result = dict(source=f"blobs/espressif/{src.name}", sha256=hashlib.sha256(data).hexdigest(), stripped=strip,
                   objects=[dict(name=n, functions=json.loads((out / f"{n}.json").read_text(encoding="utf-8")))
                            for n in names])
+    if strip:
+        alias = alias_map(src)
+        for o in result["objects"]:
+            for f in o["functions"]:
+                f["c"] = redact_strings(f["c"], alias)
     dst = Path("facts/decomp") / f"{tag}.json.gz"
     dst.parent.mkdir(parents=True, exist_ok=True)
     with gzip.open(dst, "wt", encoding="utf-8") as fh:
