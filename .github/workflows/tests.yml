@@ -1,0 +1,23 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: Fetch pinned inputs (verifies SHA-256)
+        run: bash fetch_inputs.sh
+      - name: Run tests
+        env:
+          PYTHONPATH: .
+        run: |
+          python tests/test_facts.py
+          python tests/test_svd.py
+          python tests/test_baseline.py

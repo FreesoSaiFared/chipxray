@@ -13,7 +13,7 @@ Phase 1 plan: a rules-only baseline that ranks functions by how much undocumente
 ## Global Constraints
 - Stdlib only. No pytest, no new dependencies.
 - Never write to C:. Never modify files in `blobs/` by hand.
-- Run everything from `F:\hack a day\chipxray` with `PYTHONPATH=.`.
+- Run everything from the repo root with `PYTHONPATH=.`.
 - Peripheral window: `0x6000_0000–0x600F_FFFF` for all chips, plus `0x3FF0_0000–0x3FF7_FFFF` for ESP32.
 - Inputs pinned: esp-phy-lib `20f1db053a0e6cb9f1c09d255c43bf42483041d0`, esp-pacs `fed196c2f4b46f28f67e197ddbc007acd9804d3b`.
 - The baseline must not read function names (it must give identical ranks in normal and stripped mode).
