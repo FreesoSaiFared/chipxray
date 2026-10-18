@@ -336,7 +336,7 @@ if __name__ == "__main__":
 - [ ] **Step 4: Run on the S3, both modes** (Windows):
 
 ```bash
-export CHIPXRAY_GHIDRA="F:/hack a day/tools/ghidra-headless.ps1"
+export CHIPXRAY_GHIDRA="/path/to/ghidra-headless.ps1"  # or <ghidra>/support/analyzeHeadless
 python -m chipxray.decompile blobs/espressif/esp32s3_librftest.a
 python -m chipxray.decompile blobs/espressif/esp32s3_librftest.a --strip
 ```
