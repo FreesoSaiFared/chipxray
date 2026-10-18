@@ -28,3 +28,4 @@ jobs:
           python tests/test_agent.py
           python tests/test_oneshot.py
           python tests/test_cli_backend.py
+          python tests/test_bench.py

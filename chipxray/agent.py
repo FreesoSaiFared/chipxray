@@ -23,7 +23,8 @@ Use the tools. They return facts from the binary:
 - address: the class of one hardware address and all functions that touch it.
 - search: regex over all decompiled C.
 - callers_of: who calls a function.
-Stay inside your tool budget. Look at the top candidates first, then follow registers and calls.
+- rare_pages: register pages that only one or two functions touch.
+Stay inside your tool budget. Look at the top candidates and at rare_pages first, then follow registers and calls.
 """
 
 RULES = """

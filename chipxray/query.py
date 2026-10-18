@@ -67,6 +67,15 @@ class Store:
             return {"error": f"unknown function {name!r}"}
         return {"name": name, "callers": sorted(self.callers[name])}
 
+    def rare_pages(self, max_users=2):
+        pages = {}
+        for n, f in self.fn.items():
+            for m in f["mmio"]:
+                pages.setdefault(int(m, 16) & ~0xFF, set()).add(n)
+        rare = [{"page": f"0x{p:08x}", "kind": classify(p, self.periphs)[0], "functions": sorted(fs)}
+                for p, fs in sorted(pages.items()) if len(fs) <= int(max_users)]
+        return {"pages": rare[:60], "total": len(rare)}
+
 
 def _tool(name, desc, props, required):
     return {"type": "function", "function": {"name": name, "description": desc,
@@ -83,6 +92,8 @@ TOOLS = [
     _tool("search", "Regex search over all decompiled C. Returns matching function names.",
           {"pattern": {"type": "string"}, "limit": {"type": "integer"}}, ["pattern"]),
     _tool("callers_of", "Functions that call the given function.", {"name": {"type": "string"}}, ["name"]),
+    _tool("rare_pages", "Hardware register pages (256 bytes) touched by only one or two functions, with those functions.",
+          {"max_users": {"type": "integer"}}, []),
 ]
 
 

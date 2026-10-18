@@ -45,6 +45,11 @@ def test_tools_schema_matches_dispatch():
         assert "error" not in dispatch(S, t["function"]["name"], {"name": "adctrig", "addr": "0x60033d5c", "pattern": "memw"}) or t["function"]["name"] == "callers_of"
 
 
+def test_rare_pages_lists_only_lightly_used_pages():
+    r = S.rare_pages()
+    assert r["pages"] and all(len(p["functions"]) <= 2 for p in r["pages"])
+
+
 def test_cli_uses_env_for_chip_and_mode():
     import os, subprocess, sys
     env = dict(os.environ, PYTHONPATH=".", CHIPXRAY_CHIP="esp32s3", CHIPXRAY_STRIPPED="1")
@@ -60,6 +65,6 @@ if __name__ == "__main__":
     for t in [test_candidates_sorted_by_inclusive_score, test_function_reports_classified_mmio_and_code,
               test_address_lists_functions_touching_it, test_unknown_inputs_return_errors_not_exceptions,
               test_search_finds_code_pattern, test_stripped_store_leaks_no_names, test_tools_schema_matches_dispatch,
-              test_cli_uses_env_for_chip_and_mode]:
+              test_rare_pages_lists_only_lightly_used_pages, test_cli_uses_env_for_chip_and_mode]:
         t()
     print("ok")
