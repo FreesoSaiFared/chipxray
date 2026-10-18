@@ -7,9 +7,9 @@ The 5-week roadmap for ChipXray; each phase gets its own detailed plan file when
 | Phase | Plan file | Output | Status |
 |---|---|---|---|
 | 0. Setup | — | Ghidra + JDK on F:, 5 `librftest.a` blobs, `facts.py`, decompile script | done 2026-10-18 |
-| 1. Rules-only baseline | `01-baseline.md` | MMIO constants per function, SVD register maps, ranked CSV per chip, first result table | next |
-| 2. Decompiled-code facts | `02-decompile-facts.md` | Ghidra export (C + MMIO accesses) for top-N functions into `facts/` | after 1 |
-| 3. Evidence-driven agent | `03-agent.md` | Agent that queries facts, writes findings at 4 evidence levels with counter-evidence | after 2 |
+| 1. Rules-only baseline | `01-baseline.md` | MMIO constants per function, SVD register maps, ranked CSV per chip, first result table | done 2026-10-18 |
+| 2. Better facts | `02-facts.md` | leak-free hard mode, call-graph-inclusive score, Ghidra C for every function | in progress |
+| 3. Evidence-driven agent | `03-agent.md` | tools + agent + one-shot + evidence checker; then hunt new leads (fft_dump_init) | in progress |
 | 4. Benchmark | `04-benchmark.md` | rules vs single-shot LLM vs agent × names intact vs stripped; negative controls; contamination log | after 3 |
 | 5. Transfer + write-up | `05-writeup.md` | Run on a sibling chip, README with results, demo, limitations | after 4 |
 

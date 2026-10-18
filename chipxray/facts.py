@@ -165,6 +165,14 @@ def elf_facts(obj):
                           exported=f["bind"] == 1, mmio=mmio(f)) for f in funcs], edges
 
 
+def alias_map(path):
+    """Hard-mode names: every defined function -> fn_N, sorted by name. Shared by facts and decompile."""
+    data = Path(path).read_bytes()
+    defined = {f["name"] for _, body in ar_members(data) if body[:4] == b"\x7fELF"
+               for f in elf_facts(body)[1]}
+    return {n: f"fn_{i}" for i, n in enumerate(sorted(defined))}
+
+
 def extract(path, strip=False):
     data = Path(path).read_bytes()
     out = dict(source=str(path), sha256=hashlib.sha256(data).hexdigest(), objects=[])
@@ -175,12 +183,12 @@ def extract(path, strip=False):
         out["objects"].append(dict(name=name, machine=machine, functions=funcs,
                                    calls=sorted(edges)))
     if strip:
-        defined = {f["name"] for o in out["objects"] for f in o["functions"]}
-        alias = {n: f"fn_{i}" for i, n in enumerate(sorted(defined))}
+        alias = alias_map(path)
         # ponytail: renames every defined symbol, incl. exported ones; real stripping keeps exports. Revisit for hard-mode fairness.
         for o in out["objects"]:
             for f in o["functions"]:
                 f["name"] = alias[f["name"]]
+                f["section"] = ".".join(alias.get(p, p) for p in f["section"].split("."))
             o["calls"] = [[alias.get(a, a), alias.get(b, b)] for a, b in o["calls"]]
     return out
 

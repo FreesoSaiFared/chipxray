@@ -1,0 +1,6315 @@
+{
+ "source": "blobs\\espressif\\esp32c5_librftest.a",
+ "sha256": "0f9680b41612762d854accf2334412e3e01b206a3ec290bbbb232842fdaec7ba",
+ "objects": [
+  {
+   "name": "phy_test.o",
+   "machine": 243,
+   "functions": [
+    {
+     "name": "fn_114",
+     "size": 44,
+     "section": ".text.fn_114",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_237",
+     "size": 2,
+     "section": ".text.fn_237",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_167",
+     "size": 16,
+     "section": ".text.fn_167",
+     "exported": true,
+     "mmio": [
+      "0x600a080c",
+      "0x600a1000"
+     ]
+    },
+    {
+     "name": "fn_244",
+     "size": 98,
+     "section": ".text.fn_244",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a041c"
+     ]
+    },
+    {
+     "name": "fn_269",
+     "size": 446,
+     "section": ".text.fn_269",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_120",
+     "size": 44,
+     "section": ".text.fn_120",
+     "exported": true,
+     "mmio": [
+      "0x600a7000",
+      "0x600a708c"
+     ]
+    },
+    {
+     "name": "fn_194",
+     "size": 36,
+     "section": ".text.fn_194",
+     "exported": true,
+     "mmio": [
+      "0x600a7000",
+      "0x600a705c"
+     ]
+    },
+    {
+     "name": "fn_193",
+     "size": 2,
+     "section": ".text.fn_193",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_161",
+     "size": 238,
+     "section": ".text.fn_161",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_159",
+     "size": 110,
+     "section": ".text.fn_159",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a0454",
+      "0x600a0458",
+      "0x600a045c",
+      "0x600a0460"
+     ]
+    },
+    {
+     "name": "fn_160",
+     "size": 130,
+     "section": ".text.fn_160",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_154",
+     "size": 2,
+     "section": ".text.fn_154",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_54",
+     "size": 162,
+     "section": ".text.fn_54",
+     "exported": true,
+     "mmio": [
+      "0x600a7000",
+      "0x600a7018",
+      "0x600a7050",
+      "0x600ad800",
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "fn_105",
+     "size": 244,
+     "section": ".text.fn_105",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a0438",
+      "0x600a0c0c",
+      "0x600a1000"
+     ]
+    },
+    {
+     "name": "fn_232",
+     "size": 74,
+     "section": ".text.fn_232",
+     "exported": true,
+     "mmio": [
+      "0x600a7000",
+      "0x600a7018"
+     ]
+    },
+    {
+     "name": "fn_153",
+     "size": 82,
+     "section": ".text.fn_153",
+     "exported": true,
+     "mmio": [
+      "0x600a7000",
+      "0x600a7030",
+      "0x600a9c18",
+      "0x600aa000"
+     ]
+    },
+    {
+     "name": "fn_223",
+     "size": 296,
+     "section": ".text.fn_223",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a0454",
+      "0x600a0458",
+      "0x600a045c",
+      "0x600a0460"
+     ]
+    },
+    {
+     "name": "fn_271",
+     "size": 122,
+     "section": ".text.fn_271",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_272",
+     "size": 246,
+     "section": ".text.fn_272",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_273",
+     "size": 92,
+     "section": ".text.fn_273",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_45",
+     "size": 214,
+     "section": ".text.fn_45",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a0008",
+      "0x600a0890",
+      "0x600a1000"
+     ]
+    },
+    {
+     "name": "fn_107",
+     "size": 222,
+     "section": ".text.fn_107",
+     "exported": true,
+     "mmio": [
+      "0x600a2000",
+      "0x600a2184",
+      "0x600a2840",
+      "0x600a3000",
+      "0x600a7000",
+      "0x600a702c",
+      "0x600af000",
+      "0x600af4b4"
+     ]
+    },
+    {
+     "name": "fn_104",
+     "size": 66,
+     "section": ".text.fn_104",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a0408"
+     ]
+    },
+    {
+     "name": "fn_221",
+     "size": 112,
+     "section": ".text.fn_221",
+     "exported": true,
+     "mmio": [
+      "0x600a7000",
+      "0x600a71d4",
+      "0x600a7c14",
+      "0x600a7c2c",
+      "0x600a8000"
+     ]
+    },
+    {
+     "name": "fn_94",
+     "size": 2,
+     "section": ".text.fn_94",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_93",
+     "size": 2,
+     "section": ".text.fn_93",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_92",
+     "size": 2,
+     "section": ".text.fn_92",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_268",
+     "size": 150,
+     "section": ".text.fn_268",
+     "exported": true,
+     "mmio": [
+      "0x600a4c90",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "fn_152",
+     "size": 58,
+     "section": ".text.fn_152",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_117",
+     "size": 210,
+     "section": ".text.fn_117",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_151",
+     "size": 796,
+     "section": ".text.fn_151",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a4494",
+      "0x600a44c4",
+      "0x600a44c8",
+      "0x600a44cc",
+      "0x600a44d0",
+      "0x600a44d4"
+     ]
+    },
+    {
+     "name": "fn_150",
+     "size": 56,
+     "section": ".text.fn_150",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a4038"
+     ]
+    },
+    {
+     "name": "fn_131",
+     "size": 202,
+     "section": ".text.fn_131",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_222",
+     "size": 28,
+     "section": ".text.fn_222",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_115",
+     "size": 168,
+     "section": ".text.fn_115",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_59",
+     "size": 2,
+     "section": ".text.fn_59",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_106",
+     "size": 18,
+     "section": ".text.fn_106",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_218",
+     "size": 28,
+     "section": ".text.fn_218",
+     "exported": true,
+     "mmio": [
+      "0x600a2850",
+      "0x600a3000",
+      "0x600a7000",
+      "0x600a702c"
+     ]
+    },
+    {
+     "name": "fn_109",
+     "size": 44,
+     "section": ".text.fn_109",
+     "exported": true,
+     "mmio": [
+      "0x600a7000",
+      "0x600a7400"
+     ]
+    },
+    {
+     "name": "fn_111",
+     "size": 268,
+     "section": ".text.fn_111",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_220",
+     "size": 400,
+     "section": ".text.fn_220",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_285",
+     "size": 140,
+     "section": ".text.fn_285",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_186",
+     "size": 124,
+     "section": ".text.fn_186",
+     "exported": true,
+     "mmio": [
+      "0x600a0c50",
+      "0x600a1000"
+     ]
+    },
+    {
+     "name": "fn_181",
+     "size": 282,
+     "section": ".text.fn_181",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a041c",
+      "0x600a0428"
+     ]
+    },
+    {
+     "name": "fn_138",
+     "size": 38,
+     "section": ".text.fn_138",
+     "exported": true,
+     "mmio": [
+      "0x600ae000",
+      "0x600af000",
+      "0x600af038"
+     ]
+    },
+    {
+     "name": "fn_149",
+     "size": 146,
+     "section": ".text.fn_149",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_172",
+     "size": 320,
+     "section": ".text.fn_172",
+     "exported": true,
+     "mmio": [
+      "0x600ad800",
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "fn_174",
+     "size": 78,
+     "section": ".text.fn_174",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_173",
+     "size": 182,
+     "section": ".text.fn_173",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_171",
+     "size": 104,
+     "section": ".text.fn_171",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_165",
+     "size": 162,
+     "section": ".text.fn_165",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_227",
+     "size": 42,
+     "section": ".text.fn_227",
+     "exported": true,
+     "mmio": [
+      "0x600a08cc",
+      "0x600a1000",
+      "0x600a7000",
+      "0x600a70b8"
+     ]
+    },
+    {
+     "name": "fn_179",
+     "size": 238,
+     "section": ".text.fn_179",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_130",
+     "size": 272,
+     "section": ".text.fn_130",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_162",
+     "size": 224,
+     "section": ".text.fn_162",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_176",
+     "size": 118,
+     "section": ".text.fn_176",
+     "exported": true,
+     "mmio": [
+      "0x600a4c48",
+      "0x600a4c4c",
+      "0x600a5000",
+      "0x600ad800",
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "fn_157",
+     "size": 94,
+     "section": ".text.fn_157",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_156",
+     "size": 426,
+     "section": ".text.fn_156",
+     "exported": true,
+     "mmio": [
+      "0x600a1000",
+      "0x600a1010",
+      "0x600a1100",
+      "0x600a110c",
+      "0x600a1110",
+      "0x600a1508",
+      "0x600a1650",
+      "0x600a2000",
+      "0x600a2010",
+      "0x600a2088",
+      "0x600a2090",
+      "0x600a20b8",
+      "0x600a20d4",
+      "0x600a20d8"
+     ]
+    },
+    {
+     "name": "fn_158",
+     "size": 2,
+     "section": ".text.fn_158",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_155",
+     "size": 54,
+     "section": ".text.fn_155",
+     "exported": true,
+     "mmio": [
+      "0x600a4ca8",
+      "0x600a4dd8",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "fn_95",
+     "size": 558,
+     "section": ".text.fn_95",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a4098",
+      "0x600a4c48",
+      "0x600a4c4c",
+      "0x600a5000",
+      "0x600a5c00",
+      "0x600a5c04",
+      "0x600a5d00",
+      "0x600a6000",
+      "0x600a7000",
+      "0x600a7008",
+      "0x600a700c",
+      "0x600a7010",
+      "0x600a7030",
+      "0x600a7094",
+      "0x600a70c4",
+      "0x600a70ec",
+      "0x600a7150",
+      "0x600a7880",
+      "0x600a7884",
+      "0x600a790c",
+      "0x600a7ca8",
+      "0x600a8000",
+      "0x600ad800",
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "fn_42",
+     "size": 184,
+     "section": ".text.fn_42",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a001c",
+      "0x600a0030",
+      "0x600a0044",
+      "0x600a2000",
+      "0x600a2170"
+     ]
+    }
+   ],
+   "calls": [
+    [
+     "fn_45",
+     "ets_delay_us"
+    ],
+    [
+     "fn_95",
+     "phy_linear_to_db"
+    ],
+    [
+     "fn_95",
+     "phy_printf"
+    ],
+    [
+     "fn_105",
+     "phy_printf"
+    ],
+    [
+     "fn_106",
+     "phy_param"
+    ],
+    [
+     "fn_107",
+     "fn_45"
+    ],
+    [
+     "fn_107",
+     "ets_delay_us"
+    ],
+    [
+     "fn_107",
+     "phy_dis_hw_set_freq_new"
+    ],
+    [
+     "fn_107",
+     "phy_en_hw_set_freq"
+    ],
+    [
+     "fn_111",
+     "fn_8"
+    ],
+    [
+     "fn_111",
+     "ets_delay_us"
+    ],
+    [
+     "fn_111",
+     "force_txon_mode"
+    ],
+    [
+     "fn_111",
+     "phy_band_change"
+    ],
+    [
+     "fn_111",
+     "phy_param"
+    ],
+    [
+     "fn_111",
+     "phy_set_freq_sw_start"
+    ],
+    [
+     "fn_111",
+     "phy_set_rf_freq_offset"
+    ],
+    [
+     "fn_111",
+     "phy_start_tx_tone_step"
+    ],
+    [
+     "fn_115",
+     "phy_freq_to_index"
+    ],
+    [
+     "fn_115",
+     "phy_param"
+    ],
+    [
+     "fn_115",
+     "phy_printf"
+    ],
+    [
+     "fn_117",
+     "memcpy"
+    ],
+    [
+     "fn_130",
+     "fn_25"
+    ],
+    [
+     "fn_130",
+     "fn_28"
+    ],
+    [
+     "fn_130",
+     "ets_delay_us"
+    ],
+    [
+     "fn_130",
+     "phy_chip_set_chan"
+    ],
+    [
+     "fn_130",
+     "phy_pbus_print"
+    ],
+    [
+     "fn_130",
+     "phy_pbus_workmode"
+    ],
+    [
+     "fn_130",
+     "phy_pbus_xpd_dpd_path"
+    ],
+    [
+     "fn_130",
+     "phy_printf"
+    ],
+    [
+     "fn_130",
+     "phy_set_rxclk_en"
+    ],
+    [
+     "fn_130",
+     "phy_set_txclk_en"
+    ],
+    [
+     "fn_130",
+     "fn_179"
+    ],
+    [
+     "fn_130",
+     "fn_227"
+    ],
+    [
+     "fn_131",
+     "ets_delay_us"
+    ],
+    [
+     "fn_131",
+     "fn_105"
+    ],
+    [
+     "fn_131",
+     "phy_freq_to_index"
+    ],
+    [
+     "fn_131",
+     "phy_loop_clk_en"
+    ],
+    [
+     "fn_131",
+     "phy_param"
+    ],
+    [
+     "fn_131",
+     "phy_pbus_debugmode"
+    ],
+    [
+     "fn_131",
+     "phy_pbus_rx_dco_cal"
+    ],
+    [
+     "fn_131",
+     "phy_set_lb_txiq"
+    ],
+    [
+     "fn_131",
+     "phy_set_loopback_gain"
+    ],
+    [
+     "fn_131",
+     "phy_set_rx_pbus_freq"
+    ],
+    [
+     "fn_138",
+     "phy_printf"
+    ],
+    [
+     "fn_149",
+     "phy_chip_set_chan_ana"
+    ],
+    [
+     "fn_149",
+     "phy_en_pwdet"
+    ],
+    [
+     "fn_149",
+     "phy_index_to_txbbgain"
+    ],
+    [
+     "fn_149",
+     "phy_param"
+    ],
+    [
+     "fn_149",
+     "phy_pbus_debugmode"
+    ],
+    [
+     "fn_149",
+     "phy_pbus_force_test"
+    ],
+    [
+     "fn_149",
+     "phy_pbus_xpd_tx_on"
+    ],
+    [
+     "fn_149",
+     "phy_set_txclk_en"
+    ],
+    [
+     "fn_151",
+     "fn_11"
+    ],
+    [
+     "fn_151",
+     "fn_12"
+    ],
+    [
+     "fn_151",
+     "fn_13"
+    ],
+    [
+     "fn_151",
+     "fn_17"
+    ],
+    [
+     "fn_151",
+     "fn_117"
+    ],
+    [
+     "fn_151",
+     "fn_268"
+    ],
+    [
+     "fn_153",
+     "phy_param"
+    ],
+    [
+     "fn_155",
+     "fn_156"
+    ],
+    [
+     "fn_155",
+     "fn_157"
+    ],
+    [
+     "fn_156",
+     "phy_dis_hw_set_freq_new"
+    ],
+    [
+     "fn_156",
+     "phy_en_hw_set_freq"
+    ],
+    [
+     "fn_156",
+     "phy_force_pwr_index"
+    ],
+    [
+     "fn_156",
+     "phy_set_freq_sw_start"
+    ],
+    [
+     "fn_157",
+     "phy_check_sigrssi_en"
+    ],
+    [
+     "fn_157",
+     "phy_chip_set_chan"
+    ],
+    [
+     "fn_157",
+     "phy_param"
+    ],
+    [
+     "fn_157",
+     "phy_set_freq_sw_start"
+    ],
+    [
+     "fn_157",
+     "fn_176"
+    ],
+    [
+     "fn_160",
+     "fn_159"
+    ],
+    [
+     "fn_160",
+     "phy_iq_est_disable"
+    ],
+    [
+     "fn_160",
+     "phy_iq_est_enable_new"
+    ],
+    [
+     "fn_160",
+     "phy_start_tx_tone_step"
+    ],
+    [
+     "fn_161",
+     "ets_delay_us"
+    ],
+    [
+     "fn_161",
+     "phy_get_sar2_vol"
+    ],
+    [
+     "fn_161",
+     "phy_i2c_writeReg_Mask"
+    ],
+    [
+     "fn_161",
+     "phy_param"
+    ],
+    [
+     "fn_161",
+     "phy_printf"
+    ],
+    [
+     "fn_162",
+     "ets_delay_us"
+    ],
+    [
+     "fn_162",
+     "phy_param"
+    ],
+    [
+     "fn_162",
+     "phy_pbus_clear_reg"
+    ],
+    [
+     "fn_162",
+     "phy_pbus_force_test"
+    ],
+    [
+     "fn_162",
+     "phy_pbus_xpd_dpd_path"
+    ],
+    [
+     "fn_162",
+     "phy_start_tx_tone_step"
+    ],
+    [
+     "fn_162",
+     "phy_txbbgain_to_index"
+    ],
+    [
+     "fn_165",
+     "fn_8"
+    ],
+    [
+     "fn_165",
+     "ets_delay_us"
+    ],
+    [
+     "fn_165",
+     "force_txon_mode"
+    ],
+    [
+     "fn_165",
+     "phy_restart_cal"
+    ],
+    [
+     "fn_165",
+     "phy_start_tx_tone_step"
+    ],
+    [
+     "fn_171",
+     "ets_delay_us"
+    ],
+    [
+     "fn_171",
+     "phy_get_sar2_vol"
+    ],
+    [
+     "fn_171",
+     "phy_i2c_writeReg_Mask"
+    ],
+    [
+     "fn_171",
+     "phy_printf"
+    ],
+    [
+     "fn_172",
+     "phy_i2c_readReg_Mask"
+    ],
+    [
+     "fn_172",
+     "phy_printf"
+    ],
+    [
+     "fn_172",
+     "phy_restart_cal"
+    ],
+    [
+     "fn_173",
+     "phy_i2c_readReg_Mask"
+    ],
+    [
+     "fn_173",
+     "phy_printf"
+    ],
+    [
+     "fn_174",
+     "ets_delay_us"
+    ],
+    [
+     "fn_174",
+     "phy_i2c_writeReg_Mask"
+    ],
+    [
+     "fn_174",
+     "phy_restart_cal"
+    ],
+    [
+     "fn_176",
+     "ets_delay_us"
+    ],
+    [
+     "fn_176",
+     "phy_get_sigrssi"
+    ],
+    [
+     "fn_179",
+     "phy_printf"
+    ],
+    [
+     "fn_181",
+     "ets_delay_us"
+    ],
+    [
+     "fn_181",
+     "phy_printf"
+    ],
+    [
+     "fn_181",
+     "phy_pwdet_tone_start"
+    ],
+    [
+     "fn_181",
+     "phy_read_sar_dout"
+    ],
+    [
+     "fn_181",
+     "phy_txcal_debuge_mode_new"
+    ],
+    [
+     "fn_181",
+     "phy_txcal_work_mode"
+    ],
+    [
+     "fn_186",
+     "phy_printf"
+    ],
+    [
+     "fn_220",
+     "ets_delay_us"
+    ],
+    [
+     "fn_220",
+     "fn_107"
+    ],
+    [
+     "fn_220",
+     "phy_adc_rate_set"
+    ],
+    [
+     "fn_220",
+     "phy_chip_set_chan"
+    ],
+    [
+     "fn_220",
+     "phy_i2c_readReg_Mask"
+    ],
+    [
+     "fn_220",
+     "phy_i2c_writeReg_Mask"
+    ],
+    [
+     "fn_220",
+     "phy_printf"
+    ],
+    [
+     "fn_220",
+     "phy_start_tx_tone_step"
+    ],
+    [
+     "fn_220",
+     "fn_223"
+    ],
+    [
+     "fn_222",
+     "phy_rxiq_cover_mg_mp"
+    ],
+    [
+     "fn_223",
+     "phy_iq_est_disable"
+    ],
+    [
+     "fn_223",
+     "phy_iq_est_enable_new"
+    ],
+    [
+     "fn_223",
+     "phy_set_rxclk_en"
+    ],
+    [
+     "fn_223",
+     "phy_set_txclk_en"
+    ],
+    [
+     "fn_244",
+     "phy_start_tx_tone_step"
+    ],
+    [
+     "fn_269",
+     "phy_meas_tone_pwr_db"
+    ],
+    [
+     "fn_269",
+     "phy_param"
+    ],
+    [
+     "fn_269",
+     "phy_rfcal_pwrctrl"
+    ],
+    [
+     "fn_271",
+     "phy_abs_temp"
+    ],
+    [
+     "fn_272",
+     "ets_delay_us"
+    ],
+    [
+     "fn_272",
+     "phy_pbus_debugmode"
+    ],
+    [
+     "fn_272",
+     "phy_pbus_force_test"
+    ],
+    [
+     "fn_272",
+     "phy_pbus_rd"
+    ],
+    [
+     "fn_272",
+     "phy_pbus_workmode"
+    ],
+    [
+     "fn_272",
+     "phy_pbus_xpd_rx_on"
+    ],
+    [
+     "fn_272",
+     "phy_pbus_xpd_tx_on"
+    ],
+    [
+     "fn_272",
+     "phy_printf"
+    ],
+    [
+     "fn_272",
+     "phy_txdc_cal"
+    ],
+    [
+     "fn_272",
+     "fn_271"
+    ],
+    [
+     "fn_273",
+     "phy_printf"
+    ],
+    [
+     "fn_273",
+     "fn_271"
+    ],
+    [
+     "fn_273",
+     "fn_272"
+    ],
+    [
+     "fn_285",
+     "phy_printf"
+    ],
+    [
+     "fn_285",
+     "fn_220"
+    ]
+   ]
+  },
+  {
+   "name": "esp_phy_api.o",
+   "machine": 243,
+   "functions": [
+    {
+     "name": "fn_78",
+     "size": 8,
+     "section": ".text.fn_78",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_79",
+     "size": 8,
+     "section": ".text.fn_79",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_81",
+     "size": 8,
+     "section": ".text.fn_81",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_75",
+     "size": 8,
+     "section": ".text.fn_75",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_83",
+     "size": 34,
+     "section": ".text.fn_83",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_82",
+     "size": 24,
+     "section": ".text.fn_82",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_76",
+     "size": 34,
+     "section": ".text.fn_76",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_84",
+     "size": 26,
+     "section": ".text.fn_84",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_80",
+     "size": 26,
+     "section": ".text.fn_80",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_71",
+     "size": 34,
+     "section": ".text.fn_71",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_73",
+     "size": 8,
+     "section": ".text.fn_73",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_72",
+     "size": 8,
+     "section": ".text.fn_72",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_74",
+     "size": 10,
+     "section": ".text.fn_74",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_86",
+     "size": 10,
+     "section": ".text.fn_86",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_85",
+     "size": 8,
+     "section": ".text.fn_85",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_87",
+     "size": 10,
+     "section": ".text.fn_87",
+     "exported": true,
+     "mmio": []
+    }
+   ],
+   "calls": [
+    [
+     "fn_71",
+     "fn_152"
+    ],
+    [
+     "fn_72",
+     "esp_ble_rx_func"
+    ],
+    [
+     "fn_73",
+     "esp_ble_tx_func"
+    ],
+    [
+     "fn_74",
+     "fn_46"
+    ],
+    [
+     "fn_75",
+     "fn_52"
+    ],
+    [
+     "fn_76",
+     "esp_rx_result"
+    ],
+    [
+     "fn_76",
+     "esp_rx_valid"
+    ],
+    [
+     "fn_78",
+     "fn_128"
+    ],
+    [
+     "fn_79",
+     "fn_195"
+    ],
+    [
+     "fn_80",
+     "phy_printf"
+    ],
+    [
+     "fn_80",
+     "short_gi_enable"
+    ],
+    [
+     "fn_81",
+     "fn_264"
+    ],
+    [
+     "fn_82",
+     "fn_88"
+    ],
+    [
+     "fn_83",
+     "fn_89"
+    ],
+    [
+     "fn_84",
+     "fn_280"
+    ],
+    [
+     "fn_85",
+     "zb_rx"
+    ],
+    [
+     "fn_86",
+     "zb_tx"
+    ],
+    [
+     "fn_87",
+     "fn_46"
+    ]
+   ]
+  },
+  {
+   "name": "bb_common.o",
+   "machine": 243,
+   "functions": [
+    {
+     "name": "fn_64",
+     "size": 2,
+     "section": ".text.fn_64",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_259",
+     "size": 20,
+     "section": ".text.fn_259",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_254",
+     "size": 148,
+     "section": ".text.fn_254",
+     "exported": true,
+     "mmio": [
+      "0x600a4c40",
+      "0x600a4c48",
+      "0x600a4c4c",
+      "0x600a5000",
+      "0x600ad800",
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "fn_255",
+     "size": 288,
+     "section": ".text.fn_255",
+     "exported": true,
+     "mmio": [
+      "0x600a4c40",
+      "0x600a4c48",
+      "0x600a4c4c",
+      "0x600a5000",
+      "0x600a7c08",
+      "0x600a8000",
+      "0x600ad800",
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "fn_240",
+     "size": 318,
+     "section": ".text.fn_240",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_178",
+     "size": 174,
+     "section": ".text.fn_178",
+     "exported": true,
+     "mmio": [
+      "0x600ad800",
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "fn_251",
+     "size": 160,
+     "section": ".text.fn_251",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_229",
+     "size": 76,
+     "section": ".text.fn_229",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a4004",
+      "0x600a405c",
+      "0x600a4060",
+      "0x600a40dc",
+      "0x600a40e0",
+      "0x600a40e4"
+     ]
+    },
+    {
+     "name": "fn_125",
+     "size": 38,
+     "section": ".text.fn_125",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a407c",
+      "0x600a4090",
+      "0x600a4c70",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "fn_166",
+     "size": 46,
+     "section": ".text.fn_166",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_123",
+     "size": 56,
+     "section": ".text.fn_123",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_122",
+     "size": 8,
+     "section": ".text.fn_122",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_69",
+     "size": 30,
+     "section": ".text.fn_69",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_65",
+     "size": 1840,
+     "section": ".text.fn_65",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a407c",
+      "0x600a4090",
+      "0x600a40a8",
+      "0x600a40ac",
+      "0x600a40b0",
+      "0x600a4800",
+      "0x600a4c48",
+      "0x600a4c4c",
+      "0x600a4c70",
+      "0x600a5000",
+      "0x600a7000",
+      "0x600a706c",
+      "0x600ad800",
+      "0x600ad804",
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "fn_41",
+     "size": 382,
+     "section": ".text.fn_41",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a40a8",
+      "0x600a40ac",
+      "0x600a40b0",
+      "0x600a4800",
+      "0x600a4c48",
+      "0x600a4c4c",
+      "0x600a5000",
+      "0x600a7000",
+      "0x600a7018",
+      "0x600ad800",
+      "0x600ad804",
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "fn_214",
+     "size": 190,
+     "section": ".text.fn_214",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_97",
+     "size": 42,
+     "section": ".text.fn_97",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a405c",
+      "0x600a4060"
+     ]
+    },
+    {
+     "name": "fn_185",
+     "size": 8,
+     "section": ".text.fn_185",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_99",
+     "size": 626,
+     "section": ".text.fn_99",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a405c",
+      "0x600a4060"
+     ]
+    },
+    {
+     "name": "fn_98",
+     "size": 360,
+     "section": ".text.fn_98",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_241",
+     "size": 18,
+     "section": ".text.fn_241",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a405c",
+      "0x600a4060"
+     ]
+    },
+    {
+     "name": "fn_242",
+     "size": 24,
+     "section": ".text.fn_242",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_243",
+     "size": 46,
+     "section": ".text.fn_243",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_265",
+     "size": 76,
+     "section": ".text.fn_265",
+     "exported": true,
+     "mmio": [
+      "0x600a4ca0",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "fn_236",
+     "size": 40,
+     "section": ".text.fn_236",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_119",
+     "size": 36,
+     "section": ".text.fn_119",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_230",
+     "size": 96,
+     "section": ".text.fn_230",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a40d8",
+      "0x600a40dc",
+      "0x600a40e0",
+      "0x600a40e4"
+     ]
+    },
+    {
+     "name": "fn_266",
+     "size": 120,
+     "section": ".text.fn_266",
+     "exported": true,
+     "mmio": [
+      "0x600a4c40",
+      "0x600a4c48",
+      "0x600a4c4c",
+      "0x600a5000",
+      "0x600a5514",
+      "0x600ad800",
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "fn_247",
+     "size": 66,
+     "section": ".text.fn_247",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_33",
+     "size": 122,
+     "section": ".text.fn_33",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a405c",
+      "0x600a4060"
+     ]
+    },
+    {
+     "name": "fn_55",
+     "size": 54,
+     "section": ".text.fn_55",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a4080",
+      "0x600a40d8",
+      "0x600a40dc",
+      "0x600a40e0",
+      "0x600a40e4"
+     ]
+    },
+    {
+     "name": "fn_37",
+     "size": 102,
+     "section": ".text.fn_37",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_257",
+     "size": 498,
+     "section": ".text.fn_257",
+     "exported": true,
+     "mmio": [
+      "0x600a4000"
+     ]
+    },
+    {
+     "name": "fn_126",
+     "size": 38,
+     "section": ".text.fn_126",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_256",
+     "size": 300,
+     "section": ".text.fn_256",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a407c",
+      "0x600a4080",
+      "0x600a4c50",
+      "0x600a4c9c",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "fn_39",
+     "size": 1720,
+     "section": ".text.fn_39",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_239",
+     "size": 78,
+     "section": ".text.fn_239",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a0408"
+     ]
+    },
+    {
+     "name": "fn_258",
+     "size": 112,
+     "section": ".text.fn_258",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_252",
+     "size": 222,
+     "section": ".text.fn_252",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_121",
+     "size": 732,
+     "section": ".text.fn_121",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a4060",
+      "0x600a407c",
+      "0x600a4080",
+      "0x600a40d8",
+      "0x600a40dc",
+      "0x600a40e0",
+      "0x600a40e4",
+      "0x600ad800",
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "fn_249",
+     "size": 92,
+     "section": ".text.fn_249",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_27",
+     "size": 46,
+     "section": ".text.fn_27",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a444c",
+      "0x600a4450",
+      "0x600a4454"
+     ]
+    },
+    {
+     "name": "fn_38",
+     "size": 708,
+     "section": ".text.fn_38",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a4080",
+      "0x600a40a4",
+      "0x600a4c9c",
+      "0x600a4ca4",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "fn_40",
+     "size": 564,
+     "section": ".text.fn_40",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a407c",
+      "0x600a4080",
+      "0x600a4c9c",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "fn_91",
+     "size": 158,
+     "section": ".text.fn_91",
+     "exported": true,
+     "mmio": []
+    }
+   ],
+   "calls": [
+    [
+     "fn_33",
+     "PSDU0_OFFSET"
+    ],
+    [
+     "fn_33",
+     "memset"
+    ],
+    [
+     "fn_37",
+     "phy_printf"
+    ],
+    [
+     "fn_38",
+     "fn_4"
+    ],
+    [
+     "fn_38",
+     "fn_8"
+    ],
+    [
+     "fn_38",
+     "PSDU0_OFFSET"
+    ],
+    [
+     "fn_38",
+     "fn_16"
+    ],
+    [
+     "fn_38",
+     "fn_27"
+    ],
+    [
+     "fn_38",
+     "esp_rom_spiflash_read"
+    ],
+    [
+     "fn_38",
+     "fn_125"
+    ],
+    [
+     "fn_38",
+     "phy_chip_set_chan"
+    ],
+    [
+     "fn_38",
+     "phy_force_pwr_index"
+    ],
+    [
+     "fn_38",
+     "phy_get_pwr_index"
+    ],
+    [
+     "fn_38",
+     "phy_param"
+    ],
+    [
+     "fn_38",
+     "phy_printf"
+    ],
+    [
+     "fn_38",
+     "fn_230"
+    ],
+    [
+     "fn_38",
+     "fn_236"
+    ],
+    [
+     "fn_38",
+     "fn_240"
+    ],
+    [
+     "fn_38",
+     "fn_241"
+    ],
+    [
+     "fn_38",
+     "fn_242"
+    ],
+    [
+     "fn_38",
+     "fn_256"
+    ],
+    [
+     "fn_38",
+     "fn_265"
+    ],
+    [
+     "fn_39",
+     "fn_4"
+    ],
+    [
+     "fn_39",
+     "PSDU0_OFFSET"
+    ],
+    [
+     "fn_39",
+     "fn_16"
+    ],
+    [
+     "fn_39",
+     "fn_37"
+    ],
+    [
+     "fn_39",
+     "fn_55"
+    ],
+    [
+     "fn_39",
+     "fn_123"
+    ],
+    [
+     "fn_39",
+     "fn_125"
+    ],
+    [
+     "fn_39",
+     "phy_11ax_array"
+    ],
+    [
+     "fn_39",
+     "fn_151"
+    ],
+    [
+     "fn_39",
+     "fn_152"
+    ],
+    [
+     "fn_39",
+     "phy_chip_set_chan"
+    ],
+    [
+     "fn_39",
+     "phy_force_pwr_index"
+    ],
+    [
+     "fn_39",
+     "phy_get_pwr_index"
+    ],
+    [
+     "fn_39",
+     "phy_param"
+    ],
+    [
+     "fn_39",
+     "phy_printf"
+    ],
+    [
+     "fn_39",
+     "fn_236"
+    ],
+    [
+     "fn_39",
+     "fn_240"
+    ],
+    [
+     "fn_39",
+     "test_pocket_type"
+    ],
+    [
+     "fn_39",
+     "fn_256"
+    ],
+    [
+     "fn_39",
+     "fn_266"
+    ],
+    [
+     "fn_39",
+     "uart_tx_wait_idle"
+    ],
+    [
+     "fn_40",
+     "fn_8"
+    ],
+    [
+     "fn_40",
+     "fn_27"
+    ],
+    [
+     "fn_40",
+     "fn_125"
+    ],
+    [
+     "fn_40",
+     "phy_force_pwr_index"
+    ],
+    [
+     "fn_40",
+     "phy_get_pwr_index"
+    ],
+    [
+     "fn_40",
+     "phy_printf"
+    ],
+    [
+     "fn_40",
+     "fn_230"
+    ],
+    [
+     "fn_40",
+     "fn_241"
+    ],
+    [
+     "fn_41",
+     "fn_125"
+    ],
+    [
+     "fn_41",
+     "phy_printf"
+    ],
+    [
+     "fn_41",
+     "fn_229"
+    ],
+    [
+     "fn_65",
+     "fn_8"
+    ],
+    [
+     "fn_65",
+     "ets_delay_us"
+    ],
+    [
+     "fn_65",
+     "fn_102"
+    ],
+    [
+     "fn_65",
+     "fn_123"
+    ],
+    [
+     "fn_65",
+     "phy_printf"
+    ],
+    [
+     "fn_65",
+     "phy_read_hw_noisefloor"
+    ],
+    [
+     "fn_65",
+     "phy_rxevm_calcu"
+    ],
+    [
+     "fn_65",
+     "phy_vht_support"
+    ],
+    [
+     "fn_91",
+     "fn_40"
+    ],
+    [
+     "fn_91",
+     "phy_11ac_enable"
+    ],
+    [
+     "fn_91",
+     "target_power_backoff"
+    ],
+    [
+     "fn_91",
+     "fn_258"
+    ],
+    [
+     "fn_97",
+     "phy_get_mac_addr"
+    ],
+    [
+     "fn_98",
+     "fn_97"
+    ],
+    [
+     "fn_98",
+     "fn_99"
+    ],
+    [
+     "fn_99",
+     "fn_4"
+    ],
+    [
+     "fn_99",
+     "PSDU0_OFFSET"
+    ],
+    [
+     "fn_99",
+     "fn_16"
+    ],
+    [
+     "fn_99",
+     "TXBUF_START"
+    ],
+    [
+     "fn_99",
+     "fn_96"
+    ],
+    [
+     "fn_119",
+     "phy_get_mac_addr"
+    ],
+    [
+     "fn_121",
+     "fn_8"
+    ],
+    [
+     "fn_121",
+     "fn_125"
+    ],
+    [
+     "fn_121",
+     "phy_get_rx_freq"
+    ],
+    [
+     "fn_121",
+     "phy_printf"
+    ],
+    [
+     "fn_122",
+     "fn_125"
+    ],
+    [
+     "fn_123",
+     "fn_125"
+    ],
+    [
+     "fn_123",
+     "phy_get_rx_freq"
+    ],
+    [
+     "fn_178",
+     "fcc_mode_sel"
+    ],
+    [
+     "fn_178",
+     "phy_param"
+    ],
+    [
+     "fn_178",
+     "phy_printf"
+    ],
+    [
+     "fn_178",
+     "phy_txiq_cal_init"
+    ],
+    [
+     "fn_185",
+     "phy_get_mac_addr"
+    ],
+    [
+     "fn_236",
+     "fn_17"
+    ],
+    [
+     "fn_239",
+     "phy_get_target_pwr"
+    ],
+    [
+     "fn_240",
+     "fn_10"
+    ],
+    [
+     "fn_240",
+     "fn_11"
+    ],
+    [
+     "fn_240",
+     "fn_17"
+    ],
+    [
+     "fn_240",
+     "fn_21"
+    ],
+    [
+     "fn_240",
+     "phy_11ac_enable"
+    ],
+    [
+     "fn_247",
+     "ets_delay_us"
+    ],
+    [
+     "fn_249",
+     "fn_8"
+    ],
+    [
+     "fn_249",
+     "ets_delay_us"
+    ],
+    [
+     "fn_249",
+     "phy_chip_set_chan"
+    ],
+    [
+     "fn_249",
+     "phy_printf"
+    ],
+    [
+     "fn_249",
+     "phy_read_hw_noisefloor"
+    ],
+    [
+     "fn_251",
+     "ets_delay_us"
+    ],
+    [
+     "fn_251",
+     "phy_i2c_correct"
+    ],
+    [
+     "fn_251",
+     "phy_param"
+    ],
+    [
+     "fn_251",
+     "phy_tx_pwctrl_background"
+    ],
+    [
+     "fn_251",
+     "fn_240"
+    ],
+    [
+     "fn_251",
+     "fn_255"
+    ],
+    [
+     "fn_252",
+     "ets_delay_us"
+    ],
+    [
+     "fn_252",
+     "phy_get_power_db"
+    ],
+    [
+     "fn_252",
+     "phy_param"
+    ],
+    [
+     "fn_252",
+     "phy_printf"
+    ],
+    [
+     "fn_252",
+     "phy_start_tx_tone_step"
+    ],
+    [
+     "fn_252",
+     "phy_stop_tx_tone"
+    ],
+    [
+     "fn_252",
+     "phy_txcal_debuge_mode_new"
+    ],
+    [
+     "fn_252",
+     "phy_txcal_work_mode"
+    ],
+    [
+     "fn_254",
+     "fn_4"
+    ],
+    [
+     "fn_254",
+     "fn_16"
+    ],
+    [
+     "fn_255",
+     "fn_4"
+    ],
+    [
+     "fn_255",
+     "fn_16"
+    ],
+    [
+     "fn_255",
+     "fn_102"
+    ],
+    [
+     "fn_255",
+     "phy_printf"
+    ],
+    [
+     "fn_255",
+     "tx_contin_fcc_en"
+    ],
+    [
+     "fn_256",
+     "fn_7"
+    ],
+    [
+     "fn_256",
+     "fn_11"
+    ],
+    [
+     "fn_256",
+     "fn_126"
+    ],
+    [
+     "fn_256",
+     "fn_230"
+    ],
+    [
+     "fn_256",
+     "fn_241"
+    ],
+    [
+     "fn_256",
+     "test_sta_mac"
+    ],
+    [
+     "fn_257",
+     "fn_4"
+    ],
+    [
+     "fn_257",
+     "fn_16"
+    ],
+    [
+     "fn_257",
+     "ets_delay_us"
+    ],
+    [
+     "fn_257",
+     "phy_11ax_array"
+    ],
+    [
+     "fn_257",
+     "fn_151"
+    ],
+    [
+     "fn_257",
+     "fn_233"
+    ],
+    [
+     "fn_257",
+     "fn_240"
+    ],
+    [
+     "fn_257",
+     "target_power_backoff"
+    ],
+    [
+     "fn_257",
+     "fn_259"
+    ],
+    [
+     "fn_257",
+     "fn_266"
+    ],
+    [
+     "fn_258",
+     "phy_printf"
+    ],
+    [
+     "fn_258",
+     "fn_256"
+    ],
+    [
+     "fn_258",
+     "fn_257"
+    ],
+    [
+     "fn_259",
+     "PSDU0_OFFSET"
+    ],
+    [
+     "fn_265",
+     "test_pocket_type"
+    ],
+    [
+     "fn_266",
+     "fn_16"
+    ]
+   ]
+  },
+  {
+   "name": "crypto_common.o",
+   "machine": 243,
+   "functions": [
+    {
+     "name": "fn_60",
+     "size": 14,
+     "section": ".text.fn_60",
+     "exported": true,
+     "mmio": [
+      "0x600a4800",
+      "0x600a4814",
+      "0x600a5000"
+     ]
+    }
+   ],
+   "calls": []
+  },
+  {
+   "name": "mac_common.o",
+   "machine": 243,
+   "functions": [
+    {
+     "name": "fn_135",
+     "size": 4,
+     "section": ".text.fn_135",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_134",
+     "size": 4,
+     "section": ".text.fn_134",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_132",
+     "size": 170,
+     "section": ".text.fn_132",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_5",
+     "size": 36,
+     "section": ".text.fn_5",
+     "exported": true,
+     "mmio": [
+      "0x600a5000",
+      "0x600a54ec"
+     ]
+    },
+    {
+     "name": "fn_19",
+     "size": 28,
+     "section": ".text.fn_19",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_2",
+     "size": 36,
+     "section": ".text.fn_2",
+     "exported": true,
+     "mmio": [
+      "0x600a4d64",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "fn_3",
+     "size": 36,
+     "section": ".text.fn_3",
+     "exported": true,
+     "mmio": [
+      "0x600a4d60",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "fn_21",
+     "size": 36,
+     "section": ".text.fn_21",
+     "exported": true,
+     "mmio": [
+      "0x600a5000",
+      "0x600a54c4"
+     ]
+    },
+    {
+     "name": "fn_22",
+     "size": 36,
+     "section": ".text.fn_22",
+     "exported": true,
+     "mmio": [
+      "0x600a5000",
+      "0x600a54c8"
+     ]
+    },
+    {
+     "name": "fn_12",
+     "size": 36,
+     "section": ".text.fn_12",
+     "exported": true,
+     "mmio": [
+      "0x600a5000",
+      "0x600a54cc"
+     ]
+    },
+    {
+     "name": "fn_13",
+     "size": 36,
+     "section": ".text.fn_13",
+     "exported": true,
+     "mmio": [
+      "0x600a5000",
+      "0x600a54d0"
+     ]
+    },
+    {
+     "name": "fn_15",
+     "size": 36,
+     "section": ".text.fn_15",
+     "exported": true,
+     "mmio": [
+      "0x600a5000",
+      "0x600a54dc"
+     ]
+    },
+    {
+     "name": "fn_20",
+     "size": 36,
+     "section": ".text.fn_20",
+     "exported": true,
+     "mmio": [
+      "0x600a5000",
+      "0x600a54b4"
+     ]
+    },
+    {
+     "name": "fn_16",
+     "size": 36,
+     "section": ".text.fn_16",
+     "exported": true,
+     "mmio": [
+      "0x600a4d6c",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "fn_17",
+     "size": 36,
+     "section": ".text.fn_17",
+     "exported": true,
+     "mmio": [
+      "0x600a5000",
+      "0x600a54b0"
+     ]
+    },
+    {
+     "name": "fn_10",
+     "size": 36,
+     "section": ".text.fn_10",
+     "exported": true,
+     "mmio": [
+      "0x600a5000",
+      "0x600a54e4"
+     ]
+    },
+    {
+     "name": "fn_11",
+     "size": 36,
+     "section": ".text.fn_11",
+     "exported": true,
+     "mmio": [
+      "0x600a5000",
+      "0x600a54c0"
+     ]
+    },
+    {
+     "name": "fn_9",
+     "size": 36,
+     "section": ".text.fn_9",
+     "exported": true,
+     "mmio": [
+      "0x600a5000",
+      "0x600a54e4"
+     ]
+    },
+    {
+     "name": "fn_4",
+     "size": 36,
+     "section": ".text.fn_4",
+     "exported": true,
+     "mmio": [
+      "0x600a4d68",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "fn_0",
+     "size": 124,
+     "section": ".text.fn_0",
+     "exported": true,
+     "mmio": [
+      "0x600a4cf8",
+      "0x600a4d08",
+      "0x600a4d18",
+      "0x600a4d28",
+      "0x600a4d38",
+      "0x600a4d48",
+      "0x600a4d58",
+      "0x600a4d68",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "fn_96",
+     "size": 920,
+     "section": ".text.fn_96",
+     "exported": true,
+     "mmio": [
+      "0x600a4c8c",
+      "0x600a4d68",
+      "0x600a4d6c",
+      "0x600a5000",
+      "0x600a54b0",
+      "0x600a54c0",
+      "0x600a54c8",
+      "0x600a54d0",
+      "0x600a54e4"
+     ]
+    },
+    {
+     "name": "fn_211",
+     "size": 112,
+     "section": ".text.fn_211",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a4080",
+      "0x600a4084"
+     ]
+    },
+    {
+     "name": "fn_217",
+     "size": 28,
+     "section": ".text.fn_217",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a4080"
+     ]
+    },
+    {
+     "name": "fn_210",
+     "size": 20,
+     "section": ".text.fn_210",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a4080"
+     ]
+    },
+    {
+     "name": "fn_204",
+     "size": 94,
+     "section": ".text.fn_204",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_205",
+     "size": 34,
+     "section": ".text.fn_205",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a4084"
+     ]
+    },
+    {
+     "name": "fn_206",
+     "size": 90,
+     "section": ".text.fn_206",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_207",
+     "size": 8,
+     "section": ".text.fn_207",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_208",
+     "size": 90,
+     "section": ".text.fn_208",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_209",
+     "size": 8,
+     "section": ".text.fn_209",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_133",
+     "size": 356,
+     "section": ".text.fn_133",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a405c",
+      "0x600a4060",
+      "0x600a407c",
+      "0x600a40d8",
+      "0x600a40dc",
+      "0x600a40e0",
+      "0x600a40e4",
+      "0x600a4c24",
+      "0x600a4c40",
+      "0x600a4c5c",
+      "0x600a4c8c",
+      "0x600a4d68",
+      "0x600a4dd8",
+      "0x600a4ddc",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "fn_28",
+     "size": 1406,
+     "section": ".text.fn_28",
+     "exported": true,
+     "mmio": [
+      "0x60095000",
+      "0x60095004",
+      "0x600a0800",
+      "0x600a1000",
+      "0x600a2000",
+      "0x600a20ac",
+      "0x600a20b4",
+      "0x600a4e38",
+      "0x600a5000",
+      "0x600a7000",
+      "0x600a702c",
+      "0x600a9000",
+      "0x600a9004",
+      "0x600a9008",
+      "0x600a9018",
+      "0x600a9c04",
+      "0x600aa000",
+      "0x600ad800",
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "fn_62",
+     "size": 94,
+     "section": ".text.fn_62",
+     "exported": true,
+     "mmio": []
+    }
+   ],
+   "calls": [
+    [
+     "fn_28",
+     "ble_rx_start"
+    ],
+    [
+     "fn_28",
+     "ets_delay_us"
+    ],
+    [
+     "fn_28",
+     "phy_disable_cca"
+    ],
+    [
+     "fn_28",
+     "phy_enable_cca"
+    ],
+    [
+     "fn_28",
+     "phy_param"
+    ],
+    [
+     "fn_28",
+     "phy_pbus_clear_reg"
+    ],
+    [
+     "fn_28",
+     "phy_pbus_force_test"
+    ],
+    [
+     "fn_28",
+     "phy_pbus_xpd_dpd_path"
+    ],
+    [
+     "fn_28",
+     "phy_pbus_xpd_rx_off"
+    ],
+    [
+     "fn_28",
+     "phy_printf"
+    ],
+    [
+     "fn_28",
+     "phy_start_tx_tone_step"
+    ],
+    [
+     "fn_28",
+     "phy_stop_tx_tone"
+    ],
+    [
+     "fn_28",
+     "fn_254"
+    ],
+    [
+     "fn_62",
+     "ets_delay_us"
+    ],
+    [
+     "fn_62",
+     "phy_printf"
+    ],
+    [
+     "fn_132",
+     "RX_ampdu_buff0_buf"
+    ],
+    [
+     "fn_132",
+     "txbuffer"
+    ],
+    [
+     "fn_133",
+     "fn_132"
+    ],
+    [
+     "fn_133",
+     "fn_205"
+    ],
+    [
+     "fn_133",
+     "fn_206"
+    ],
+    [
+     "fn_133",
+     "fn_208"
+    ],
+    [
+     "fn_133",
+     "fn_210"
+    ],
+    [
+     "fn_205",
+     "fn_204"
+    ],
+    [
+     "fn_207",
+     "fn_206"
+    ],
+    [
+     "fn_209",
+     "fn_208"
+    ]
+   ]
+  },
+  {
+   "name": "rf_test.o",
+   "machine": 243,
+   "functions": [
+    {
+     "name": "fn_263",
+     "size": 286,
+     "section": ".text.fn_262.part.0",
+     "exported": false,
+     "mmio": []
+    },
+    {
+     "name": "fn_67",
+     "size": 2,
+     "section": ".text.fn_67",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_52",
+     "size": 26,
+     "section": ".text.fn_52",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_100",
+     "size": 44,
+     "section": ".text.fn_100",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_262",
+     "size": 152,
+     "section": ".text.fn_262",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_282",
+     "size": 400,
+     "section": ".text.fn_282",
+     "exported": true,
+     "mmio": [
+      "0x600a4c74",
+      "0x600a5000",
+      "0x600a7000",
+      "0x600a7400"
+     ]
+    },
+    {
+     "name": "fn_147",
+     "size": 2,
+     "section": ".text.fn_147",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_90",
+     "size": 608,
+     "section": ".text.fn_90",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a0408",
+      "0x600a4c74",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "fn_264",
+     "size": 40,
+     "section": ".text.fn_264",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_281",
+     "size": 30,
+     "section": ".text.fn_281",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_89",
+     "size": 60,
+     "section": ".text.fn_89",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_280",
+     "size": 206,
+     "section": ".text.fn_280",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_88",
+     "size": 104,
+     "section": ".text.fn_88",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_270",
+     "size": 388,
+     "section": ".text.fn_270",
+     "exported": true,
+     "mmio": [
+      "0x60096000",
+      "0x60096018"
+     ]
+    },
+    {
+     "name": "fn_66",
+     "size": 48,
+     "section": ".text.fn_66",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_18",
+     "size": 1336,
+     "section": ".text.fn_18",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_141",
+     "size": 190,
+     "section": ".text.fn_141",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_68",
+     "size": 24,
+     "section": ".text.fn_68",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_70",
+     "size": 60,
+     "section": ".text.fn_70",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_188",
+     "size": 20,
+     "section": ".text.fn_188",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_112",
+     "size": 2,
+     "section": ".text.fn_112",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_140",
+     "size": 24,
+     "section": ".text.fn_140",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_101",
+     "size": 108,
+     "section": ".text.fn_101",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_180",
+     "size": 108,
+     "section": ".text.fn_180",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_190",
+     "size": 2,
+     "section": ".text.fn_190",
+     "exported": false,
+     "mmio": []
+    },
+    {
+     "name": "fn_191",
+     "size": 2,
+     "section": ".text.fn_191",
+     "exported": false,
+     "mmio": []
+    },
+    {
+     "name": "fn_102",
+     "size": 60,
+     "section": ".text.fn_102",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_145",
+     "size": 120,
+     "section": ".text.fn_145",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_192",
+     "size": 2,
+     "section": ".text.fn_192",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_6",
+     "size": 376,
+     "section": ".text.fn_6",
+     "exported": true,
+     "mmio": [
+      "0x6000f000",
+      "0x6000f018",
+      "0x60090000",
+      "0x60090004",
+      "0x60090008",
+      "0x60090078"
+     ]
+    },
+    {
+     "name": "fn_1",
+     "size": 36,
+     "section": ".text.fn_1",
+     "exported": true,
+     "mmio": [
+      "0x60090000",
+      "0x60090004",
+      "0x60090008",
+      "0x60090078"
+     ]
+    },
+    {
+     "name": "fn_129",
+     "size": 2,
+     "section": ".text.fn_129",
+     "exported": true,
+     "mmio": []
+    }
+   ],
+   "calls": [
+    [
+     "fn_6",
+     "dig_gpio_in"
+    ],
+    [
+     "fn_6",
+     "dig_gpio_out"
+    ],
+    [
+     "fn_6",
+     "ets_delay_us"
+    ],
+    [
+     "fn_6",
+     "phy_printf"
+    ],
+    [
+     "fn_18",
+     "fn_66"
+    ],
+    [
+     "fn_18",
+     "init_param_default"
+    ],
+    [
+     "fn_18",
+     "memcpy"
+    ],
+    [
+     "fn_18",
+     "memset"
+    ],
+    [
+     "fn_18",
+     "phy_param"
+    ],
+    [
+     "fn_18",
+     "phy_printf"
+    ],
+    [
+     "fn_18",
+     "fn_184"
+    ],
+    [
+     "fn_18",
+     "register_chipv7_phy"
+    ],
+    [
+     "fn_52",
+     "phy_printf"
+    ],
+    [
+     "fn_52",
+     "tx_cbw40m_en"
+    ],
+    [
+     "fn_68",
+     "module_test_func_local"
+    ],
+    [
+     "fn_68",
+     "fn_168"
+    ],
+    [
+     "fn_70",
+     "phy_printf"
+    ],
+    [
+     "fn_70",
+     "fn_185"
+    ],
+    [
+     "fn_88",
+     "fn_23"
+    ],
+    [
+     "fn_88",
+     "phy_chan_to_freq"
+    ],
+    [
+     "fn_88",
+     "phy_printf"
+    ],
+    [
+     "fn_88",
+     "fn_199"
+    ],
+    [
+     "fn_88",
+     "tx_cbw40m_en"
+    ],
+    [
+     "fn_89",
+     "fn_90"
+    ],
+    [
+     "fn_89",
+     "fcc_mode_sel"
+    ],
+    [
+     "fn_89",
+     "fn_282"
+    ],
+    [
+     "fn_90",
+     "fn_7"
+    ],
+    [
+     "fn_90",
+     "fn_25"
+    ],
+    [
+     "fn_90",
+     "fn_53"
+    ],
+    [
+     "fn_90",
+     "fcc_mode_flag"
+    ],
+    [
+     "fn_90",
+     "phy_11ax_array"
+    ],
+    [
+     "fn_90",
+     "phy_get_rom_ver"
+    ],
+    [
+     "fn_90",
+     "phy_i2c_writeReg_Mask"
+    ],
+    [
+     "fn_90",
+     "phy_printf"
+    ],
+    [
+     "fn_90",
+     "phy_txgain_comp_pacfg_new"
+    ],
+    [
+     "fn_90",
+     "fn_199"
+    ],
+    [
+     "fn_90",
+     "short_gi_enable"
+    ],
+    [
+     "fn_90",
+     "target_power_backoff"
+    ],
+    [
+     "fn_90",
+     "tx_cbw40m_en"
+    ],
+    [
+     "fn_90",
+     "fn_263"
+    ],
+    [
+     "fn_100",
+     "phy_get_data_sat"
+    ],
+    [
+     "fn_101",
+     "phy_printf"
+    ],
+    [
+     "fn_101",
+     "rf_spi_flash_test_init"
+    ],
+    [
+     "fn_102",
+     "fn_190"
+    ],
+    [
+     "fn_102",
+     "fn_191"
+    ],
+    [
+     "fn_140",
+     "fn_70"
+    ],
+    [
+     "fn_140",
+     "phy_cal_print"
+    ],
+    [
+     "fn_141",
+     "ate_bt_dut_func"
+    ],
+    [
+     "fn_141",
+     "fn_38"
+    ],
+    [
+     "fn_141",
+     "fn_39"
+    ],
+    [
+     "fn_141",
+     "ate_zb_dut_func"
+    ],
+    [
+     "fn_141",
+     "le_slave_test"
+    ],
+    [
+     "fn_141",
+     "zb_slave_test"
+    ],
+    [
+     "fn_145",
+     "phy_chip_set_chan"
+    ],
+    [
+     "fn_145",
+     "phy_pbus_debugmode"
+    ],
+    [
+     "fn_145",
+     "phy_pbus_force_test"
+    ],
+    [
+     "fn_145",
+     "phy_pbus_workmode"
+    ],
+    [
+     "fn_145",
+     "phy_pbus_xpd_rx_off"
+    ],
+    [
+     "fn_180",
+     "phy_printf"
+    ],
+    [
+     "fn_180",
+     "rf_spi_psram_test_init"
+    ],
+    [
+     "fn_262",
+     "fn_100"
+    ],
+    [
+     "fn_262",
+     "phy_bbtx_outfilter"
+    ],
+    [
+     "fn_262",
+     "phy_i2c_writeReg"
+    ],
+    [
+     "fn_262",
+     "phy_param"
+    ],
+    [
+     "fn_262",
+     "fn_263"
+    ],
+    [
+     "fn_263",
+     "fcc_mode_flag"
+    ],
+    [
+     "fn_263",
+     "fn_100"
+    ],
+    [
+     "fn_263",
+     "phy_bbtx_outfilter"
+    ],
+    [
+     "fn_263",
+     "phy_get_data_sat"
+    ],
+    [
+     "fn_263",
+     "phy_i2c_writeReg"
+    ],
+    [
+     "fn_263",
+     "phy_param"
+    ],
+    [
+     "fn_264",
+     "fcc_mode_sel"
+    ],
+    [
+     "fn_264",
+     "phy_printf"
+    ],
+    [
+     "fn_270",
+     "fn_8"
+    ],
+    [
+     "fn_270",
+     "esp_rom_spiflash_erase_sector"
+    ],
+    [
+     "fn_270",
+     "esp_rom_spiflash_read"
+    ],
+    [
+     "fn_270",
+     "esp_rom_spiflash_write"
+    ],
+    [
+     "fn_270",
+     "force_txon_mode"
+    ],
+    [
+     "fn_270",
+     "phy_param"
+    ],
+    [
+     "fn_270",
+     "phy_printf"
+    ],
+    [
+     "fn_270",
+     "phy_set_chan_interp"
+    ],
+    [
+     "fn_270",
+     "phy_set_freq"
+    ],
+    [
+     "fn_270",
+     "phy_start_tx_tone_step"
+    ],
+    [
+     "fn_270",
+     "spi_flash_attach"
+    ],
+    [
+     "fn_280",
+     "phy_param"
+    ],
+    [
+     "fn_280",
+     "phy_printf"
+    ],
+    [
+     "fn_280",
+     "phy_set_chan_interp"
+    ],
+    [
+     "fn_280",
+     "phy_start_tx_tone_step"
+    ],
+    [
+     "fn_280",
+     "phy_txcal_debuge_mode_new"
+    ],
+    [
+     "fn_280",
+     "phy_txcal_work_mode"
+    ],
+    [
+     "fn_280",
+     "fn_199"
+    ],
+    [
+     "fn_281",
+     "fn_90"
+    ],
+    [
+     "fn_281",
+     "fcc_mode_sel"
+    ],
+    [
+     "fn_281",
+     "fn_282"
+    ],
+    [
+     "fn_282",
+     "fn_7"
+    ],
+    [
+     "fn_282",
+     "fn_25"
+    ],
+    [
+     "fn_282",
+     "fcc_mode_flag"
+    ],
+    [
+     "fn_282",
+     "phy_param"
+    ],
+    [
+     "fn_282",
+     "phy_printf"
+    ],
+    [
+     "fn_282",
+     "phy_tx_pwr_correct_en"
+    ],
+    [
+     "fn_282",
+     "phy_tx_pwr_track_en"
+    ],
+    [
+     "fn_282",
+     "fn_187"
+    ],
+    [
+     "fn_282",
+     "fn_199"
+    ],
+    [
+     "fn_282",
+     "short_gi_enable"
+    ],
+    [
+     "fn_282",
+     "target_power_backoff"
+    ],
+    [
+     "fn_282",
+     "tx_cbw40m_en"
+    ],
+    [
+     "fn_282",
+     "fn_262"
+    ],
+    [
+     "fn_282",
+     "fn_263"
+    ]
+   ]
+  },
+  {
+   "name": "wifi.o",
+   "machine": 243,
+   "functions": [
+    {
+     "name": "fn_275",
+     "size": 50,
+     "section": ".text.fn_274.part.2",
+     "exported": false,
+     "mmio": [
+      "0x600a0890",
+      "0x600a1000"
+     ]
+    },
+    {
+     "name": "fn_235",
+     "size": 102,
+     "section": ".text.fn_235",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_14",
+     "size": 148,
+     "section": ".text.fn_14",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_7",
+     "size": 80,
+     "section": ".text.fn_7",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_231",
+     "size": 84,
+     "section": ".text.fn_231",
+     "exported": true,
+     "mmio": [
+      "0x600a5000",
+      "0x600a54d8",
+      "0x600a7000",
+      "0x600a7428"
+     ]
+    },
+    {
+     "name": "fn_233",
+     "size": 84,
+     "section": ".text.fn_233",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_234",
+     "size": 60,
+     "section": ".text.fn_234",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_267",
+     "size": 24,
+     "section": ".text.fn_267",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_136",
+     "size": 82,
+     "section": ".text.fn_136",
+     "exported": true,
+     "mmio": [
+      "0x600a5000",
+      "0x600a54d8"
+     ]
+    },
+    {
+     "name": "fn_146",
+     "size": 8,
+     "section": ".text.fn_146",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_225",
+     "size": 34,
+     "section": ".text.fn_225",
+     "exported": true,
+     "mmio": [
+      "0x600a7000",
+      "0x600a7400"
+     ]
+    },
+    {
+     "name": "fn_23",
+     "size": 8,
+     "section": ".text.fn_23",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_198",
+     "size": 2,
+     "section": ".text.fn_198",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_77",
+     "size": 168,
+     "section": ".text.fn_77",
+     "exported": false,
+     "mmio": []
+    },
+    {
+     "name": "fn_8",
+     "size": 8,
+     "section": ".text.fn_8",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_24",
+     "size": 340,
+     "section": ".text.fn_24",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a0408",
+      "0x600a4cb0",
+      "0x600a5000",
+      "0x600a7000",
+      "0x600a7400",
+      "0x600a7418"
+     ]
+    },
+    {
+     "name": "fn_25",
+     "size": 30,
+     "section": ".text.fn_25",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_224",
+     "size": 18,
+     "section": ".text.fn_224",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_26",
+     "size": 136,
+     "section": ".text.fn_26",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_182",
+     "size": 172,
+     "section": ".text.fn_182",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a0454",
+      "0x600a0458",
+      "0x600a045c",
+      "0x600a0460",
+      "0x600a0464",
+      "0x600a0468",
+      "0x600a046c"
+     ]
+    },
+    {
+     "name": "fn_124",
+     "size": 144,
+     "section": ".text.fn_124",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_163",
+     "size": 4,
+     "section": ".text.fn_163",
+     "exported": false,
+     "mmio": []
+    },
+    {
+     "name": "fn_164",
+     "size": 2,
+     "section": ".text.fn_164",
+     "exported": false,
+     "mmio": []
+    },
+    {
+     "name": "fn_142",
+     "size": 122,
+     "section": ".text.fn_142",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_250",
+     "size": 196,
+     "section": ".text.fn_250",
+     "exported": true,
+     "mmio": [
+      "0x60096000",
+      "0x60096018",
+      "0x600ad800",
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "fn_253",
+     "size": 2,
+     "section": ".text.fn_253",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_168",
+     "size": 54,
+     "section": ".text.fn_168",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_48",
+     "size": 510,
+     "section": ".text.fn_48",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a405c",
+      "0x600a4060"
+     ]
+    },
+    {
+     "name": "fn_278",
+     "size": 48,
+     "section": ".text.fn_278",
+     "exported": true,
+     "mmio": [
+      "0x600b1000"
+     ]
+    },
+    {
+     "name": "fn_49",
+     "size": 16,
+     "section": ".text.fn_49",
+     "exported": true,
+     "mmio": [
+      "0x600a4d68",
+      "0x600a5000"
+     ]
+    },
+    {
+     "name": "fn_50",
+     "size": 734,
+     "section": ".text.fn_50",
+     "exported": true,
+     "mmio": [
+      "0x600a4c40",
+      "0x600a4c48",
+      "0x600a4c4c",
+      "0x600a4c74",
+      "0x600a4cb0",
+      "0x600a5000",
+      "0x600ad800",
+      "0x600ae000",
+      "0x600b1000"
+     ]
+    },
+    {
+     "name": "fn_51",
+     "size": 278,
+     "section": ".text.fn_51",
+     "exported": true,
+     "mmio": [
+      "0x600ad800",
+      "0x600ae000",
+      "0x600b1000"
+     ]
+    },
+    {
+     "name": "fn_47",
+     "size": 114,
+     "section": ".text.fn_47",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_219",
+     "size": 102,
+     "section": ".text.fn_219",
+     "exported": true,
+     "mmio": [
+      "0x600a4000",
+      "0x600a40d8",
+      "0x600a40dc",
+      "0x600a40e0",
+      "0x600a40e4"
+     ]
+    },
+    {
+     "name": "fn_57",
+     "size": 2,
+     "section": ".text.fn_57",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_148",
+     "size": 2,
+     "section": ".text.fn_148",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_279",
+     "size": 48,
+     "section": ".text.fn_279",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_53",
+     "size": 290,
+     "section": ".text.fn_53",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_187",
+     "size": 142,
+     "section": ".text.fn_187",
+     "exported": true,
+     "mmio": [
+      "0x600a7000",
+      "0x600a7414",
+      "0x600a7418"
+     ]
+    },
+    {
+     "name": "fn_184",
+     "size": 56,
+     "section": ".text.fn_184",
+     "exported": true,
+     "mmio": [
+      "0x60096000",
+      "0x60096018"
+     ]
+    },
+    {
+     "name": "fn_284",
+     "size": 42,
+     "section": ".text.fn_284",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_46",
+     "size": 172,
+     "section": ".text.fn_46",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_110",
+     "size": 90,
+     "section": ".text.fn_110",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_137",
+     "size": 10,
+     "section": ".text.fn_137",
+     "exported": true,
+     "mmio": [
+      "0x600a08dc",
+      "0x600a1000"
+     ]
+    },
+    {
+     "name": "fn_139",
+     "size": 10,
+     "section": ".text.fn_139",
+     "exported": true,
+     "mmio": [
+      "0x600a08dc",
+      "0x600a1000"
+     ]
+    },
+    {
+     "name": "fn_248",
+     "size": 102,
+     "section": ".text.fn_248",
+     "exported": true,
+     "mmio": [
+      "0x600a08dc",
+      "0x600a1000",
+      "0x600ad800",
+      "0x600adfff",
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "fn_127",
+     "size": 16,
+     "section": ".text.fn_127",
+     "exported": true,
+     "mmio": [
+      "0x600a080c",
+      "0x600a1000"
+     ]
+    },
+    {
+     "name": "fn_177",
+     "size": 82,
+     "section": ".text.fn_177",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_58",
+     "size": 2,
+     "section": ".text.fn_58",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_200",
+     "size": 4,
+     "section": ".text.fn_200",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_56",
+     "size": 2,
+     "section": ".text.fn_56",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_277",
+     "size": 2,
+     "section": ".text.fn_277",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_118",
+     "size": 42,
+     "section": ".text.fn_118",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a046c"
+     ]
+    },
+    {
+     "name": "fn_261",
+     "size": 180,
+     "section": ".text.fn_261",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_215",
+     "size": 2,
+     "section": ".text.fn_215",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_213",
+     "size": 202,
+     "section": ".text.fn_213",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_212",
+     "size": 104,
+     "section": ".text.fn_212",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_44",
+     "size": 744,
+     "section": ".text.fn_44",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_63",
+     "size": 212,
+     "section": ".text.fn_63",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a0464",
+      "0x600a0468",
+      "0x600a046c",
+      "0x600a0470",
+      "0x600a0474"
+     ]
+    },
+    {
+     "name": "fn_276",
+     "size": 246,
+     "section": ".text.fn_276",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_216",
+     "size": 54,
+     "section": ".text.fn_216",
+     "exported": true,
+     "mmio": [
+      "0x600a7000",
+      "0x600a7094",
+      "0x600a713c"
+     ]
+    },
+    {
+     "name": "fn_103",
+     "size": 92,
+     "section": ".text.fn_103",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_108",
+     "size": 154,
+     "section": ".text.fn_108",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_238",
+     "size": 124,
+     "section": ".text.fn_238",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_199",
+     "size": 66,
+     "section": ".text.fn_199",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_245",
+     "size": 138,
+     "section": ".text.fn_245",
+     "exported": true,
+     "mmio": [
+      "0x600ae000"
+     ]
+    },
+    {
+     "name": "fn_116",
+     "size": 58,
+     "section": ".text.fn_116",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_228",
+     "size": 186,
+     "section": ".text.fn_228",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_197",
+     "size": 92,
+     "section": ".text.fn_197",
+     "exported": true,
+     "mmio": [
+      "0x600a7000",
+      "0x600a7400",
+      "0x600a7904",
+      "0x600a8000"
+     ]
+    },
+    {
+     "name": "fn_43",
+     "size": 34,
+     "section": ".text.fn_43",
+     "exported": true,
+     "mmio": [
+      "0x600b2c04",
+      "0x600b2c0c",
+      "0x600b3000"
+     ]
+    },
+    {
+     "name": "fn_143",
+     "size": 2,
+     "section": ".text.fn_143",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_175",
+     "size": 2,
+     "section": ".text.fn_175",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_196",
+     "size": 38,
+     "section": ".text.fn_196",
+     "exported": true,
+     "mmio": [
+      "0x600a9c04",
+      "0x600a9c0c",
+      "0x600a9c14",
+      "0x600aa000",
+      "0x600af000",
+      "0x600af018",
+      "0x600af01c",
+      "0x600af020"
+     ]
+    },
+    {
+     "name": "fn_260",
+     "size": 128,
+     "section": ".text.fn_260",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_226",
+     "size": 16,
+     "section": ".text.fn_226",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_274",
+     "size": 58,
+     "section": ".text.fn_274",
+     "exported": true,
+     "mmio": [
+      "0x600a0890",
+      "0x600a1000"
+     ]
+    },
+    {
+     "name": "fn_189",
+     "size": 346,
+     "section": ".text.fn_189",
+     "exported": true,
+     "mmio": [
+      "0x600a0000",
+      "0x600a0408"
+     ]
+    },
+    {
+     "name": "fn_246",
+     "size": 8,
+     "section": ".text.fn_246",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_201",
+     "size": 34,
+     "section": ".text.fn_201",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_283",
+     "size": 202,
+     "section": ".text.fn_283",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_183",
+     "size": 208,
+     "section": ".text.fn_183",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_144",
+     "size": 198,
+     "section": ".text.fn_144",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_34",
+     "size": 122,
+     "section": ".text.fn_34",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_35",
+     "size": 74,
+     "section": ".text.fn_35",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_36",
+     "size": 52,
+     "section": ".text.fn_36",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_32",
+     "size": 118,
+     "section": ".text.fn_32",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_31",
+     "size": 476,
+     "section": ".text.fn_31",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_30",
+     "size": 1440,
+     "section": ".text.fn_30",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_169",
+     "size": 46,
+     "section": ".text.fn_169",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_170",
+     "size": 42,
+     "section": ".text.fn_170",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_61",
+     "size": 224,
+     "section": ".text.fn_61",
+     "exported": true,
+     "mmio": [
+      "0x600b484c",
+      "0x600b5000"
+     ]
+    },
+    {
+     "name": "fn_195",
+     "size": 328,
+     "section": ".text.fn_195",
+     "exported": true,
+     "mmio": [
+      "0x60099000",
+      "0x600990c4",
+      "0x600b0000",
+      "0x600b0028"
+     ]
+    },
+    {
+     "name": "fn_29",
+     "size": 152,
+     "section": ".text.fn_29",
+     "exported": true,
+     "mmio": [
+      "0x600a9c00",
+      "0x600a9c14",
+      "0x600aa000",
+      "0x600ae000",
+      "0x600af000",
+      "0x600af02c",
+      "0x600af038"
+     ]
+    },
+    {
+     "name": "fn_128",
+     "size": 10,
+     "section": ".text.fn_128",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_113",
+     "size": 10,
+     "section": ".text.fn_113",
+     "exported": true,
+     "mmio": []
+    },
+    {
+     "name": "fn_202",
+     "size": 16354,
+     "section": ".text.fn_202",
+     "exported": true,
+     "mmio": [
+      "0x60096000",
+      "0x60096094",
+      "0x600a086c",
+      "0x600a1000",
+      "0x600a2000",
+      "0x600a2170",
+      "0x600a4c74",
+      "0x600a5000",
+      "0x600a7000",
+      "0x600a7050",
+      "0x600a7400",
+      "0x600a7c00",
+      "0x600a7c30",
+      "0x600a7c6c",
+      "0x600a8000",
+      "0x600ad800",
+      "0x600ae000",
+      "0x600ae004"
+     ]
+    },
+    {
+     "name": "fn_203",
+     "size": 4,
+     "section": ".text.fn_203",
+     "exported": true,
+     "mmio": []
+    }
+   ],
+   "calls": [
+    [
+     "fn_7",
+     "fn_96"
+    ],
+    [
+     "fn_8",
+     "fn_77"
+    ],
+    [
+     "fn_14",
+     "phy_printf"
+    ],
+    [
+     "fn_23",
+     "fn_65"
+    ],
+    [
+     "fn_24",
+     "fn_77"
+    ],
+    [
+     "fn_24",
+     "phy_11ax_array"
+    ],
+    [
+     "fn_24",
+     "fn_151"
+    ],
+    [
+     "fn_24",
+     "phy_disable_cca"
+    ],
+    [
+     "fn_24",
+     "phy_enable_cca"
+    ],
+    [
+     "fn_24",
+     "phy_param"
+    ],
+    [
+     "fn_24",
+     "phy_set_rate"
+    ],
+    [
+     "fn_24",
+     "fn_233"
+    ],
+    [
+     "fn_24",
+     "fn_251"
+    ],
+    [
+     "fn_25",
+     "fn_24"
+    ],
+    [
+     "fn_25",
+     "phy_11ax_array"
+    ],
+    [
+     "fn_26",
+     "phy_printf"
+    ],
+    [
+     "fn_26",
+     "fn_224"
+    ],
+    [
+     "fn_29",
+     "phy_printf"
+    ],
+    [
+     "fn_30",
+     "fn_32"
+    ],
+    [
+     "fn_30",
+     "fn_34"
+    ],
+    [
+     "fn_30",
+     "fn_36"
+    ],
+    [
+     "fn_30",
+     "dig_gpio_in"
+    ],
+    [
+     "fn_30",
+     "phy_i2c_readReg_Mask"
+    ],
+    [
+     "fn_30",
+     "phy_i2c_writeReg_Mask"
+    ],
+    [
+     "fn_30",
+     "phy_printf"
+    ],
+    [
+     "fn_31",
+     "fn_32"
+    ],
+    [
+     "fn_31",
+     "dig_gpio_in"
+    ],
+    [
+     "fn_31",
+     "phy_i2c_readReg_Mask"
+    ],
+    [
+     "fn_31",
+     "phy_i2c_writeReg_Mask"
+    ],
+    [
+     "fn_31",
+     "phy_printf"
+    ],
+    [
+     "fn_31",
+     "pull_internal_voltage"
+    ],
+    [
+     "fn_32",
+     "dig_gpio_in"
+    ],
+    [
+     "fn_32",
+     "ets_delay_us"
+    ],
+    [
+     "fn_34",
+     "fn_108"
+    ],
+    [
+     "fn_34",
+     "force_txon_mode"
+    ],
+    [
+     "fn_34",
+     "phy_param"
+    ],
+    [
+     "fn_34",
+     "phy_set_channel_rfpll_freq_new"
+    ],
+    [
+     "fn_34",
+     "phy_set_pbus_mem_5g"
+    ],
+    [
+     "fn_35",
+     "phy_i2c_readReg_Mask"
+    ],
+    [
+     "fn_35",
+     "phy_printf"
+    ],
+    [
+     "fn_36",
+     "fn_35"
+    ],
+    [
+     "fn_36",
+     "phy_i2c_writeReg_Mask"
+    ],
+    [
+     "fn_44",
+     "ets_delay_us"
+    ],
+    [
+     "fn_44",
+     "phy_abs_temp"
+    ],
+    [
+     "fn_44",
+     "phy_dc_iq_est_new"
+    ],
+    [
+     "fn_44",
+     "phy_pbus_force_test"
+    ],
+    [
+     "fn_44",
+     "phy_pbus_rd"
+    ],
+    [
+     "fn_44",
+     "phy_printf"
+    ],
+    [
+     "fn_46",
+     "force_txon_mode"
+    ],
+    [
+     "fn_46",
+     "phy_printf"
+    ],
+    [
+     "fn_46",
+     "phy_set_freq"
+    ],
+    [
+     "fn_46",
+     "phy_start_tx_tone_step"
+    ],
+    [
+     "fn_47",
+     "fn_49"
+    ],
+    [
+     "fn_47",
+     "fn_50"
+    ],
+    [
+     "fn_47",
+     "dig_gpio_out"
+    ],
+    [
+     "fn_47",
+     "fn_77"
+    ],
+    [
+     "fn_47",
+     "ets_delay_us"
+    ],
+    [
+     "fn_47",
+     "phy_printf"
+    ],
+    [
+     "fn_48",
+     "fn_4"
+    ],
+    [
+     "fn_48",
+     "PSDU0_OFFSET"
+    ],
+    [
+     "fn_48",
+     "fn_16"
+    ],
+    [
+     "fn_48",
+     "memset"
+    ],
+    [
+     "fn_49",
+     "fn_278"
+    ],
+    [
+     "fn_50",
+     "fn_4"
+    ],
+    [
+     "fn_50",
+     "fn_7"
+    ],
+    [
+     "fn_50",
+     "fn_16"
+    ],
+    [
+     "fn_50",
+     "fn_25"
+    ],
+    [
+     "fn_50",
+     "fn_48"
+    ],
+    [
+     "fn_50",
+     "ets_delay_us"
+    ],
+    [
+     "fn_50",
+     "lp_wdt_feed"
+    ],
+    [
+     "fn_50",
+     "phy_chip_set_chan"
+    ],
+    [
+     "fn_50",
+     "fn_168"
+    ],
+    [
+     "fn_50",
+     "phy_param"
+    ],
+    [
+     "fn_50",
+     "phy_printf"
+    ],
+    [
+     "fn_50",
+     "fn_240"
+    ],
+    [
+     "fn_50",
+     "target_power_backoff"
+    ],
+    [
+     "fn_50",
+     "fn_256"
+    ],
+    [
+     "fn_51",
+     "fn_7"
+    ],
+    [
+     "fn_51",
+     "fn_25"
+    ],
+    [
+     "fn_51",
+     "lp_wdt_feed"
+    ],
+    [
+     "fn_51",
+     "phy_chip_set_chan"
+    ],
+    [
+     "fn_51",
+     "phy_i2c_readReg_Mask"
+    ],
+    [
+     "fn_51",
+     "phy_printf"
+    ],
+    [
+     "fn_51",
+     "target_power_backoff"
+    ],
+    [
+     "fn_53",
+     "phy_printf"
+    ],
+    [
+     "fn_61",
+     "phy_i2c_writeReg"
+    ],
+    [
+     "fn_61",
+     "phy_i2c_writeReg_Mask"
+    ],
+    [
+     "fn_61",
+     "phy_param"
+    ],
+    [
+     "fn_61",
+     "fn_170"
+    ],
+    [
+     "fn_63",
+     "phy_iq_est_disable"
+    ],
+    [
+     "fn_63",
+     "phy_iq_est_enable_new"
+    ],
+    [
+     "fn_63",
+     "phy_linear_to_db"
+    ],
+    [
+     "fn_77",
+     "UartGetCmdLn"
+    ],
+    [
+     "fn_77",
+     "cmd_parse"
+    ],
+    [
+     "fn_77",
+     "phy_printf"
+    ],
+    [
+     "fn_77",
+     "fn_188"
+    ],
+    [
+     "fn_77",
+     "strcmp"
+    ],
+    [
+     "fn_103",
+     "phy_param"
+    ],
+    [
+     "fn_103",
+     "phy_set_tx_gain_mem"
+    ],
+    [
+     "fn_108",
+     "fn_103"
+    ],
+    [
+     "fn_108",
+     "phy_param"
+    ],
+    [
+     "fn_108",
+     "phy_set_tx_gain_mem"
+    ],
+    [
+     "fn_110",
+     "ets_delay_us"
+    ],
+    [
+     "fn_110",
+     "force_txon"
+    ],
+    [
+     "fn_110",
+     "phy_stop_tx_tone"
+    ],
+    [
+     "fn_110",
+     "fn_244"
+    ],
+    [
+     "fn_113",
+     "phy_param"
+    ],
+    [
+     "fn_116",
+     "phy_printf"
+    ],
+    [
+     "fn_118",
+     "phy_iq_est_disable"
+    ],
+    [
+     "fn_118",
+     "phy_iq_est_enable_new"
+    ],
+    [
+     "fn_124",
+     "__fixsfsi"
+    ],
+    [
+     "fn_124",
+     "ets_delay_us"
+    ],
+    [
+     "fn_124",
+     "phy_iq_est_disable"
+    ],
+    [
+     "fn_124",
+     "phy_iq_est_enable_new"
+    ],
+    [
+     "fn_124",
+     "phy_linear_to_db"
+    ],
+    [
+     "fn_124",
+     "phy_printf"
+    ],
+    [
+     "fn_124",
+     "phy_stop_tx_tone"
+    ],
+    [
+     "fn_124",
+     "fn_182"
+    ],
+    [
+     "fn_124",
+     "fn_244"
+    ],
+    [
+     "fn_136",
+     "phy_get_target_pwr"
+    ],
+    [
+     "fn_142",
+     "fn_54"
+    ],
+    [
+     "fn_142",
+     "phy_chip_set_chan"
+    ],
+    [
+     "fn_142",
+     "phy_printf"
+    ],
+    [
+     "fn_144",
+     "esp_rom_spiflash_read"
+    ],
+    [
+     "fn_144",
+     "phy_i2c_readReg_Mask"
+    ],
+    [
+     "fn_144",
+     "phy_i2c_writeReg_Mask"
+    ],
+    [
+     "fn_144",
+     "phy_open_i2c_xpd"
+    ],
+    [
+     "fn_144",
+     "phy_printf"
+    ],
+    [
+     "fn_144",
+     "spi_flash_attach"
+    ],
+    [
+     "fn_146",
+     "phy_set_rate"
+    ],
+    [
+     "fn_168",
+     "phy_param"
+    ],
+    [
+     "fn_168",
+     "register_chipv7_phy"
+    ],
+    [
+     "fn_169",
+     "fn_283"
+    ],
+    [
+     "fn_170",
+     "esp_rom_spiflash_read"
+    ],
+    [
+     "fn_170",
+     "spi_flash_attach"
+    ],
+    [
+     "fn_177",
+     "phy_get_romfunc_addr"
+    ],
+    [
+     "fn_177",
+     "fn_168"
+    ],
+    [
+     "fn_177",
+     "phy_printf"
+    ],
+    [
+     "fn_182",
+     "__ashrdi3"
+    ],
+    [
+     "fn_183",
+     "esp_rom_spiflash_read"
+    ],
+    [
+     "fn_183",
+     "memset"
+    ],
+    [
+     "fn_183",
+     "phy_printf"
+    ],
+    [
+     "fn_183",
+     "spi_flash_attach"
+    ],
+    [
+     "fn_184",
+     "esp_rom_spiflash_read"
+    ],
+    [
+     "fn_184",
+     "spi_flash_attach"
+    ],
+    [
+     "fn_189",
+     "ets_delay_us"
+    ],
+    [
+     "fn_189",
+     "phy_printf"
+    ],
+    [
+     "fn_189",
+     "phy_start_tx_tone_step"
+    ],
+    [
+     "fn_189",
+     "fn_226"
+    ],
+    [
+     "fn_189",
+     "fn_274"
+    ],
+    [
+     "fn_189",
+     "fn_275"
+    ],
+    [
+     "fn_195",
+     "fn_7"
+    ],
+    [
+     "fn_195",
+     "bt_testmode_init"
+    ],
+    [
+     "fn_195",
+     "fn_60"
+    ],
+    [
+     "fn_195",
+     "fn_61"
+    ],
+    [
+     "fn_195",
+     "fn_70"
+    ],
+    [
+     "fn_195",
+     "fn_129"
+    ],
+    [
+     "fn_195",
+     "fn_133"
+    ],
+    [
+     "fn_195",
+     "phy_chip_set_chan"
+    ],
+    [
+     "fn_195",
+     "phy_get_romfunc_addr"
+    ],
+    [
+     "fn_195",
+     "phy_i2c_txrate_init_new"
+    ],
+    [
+     "fn_195",
+     "phy_i2c_writeReg_Mask"
+    ],
+    [
+     "fn_195",
+     "fn_168"
+    ],
+    [
+     "fn_195",
+     "phy_param"
+    ],
+    [
+     "fn_195",
+     "phy_printf"
+    ],
+    [
+     "fn_195",
+     "phy_rxevm_en"
+    ],
+    [
+     "fn_195",
+     "phy_version_print"
+    ],
+    [
+     "fn_195",
+     "fn_196"
+    ],
+    [
+     "fn_195",
+     "fn_197"
+    ],
+    [
+     "fn_197",
+     "phy_set_bttx_low_power"
+    ],
+    [
+     "fn_197",
+     "phy_txpwr_track_slow"
+    ],
+    [
+     "fn_199",
+     "RFChannelSel"
+    ],
+    [
+     "fn_199",
+     "phy_param_track_tot"
+    ],
+    [
+     "fn_202",
+     "fn_1"
+    ],
+    [
+     "fn_202",
+     "fn_6"
+    ],
+    [
+     "fn_202",
+     "fn_7"
+    ],
+    [
+     "fn_202",
+     "fn_18"
+    ],
+    [
+     "fn_202",
+     "fn_24"
+    ],
+    [
+     "fn_202",
+     "fn_26"
+    ],
+    [
+     "fn_202",
+     "fn_28"
+    ],
+    [
+     "fn_202",
+     "fn_29"
+    ],
+    [
+     "fn_202",
+     "ate_rxdc_remain_check"
+    ],
+    [
+     "fn_202",
+     "fn_38"
+    ],
+    [
+     "fn_202",
+     "fn_39"
+    ],
+    [
+     "fn_202",
+     "fn_41"
+    ],
+    [
+     "fn_202",
+     "fn_42"
+    ],
+    [
+     "fn_202",
+     "ble_rx_opt_en"
+    ],
+    [
+     "fn_202",
+     "fn_45"
+    ],
+    [
+     "fn_202",
+     "bt_set_rx_comp"
+    ],
+    [
+     "fn_202",
+     "fn_46"
+    ],
+    [
+     "fn_202",
+     "fn_47"
+    ],
+    [
+     "fn_202",
+     "fn_52"
+    ],
+    [
+     "fn_202",
+     "fn_54"
+    ],
+    [
+     "fn_202",
+     "fn_59"
+    ],
+    [
+     "fn_202",
+     "fn_63"
+    ],
+    [
+     "fn_202",
+     "fn_65"
+    ],
+    [
+     "fn_202",
+     "fn_70"
+    ],
+    [
+     "fn_202",
+     "esp_rom_spiflash_erase_sector"
+    ],
+    [
+     "fn_202",
+     "fn_88"
+    ],
+    [
+     "fn_202",
+     "fn_89"
+    ],
+    [
+     "fn_202",
+     "fn_91"
+    ],
+    [
+     "fn_202",
+     "ets_delay_us"
+    ],
+    [
+     "fn_202",
+     "fn_92"
+    ],
+    [
+     "fn_202",
+     "fn_93"
+    ],
+    [
+     "fn_202",
+     "fn_94"
+    ],
+    [
+     "fn_202",
+     "fn_95"
+    ],
+    [
+     "fn_202",
+     "flash_test_enable"
+    ],
+    [
+     "fn_202",
+     "fn_101"
+    ],
+    [
+     "fn_202",
+     "fn_103"
+    ],
+    [
+     "fn_202",
+     "fn_104"
+    ],
+    [
+     "fn_202",
+     "fn_105"
+    ],
+    [
+     "fn_202",
+     "fn_106"
+    ],
+    [
+     "fn_202",
+     "fn_107"
+    ],
+    [
+     "fn_202",
+     "fn_108"
+    ],
+    [
+     "fn_202",
+     "fn_109"
+    ],
+    [
+     "fn_202",
+     "force_txon_mode"
+    ],
+    [
+     "fn_202",
+     "fn_110"
+    ],
+    [
+     "fn_202",
+     "fn_111"
+    ],
+    [
+     "fn_202",
+     "fn_115"
+    ],
+    [
+     "fn_202",
+     "fn_116"
+    ],
+    [
+     "fn_202",
+     "fn_118"
+    ],
+    [
+     "fn_202",
+     "fn_121"
+    ],
+    [
+     "fn_202",
+     "fn_127"
+    ],
+    [
+     "fn_202",
+     "le_master_test"
+    ],
+    [
+     "fn_202",
+     "le_slave_test"
+    ],
+    [
+     "fn_202",
+     "fn_130"
+    ],
+    [
+     "fn_202",
+     "fn_131"
+    ],
+    [
+     "fn_202",
+     "fn_133"
+    ],
+    [
+     "fn_202",
+     "fn_138"
+    ],
+    [
+     "fn_202",
+     "fn_140"
+    ],
+    [
+     "fn_202",
+     "fn_141"
+    ],
+    [
+     "fn_202",
+     "fn_145"
+    ],
+    [
+     "fn_202",
+     "fn_149"
+    ],
+    [
+     "fn_202",
+     "fn_150"
+    ],
+    [
+     "fn_202",
+     "fn_152"
+    ],
+    [
+     "fn_202",
+     "phy_11p_set"
+    ],
+    [
+     "fn_202",
+     "phy_adc_rate_set"
+    ],
+    [
+     "fn_202",
+     "phy_band_sel"
+    ],
+    [
+     "fn_202",
+     "phy_bb_init"
+    ],
+    [
+     "fn_202",
+     "phy_bbtx_outfilter"
+    ],
+    [
+     "fn_202",
+     "phy_bt_power_track"
+    ],
+    [
+     "fn_202",
+     "phy_bt_set_tx_gain_new"
+    ],
+    [
+     "fn_202",
+     "phy_bt_txdc_cal"
+    ],
+    [
+     "fn_202",
+     "phy_bt_txiq_cal"
+    ],
+    [
+     "fn_202",
+     "phy_cfg_tx_magtrk"
+    ],
+    [
+     "fn_202",
+     "phy_chan_freq_hw_init"
+    ],
+    [
+     "fn_202",
+     "phy_check_freq_mem"
+    ],
+    [
+     "fn_202",
+     "fn_155"
+    ],
+    [
+     "fn_202",
+     "fn_156"
+    ],
+    [
+     "fn_202",
+     "phy_check_rssi_band_set"
+    ],
+    [
+     "fn_202",
+     "phy_chip_set_chan"
+    ],
+    [
+     "fn_202",
+     "phy_chip_set_chan_offset"
+    ],
+    [
+     "fn_202",
+     "phy_close_rf"
+    ],
+    [
+     "fn_202",
+     "fn_160"
+    ],
+    [
+     "fn_202",
+     "phy_dis_hw_set_freq_new"
+    ],
+    [
+     "fn_202",
+     "phy_disable_cca"
+    ],
+    [
+     "fn_202",
+     "phy_dpd_rxdc_cal"
+    ],
+    [
+     "fn_202",
+     "fn_162"
+    ],
+    [
+     "fn_202",
+     "phy_enable_cca"
+    ],
+    [
+     "fn_202",
+     "fn_165"
+    ],
+    [
+     "fn_202",
+     "phy_freq_cal_test"
+    ],
+    [
+     "fn_202",
+     "phy_freq_i2c_data_write"
+    ],
+    [
+     "fn_202",
+     "phy_freq_mem_backup"
+    ],
+    [
+     "fn_202",
+     "phy_freq_to_index"
+    ],
+    [
+     "fn_202",
+     "phy_ftm_comp"
+    ],
+    [
+     "fn_202",
+     "phy_get_adc_rand"
+    ],
+    [
+     "fn_202",
+     "phy_get_chan_cap"
+    ],
+    [
+     "fn_202",
+     "phy_get_freq_init"
+    ],
+    [
+     "fn_202",
+     "phy_get_loop_snr"
+    ],
+    [
+     "fn_202",
+     "phy_get_most_tpw"
+    ],
+    [
+     "fn_202",
+     "phy_get_pkdet_data"
+    ],
+    [
+     "fn_202",
+     "phy_get_power_db"
+    ],
+    [
+     "fn_202",
+     "phy_get_pwdet_offset_new"
+    ],
+    [
+     "fn_202",
+     "phy_get_rfcal_rxiq_data"
+    ],
+    [
+     "fn_202",
+     "phy_get_romfunc_addr"
+    ],
+    [
+     "fn_202",
+     "phy_get_rx_sig_pwr"
+    ],
+    [
+     "fn_202",
+     "phy_get_sar2_vol"
+    ],
+    [
+     "fn_202",
+     "phy_get_target_pwr"
+    ],
+    [
+     "fn_202",
+     "phy_get_tone_sar_dout"
+    ],
+    [
+     "fn_202",
+     "phy_get_vdd33"
+    ],
+    [
+     "fn_202",
+     "phy_i2c_check"
+    ],
+    [
+     "fn_202",
+     "phy_i2c_clk_sel"
+    ],
+    [
+     "fn_202",
+     "phy_i2c_readReg"
+    ],
+    [
+     "fn_202",
+     "phy_i2c_readReg_Mask"
+    ],
+    [
+     "fn_202",
+     "phy_i2c_writeReg"
+    ],
+    [
+     "fn_202",
+     "phy_i2c_writeReg_Mask"
+    ],
+    [
+     "fn_202",
+     "fn_168"
+    ],
+    [
+     "fn_202",
+     "phy_meas_tone_pwr_db"
+    ],
+    [
+     "fn_202",
+     "phy_param"
+    ],
+    [
+     "fn_202",
+     "phy_pbus_debugmode"
+    ],
+    [
+     "fn_202",
+     "phy_pbus_force_test"
+    ],
+    [
+     "fn_202",
+     "phy_pbus_print"
+    ],
+    [
+     "fn_202",
+     "phy_pbus_rd"
+    ],
+    [
+     "fn_202",
+     "phy_pbus_rx_dco_cal"
+    ],
+    [
+     "fn_202",
+     "phy_pbus_set_dco"
+    ],
+    [
+     "fn_202",
+     "phy_pbus_set_rxgain"
+    ],
+    [
+     "fn_202",
+     "phy_pbus_workmode"
+    ],
+    [
+     "fn_202",
+     "phy_pbus_xpd_dpd_path"
+    ],
+    [
+     "fn_202",
+     "phy_pbus_xpd_iq_path"
+    ],
+    [
+     "fn_202",
+     "phy_pbus_xpd_rx_on"
+    ],
+    [
+     "fn_202",
+     "phy_pbus_xpd_tx_on"
+    ],
+    [
+     "fn_202",
+     "phy_pkdadc_set"
+    ],
+    [
+     "fn_202",
+     "phy_printf"
+    ],
+    [
+     "fn_202",
+     "phy_pwdet_always_en"
+    ],
+    [
+     "fn_202",
+     "phy_pwdet_code_cal"
+    ],
+    [
+     "fn_202",
+     "phy_read_hw_noisefloor"
+    ],
+    [
+     "fn_202",
+     "phy_read_sar2_code"
+    ],
+    [
+     "fn_202",
+     "phy_reg_check"
+    ],
+    [
+     "fn_202",
+     "phy_restart_cal"
+    ],
+    [
+     "fn_202",
+     "phy_rf_init"
+    ],
+    [
+     "fn_202",
+     "fn_169"
+    ],
+    [
+     "fn_202",
+     "fn_170"
+    ],
+    [
+     "fn_202",
+     "phy_rfagc_disable"
+    ],
+    [
+     "fn_202",
+     "phy_rfpll_dreg_pvt_opt"
+    ],
+    [
+     "fn_202",
+     "phy_rxevm_calcu"
+    ],
+    [
+     "fn_202",
+     "phy_rxevm_init_cfg"
+    ],
+    [
+     "fn_202",
+     "phy_rxiq_cover_mg_mp"
+    ],
+    [
+     "fn_202",
+     "phy_rxiq_get_mis"
+    ],
+    [
+     "fn_202",
+     "fn_171"
+    ],
+    [
+     "fn_202",
+     "fn_172"
+    ],
+    [
+     "fn_202",
+     "fn_173"
+    ],
+    [
+     "fn_202",
+     "fn_174"
+    ],
+    [
+     "fn_202",
+     "phy_set_cca"
+    ],
+    [
+     "fn_202",
+     "phy_set_freq"
+    ],
+    [
+     "fn_202",
+     "phy_set_freq_sw_start"
+    ],
+    [
+     "fn_202",
+     "phy_set_loopback_gain"
+    ],
+    [
+     "fn_202",
+     "phy_set_most_tpw"
+    ],
+    [
+     "fn_202",
+     "phy_set_rf_freq_offset"
+    ],
+    [
+     "fn_202",
+     "phy_set_rx_gain_cal_iq"
+    ],
+    [
+     "fn_202",
+     "phy_set_rx_gain_table"
+    ],
+    [
+     "fn_202",
+     "phy_set_rx_pbus_freq"
+    ],
+    [
+     "fn_202",
+     "phy_set_rx_sense"
+    ],
+    [
+     "fn_202",
+     "phy_set_rxclk_en"
+    ],
+    [
+     "fn_202",
+     "phy_set_txcap_reg"
+    ],
+    [
+     "fn_202",
+     "phy_set_txclk_en"
+    ],
+    [
+     "fn_202",
+     "phy_start_tx_tone_step"
+    ],
+    [
+     "fn_202",
+     "phy_stop_tx_tone"
+    ],
+    [
+     "fn_202",
+     "fn_177"
+    ],
+    [
+     "fn_202",
+     "phy_track_temp_debug"
+    ],
+    [
+     "fn_202",
+     "phy_tsens_temp_read"
+    ],
+    [
+     "fn_202",
+     "phy_tx_cap_init"
+    ],
+    [
+     "fn_202",
+     "phy_tx_pwctrl_init_new"
+    ],
+    [
+     "fn_202",
+     "phy_tx_pwr_correct_en"
+    ],
+    [
+     "fn_202",
+     "phy_tx_pwr_print_en"
+    ],
+    [
+     "fn_202",
+     "phy_tx_pwr_track_en"
+    ],
+    [
+     "fn_202",
+     "phy_txbbgain_to_index"
+    ],
+    [
+     "fn_202",
+     "phy_txdc_cal_init"
+    ],
+    [
+     "fn_202",
+     "phy_txdc_cal_pwdet_init"
+    ],
+    [
+     "fn_202",
+     "phy_txiq_cal_init"
+    ],
+    [
+     "fn_202",
+     "phy_wakeup_init"
+    ],
+    [
+     "fn_202",
+     "phy_wifi_set_tx_gain_new"
+    ],
+    [
+     "fn_202",
+     "phy_xtal_duty_cal"
+    ],
+    [
+     "fn_202",
+     "fn_179"
+    ],
+    [
+     "fn_202",
+     "psram_test_enable"
+    ],
+    [
+     "fn_202",
+     "fn_180"
+    ],
+    [
+     "fn_202",
+     "pull_internal_voltage"
+    ],
+    [
+     "fn_202",
+     "fn_181"
+    ],
+    [
+     "fn_202",
+     "fn_183"
+    ],
+    [
+     "fn_202",
+     "fn_186"
+    ],
+    [
+     "fn_202",
+     "reg_opt_on"
+    ],
+    [
+     "fn_202",
+     "register_chipv7_phy_init_param"
+    ],
+    [
+     "fn_202",
+     "fn_187"
+    ],
+    [
+     "fn_202",
+     "fn_189"
+    ],
+    [
+     "fn_202",
+     "fn_190"
+    ],
+    [
+     "fn_202",
+     "fn_191"
+    ],
+    [
+     "fn_202",
+     "fn_192"
+    ],
+    [
+     "fn_202",
+     "fn_195"
+    ],
+    [
+     "fn_202",
+     "fn_196"
+    ],
+    [
+     "fn_202",
+     "fn_199"
+    ],
+    [
+     "fn_202",
+     "rssi_min_max_print"
+    ],
+    [
+     "fn_202",
+     "rtc_set_cpu_freq"
+    ],
+    [
+     "fn_202",
+     "fn_201"
+    ],
+    [
+     "fn_202",
+     "fn_212"
+    ],
+    [
+     "fn_202",
+     "fn_213"
+    ],
+    [
+     "fn_202",
+     "fn_216"
+    ],
+    [
+     "fn_202",
+     "fn_218"
+    ],
+    [
+     "fn_202",
+     "fn_221"
+    ],
+    [
+     "fn_202",
+     "fn_222"
+    ],
+    [
+     "fn_202",
+     "fn_223"
+    ],
+    [
+     "fn_202",
+     "scale_20"
+    ],
+    [
+     "fn_202",
+     "scale_40"
+    ],
+    [
+     "fn_202",
+     "fn_232"
+    ],
+    [
+     "fn_202",
+     "fn_238"
+    ],
+    [
+     "fn_202",
+     "spur_data_1p1"
+    ],
+    [
+     "fn_202",
+     "fn_244"
+    ],
+    [
+     "fn_202",
+     "strcmp"
+    ],
+    [
+     "fn_202",
+     "fn_245"
+    ],
+    [
+     "fn_202",
+     "target_power_backoff"
+    ],
+    [
+     "fn_202",
+     "fn_248"
+    ],
+    [
+     "fn_202",
+     "fn_250"
+    ],
+    [
+     "fn_202",
+     "fn_252"
+    ],
+    [
+     "fn_202",
+     "fn_254"
+    ],
+    [
+     "fn_202",
+     "fn_256"
+    ],
+    [
+     "fn_202",
+     "fn_258"
+    ],
+    [
+     "fn_202",
+     "fn_261"
+    ],
+    [
+     "fn_202",
+     "fn_264"
+    ],
+    [
+     "fn_202",
+     "tx_frame_delay_us"
+    ],
+    [
+     "fn_202",
+     "tx_frame_enable"
+    ],
+    [
+     "fn_202",
+     "fn_270"
+    ],
+    [
+     "fn_202",
+     "fn_280"
+    ],
+    [
+     "fn_202",
+     "fn_281"
+    ],
+    [
+     "fn_202",
+     "fn_283"
+    ],
+    [
+     "fn_202",
+     "x32k_enable"
+    ],
+    [
+     "fn_202",
+     "x32k_set"
+    ],
+    [
+     "fn_202",
+     "fn_285"
+    ],
+    [
+     "fn_212",
+     "fn_54"
+    ],
+    [
+     "fn_212",
+     "phy_chip_set_chan"
+    ],
+    [
+     "fn_212",
+     "phy_printf"
+    ],
+    [
+     "fn_213",
+     "fn_54"
+    ],
+    [
+     "fn_213",
+     "phy_chip_set_chan"
+    ],
+    [
+     "fn_213",
+     "phy_printf"
+    ],
+    [
+     "fn_219",
+     "fn_229"
+    ],
+    [
+     "fn_226",
+     "phy_set_freq_sw_start"
+    ],
+    [
+     "fn_228",
+     "phy_pbus_force_test"
+    ],
+    [
+     "fn_233",
+     "phy_get_pwr_by_rate"
+    ],
+    [
+     "fn_233",
+     "phy_param"
+    ],
+    [
+     "fn_233",
+     "phy_wifi_set_tx_gain_new"
+    ],
+    [
+     "fn_233",
+     "fn_231"
+    ],
+    [
+     "fn_234",
+     "phy_force_pwr_index"
+    ],
+    [
+     "fn_234",
+     "phy_get_pwr_index"
+    ],
+    [
+     "fn_234",
+     "phy_param"
+    ],
+    [
+     "fn_234",
+     "phy_wifi_set_tx_gain_new"
+    ],
+    [
+     "fn_235",
+     "phy_printf"
+    ],
+    [
+     "fn_235",
+     "phy_spur_cal"
+    ],
+    [
+     "fn_235",
+     "phy_spur_reg_write"
+    ],
+    [
+     "fn_238",
+     "fn_108"
+    ],
+    [
+     "fn_238",
+     "g_phyFuns"
+    ],
+    [
+     "fn_238",
+     "phy_param"
+    ],
+    [
+     "fn_238",
+     "phy_printf"
+    ],
+    [
+     "fn_245",
+     "fn_41"
+    ],
+    [
+     "fn_245",
+     "phy_printf"
+    ],
+    [
+     "fn_245",
+     "fn_199"
+    ],
+    [
+     "fn_246",
+     "phy_band_sel"
+    ],
+    [
+     "fn_248",
+     "phy_printf"
+    ],
+    [
+     "fn_250",
+     "esp_rom_spiflash_erase_sector"
+    ],
+    [
+     "fn_250",
+     "esp_rom_spiflash_read"
+    ],
+    [
+     "fn_250",
+     "esp_rom_spiflash_write"
+    ],
+    [
+     "fn_250",
+     "phy_param"
+    ],
+    [
+     "fn_250",
+     "phy_printf"
+    ],
+    [
+     "fn_250",
+     "register_chipv7_phy"
+    ],
+    [
+     "fn_260",
+     "phy_param"
+    ],
+    [
+     "fn_261",
+     "phy_chip_set_chan"
+    ],
+    [
+     "fn_261",
+     "phy_param"
+    ],
+    [
+     "fn_261",
+     "phy_printf"
+    ],
+    [
+     "fn_261",
+     "phy_rfcal_pwrctrl"
+    ],
+    [
+     "fn_261",
+     "phy_txcal_debuge_mode_new"
+    ],
+    [
+     "fn_261",
+     "phy_txcal_work_mode"
+    ],
+    [
+     "fn_267",
+     "phy_force_pwr_index"
+    ],
+    [
+     "fn_274",
+     "fn_275"
+    ],
+    [
+     "fn_276",
+     "phy_chip_set_chan"
+    ],
+    [
+     "fn_276",
+     "phy_param"
+    ],
+    [
+     "fn_276",
+     "phy_printf"
+    ],
+    [
+     "fn_276",
+     "phy_txcal_debuge_mode_new"
+    ],
+    [
+     "fn_276",
+     "phy_txcal_work_mode"
+    ],
+    [
+     "fn_276",
+     "fn_269"
+    ],
+    [
+     "fn_278",
+     "lp_wdt_reset_sys"
+    ],
+    [
+     "fn_278",
+     "rtc_reset_cause"
+    ],
+    [
+     "fn_279",
+     "fn_133"
+    ],
+    [
+     "fn_279",
+     "phy_get_romfunc_addr"
+    ],
+    [
+     "fn_279",
+     "fn_168"
+    ],
+    [
+     "fn_279",
+     "phy_printf"
+    ],
+    [
+     "fn_283",
+     "esp_rom_spiflash_erase_sector"
+    ],
+    [
+     "fn_283",
+     "esp_rom_spiflash_write"
+    ],
+    [
+     "fn_283",
+     "memset"
+    ],
+    [
+     "fn_283",
+     "phy_printf"
+    ],
+    [
+     "fn_283",
+     "spi_flash_attach"
+    ],
+    [
+     "fn_284",
+     "esp_rom_spiflash_erase_sector"
+    ],
+    [
+     "fn_284",
+     "esp_rom_spiflash_write"
+    ]
+   ]
+  }
+ ]
+}

@@ -9,14 +9,14 @@
     {
      "name": "fn_115",
      "size": 51,
-     "section": ".text.phy_timer_funs_test",
+     "section": ".text.fn_115",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_152",
      "size": 276,
-     "section": ".text.rxiq_get_pwr",
+     "section": ".text.fn_152",
      "exported": true,
      "mmio": [
       "0x60006148",
@@ -28,28 +28,28 @@
     {
      "name": "fn_189",
      "size": 102,
-     "section": ".text.txdc_delta_max",
+     "section": ".text.fn_189",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_190",
      "size": 202,
-     "section": ".text.txdc_stable_sub",
+     "section": ".text.fn_190",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_191",
      "size": 75,
-     "section": ".text.txdc_stable_test",
+     "section": ".text.fn_191",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_80",
      "size": 122,
-     "section": ".text.force_txon_mode",
+     "section": ".text.fn_80",
      "exported": true,
      "mmio": [
       "0x60006000",
@@ -59,7 +59,7 @@
     {
      "name": "fn_23",
      "size": 176,
-     "section": ".text.bt_rx_force",
+     "section": ".text.fn_23",
      "exported": true,
      "mmio": [
       "0x60006110",
@@ -69,7 +69,7 @@
     {
      "name": "fn_78",
      "size": 184,
-     "section": ".text.force_rx_gain",
+     "section": ".text.fn_78",
      "exported": true,
      "mmio": [
       "0x60011054",
@@ -80,7 +80,7 @@
     {
      "name": "fn_109",
      "size": 123,
-     "section": ".text.phy_corr_get_pwr",
+     "section": ".text.fn_109",
      "exported": true,
      "mmio": [
       "0x60006148",
@@ -92,14 +92,14 @@
     {
      "name": "fn_110",
      "size": 117,
-     "section": ".text.phy_corr_pwr_sum",
+     "section": ".text.fn_110",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_108",
      "size": 314,
-     "section": ".text.phy_2480m_opt",
+     "section": ".text.fn_108",
      "exported": true,
      "mmio": [
       "0x6001c02c"
@@ -108,14 +108,14 @@
     {
      "name": "fn_167",
      "size": 244,
-     "section": ".text.test_div_adc",
+     "section": ".text.fn_167",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_77",
      "size": 211,
-     "section": ".text.force_iq_set",
+     "section": ".text.fn_77",
      "exported": true,
      "mmio": [
       "0x6000607c"
@@ -124,7 +124,7 @@
     {
      "name": "fn_34",
      "size": 23,
-     "section": ".text.cpu_reset",
+     "section": ".text.fn_34",
      "exported": true,
      "mmio": [
       "0x60008000"
@@ -133,7 +133,7 @@
     {
      "name": "fn_202",
      "size": 342,
-     "section": ".text.xtal_freq_rx_cal_init",
+     "section": ".text.fn_202",
      "exported": true,
      "mmio": [
       "0x6001c02c"
@@ -142,21 +142,21 @@
     {
      "name": "fn_201",
      "size": 163,
-     "section": ".text.xtal_freq_rx_cal",
+     "section": ".text.fn_201",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_188",
      "size": 552,
-     "section": ".text.txdc_cal_dcap_test",
+     "section": ".text.fn_188",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_116",
      "size": 79,
-     "section": ".text.phy_timer_intr_init",
+     "section": ".text.fn_116",
      "exported": true,
      "mmio": []
     }
@@ -347,84 +347,84 @@
     {
      "name": "fn_54",
      "size": 14,
-     "section": ".text.esp_phy_rftest_config",
+     "section": ".text.fn_54",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_55",
      "size": 11,
-     "section": ".text.esp_phy_rftest_init",
+     "section": ".text.fn_55",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_57",
      "size": 14,
-     "section": ".text.esp_phy_tx_contin_en",
+     "section": ".text.fn_57",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_51",
      "size": 14,
-     "section": ".text.esp_phy_cbw40m_en",
+     "section": ".text.fn_51",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_59",
      "size": 30,
-     "section": ".text.esp_phy_wifi_tx",
+     "section": ".text.fn_59",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_58",
      "size": 18,
-     "section": ".text.esp_phy_wifi_rx",
+     "section": ".text.fn_58",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_52",
      "size": 28,
-     "section": ".text.esp_phy_get_rx_result",
+     "section": ".text.fn_52",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_60",
      "size": 19,
-     "section": ".text.esp_phy_wifi_tx_tone",
+     "section": ".text.fn_60",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_56",
      "size": 22,
-     "section": ".text.esp_phy_short_gi_en",
+     "section": ".text.fn_56",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_49",
      "size": 27,
-     "section": ".text.esp_phy_ble_tx",
+     "section": ".text.fn_49",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_48",
      "size": 18,
-     "section": ".text.esp_phy_ble_rx",
+     "section": ".text.fn_48",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_50",
      "size": 18,
-     "section": ".text.esp_phy_bt_tx_tone",
+     "section": ".text.fn_50",
      "exported": true,
      "mmio": []
     }
@@ -483,21 +483,21 @@
     {
      "name": "fn_38",
      "size": 5,
-     "section": ".text.delay_ns",
+     "section": ".text.fn_38",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_181",
      "size": 69,
-     "section": ".text.tx_add_pocketnum",
+     "section": ".text.fn_181",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_176",
      "size": 151,
-     "section": ".text.trig_tx_frame",
+     "section": ".text.fn_176",
      "exported": true,
      "mmio": [
       "0x60033c34",
@@ -509,7 +509,7 @@
     {
      "name": "fn_177",
      "size": 252,
-     "section": ".text.tx_a_frame",
+     "section": ".text.fn_177",
      "exported": true,
      "mmio": [
       "0x6001d008",
@@ -525,7 +525,7 @@
     {
      "name": "fn_173",
      "size": 416,
-     "section": ".text.test_tx_frame",
+     "section": ".text.fn_173",
      "exported": true,
      "mmio": [
       "0x60035000"
@@ -534,7 +534,7 @@
     {
      "name": "fn_154",
      "size": 68,
-     "section": ".text.set_mac_filter",
+     "section": ".text.fn_154",
      "exported": true,
      "mmio": [
       "0x60033040",
@@ -549,7 +549,7 @@
     {
      "name": "fn_89",
      "size": 49,
-     "section": ".text.get_rxctrl_addr",
+     "section": ".text.fn_89",
      "exported": true,
      "mmio": [
       "0x60033080",
@@ -560,21 +560,21 @@
     {
      "name": "fn_87",
      "size": 56,
-     "section": ".text.get_rx_freq_local",
+     "section": ".text.fn_87",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_46",
      "size": 26,
-     "section": ".text.esp_get_rx_result",
+     "section": ".text.fn_46",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_39",
      "size": 1287,
-     "section": ".text.do_rx_poll",
+     "section": ".text.fn_39",
      "exported": true,
      "mmio": [
       "0x6001c06c",
@@ -591,7 +591,7 @@
     {
      "name": "fn_21",
      "size": 338,
-     "section": ".text.beacon_print",
+     "section": ".text.fn_21",
      "exported": true,
      "mmio": [
       "0x6001c018",
@@ -609,14 +609,14 @@
     {
      "name": "fn_147",
      "size": 160,
-     "section": ".text.rx_data_check",
+     "section": ".text.fn_147",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_70",
      "size": 35,
-     "section": ".text.fill_txaddr",
+     "section": ".text.fn_70",
      "exported": true,
      "mmio": [
       "0x60033040",
@@ -626,14 +626,14 @@
     {
      "name": "fn_123",
      "size": 14,
-     "section": ".text.read_macaddr_from_otp",
+     "section": ".text.fn_123",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_72",
      "size": 538,
-     "section": ".text.fill_txdataframe",
+     "section": ".text.fn_72",
      "exported": true,
      "mmio": [
       "0x60033040",
@@ -644,14 +644,14 @@
     {
      "name": "fn_71",
      "size": 310,
-     "section": ".text.fill_txbeacon",
+     "section": ".text.fn_71",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_159",
      "size": 21,
-     "section": ".text.setmacaddr",
+     "section": ".text.fn_159",
      "exported": true,
      "mmio": [
       "0x60033040",
@@ -661,28 +661,28 @@
     {
      "name": "fn_160",
      "size": 38,
-     "section": ".text.settxframe_chipid",
+     "section": ".text.fn_160",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_161",
      "size": 62,
-     "section": ".text.settxframe_rate",
+     "section": ".text.fn_161",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_85",
      "size": 23,
-     "section": ".text.get_macaddr",
+     "section": ".text.fn_85",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_155",
      "size": 196,
-     "section": ".text.set_macrxfilter",
+     "section": ".text.fn_155",
      "exported": true,
      "mmio": [
       "0x600330d8",
@@ -694,7 +694,7 @@
     {
      "name": "fn_185",
      "size": 140,
-     "section": ".text.tx_data_frame",
+     "section": ".text.fn_185",
      "exported": true,
      "mmio": [
       "0x60033c04",
@@ -708,14 +708,14 @@
     {
      "name": "fn_166",
      "size": 38,
-     "section": ".text.test_delay_us",
+     "section": ".text.fn_166",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_194",
      "size": 59,
-     "section": ".text.uart_wait_idle",
+     "section": ".text.fn_194",
      "exported": true,
      "mmio": [
       "0x6000001c",
@@ -726,7 +726,7 @@
     {
      "name": "fn_19",
      "size": 1970,
-     "section": ".text.ate_txframe_dut",
+     "section": ".text.fn_19",
      "exported": true,
      "mmio": [
       "0x6001c018",
@@ -744,7 +744,7 @@
     {
      "name": "fn_179",
      "size": 371,
-     "section": ".text.tx_ack_start",
+     "section": ".text.fn_179",
      "exported": true,
      "mmio": [
       "0x6001c018",
@@ -755,7 +755,7 @@
     {
      "name": "fn_178",
      "size": 272,
-     "section": ".text.tx_ack_init",
+     "section": ".text.fn_178",
      "exported": true,
      "mmio": [
       "0x60033040",
@@ -769,21 +769,21 @@
     {
      "name": "fn_180",
      "size": 95,
-     "section": ".text.tx_ack_test",
+     "section": ".text.fn_180",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_174",
      "size": 148,
-     "section": ".text.test_txtone_pwr",
+     "section": ".text.fn_174",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_86",
      "size": 549,
-     "section": ".text.get_rx_buffer",
+     "section": ".text.fn_86",
      "exported": true,
      "mmio": [
       "0x60033080",
@@ -794,14 +794,14 @@
     {
      "name": "fn_169",
      "size": 63,
-     "section": ".text.test_noise_floor",
+     "section": ".text.fn_169",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_17",
      "size": 61,
-     "section": ".text.ack_rate_tab",
+     "section": ".text.fn_17",
      "exported": true,
      "mmio": [
       "0x60033404",
@@ -812,7 +812,7 @@
     {
      "name": "fn_20",
      "size": 404,
-     "section": ".text.auto_ack_test",
+     "section": ".text.fn_20",
      "exported": true,
      "mmio": [
       "0x60033040",
@@ -826,7 +826,7 @@
     {
      "name": "fn_65",
      "size": 86,
-     "section": ".text.esp_txrx_test",
+     "section": ".text.fn_65",
      "exported": true,
      "mmio": []
     }
@@ -1177,7 +1177,7 @@
     {
      "name": "fn_35",
      "size": 23,
-     "section": ".text.crypto_disable",
+     "section": ".text.fn_35",
      "exported": true,
      "mmio": [
       "0x60033800",
@@ -1194,28 +1194,28 @@
     {
      "name": "fn_97",
      "size": 10,
-     "section": ".text.mac_write",
+     "section": ".text.fn_97",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_96",
      "size": 10,
-     "section": ".text.mac_read",
+     "section": ".text.fn_96",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_93",
      "size": 93,
-     "section": ".text.mac_buffer_get",
+     "section": ".text.fn_93",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_3",
      "size": 22,
-     "section": ".text.DurAddrGet",
+     "section": ".text.fn_3",
      "exported": true,
      "mmio": [
       "0x60034318"
@@ -1224,14 +1224,14 @@
     {
      "name": "fn_13",
      "size": 22,
-     "section": ".text.RealQGet",
+     "section": ".text.fn_13",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_10",
      "size": 23,
-     "section": ".text.Plcp0AddrGet",
+     "section": ".text.fn_10",
      "exported": true,
      "mmio": [
       "0x60033d08"
@@ -1240,7 +1240,7 @@
     {
      "name": "fn_11",
      "size": 23,
-     "section": ".text.Plcp1AddrGet",
+     "section": ".text.fn_11",
      "exported": true,
      "mmio": [
       "0x600342f8"
@@ -1249,7 +1249,7 @@
     {
      "name": "fn_7",
      "size": 22,
-     "section": ".text.HT40LenAddrGet",
+     "section": ".text.fn_7",
      "exported": true,
      "mmio": [
       "0x60034310"
@@ -1258,7 +1258,7 @@
     {
      "name": "fn_8",
      "size": 23,
-     "section": ".text.HTsigAddrGet",
+     "section": ".text.fn_8",
      "exported": true,
      "mmio": [
       "0x60034300"
@@ -1267,7 +1267,7 @@
     {
      "name": "fn_2",
      "size": 22,
-     "section": ".text.ConfAddrGet",
+     "section": ".text.fn_2",
      "exported": true,
      "mmio": [
       "0x60033d04"
@@ -1276,7 +1276,7 @@
     {
      "name": "fn_0",
      "size": 77,
-     "section": ".text.BackOffCountGet",
+     "section": ".text.fn_0",
      "exported": true,
      "mmio": [
       "0x60033ccc",
@@ -1292,7 +1292,7 @@
     {
      "name": "fn_69",
      "size": 849,
-     "section": ".text.fill_tx_frame",
+     "section": ".text.fn_69",
      "exported": true,
      "mmio": [
       "0x60033c6c"
@@ -1301,7 +1301,7 @@
     {
      "name": "fn_144",
      "size": 110,
-     "section": ".text.rx_buffer_init",
+     "section": ".text.fn_144",
      "exported": true,
      "mmio": [
       "0x60033084",
@@ -1311,7 +1311,7 @@
     {
      "name": "fn_149",
      "size": 31,
-     "section": ".text.rx_link_des",
+     "section": ".text.fn_149",
      "exported": true,
      "mmio": [
       "0x60033084"
@@ -1320,7 +1320,7 @@
     {
      "name": "fn_143",
      "size": 24,
-     "section": ".text.rx_buffer_ena",
+     "section": ".text.fn_143",
      "exported": true,
      "mmio": [
       "0x60033084"
@@ -1329,14 +1329,14 @@
     {
      "name": "fn_137",
      "size": 89,
-     "section": ".text.rx_ampdu_buffer_fresh",
+     "section": ".text.fn_137",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_138",
      "size": 28,
-     "section": ".text.rx_ampdu_buffer_init",
+     "section": ".text.fn_138",
      "exported": true,
      "mmio": [
       "0x60033088"
@@ -1345,35 +1345,35 @@
     {
      "name": "fn_139",
      "size": 88,
-     "section": ".text.rx_ampdu_entry_fresh",
+     "section": ".text.fn_139",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_140",
      "size": 15,
-     "section": ".text.rx_ampdu_entry_init",
+     "section": ".text.fn_140",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_141",
      "size": 88,
-     "section": ".text.rx_ampdu_entrysd_fresh",
+     "section": ".text.fn_141",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_142",
      "size": 15,
-     "section": ".text.rx_ampdu_entrysd_init",
+     "section": ".text.fn_142",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_95",
      "size": 387,
-     "section": ".text.mac_init",
+     "section": ".text.fn_95",
      "exported": true,
      "mmio": [
       "0x60033040",
@@ -1394,7 +1394,7 @@
     {
      "name": "fn_18",
      "size": 774,
-     "section": ".text.adctrig",
+     "section": ".text.fn_18",
      "exported": true,
      "mmio": [
       "0x6001c02c",
@@ -1406,7 +1406,7 @@
     {
      "name": "fn_36",
      "size": 215,
-     "section": ".text.dactrig",
+     "section": ".text.fn_36",
      "exported": true,
      "mmio": [
       "0x60033d5c",
@@ -1500,7 +1500,7 @@
     {
      "name": "fn_44",
      "size": 100,
-     "section": ".text.esp_en_reboot",
+     "section": ".text.fn_44",
      "exported": true,
      "mmio": [
       "0x60008098",
@@ -1513,14 +1513,14 @@
     {
      "name": "fn_28",
      "size": 23,
-     "section": ".text.cbw40m_en",
+     "section": ".text.fn_28",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_29",
      "size": 55,
-     "section": ".text.cfr_set_reg",
+     "section": ".text.fn_29",
      "exported": true,
      "mmio": [
       "0x600061d8",
@@ -1530,14 +1530,14 @@
     {
      "name": "fn_183",
      "size": 299,
-     "section": ".text.tx_cont_cfg",
+     "section": ".text.fn_183",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_198",
      "size": 346,
-     "section": ".text.wifitxout_func",
+     "section": ".text.fn_198",
      "exported": true,
      "mmio": [
       "0x6001c400",
@@ -1547,7 +1547,7 @@
     {
      "name": "fn_64",
      "size": 291,
-     "section": ".text.esp_tx_func_org",
+     "section": ".text.fn_64",
      "exported": true,
      "mmio": [
       "0x60033c68"
@@ -1556,7 +1556,7 @@
     {
      "name": "fn_184",
      "size": 72,
-     "section": ".text.tx_contin_en",
+     "section": ".text.fn_184",
      "exported": true,
      "mmio": [
       "0x600310d0"
@@ -1565,21 +1565,21 @@
     {
      "name": "fn_63",
      "size": 32,
-     "section": ".text.esp_tx_func",
+     "section": ".text.fn_63",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_197",
      "size": 15,
-     "section": ".text.wifitxout",
+     "section": ".text.fn_197",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_196",
      "size": 156,
-     "section": ".text.wifiscwout",
+     "section": ".text.fn_196",
      "exported": true,
      "mmio": [
       "0x60006004"
@@ -1588,7 +1588,7 @@
     {
      "name": "fn_24",
      "size": 163,
-     "section": ".text.bt_tx_tone",
+     "section": ".text.fn_24",
      "exported": true,
      "mmio": [
       "0x60006110"
@@ -1597,91 +1597,91 @@
     {
      "name": "fn_61",
      "size": 72,
-     "section": ".text.esp_rx_func",
+     "section": ".text.fn_61",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_43",
      "size": 49,
-     "section": ".text.esp_crc8",
+     "section": ".text.fn_43",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_12",
      "size": 319,
-     "section": ".text.RF_init_sel",
+     "section": ".text.fn_12",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_42",
      "size": 271,
-     "section": ".text.esp_chg_freqoff",
+     "section": ".text.fn_42",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_47",
      "size": 43,
-     "section": ".text.esp_origin_mac",
+     "section": ".text.fn_47",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_125",
      "size": 20,
-     "section": ".text.remove_head_newline",
+     "section": ".text.fn_125",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_82",
      "size": 5,
-     "section": ".text.gen_ate_data",
+     "section": ".text.fn_82",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_100",
      "size": 17,
-     "section": ".text.module_test_cal_print",
+     "section": ".text.fn_100",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_101",
      "size": 72,
-     "section": ".text.module_test_func_local",
+     "section": ".text.fn_101",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_45",
      "size": 17,
-     "section": ".text.esp_en_retest",
+     "section": ".text.fn_45",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_162",
      "size": 5,
-     "section": ".text.spi_flash_op",
+     "section": ".text.fn_162",
      "exported": false,
      "mmio": []
     },
     {
      "name": "fn_163",
      "size": 5,
-     "section": ".text.spi_psram_op",
+     "section": ".text.fn_163",
      "exported": false,
      "mmio": []
     },
     {
      "name": "fn_74",
      "size": 84,
-     "section": ".text.flash_test_init",
+     "section": ".text.fn_74",
      "exported": true,
      "mmio": [
       "0x600260a8",
@@ -1692,7 +1692,7 @@
     {
      "name": "fn_118",
      "size": 84,
-     "section": ".text.psram_test_init",
+     "section": ".text.fn_118",
      "exported": true,
      "mmio": [
       "0x600260a8",
@@ -1703,14 +1703,14 @@
     {
      "name": "fn_75",
      "size": 95,
-     "section": ".text.flash_test_run",
+     "section": ".text.fn_75",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_127",
      "size": 450,
-     "section": ".text.rfpll_cal_time",
+     "section": ".text.fn_127",
      "exported": true,
      "mmio": [
       "0x6000e0c4",
@@ -1720,14 +1720,14 @@
     {
      "name": "fn_4",
      "size": 398,
-     "section": ".text.ESP_TEST_GPIO",
+     "section": ".text.fn_4",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_1",
      "size": 70,
-     "section": ".text.CMDSTOP_GPIO",
+     "section": ".text.fn_1",
      "exported": true,
      "mmio": []
     }
@@ -2022,63 +2022,63 @@
     {
      "name": "fn_157",
      "size": 82,
-     "section": ".text.set_spur_reg",
+     "section": ".text.fn_157",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_9",
      "size": 106,
-     "section": ".text.Mem_WrByteEn_Test",
+     "section": ".text.fn_9",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_5",
      "size": 100,
-     "section": ".text.FillTxPacket",
+     "section": ".text.fn_5",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_105",
      "size": 14,
-     "section": ".text.pa_reg_opt",
+     "section": ".text.fn_105",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_14",
      "size": 46,
-     "section": ".text.WifiRxStart",
+     "section": ".text.fn_14",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_131",
      "size": 71,
-     "section": ".text.rftest_pll_track",
+     "section": ".text.fn_131",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_53",
      "size": 127,
-     "section": ".text.esp_phy_getstopcmd",
+     "section": ".text.fn_53",
      "exported": false,
      "mmio": []
     },
     {
      "name": "fn_6",
      "size": 13,
-     "section": ".text.GetStopCmd",
+     "section": ".text.fn_6",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_15",
      "size": 275,
-     "section": ".text.WifiTxStart",
+     "section": ".text.fn_15",
      "exported": true,
      "mmio": [
       "0x6001c400",
@@ -2089,21 +2089,21 @@
     {
      "name": "fn_153",
      "size": 17,
-     "section": ".text.sampledeal",
+     "section": ".text.fn_153",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_16",
      "size": 86,
-     "section": ".text.accumiq",
+     "section": ".text.fn_16",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_119",
      "size": 176,
-     "section": ".text.ram_get_corr_power",
+     "section": ".text.fn_119",
      "exported": true,
      "mmio": [
       "0x60006148",
@@ -2118,35 +2118,35 @@
     {
      "name": "fn_88",
      "size": 119,
-     "section": ".text.get_rx_tone_pwr",
+     "section": ".text.fn_88",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_111",
      "size": 7,
-     "section": ".text.phy_enter_critical",
+     "section": ".text.fn_111",
      "exported": false,
      "mmio": []
     },
     {
      "name": "fn_112",
      "size": 5,
-     "section": ".text.phy_exit_critical",
+     "section": ".text.fn_112",
      "exported": false,
      "mmio": []
     },
     {
      "name": "fn_102",
      "size": 74,
-     "section": ".text.noise_init_check",
+     "section": ".text.fn_102",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_126",
      "size": 62,
-     "section": ".text.rf_cal_data_clear",
+     "section": ".text.fn_126",
      "exported": true,
      "mmio": [
       "0x60008000",
@@ -2156,7 +2156,7 @@
     {
      "name": "fn_171",
      "size": 115,
-     "section": ".text.test_rf_cal_level",
+     "section": ".text.fn_171",
      "exported": true,
      "mmio": [
       "0x60035000"
@@ -2165,49 +2165,49 @@
     {
      "name": "fn_67",
      "size": 99,
-     "section": ".text.esp_wr_cal_data",
+     "section": ".text.fn_67",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_62",
      "size": 91,
-     "section": ".text.esp_tester_cali_en",
+     "section": ".text.fn_62",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_66",
      "size": 88,
-     "section": ".text.esp_wifi_pwr_correct",
+     "section": ".text.fn_66",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_41",
      "size": 88,
-     "section": ".text.esp_bt_pwr_correct",
+     "section": ".text.fn_41",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_68",
      "size": 5,
-     "section": ".text.esp_wr_efuse_data",
+     "section": ".text.fn_68",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_175",
      "size": 63,
-     "section": ".text.timers_wdt_init",
+     "section": ".text.fn_175",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_26",
      "size": 81,
-     "section": ".text.burnin_rtc_init",
+     "section": ".text.fn_26",
      "exported": true,
      "mmio": [
       "0x60008018",
@@ -2219,21 +2219,21 @@
     {
      "name": "fn_92",
      "size": 136,
-     "section": ".text.init_param_read",
+     "section": ".text.fn_92",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_73",
      "size": 148,
-     "section": ".text.flash_init_param_print",
+     "section": ".text.fn_73",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_113",
      "size": 59,
-     "section": ".text.phy_init",
+     "section": ".text.fn_113",
      "exported": true,
      "mmio": [
       "0x60004038"
@@ -2242,7 +2242,7 @@
     {
      "name": "fn_27",
      "size": 613,
-     "section": ".text.burnin_test_func",
+     "section": ".text.fn_27",
      "exported": true,
      "mmio": [
       "0x60008050",
@@ -2258,14 +2258,14 @@
     {
      "name": "fn_25",
      "size": 35,
-     "section": ".text.burn_in_test",
+     "section": ".text.fn_25",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_151",
      "size": 100,
-     "section": ".text.rx_per_init",
+     "section": ".text.fn_151",
      "exported": true,
      "mmio": [
       "0x600330d8",
@@ -2277,7 +2277,7 @@
     {
      "name": "fn_32",
      "size": 62,
-     "section": ".text.clk_pull_out",
+     "section": ".text.fn_32",
      "exported": true,
      "mmio": [
       "0x60009000"
@@ -2286,7 +2286,7 @@
     {
      "name": "fn_117",
      "size": 30,
-     "section": ".text.print_efuse_mac",
+     "section": ".text.fn_117",
      "exported": true,
      "mmio": [
       "0x60007044",
@@ -2296,35 +2296,35 @@
     {
      "name": "fn_106",
      "size": 101,
-     "section": ".text.pad_gpio_set",
+     "section": ".text.fn_106",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_195",
      "size": 32,
-     "section": ".text.wifi_init",
+     "section": ".text.fn_195",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_30",
      "size": 190,
-     "section": ".text.change_data_rate",
+     "section": ".text.fn_30",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_84",
      "size": 144,
-     "section": ".text.get_length_delay",
+     "section": ".text.fn_84",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_124",
      "size": 143,
-     "section": ".text.remove_11b_4p8G_spur",
+     "section": ".text.fn_124",
      "exported": true,
      "mmio": [
       "0x6001c454",
@@ -2334,7 +2334,7 @@
     {
      "name": "fn_156",
      "size": 754,
-     "section": ".text.set_pbus_mem_debug",
+     "section": ".text.fn_156",
      "exported": true,
      "mmio": [
       "0x600060c8",
@@ -2350,7 +2350,7 @@
     {
      "name": "fn_150",
      "size": 323,
-     "section": ".text.rx_pbus_set",
+     "section": ".text.fn_150",
      "exported": true,
      "mmio": [
       "0x600060c8",
@@ -2361,7 +2361,7 @@
     {
      "name": "fn_187",
      "size": 342,
-     "section": ".text.tx_pbus_set",
+     "section": ".text.fn_187",
      "exported": true,
      "mmio": [
       "0x600060c8",
@@ -2372,7 +2372,7 @@
     {
      "name": "fn_104",
      "size": 283,
-     "section": ".text.pa_pbus_set",
+     "section": ".text.fn_104",
      "exported": true,
      "mmio": [
       "0x600060c8",
@@ -2383,28 +2383,28 @@
     {
      "name": "fn_122",
      "size": 28,
-     "section": ".text.read_flash_init_para",
+     "section": ".text.fn_122",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_200",
      "size": 38,
-     "section": ".text.write_flash_init_para",
+     "section": ".text.fn_200",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_81",
      "size": 74,
-     "section": ".text.force_txtone",
+     "section": ".text.fn_81",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_98",
      "size": 13,
-     "section": ".text.mem_read_func",
+     "section": ".text.fn_98",
      "exported": true,
      "mmio": [
       "0x600061fc"
@@ -2413,7 +2413,7 @@
     {
      "name": "fn_99",
      "size": 15,
-     "section": ".text.mem_write_func",
+     "section": ".text.fn_99",
      "exported": true,
      "mmio": [
       "0x600061fc"
@@ -2422,7 +2422,7 @@
     {
      "name": "fn_168",
      "size": 108,
-     "section": ".text.test_mem_time",
+     "section": ".text.fn_168",
      "exported": true,
      "mmio": [
       "0x600061fc",
@@ -2432,7 +2432,7 @@
     {
      "name": "fn_90",
      "size": 16,
-     "section": ".text.get_tx_rate",
+     "section": ".text.fn_90",
      "exported": true,
      "mmio": [
       "0x6000e060"
@@ -2441,7 +2441,7 @@
     {
      "name": "fn_114",
      "size": 58,
-     "section": ".text.phy_test_init",
+     "section": ".text.fn_114",
      "exported": true,
      "mmio": [
       "0x60026014"
@@ -2450,7 +2450,7 @@
     {
      "name": "fn_33",
      "size": 26,
-     "section": ".text.close_peri",
+     "section": ".text.fn_33",
      "exported": true,
      "mmio": [
       "0x600c0018",
@@ -2460,14 +2460,14 @@
     {
      "name": "fn_170",
      "size": 106,
-     "section": ".text.test_phy_vdd33",
+     "section": ".text.fn_170",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_133",
      "size": 59,
-     "section": ".text.rtc_sar_read",
+     "section": ".text.fn_133",
      "exported": true,
      "mmio": [
       "0x60008830"
@@ -2476,14 +2476,14 @@
     {
      "name": "fn_172",
      "size": 94,
-     "section": ".text.test_rtc_vdd33",
+     "section": ".text.fn_172",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_31",
      "size": 45,
-     "section": ".text.clk10m_enable",
+     "section": ".text.fn_31",
      "exported": true,
      "mmio": [
       "0x600c0060"
@@ -2492,14 +2492,14 @@
     {
      "name": "fn_193",
      "size": 5,
-     "section": ".text.uart1_sel",
+     "section": ".text.fn_193",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_83",
      "size": 41,
-     "section": ".text.get_iq_est_pwr",
+     "section": ".text.fn_83",
      "exported": true,
      "mmio": [
       "0x60006164"
@@ -2508,14 +2508,14 @@
     {
      "name": "fn_182",
      "size": 118,
-     "section": ".text.tx_chan_atten",
+     "section": ".text.fn_182",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_148",
      "size": 321,
-     "section": ".text.rx_gain_comp",
+     "section": ".text.fn_148",
      "exported": true,
      "mmio": [
       "0x6000607c"
@@ -2524,28 +2524,28 @@
     {
      "name": "fn_146",
      "size": 130,
-     "section": ".text.rx_chan_noise_all",
+     "section": ".text.fn_146",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_145",
      "size": 78,
-     "section": ".text.rx_chan_noise",
+     "section": ".text.fn_145",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_22",
      "size": 643,
-     "section": ".text.bt_pbus_rx_dco_cal",
+     "section": ".text.fn_22",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_37",
      "size": 178,
-     "section": ".text.dc_iq_est_test",
+     "section": ".text.fn_37",
      "exported": true,
      "mmio": [
       "0x6000615c",
@@ -2558,42 +2558,42 @@
     {
      "name": "fn_192",
      "size": 134,
-     "section": ".text.txpwr_backoff_test",
+     "section": ".text.fn_192",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_158",
      "size": 63,
-     "section": ".text.set_tx_power",
+     "section": ".text.fn_158",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_76",
      "size": 95,
-     "section": ".text.force_ble_tx_gain",
+     "section": ".text.fn_76",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_79",
      "size": 108,
-     "section": ".text.force_tx_gain",
+     "section": ".text.fn_79",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_132",
      "size": 84,
-     "section": ".text.rftest_set_chan",
+     "section": ".text.fn_132",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_164",
      "size": 86,
-     "section": ".text.sw_chan_test",
+     "section": ".text.fn_164",
      "exported": true,
      "mmio": [
       "0x60035000"
@@ -2602,7 +2602,7 @@
     {
      "name": "fn_136",
      "size": 582,
-     "section": ".text.rx_2440m_opt",
+     "section": ".text.fn_136",
      "exported": true,
      "mmio": [
       "0x6001c02c",
@@ -2612,7 +2612,7 @@
     {
      "name": "fn_120",
      "size": 158,
-     "section": ".text.read_efuse_byte",
+     "section": ".text.fn_120",
      "exported": true,
      "mmio": [
       "0x60008800",
@@ -2628,7 +2628,7 @@
     {
      "name": "fn_165",
      "size": 36,
-     "section": ".text.test_cut_current",
+     "section": ".text.fn_165",
      "exported": true,
      "mmio": [
       "0x600260a8",
@@ -2639,7 +2639,7 @@
     {
      "name": "fn_130",
      "size": 35,
-     "section": ".text.rftest_optimize",
+     "section": ".text.fn_130",
      "exported": true,
      "mmio": [
       "0x6001cd04",
@@ -2649,7 +2649,7 @@
     {
      "name": "fn_128",
      "size": 51,
-     "section": ".text.rftest_en_usb",
+     "section": ".text.fn_128",
      "exported": true,
      "mmio": [
       "0x60038018"
@@ -2658,7 +2658,7 @@
     {
      "name": "fn_103",
      "size": 61,
-     "section": ".text.open_pwr_domain",
+     "section": ".text.fn_103",
      "exported": true,
      "mmio": [
       "0x60008088",
@@ -2669,14 +2669,14 @@
     {
      "name": "fn_91",
      "size": 19,
-     "section": ".text.idf_enable",
+     "section": ".text.fn_91",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_129",
      "size": 177,
-     "section": ".text.rftest_init",
+     "section": ".text.fn_129",
      "exported": true,
      "mmio": [
       "0x60026014"
@@ -2685,56 +2685,56 @@
     {
      "name": "fn_199",
      "size": 88,
-     "section": ".text.write_flash",
+     "section": ".text.fn_199",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_40",
      "size": 57,
-     "section": ".text.erase_flash",
+     "section": ".text.fn_40",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_121",
      "size": 110,
-     "section": ".text.read_flash",
+     "section": ".text.fn_121",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_107",
      "size": 168,
-     "section": ".text.pbus_debug",
+     "section": ".text.fn_107",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_94",
      "size": 11,
-     "section": ".text.mac_filter_enable",
+     "section": ".text.fn_94",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_186",
      "size": 134,
-     "section": ".text.tx_i2c_track",
+     "section": ".text.fn_186",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_134",
      "size": 28,
-     "section": ".text.run_para_array_clear",
+     "section": ".text.fn_134",
      "exported": true,
      "mmio": []
     },
     {
      "name": "fn_135",
      "size": 8923,
-     "section": ".text.run_rftest_case",
+     "section": ".text.fn_135",
      "exported": true,
      "mmio": [
       "0x60006110",

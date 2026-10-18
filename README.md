@@ -46,13 +46,13 @@ The ESP32-C3 uses a different instruction set (RISC-V instead of Xtensa), but Ch
 
 ### Phase 1 result: rules only, no AI
 
-| Chip | Functions | `adctrig` rank | Documented test functions ranked above it |
-|---|---|---|---|
-| ESP32-C5 | 286 | **2** | 0 |
-| ESP32-C61 | 252 | **2** | 0 |
-| ESP32-S3 | 203 | 28 | 0 |
-| ESP32-C3 | 218 | 29 | 0 |
-| ESP32 | 289 | 30 | 0 |
+| Chip | Functions | `adctrig` rank | inclusive rank | Documented test functions ranked above it |
+|---|---|---|---|---|
+| ESP32-C5 | 286 | **2** | 19 | 0 |
+| ESP32-C61 | 252 | **2** | 29 | 0 |
+| ESP32-S3 | 203 | 28 | 23 | 0 |
+| ESP32-C3 | 218 | 29 | 27 | 0 |
+| ESP32 | 289 | 30 | 58 | 0 |
 
 Rules alone find it on two chips. On the other three, large radio functions outscore it, because the whole radio register space is undocumented. That gap is what the agent must close. Details: [results/baseline.md](results/baseline.md).
 

@@ -51,7 +51,17 @@ def test_riscv_c_addi_updates_base():
     assert 0x60034008 in riscv_consts(code)
 
 
+def test_strip_leaks_no_defined_names():
+    import json, re
+    from chipxray.facts import alias_map
+    path = "blobs/espressif/esp32s3_librftest.a"
+    text = json.dumps(extract(path, strip=True))
+    leaked = [n for n in alias_map(path)
+              if re.search(rf"(?<![A-Za-z0-9_]){re.escape(n)}(?![A-Za-z0-9_])", text)]
+    assert leaked == [], leaked[:10]
+
+
 if __name__ == "__main__":
     test_s3_adctrig_ground_truth(); test_strip_hides_names()
     test_s3_adctrig_mmio(); test_c3_adctrig_mmio(); test_riscv_lui_addi_and_load()
-    test_riscv_c_addi_updates_base(); print("ok")
+    test_riscv_c_addi_updates_base(); test_strip_leaks_no_defined_names(); print("ok")
