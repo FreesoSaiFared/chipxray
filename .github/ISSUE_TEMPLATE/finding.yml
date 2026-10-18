@@ -1,0 +1,28 @@
+name: Finding
+description: Report, confirm or challenge a hidden-feature candidate
+labels: ["finding"]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: Chip and function
+      placeholder: ESP32-C5, fft_dump_init
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: This report
+      options:
+        - proposes a new candidate
+        - adds evidence for an existing candidate
+        - challenges a candidate (wrong, or already documented)
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Cite facts someone can check - register addresses, call edges, exact code snippets, or documentation links.
+    validations:
+      required: true

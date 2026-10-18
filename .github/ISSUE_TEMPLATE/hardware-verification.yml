@@ -1,0 +1,36 @@
+name: Hardware verification
+description: You tested a finding on a real board
+labels: ["finding", "hardware-verified"]
+body:
+  - type: input
+    id: board
+    attributes:
+      label: Board and chip revision
+      placeholder: ESP32-C5-DevKitC-1, chip rev v1.0
+    validations:
+      required: true
+  - type: input
+    id: finding
+    attributes:
+      label: Finding tested
+      placeholder: ESP32-C5 fft_dump_init
+    validations:
+      required: true
+  - type: textarea
+    id: method
+    attributes:
+      label: What you ran
+      description: Firmware, commands, and settings. Receive-only experiments, or transmit only where you are licensed to.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: What you measured
+      description: Results, logs, captures. Negative results are welcome.
+    validations:
+      required: true
+  - type: input
+    id: credit
+    attributes:
+      label: Name for the credits (optional)

@@ -1,0 +1,30 @@
+name: Add a chip
+description: Request or claim support for a new chip or vendor library
+labels: ["new chip"]
+body:
+  - type: input
+    id: chip
+    attributes:
+      label: Chip
+      placeholder: ESP32-C6
+    validations:
+      required: true
+  - type: input
+    id: library
+    attributes:
+      label: Library and source
+      description: Where the firmware library comes from, and its license.
+      placeholder: librftest.a from espressif/esp-phy-lib (Apache-2.0)
+    validations:
+      required: true
+  - type: input
+    id: registers
+    attributes:
+      label: Register description (SVD or similar)
+      placeholder: esp-rs/esp-pacs esp32c6/svd/esp32c6.base.svd
+  - type: checkboxes
+    id: doing
+    attributes:
+      label: Plan
+      options:
+        - label: I will open the pull request myself (see CONTRIBUTING.md, "Add a chip")
