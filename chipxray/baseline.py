@@ -49,7 +49,7 @@ if __name__ == "__main__":
     out = Path("results") / (Path(facts_path).stem + "_baseline.csv")
     out.parent.mkdir(exist_ok=True)
     with open(out, "w", newline="", encoding="utf-8") as fh:
-        w = csv.DictWriter(fh, fieldnames=FIELDS)
+        w = csv.DictWriter(fh, fieldnames=FIELDS, lineterminator="\n")
         w.writeheader()
         w.writerows(rows)
     print(out)

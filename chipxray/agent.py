@@ -53,6 +53,11 @@ When you finish, reply with ONLY one JSON object, no other text:
 SYSTEM = HEAD + TOOLS_TEXT + RULES + FORMAT
 
 
+def output_paths(base):
+    """Append extensions without dropping dots from model names or run timestamps."""
+    return Path(str(base) + ".json"), Path(str(base) + ".transcript.json")
+
+
 def parse_report(text):
     if not text:
         return None
@@ -119,8 +124,9 @@ if __name__ == "__main__":
     model = re.sub(r"[^A-Za-z0-9._-]", "_", llm.model)
     base = Path("results/agent") / f"{chip}{'_stripped' if strip else ''}-{model}-{stamp}"
     base.parent.mkdir(parents=True, exist_ok=True)
-    base.with_suffix(".json").write_text(json.dumps(report, indent=1), encoding="utf-8")
-    Path(str(base) + ".transcript.json").write_text(json.dumps(transcript, indent=1), encoding="utf-8")
-    print(base.with_suffix(".json"))
+    report_path, transcript_path = output_paths(base)
+    report_path.write_text(json.dumps(report, indent=1), encoding="utf-8")
+    transcript_path.write_text(json.dumps(transcript, indent=1), encoding="utf-8")
+    print(report_path)
     print("ranking:", report["ranking"][:10])
     print("claims supported:", report["checked"]["supported"], "/", report["checked"]["claims"])

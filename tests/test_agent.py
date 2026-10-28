@@ -1,5 +1,6 @@
 import json
-from chipxray.agent import parse_report, run
+from pathlib import Path
+from chipxray.agent import output_paths, parse_report, run
 from chipxray.llm import ScriptedLLM
 from chipxray.query import Store
 
@@ -12,6 +13,13 @@ FINAL = {"ranking": ["adctrig"], "findings": [{"function": "adctrig", "hypothesi
 def _call(i, name, args):
     return {"role": "assistant", "content": None,
             "tool_calls": [{"id": f"c{i}", "type": "function", "function": {"name": name, "arguments": json.dumps(args)}}]}
+
+
+def test_report_paths_preserve_model_dots_and_timestamp():
+    base = Path('results/agent/esp32c5-openai_gpt-4.1-mini-20261028T004437Z')
+    report, transcript = output_paths(base)
+    assert report.name == base.name + '.json'
+    assert transcript.name == base.name + '.transcript.json'
 
 
 def test_parse_report_accepts_fenced_json():
@@ -50,6 +58,7 @@ def test_tool_calls_after_budget_get_error_replies_and_loop_ends():
 
 
 if __name__ == "__main__":
+    test_report_paths_preserve_model_dots_and_timestamp()
     test_parse_report_accepts_fenced_json(); test_run_executes_tools_then_returns_checked_report()
     test_budget_exhaustion_forces_final_answer(); test_unparseable_final_gives_empty_report()
     test_tool_calls_after_budget_get_error_replies_and_loop_ends(); print("ok")

@@ -38,6 +38,7 @@ def run(store, llm, top=15):
 
 
 if __name__ == "__main__":
+    from chipxray.agent import output_paths
     from chipxray.llm import LLM
     args = sys.argv[1:]
     chip, strip = args[0], "--strip" in args
@@ -48,6 +49,7 @@ if __name__ == "__main__":
     model = re.sub(r"[^A-Za-z0-9._-]", "_", llm.model)
     base = Path("results/oneshot") / f"{chip}{'_stripped' if strip else ''}-{model}-{stamp}"
     base.parent.mkdir(parents=True, exist_ok=True)
-    base.with_suffix(".json").write_text(json.dumps(report, indent=1), encoding="utf-8")
-    Path(str(base) + ".transcript.json").write_text(json.dumps(transcript, indent=1), encoding="utf-8")
-    print(base.with_suffix(".json"), "ranking:", report["ranking"][:10])
+    report_path, transcript_path = output_paths(base)
+    report_path.write_text(json.dumps(report, indent=1), encoding="utf-8")
+    transcript_path.write_text(json.dumps(transcript, indent=1), encoding="utf-8")
+    print(report_path, "ranking:", report["ranking"][:10])

@@ -110,6 +110,10 @@ Optional: [Ghidra](https://ghidra-sre.org/) decompiles a function with `ghidra_s
 - Register lists: [esp-rs/esp-pacs](https://github.com/esp-rs/esp-pacs), pinned at `fed196c2`.
 - The ground truth comes from the [ESPARGOS](https://espargos.net/espsdr/) team's discovery.
 
+## Independent reproduction and evaluation (2026-10-28)
+
+See [EVALUATION-2026-10-28.md](EVALUATION-2026-10-28.md) for verified Windows build/test results, three real AI trials, a reproduced failure to recover `adctrig`, and two small portability/reporting fixes. Existing agent and benchmark modules have deterministic tests; that should not be confused with successful independent feature discovery.
+
 ## License
 
 [MIT](LICENSE)

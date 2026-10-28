@@ -3,4 +3,5 @@ __pycache__/
 blobs/
 .superpowers/
 *.local.json
-results/agent/*.raw.json
+results/agent/
+results/oneshot/
